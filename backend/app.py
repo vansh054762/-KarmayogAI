@@ -29,6 +29,22 @@ def create_app():
     app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL', 'sqlite:///karmayogai.db')
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
+    # ── Connection pool — fixes Supabase SSL EOF / timeout drops ──────────
+    app.config['SQLALCHEMY_ENGINE_OPTIONS'] = {
+        'pool_pre_ping': True,        # test connection before use
+        'pool_recycle': 300,          # recycle connections every 5 min
+        'pool_size': 5,
+        'max_overflow': 2,
+        'connect_args': {
+            'sslmode': 'require',
+            'connect_timeout': 10,
+            'keepalives': 1,
+            'keepalives_idle': 30,
+            'keepalives_interval': 10,
+            'keepalives_count': 5,
+        }
+    }
+
     # File upload limits — Flask enforces this globally before any route runs
     app.config['MAX_CONTENT_LENGTH'] = 10 * 1024 * 1024  # 10 MB hard cap
 
