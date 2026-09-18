@@ -38,6 +38,7 @@ backend/logs/
 backend/ai_modules/trained_models/*.pkl
 
 # ── IDE / OS ───────────────────────────────────────────────────────────────
+.kiro/
 .vscode/
 .idea/
 *.DS_Store
