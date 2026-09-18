@@ -1,6 +1,48 @@
 <!-- Mobile sidebar overlay -->
 <div class="sidebar-overlay" id="sidebar-overlay" onclick="closeSidebar()"></div>
 
+<!-- ══ MOBILE BOTTOM NAV ════════════════════════════════ -->
+<nav class="mob-nav" id="mob-nav">
+
+  <a href="/dashboard" class="mob-nav-item" id="mob-dashboard">
+    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
+    </svg>
+    Home
+  </a>
+
+  <a href="/assessment" class="mob-nav-item" id="mob-assessment">
+    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/>
+    </svg>
+    Assess
+  </a>
+
+  <a href="/recommendations" class="mob-nav-item" id="mob-recommendations">
+    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+    </svg>
+    Learn
+  </a>
+
+  <a href="/progress" class="mob-nav-item" id="mob-progress">
+    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
+    </svg>
+    Progress
+  </a>
+
+  <button class="mob-nav-more" onclick="openSidebar()" aria-label="More">
+    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="5"  cy="12" r="1.5" fill="currentColor" stroke="none"/>
+      <circle cx="12" cy="12" r="1.5" fill="currentColor" stroke="none"/>
+      <circle cx="19" cy="12" r="1.5" fill="currentColor" stroke="none"/>
+    </svg>
+    More
+  </button>
+
+</nav>
+
 <aside class="sidebar" id="sidebar">
   <div class="sidebar-logo">
     <div class="sidebar-logo-icon">
@@ -170,6 +212,26 @@ function closeSidebar() {
 document.querySelectorAll('.nav-item').forEach(function(el) {
   el.addEventListener('click', closeSidebar);
 });
+
+// ── Mobile bottom nav active state ────────────────────
+(function() {
+  var path = window.location.pathname.replace(/\/$/, '') || '/dashboard';
+  var map = {
+    '/dashboard':       'mob-dashboard',
+    '/assessment':      'mob-assessment',
+    '/recommendations': 'mob-recommendations',
+    '/learning-paths':  'mob-recommendations',
+    '/progress':        'mob-progress',
+    '/quiz-generator':  'mob-assessment',
+    '/igot':            'mob-recommendations',
+    '/admin':           'mob-dashboard',
+  };
+  var activeId = map[path];
+  if (activeId) {
+    var el = document.getElementById(activeId);
+    if (el) el.classList.add('active');
+  }
+})();
 
 async function saveProfile() {
   const btn   = document.getElementById('pm-save');
