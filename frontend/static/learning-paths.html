@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>KarmayogAI — Learning Paths</title>
+<link rel="stylesheet" href="/static/theme.css?v=4">
+</head>
+<body>
+<div id="shell"></div>
+<div class="sidebar-pad">
+  <div class="topbar">
+    <div>
+      <div class="topbar-title">Learning Paths</div>
+      <div class="topbar-sub">AI-generated sequential learning journeys to close your skill gaps</div>
+    </div>
+  </div>
+  <div class="page" id="main"><div class="spinner"></div></div>
+</div>
+<script src="/static/app.js"></script>
+<script>
+if (!requireAuth()) throw 0;
+let allComps=[];
+
+async function init(){
+  const r=await fetch('/static/shell.html');
+  document.getElementById('shell').innerHTML=await r.text();
+  await renderShell('Learning Paths','learning-paths');
+  const [pd,cd]=await Promise.all([apiFetch('/recommendations/learning-paths'),apiFetch('/assessment/competencies')]);
+  allComps=Object.values(cd.domains).flat();
+  renderAll(pd.learning_paths||[]);
+}
+
+function renderAll(paths){
+  const diffCol={beginner:'var(--green)',intermediate:'var(--amber)',advanced:'var(--red)'};
+  let html=`
+    <div class="card" style="margin-bottom:20px;">
+      <div class="card-hd"><div class="card-title">Generate Learning Path</div></div>
+      <div class="card-bd" style="display:flex;flex-wrap:wrap;gap:8px;">
+        ${allComps.map(c=>{
+          const has=paths.find(p=>p.competency_id===c.id);
+          return `<button onclick="generatePath(${c.id},this)" style="padding:7px 14px;border-radius:999px;border:1.5px solid ${has?'var(--sage)':'var(--border)'};background:${has?'var(--sage-pale)':'var(--card2)'};color:${has?'var(--sage)':'var(--ink2)'};font-size:12.5px;font-weight:500;cursor:pointer;transition:all .15s;">
+            ${has?`${iconCheck('currentColor', 14)} `:''} ${c.name}
+          </button>`;
+        }).join('')}
+      </div>
+    </div>`;
+
+  if(!paths.length){
+    html+=`<div class="card" style="text-align:center;padding:60px 24px;">
+      <div style="font-size:40px;margin-bottom:14px;">${iconMap('#7A5540', 48)}</div>
+      <div style="font-family:var(--serif);font-size:17px;font-weight:700;color:var(--ink);">No Learning Paths Yet</div>
+      <p style="color:var(--muted);margin-top:8px;">Click a competency above to generate your personalized learning path.</p>
+    </div>`;
+  } else {
+    html+=`<div style="display:flex;flex-direction:column;gap:16px;">`;
+    for(const path of paths){
+      const courses=path.courses||[];
+      html+=`
+      <div class="card">
+        <div class="card-hd" style="padding-bottom:14px;border-bottom:1px solid var(--border);">
+          <div>
+            <div class="card-title">${path.competency_name||'Learning Path'}</div>
+            <div style="display:flex;gap:8px;margin-top:6px;align-items:center;">
+              <span class="badge ${path.status==='completed'?'badge-prof':'badge-base'}">${path.status}</span>
+              <span style="font-size:12px;color:var(--muted);">${courses.length} courses · ${(path.completion_percentage||0).toFixed(0)}% complete</span>
+            </div>
+          </div>
+          <div style="font-family:var(--serif);font-size:24px;font-weight:700;color:var(--ink);">${(path.completion_percentage||0).toFixed(0)}%</div>
+        </div>
+        <div class="card-bd">
+          <div class="prog-wrap" style="height:7px;margin-bottom:18px;">
+            <div class="prog-fill${path.completion_percentage>=100?' green':''}" style="width:${path.completion_percentage||0}%;"></div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:10px;">
+            ${courses.map((c,idx)=>{
+              const done=idx<path.current_step, active=idx===path.current_step;
+              return `
+              <div style="display:flex;align-items:center;gap:12px;">
+                <div style="width:32px;height:32px;min-width:32px;border-radius:50%;background:${done?'var(--green)':active?'var(--brown)':'var(--bg3)'};color:${done||active?'#fff':'var(--muted)'};display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;">${done?'✓':idx+1}</div>
+                <div style="flex:1;padding:12px 14px;border:1.5px solid ${active?'var(--brown)':done?'var(--sage)':'var(--border)'};border-radius:10px;background:${active?'var(--bg2)':done?'var(--sage-pale)':'var(--card)'};">
+                  <div style="display:flex;justify-content:space-between;align-items:center;">
+                    <div>
+                      <div style="font-weight:600;font-size:13.5px;">${c.title}</div>
+                      <div style="display:flex;gap:12px;font-size:12px;color:var(--muted);margin-top:3px;">
+                        <span style="color:${diffCol[c.difficulty]||'var(--muted)'};font-weight:600;">${c.difficulty}</span>
+                        ${iconTime('currentColor', 14)} ${c.duration_hours}h
+                        <span>${c.course_type}</span>
+                      </div>
+                    </div>
+                    ${done?`<span class="badge badge-prof">Completed</span>`
+                      :active?`<button onclick="markDone(${c.id})" class="btn btn-primary btn-sm">${iconPlay('currentColor', 14)} Mark Done</button>`
+                      :`<span class="badge badge-base" style="opacity:.6;">Locked</span>`}
+                  </div>
+                </div>
+              </div>`;
+            }).join('')}
+          </div>
+        </div>
+      </div>`;
+    }
+    html+=`</div>`;
+  }
+  document.getElementById('main').innerHTML=html;
+}
+
+async function generatePath(compId,btn){
+  const orig=btn.innerHTML; btn.innerHTML='⏳'; btn.disabled=true;
+  try{
+    await apiFetch('/recommendations/learning-path',{method:'POST',body:JSON.stringify({competency_id:compId})});
+    showToast('Learning path generated!');
+    const d=await apiFetch('/recommendations/learning-paths');
+    renderAll(d.learning_paths||[]);
+  } catch(e){ showToast(e.message,'err'); btn.innerHTML=orig; btn.disabled=false; }
+}
+async function markDone(courseId){
+  await apiFetch('/progress/update-course',{method:'POST',body:JSON.stringify({course_id:courseId,progress_pct:100})});
+  showToast('Course completed!');
+  const d=await apiFetch('/recommendations/learning-paths');
+  renderAll(d.learning_paths||[]);
+}
+init().catch(console.error);
+</script>
+</body>
+</html>

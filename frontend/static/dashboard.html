@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>KarmayogAI — Dashboard</title>
+<link rel="stylesheet" href="/static/theme.css?v=4">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body>
+<div id="shell"></div>
+<div class="sidebar-pad">
+
+  <div class="topbar">
+    <div>
+      <div class="topbar-title" id="page-title">Dashboard</div>
+      <div class="topbar-sub" id="page-sub"></div>
+    </div>
+    <div id="topbar-actions" style="display:flex;gap:10px;"></div>
+  </div>
+
+  <div class="page" id="main">
+    <div class="spinner"></div>
+  </div>
+</div>
+
+<script src="/static/app.js"></script>
+<script>
+if (!requireAuth()) throw 0;
+
+async function init() {
+  const r = await fetch('/static/shell.html');
+  document.getElementById('shell').innerHTML = await r.text();
+  const user = await renderShell('Dashboard','dashboard');
+  document.getElementById('page-sub').textContent = `Welcome back, ${user.name.split(' ')[0]}`;
+  user.role === 'admin' ? renderAdmin(user) : renderEmployee(user);
+}
+
+/* ── EMPLOYEE ─────────────────────────────────────────── */
+async function renderEmployee(user) {
+  document.getElementById('topbar-actions').innerHTML = `
+    <a href="/assessment" class="btn btn-primary btn-sm">Take Assessment</a>
+    <a href="/quiz-generator" class="btn btn-secondary btn-sm">Generate Quiz</a>`;
+
+  const data  = await apiFetch('/progress/dashboard');
+  const stats = data.stats || {};
+  const radar = data.radar_data || [];
+  const trend = data.score_trend || [];
+  const scores= data.competency_scores || [];
+  const skill = data.skill_level || {label:'Beginner', color:'#A03020'};
+
+  const cards = [
+    {icon:iconChart, label:'Overall Score',       val:`${stats.overall_score||0}%`,  bg:'#EDE5D8'},
+    {icon:iconTarget, label:'Assessments Taken',    val:stats.total_assessments||0,     bg:'#E2DBD0'},
+    {icon:iconBook, label:'Courses Enrolled',     val:stats.courses_enrolled||0,      bg:'#EDE5D8'},
+    {icon:iconCheck, label:'Courses Completed',    val:stats.courses_completed||0,     bg:'#D8ECD8'},
+    {icon:iconMap, label:'Learning Paths',       val:stats.active_learning_paths||0, bg:'#EDE5D8'},
+    {icon:iconMedal, label:'Competencies Mapped',  val:stats.competencies_assessed||0, bg:'#E8E0D8'},
+  ];
+
+  document.getElementById('main').innerHTML = `
+
+    <!-- Banner -->
+    <div style="background:linear-gradient(135deg,#1E1209,#3E2210);border-radius:16px;padding:24px 28px;margin-bottom:20px;color:#FEFCF8;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;">
+      <div>
+        <div style="font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#9C8070;margin-bottom:6px;">Your Skill Level</div>
+        <div style="font-family:var(--serif);font-size:26px;font-weight:700;color:${skill.color||'#B8845A'};">${skill.label}</div>
+        <div style="font-size:13px;color:#B8845A;margin-top:4px;">Overall: <strong style="color:#FEFCF8;">${stats.overall_score||0}%</strong> across ${stats.competencies_assessed||0} competencies</div>
+      </div>
+      ${!stats.total_assessments
+        ? `<a href="/assessment" class="btn btn-sm" style="background:#B8845A;color:#1E1209;font-weight:700;border-radius:999px;">Take First Assessment →</a>`
+        : `<a href="/assessment" class="btn btn-sm" style="background:rgba(255,255,255,.15);color:#FEFCF8;border:1px solid rgba(255,255,255,.3);border-radius:999px;">Re-assess →</a>`}
+    </div>
+
+    <!-- Stats -->
+    <div class="g4" style="margin-bottom:20px;">
+      ${cards.map(c=>`
+        <div class="stat fade-up">
+          <div class="stat-icon" style="background:${c.bg};display:flex;align-items:center;justify-content:center;">${c.icon('#7A5540', 20)}</div>
+          <div class="stat-val">${c.val}</div>
+          <div class="stat-label">${c.label}</div>
+        </div>`).join('')}
+    </div>
+
+    <!-- Charts -->
+    <div class="g2" style="margin-bottom:20px;">
+      <div class="card">
+        <div class="card-hd"><div class="card-title">Competency Radar</div></div>
+        <div class="card-bd">
+          ${radar.length ? `<canvas id="radarChart" height="260"></canvas>`
+            : `<div style="text-align:center;padding:40px 0;color:var(--dim);">Take an assessment to see your radar chart</div>`}
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-hd"><div class="card-title">Score Trend</div></div>
+        <div class="card-bd">
+          ${trend.length ? `<canvas id="trendChart" height="260"></canvas>`
+            : `<div style="text-align:center;padding:40px 0;color:var(--dim);">No trend data yet — complete more assessments</div>`}
+        </div>
+      </div>
+    </div>
+
+    <!-- Competency table -->
+    ${scores.length ? `
+    <div class="card" style="margin-bottom:20px;">
+      <div class="card-hd">
+        <div class="card-title">Competency Scores</div>
+        <a href="/assessment" class="btn btn-secondary btn-sm">Re-assess</a>
+      </div>
+      <div class="card-bd" style="padding-top:0;">
+        <div class="tbl-wrap">
+          <table>
+            <thead><tr><th>Competency</th><th>Score</th><th>Progress</th><th>Status</th></tr></thead>
+            <tbody>
+              ${scores.map(c=>`
+              <tr>
+                <td style="font-weight:600;">${c.competency_name}</td>
+                <td style="font-weight:700;color:${gapColor(c.score)};">${c.score.toFixed(1)}%</td>
+                <td style="width:140px;">
+                  <div class="prog-wrap" style="height:7px;">
+                    <div class="prog-fill${c.score>=85?' green':''}" style="width:${c.score}%;"></div>
+                  </div>
+                </td>
+                <td>${gapBadge(c.score)}</td>
+              </tr>`).join('')}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>` : ''}
+
+    <!-- Quick actions -->
+    <div class="g3">
+      ${[
+      {href:'/assessment',   icon:iconTarget, bg:'#EBE0D4', title:'Identify Gaps',          desc:'Take a comprehensive skill assessment'},
+        {href:'/recommendations',icon:iconBook,bg:'#DCE8D4', title:'Get Recommendations',    desc:'AI-powered course suggestions'},
+        {href:'/quiz-generator',icon:iconZap,bg:'#D8ECD8', title:'Generate Quiz',           desc:'Upload a doc and generate MCQs instantly'},
+      ].map(a=>`
+        <a href="${a.href}" class="card" style="display:block;transition:box-shadow .2s,transform .2s;" onmouseover="this.style.boxShadow='var(--shadow-md)';this.style.transform='translateY(-2px)'" onmouseout="this.style.boxShadow='';this.style.transform=''">
+          <div class="card-bd">
+            <div style="width:44px;height:44px;border-radius:10px;background:${a.bg};display:flex;align-items:center;justify-content:center;margin-bottom:12px;">${a.icon('#7A5540', 20)}</div>
+            <div style="font-family:var(--serif);font-weight:700;color:var(--ink);margin-bottom:6px;">${a.title}</div>
+            <div style="font-size:12.5px;color:var(--muted);">${a.desc}</div>
+          </div>
+        </a>`).join('')}
+    </div>`;
+
+  if (radar.length) {
+    new Chart(document.getElementById('radarChart'),{type:'radar',
+      data:{labels:radar.map(r=>r.competency.split(' ').slice(0,2).join(' ')),
+        datasets:[{data:radar.map(r=>r.score),backgroundColor:'rgba(110,74,48,.18)',borderColor:'#6E4A30',borderWidth:2,pointBackgroundColor:'#6E4A30'}]},
+      options:{scales:{r:{min:0,max:100,grid:{color:'rgba(212,198,180,.7)'},ticks:{font:{size:10},color:'#5C4A38'},pointLabels:{font:{size:10},color:'#3C2A18'}}},plugins:{legend:{display:false}}}});
+  }
+  if (trend.length) {
+    new Chart(document.getElementById('trendChart'),{type:'line',
+      data:{labels:trend.map(t=>t.date),datasets:[{data:trend.map(t=>t.score),borderColor:'#6E4A30',backgroundColor:'rgba(110,74,48,.10)',borderWidth:2,tension:.4,fill:true,pointRadius:4,pointBackgroundColor:'#6E4A30'}]},
+      options:{scales:{y:{min:0,max:100,ticks:{font:{size:11},color:'#5C4A38'}},x:{ticks:{font:{size:11},color:'#5C4A38'}}},plugins:{legend:{display:false}}}});
+  }
+}
+
+/* ── ADMIN ────────────────────────────────────────────── */
+async function renderAdmin(user) {
+  document.getElementById('topbar-actions').innerHTML =
+    `<a href="/admin" class="btn btn-primary btn-sm">Full Admin Panel</a>`;
+
+  const [sd, ud] = await Promise.all([apiFetch('/admin/stats'), apiFetch('/admin/users')]);
+  const stats = sd.platform_stats || {};
+  const comps = sd.competency_analytics || [];
+  const users = ud.users || [];
+
+  const cards = [
+    {icon:iconUsers, label:'Total Users',       val:stats.total_users||0,         bg:'#EDE5D8'},
+    {icon:iconChart, label:'Assessments',       val:stats.total_assessments||0,    bg:'#E2DBD0'},
+    {icon:iconBook, label:'Enrollments',       val:stats.total_enrollments||0,    bg:'#D8ECD8'},
+    {icon:iconCheck, label:'Completions',       val:stats.total_completions||0,    bg:'#EDE5D8'},
+    {icon:iconZap, label:'Active (7d)',        val:stats.active_users_7d||0,     bg:'#E8E0D8'},
+    {icon:iconTrendUp, label:'Completion Rate',   val:`${stats.completion_rate||0}%`, bg:'#DCE8D4'},
+  ];
+
+  document.getElementById('main').innerHTML = `
+    <!-- Banner -->
+    <div style="background:linear-gradient(135deg,#1E1209,#3E2210);border-radius:16px;padding:24px 28px;margin-bottom:20px;color:#FEFCF8;display:flex;align-items:center;gap:16px;">
+      ${iconShield('#B8845A', 36)}
+      <div>
+        <div style="font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#9C8070;">Administrator View</div>
+        <div style="font-family:var(--serif);font-size:22px;font-weight:700;margin-top:2px;">Platform Overview</div>
+        <div style="font-size:13px;color:#B8845A;margin-top:2px;">Logged in as <strong style="color:#FEFCF8;">${user.name}</strong></div>
+      </div>
+    </div>
+
+    <!-- Stats -->
+    <div class="g4" style="margin-bottom:20px;">
+      ${cards.map(c=>`<div class="stat fade-up"><div class="stat-icon" style="background:${c.bg};display:flex;align-items:center;justify-content:center;">${c.icon('#7A5540', 20)}</div><div class="stat-val">${c.val}</div><div class="stat-label">${c.label}</div></div>`).join('')}
+    </div>
+
+    <!-- Chart + Gaps -->
+    <div class="g2" style="margin-bottom:20px;">
+      <div class="card">
+        <div class="card-hd"><div class="card-title">Avg Score by Competency</div></div>
+        <div class="card-bd">${comps.length?`<canvas id="adminChart" height="260"></canvas>`:`<div style="text-align:center;padding:40px 0;color:var(--dim);">No assessment data yet</div>`}</div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:14px;">
+        <div class="card">
+          <div class="card-hd"><div class="card-title" style="color:var(--red);">⚠ Weakest Areas</div></div>
+          <div class="card-bd">
+            ${(sd.weakest_competencies||[]).map(c=>`
+              <div style="display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid var(--border);">
+                <div>
+                  <div style="font-weight:600;font-size:13px;">${c.competency}</div>
+                  <div style="font-size:11px;color:var(--light);">${c.users_assessed} users</div>
+                </div>
+                ${gapBadge(c.avg_score)}
+              </div>`).join('') || `<div style="color:var(--dim);font-size:13px;padding:12px 0;">No data yet</div>`}
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-hd"><div class="card-title" style="color:var(--green);">✓ Strongest Areas</div></div>
+          <div class="card-bd">
+            ${(sd.strongest_competencies||[]).map(c=>`
+              <div style="display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid var(--border);">
+                <div>
+                  <div style="font-weight:600;font-size:13px;">${c.competency}</div>
+                  <div style="font-size:11px;color:var(--light);">${c.users_assessed} users</div>
+                </div>
+                ${gapBadge(c.avg_score)}
+              </div>`).join('')}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Users table -->
+    <div class="card">
+      <div class="card-hd">
+        <div class="card-title">All Users <span style="font-weight:400;color:var(--muted);font-size:13px;">(${users.length})</span></div>
+        <a href="/admin" class="btn btn-secondary btn-sm">Full Table</a>
+      </div>
+      <div class="card-bd" style="padding-top:0;">
+        <div class="tbl-wrap">
+          <table>
+            <thead><tr><th>Name</th><th>Department</th><th>Avg Score</th><th>Assessments</th><th>Completed</th><th>Joined</th></tr></thead>
+            <tbody>
+              ${users.slice(0,15).map(u=>`
+              <tr>
+                <td><div style="font-weight:600;">${u.name}</div><div style="font-size:11px;color:var(--light);">${u.email}</div></td>
+                <td style="color:var(--muted);">${u.department||'—'}</td>
+                <td>${u.avg_score!==null?gapBadge(u.avg_score):'<span style="color:var(--dim);font-size:12px;">—</span>'}</td>
+                <td style="text-align:center;color:var(--muted);">${u.assessments_taken}</td>
+                <td style="text-align:center;color:var(--muted);">${u.courses_completed}</td>
+                <td style="color:var(--dim);font-size:12px;">${new Date(u.created_at).toLocaleDateString()}</td>
+              </tr>`).join('')}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>`;
+
+  if (comps.length) {
+    new Chart(document.getElementById('adminChart'),{type:'bar',
+      data:{labels:comps.map(c=>c.competency.split(' ').slice(0,2).join(' ')),
+        datasets:[{data:comps.map(c=>c.avg_score),backgroundColor:comps.map(c=>gapColor(c.avg_score)),borderRadius:5}]},
+      options:{scales:{y:{min:0,max:100,ticks:{font:{size:11},color:'#5C4A38'}},x:{ticks:{font:{size:10},color:'#5C4A38'}}},plugins:{legend:{display:false}}}});
+  }
+}
+
+init().catch(console.error);
+</script>
+</body>
+</html>

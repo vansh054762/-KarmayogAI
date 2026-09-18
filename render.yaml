@@ -1,0 +1,28 @@
+services:
+  - type: web
+    name: karmayogai
+    runtime: python
+    rootDir: backend
+    buildCommand: |
+      pip install --upgrade pip
+      pip install -r requirements.txt
+      python ai_modules/train_models.py
+    startCommand: gunicorn "app:create_app()" --bind 0.0.0.0:$PORT --workers 2 --timeout 120
+    envVars:
+      - key: FLASK_ENV
+        value: production
+      - key: SECRET_KEY
+        generateValue: true
+      - key: JWT_SECRET_KEY
+        generateValue: true
+      - key: DATABASE_URL
+        value: sqlite:///karmayogai.db
+      - key: UPLOAD_FOLDER
+        value: /tmp/uploads
+      - key: ALLOWED_ORIGINS
+        value: "*"
+      - key: IGOT_API_BASE_URL
+        value: https://igot-mock.karmayogai.local/api/v1
+      - key: IGOT_API_KEY
+        sync: false
+    plan: free

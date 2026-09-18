@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>KarmayogAI — Recommendations</title>
+<link rel="stylesheet" href="/static/theme.css?v=4">
+</head>
+<body>
+<div id="shell"></div>
+<div class="sidebar-pad">
+  <div class="topbar">
+    <div>
+      <div class="topbar-title">Recommendations</div>
+      <div class="topbar-sub">AI-curated courses based on your competency gaps</div>
+    </div>
+  </div>
+  <div class="page" id="main"><div class="spinner"></div></div>
+</div>
+<script src="/static/app.js"></script>
+<script>
+if (!requireAuth()) throw 0;
+
+async function init(){
+  const r=await fetch('/static/shell.html');
+  document.getElementById('shell').innerHTML=await r.text();
+  await renderShell('Recommendations','recommendations');
+
+  const data=await apiFetch('/recommendations/');
+  const recs=data.recommendations||[];
+  const nsstaRecs=data.nssta_recommendations||[];
+
+  if(!recs.length && !nsstaRecs.length){
+    document.getElementById('main').innerHTML=`
+      <div class="card" style="text-align:center;padding:60px 24px;">
+        <div style="font-size:40px;margin-bottom:14px;">${iconBook('#7A5540', 48)}</div>
+        <div style="font-family:var(--serif);font-size:18px;font-weight:700;color:var(--ink);margin-bottom:8px;">No Recommendations Yet</div>
+        <p style="color:var(--muted);margin-bottom:20px;">${data.message||'Take an assessment to get personalized course recommendations.'}</p>
+        <a href="/assessment" class="btn btn-primary">Take Assessment →</a>
+      </div>`;
+    return;
+  }
+
+  const topColors={beginner:'#3A6040',intermediate:'#A07020',advanced:'#A03020'};
+  let html='';
+
+  /* ── Gap alert banner ── */
+  if(data.top_gap){
+    html+=`<div class="alert alert-info" style="margin-bottom:16px;">
+      <span>${iconTarget('#3A6040', 18)}</span>
+      <div><strong>Priority Focus:</strong> ${data.top_gap.competency_name} (${data.top_gap.score.toFixed(1)}%) — ${data.gap_count} gap(s) identified.</div>
+    </div>`;
+  }
+
+  /* ── iGOT section ── */
+  if(recs.length){
+    html+=`
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
+      ${iconBook('#7A5540',20)}
+      <div>
+        <div style="font-family:var(--serif);font-size:16px;font-weight:700;color:var(--ink);">iGOT Karmayogi Courses</div>
+        <div style="font-size:12px;color:var(--muted);">${recs.length} personalised courses from the Government of India learning platform</div>
+      </div>
+      <span class="badge badge-base" style="margin-left:auto;font-size:11px;padding:4px 10px;">iGOT</span>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px;margin-bottom:28px;">`;
+    for(const c of recs){
+      const matchPct=Math.round((c.recommendation_score||0)*100);
+      html+=courseCard(c, matchPct, false);
+    }
+    html+=`</div>`;
+  }
+
+  /* ── NSSTA TPAC section ── */
+  if(nsstaRecs.length){
+    html+=`
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7A5540" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      <div>
+        <div style="font-family:var(--serif);font-size:16px;font-weight:700;color:var(--ink);">NSSTA Training Programmes</div>
+        <div style="font-size:12px;color:var(--muted);">${nsstaRecs.length} residential &amp; online programmes from NSSTA TPAC — MoSPI, Govt. of India</div>
+      </div>
+      <span class="badge badge-sage" style="margin-left:auto;font-size:11px;padding:4px 10px;">NSSTA</span>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px;margin-bottom:20px;">`;
+    for(const c of nsstaRecs){
+      html+=nsstaCard(c);
+    }
+    html+=`</div>`;
+  }
+
+  document.getElementById('main').innerHTML=html;
+}
+
+/* ── iGOT course card ── */
+function courseCard(c, matchPct, isNssta){
+  const topColors={beginner:'#3A6040',intermediate:'#A07020',advanced:'#A03020'};
+  return `
+  <div class="card" style="display:flex;flex-direction:column;overflow:hidden;transition:box-shadow .2s,transform .2s;" onmouseover="this.style.boxShadow='var(--shadow-md)';this.style.transform='translateY(-2px)';" onmouseout="this.style.boxShadow='';this.style.transform='';">
+    <div style="height:4px;background:${topColors[c.difficulty]||'#A89080'};"></div>
+    <div class="card-bd" style="display:flex;flex-direction:column;gap:10px;flex:1;">
+      <div style="display:flex;justify-content:space-between;align-items:center;">
+        ${diffBadge(c.difficulty)}
+        <span style="font-size:11.5px;color:var(--muted);">⭐ ${matchPct}% match</span>
+      </div>
+      <div style="font-family:var(--serif);font-size:15px;font-weight:700;color:var(--ink);line-height:1.4;">${c.title}</div>
+      <p style="font-size:13px;color:var(--muted);flex:1;line-height:1.6;">${(c.description||'').slice(0,120)}${(c.description||'').length>120?'…':''}</p>
+      <div style="background:var(--bg2);border-left:3px solid var(--brown-pale);padding:8px 12px;border-radius:6px;font-size:12.5px;color:var(--ink2);">${iconLightbulb('#7A5540', 14)} ${c.reason||''}</div>
+      <div style="display:flex;gap:14px;font-size:12px;color:var(--muted);">
+        ${iconTime('currentColor', 14)} ${c.duration_hours}h
+        ${iconFolder('currentColor', 14)} ${c.course_type||''}
+        <span style="background:var(--bg2);border:1px solid var(--border);padding:1px 8px;border-radius:999px;font-weight:700;font-size:11px;">iGOT</span>
+      </div>
+      <div style="display:flex;gap:8px;margin-top:4px;">
+        <button onclick="enroll(${c.id},'${c.title.replace(/'/g,"\\'")}',this)" class="btn btn-primary btn-sm" style="flex:1;">${iconPlay('currentColor', 14)} Enroll & Start</button>
+        ${c.igot_course_id?`<a href="https://igotkarmayogi.gov.in/search?q=${encodeURIComponent(c.title)}" target="_blank" class="btn btn-secondary btn-sm">${iconExternal('currentColor', 14)}</a>`:''}
+      </div>
+    </div>
+  </div>`;
+}
+
+/* ── NSSTA course card ── */
+function nsstaCard(c){
+  const diffColors={beginner:'#3A6040',intermediate:'#A07020',advanced:'#A03020'};
+  const modeIcon = (c.course_type||'').includes('online') || (c.venue||'').toLowerCase().includes('online')
+    ? `<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg> Online`
+    : `<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg> Residential`;
+  const gapLevelColor={critical:'var(--red)',moderate:'var(--amber)',minor:'#6A4E08'};
+  return `
+  <div class="card" style="display:flex;flex-direction:column;overflow:hidden;transition:box-shadow .2s,transform .2s;border-top:3px solid var(--sage);" onmouseover="this.style.boxShadow='var(--shadow-md)';this.style.transform='translateY(-2px)';" onmouseout="this.style.boxShadow='';this.style.transform='';">
+    <div class="card-bd" style="display:flex;flex-direction:column;gap:10px;flex:1;">
+      <div style="display:flex;justify-content:space-between;align-items:center;">
+        ${diffBadge(c.difficulty)}
+        <span class="badge badge-sage" style="font-size:10px;">NSSTA</span>
+      </div>
+      <div style="font-family:var(--serif);font-size:15px;font-weight:700;color:var(--ink);line-height:1.4;">${c.title}</div>
+      <p style="font-size:13px;color:var(--muted);flex:1;line-height:1.6;">${(c.description||'').slice(0,120)}${(c.description||'').length>120?'…':''}</p>
+
+      ${c.reason?`<div style="background:var(--bg2);border-left:3px solid var(--sage);padding:8px 12px;border-radius:6px;font-size:12.5px;color:var(--ink2);">${iconLightbulb('#4A5E3A', 14)} ${c.reason}</div>`:''}
+
+      <div style="display:flex;flex-wrap:wrap;gap:10px;font-size:12px;color:var(--muted);">
+        ${iconTime('currentColor', 13)} ${c.duration_hours}d
+        <span style="display:flex;align-items:center;gap:4px;">${modeIcon}</span>
+        ${c.venue?`<span style="display:flex;align-items:center;gap:4px;"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> ${c.venue}</span>`:''}
+      </div>
+
+      ${c.target_audience?`<div style="font-size:11.5px;color:var(--muted);background:var(--card2);border:1px solid var(--border);padding:5px 10px;border-radius:6px;">👥 ${c.target_audience}</div>`:''}
+
+      <div style="display:flex;gap:8px;margin-top:4px;">
+        <a href="${c.apply_url||'https://mospi.gov.in/training'}" target="_blank" class="btn btn-sm" style="flex:1;background:var(--sage);color:#fff;">Apply at NSSTA ↗</a>
+        <a href="https://mospi.gov.in/training" target="_blank" class="btn btn-secondary btn-sm">${iconExternal('currentColor', 14)}</a>
+      </div>
+
+      <div style="font-size:11px;color:var(--dim);margin-top:2px;">Provider: NSSTA TPAC — MoSPI, Govt. of India</div>
+    </div>
+  </div>`;
+}
+
+async function enroll(id,title,btn){
+  btn.innerHTML='Enrolling…'; btn.disabled=true;
+  try{
+    await apiFetch('/igot/enroll',{method:'POST',body:JSON.stringify({course_id:id})});
+    showToast(`Enrolled in "${title}"`);
+    btn.innerHTML=`${iconCheck('currentColor', 14)} Enrolled`; btn.style.background='var(--green)';
+  } catch(e){ showToast(e.message,'err'); btn.innerHTML=`${iconPlay('currentColor', 14)} Enroll & Start`; btn.disabled=false; }
+}
+
+init().catch(console.error);
+</script>
+</body>
+</html>

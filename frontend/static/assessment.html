@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>KarmayogAI — Skill Assessment</title>
+<link rel="stylesheet" href="/static/theme.css?v=4">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body>
+<div id="shell"></div>
+<div class="sidebar-pad">
+
+  <div class="topbar">
+    <div>
+      <div class="topbar-title">Skill Assessment</div>
+      <div class="topbar-sub" id="topbar-sub">Select competency areas and test your knowledge</div>
+    </div>
+    <div id="timer-wrap" style="display:none;background:var(--bg2);border:1px solid var(--border);border-radius:999px;padding:7px 16px;font-family:monospace;font-weight:700;font-size:15px;color:var(--ink2);display:flex;align-items:center;gap:6px;">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><span id="timer-val">00:00</span>
+    </div>
+  </div>
+
+  <div class="page" id="main">
+    <div class="spinner"></div>
+  </div>
+</div>
+
+<script src="/static/app.js"></script>
+<script>
+if (!requireAuth()) throw 0;
+let allQ=[], answers={}, cur=0, timerSec=0, timerID, allComps=[];
+const letters=['A','B','C','D'];
+const colorMap={critical:'#A03020',moderate:'#A07020',minor:'#806010',proficient:'#3A6040'};
+
+async function init(){
+  const r=await fetch('/static/shell.html');
+  document.getElementById('shell').innerHTML=await r.text();
+  await renderShell('Skill Assessment','assessment');
+
+  const d=await apiFetch('/assessment/competencies');
+  const domains=d.domains||{};
+  allComps=Object.values(domains).flat();
+
+  let html=`
+    <div class="alert alert-info" style="margin-bottom:16px;">
+      <span>${iconInfo('#3A6040', 16)}</span>
+      <span><strong>How it works:</strong> Select competency areas → answer 5 questions each → AI analyzes your results → get personalized gap analysis.</span>
+    </div>
+    <div class="card" style="margin-bottom:20px;">
+      <div class="card-hd">
+        <div class="card-title">Select Competency Areas</div>
+        <span id="sel-count" style="font-size:13px;color:var(--muted);">0 selected</span>
+      </div>
+      <div class="card-bd" id="comp-list">`;
+
+  for(const [domain,comps] of Object.entries(domains)){
+    html+=`<div style="margin-bottom:18px;">
+      <div style="font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:10px;">${domain}</div>
+      <div style="display:flex;flex-wrap:wrap;gap:8px;">`;
+    for(const c of comps){
+      html+=`<button onclick="toggleComp(${c.id},this)" data-id="${c.id}" style="padding:8px 16px;border-radius:999px;border:1.5px solid var(--border);background:var(--card2);color:var(--ink2);font-size:13px;font-weight:500;cursor:pointer;transition:all .15s;">${c.name}</button>`;
+    }
+    html+=`</div></div>`;
+  }
+
+  html+=`</div></div>
+    <div style="display:flex;align-items:center;justify-content:space-between;">
+      <p id="q-est" style="font-size:13px;color:var(--muted);">Select at least one competency to begin</p>
+      <button id="start-btn" onclick="startAssessment()" disabled class="btn btn-primary btn-lg" style="opacity:.5;cursor:not-allowed;">Start Assessment →</button>
+    </div>`;
+
+  document.getElementById('main').innerHTML=html;
+}
+
+const selComps=new Set();
+function toggleComp(id,btn){
+  if(selComps.has(id)){
+    selComps.delete(id);
+    btn.style.background='var(--card2)'; btn.style.borderColor='var(--border)'; btn.style.color='var(--ink2)';
+  } else {
+    selComps.add(id);
+    btn.style.background='var(--bg2)'; btn.style.borderColor='var(--brown)'; btn.style.color='var(--brown-dark)';
+  }
+  document.getElementById('sel-count').textContent=`${selComps.size} selected`;
+  const sb=document.getElementById('start-btn');
+  sb.disabled=selComps.size===0;
+  sb.style.opacity=selComps.size?'1':'0.5';
+  sb.style.cursor=selComps.size?'pointer':'not-allowed';
+  document.getElementById('q-est').textContent=selComps.size>0
+    ?`${selComps.size*5} questions · ~${selComps.size*3} minutes`
+    :'Select at least one competency to begin';
+}
+
+async function startAssessment(){
+  const btn=document.getElementById('start-btn');
+  btn.textContent='Loading…'; btn.disabled=true;
+  try{
+    const d=await apiFetch(`/assessment/questions?competency_ids=${[...selComps].join(',')}&count=5`);
+    allQ=d.questions; answers={}; cur=0; timerSec=0;
+    document.getElementById('timer-wrap').style.display='block';
+    timerID=setInterval(()=>{ timerSec++; const m=String(Math.floor(timerSec/60)).padStart(2,'0'),s=String(timerSec%60).padStart(2,'0'); document.getElementById('timer-val').textContent=`${m}:${s}`; },1000);
+    renderQ();
+  } catch(e){ showToast(e.message,'err'); btn.textContent='Start Assessment →'; btn.disabled=false; }
+}
+
+function renderQ(){
+  const q=allQ[cur], answered=Object.keys(answers).length;
+  const pct=Math.round((cur+1)/allQ.length*100);
+  document.getElementById('topbar-sub').textContent=`Question ${cur+1} of ${allQ.length} · ${answered} answered`;
+
+  const compName=allComps.find(c=>c.id===q.competency_id)?.name||'General';
+  const diffStyle={easy:'badge-beg',medium:'badge-int',hard:'badge-adv'};
+
+  document.getElementById('main').innerHTML=`
+    <div style="max-width:720px;margin:0 auto;">
+      <div class="prog-wrap" style="height:6px;margin-bottom:20px;">
+        <div class="prog-fill" style="width:${pct}%;"></div>
+      </div>
+
+      <div class="card" style="margin-bottom:16px;">
+        <div class="card-bd">
+          <div style="display:flex;gap:8px;margin-bottom:16px;">
+            <span class="badge ${diffStyle[q.difficulty]||'badge-base'}">${q.difficulty}</span>
+            <span class="badge badge-base">${compName}</span>
+          </div>
+          <h2 style="font-family:var(--serif);font-size:18px;font-weight:700;color:var(--ink);line-height:1.5;margin-bottom:20px;">Q${cur+1}. ${q.text}</h2>
+          <div id="opts">
+            ${q.options.map((o,i)=>{
+              const sel=answers[q.id]===i;
+              return `<div class="opt${sel?' sel':''}" onclick="selectAns('${q.id}',${i})">
+                <span class="opt-letter${sel?' sel':''}" style="${sel?'background:var(--brown);border-color:var(--brown);color:#fff;':''}">${letters[i]}</span>
+                <span style="font-size:14px;">${o}</span>
+              </div>`;
+            }).join('')}
+          </div>
+        </div>
+      </div>
+
+      <div style="display:flex;justify-content:space-between;align-items:center;">
+        <button onclick="nav(-1)" ${cur===0?'disabled':''} class="btn btn-secondary" style="${cur===0?'opacity:.45;':''}" >← Previous</button>
+        <div style="display:flex;gap:6px;flex-wrap:wrap;justify-content:center;">
+          ${allQ.map((_,i)=>`<button onclick="goTo(${i})" style="width:30px;height:30px;border-radius:6px;border:1.5px solid ${i===cur?'var(--brown)':answers[allQ[i].id]!==undefined?'var(--sage)':'var(--border)'};background:${i===cur?'var(--bg2)':answers[allQ[i].id]!==undefined?'var(--sage-pale)':'var(--card)'};font-size:11px;font-weight:700;cursor:pointer;color:${i===cur?'var(--brown-dark)':'var(--muted)'};">${i+1}</button>`).join('')}
+        </div>
+        ${cur<allQ.length-1
+          ? `<button onclick="nav(1)" class="btn btn-primary">Next →</button>`
+          : `<button onclick="submitAssessment()" class="btn btn-success">Submit ✓</button>`}
+      </div>
+    </div>`;
+}
+
+function selectAns(qId,idx){ answers[qId]=idx; renderQ(); }
+function nav(d){ cur=Math.max(0,Math.min(allQ.length-1,cur+d)); renderQ(); }
+function goTo(i){ cur=i; renderQ(); }
+
+async function submitAssessment(){
+  const unanswered=allQ.filter(q=>answers[q.id]===undefined);
+  if(unanswered.length){ showToast(`${unanswered.length} question(s) unanswered`,'err'); return; }
+  clearInterval(timerID);
+  document.getElementById('main').innerHTML=`<div style="text-align:center;padding:60px 0;"><div class="spinner"></div><p style="color:var(--muted);margin-top:-8px;">Analyzing your competencies…</p></div>`;
+  try{
+    const res=await apiFetch('/assessment/submit',{method:'POST',body:JSON.stringify({
+      answers:allQ.map(q=>({question_id:q.id,selected_option:answers[q.id]})),
+      time_taken:timerSec
+    })});
+    showResults(res);
+  } catch(e){ showToast(e.message,'err'); }
+}
+
+function showResults(res){
+  const ga=res.gap_analysis;
+  document.getElementById('timer-wrap').style.display='none';
+  document.getElementById('topbar-sub').textContent='Your competency gap analysis is ready';
+
+  const chartData=res.assessment_results.map(r=>({
+    name:r.competency_name.split(' ').slice(0,2).join(' '), score:r.score, color:gapColor(r.score)
+  }));
+
+  document.getElementById('main').innerHTML=`
+    <div style="max-width:900px;margin:0 auto;">
+
+      <!-- Banner -->
+      <div style="background:linear-gradient(135deg,#1E1209,#3E2210);border-radius:16px;padding:24px 28px;margin-bottom:20px;color:#FEFCF8;">
+        <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:16px;">
+          <div>
+            <div style="font-size:12px;color:#9C8070;text-transform:uppercase;letter-spacing:.1em;margin-bottom:4px;">Overall Score</div>
+            <div style="font-family:var(--serif);font-size:48px;font-weight:700;line-height:1;">${ga.overall_score.toFixed(1)}%</div>
+            <div style="font-size:13px;color:#B8845A;margin-top:6px;max-width:480px;">${ga.summary}</div>
+          </div>
+          <div style="display:flex;gap:24px;text-align:center;">
+            <div><div style="font-family:var(--serif);font-size:28px;font-weight:700;color:#E06858;">${ga.gaps.filter(g=>g.gap_level==='critical').length}</div><div style="font-size:12px;color:#9C8070;">Critical Gaps</div></div>
+            <div><div style="font-family:var(--serif);font-size:28px;font-weight:700;color:#C8855A;">${ga.gaps.filter(g=>g.gap_level==='moderate').length}</div><div style="font-size:12px;color:#9C8070;">Moderate Gaps</div></div>
+            <div><div style="font-family:var(--serif);font-size:28px;font-weight:700;color:#6AA07A;">${ga.strengths.length}</div><div style="font-size:12px;color:#9C8070;">Strengths</div></div>
+          </div>
+        </div>
+        <div style="display:flex;gap:10px;margin-top:18px;">
+          <a href="/recommendations" class="btn btn-sm" style="background:#B8845A;color:#1E1209;font-weight:700;border-radius:999px;">View Recommendations →</a>
+          <a href="/assessment" class="btn btn-sm" style="background:rgba(255,255,255,.15);color:#FEFCF8;border:1px solid rgba(255,255,255,.3);border-radius:999px;">Retake</a>
+        </div>
+      </div>
+
+      <div class="g2" style="margin-bottom:20px;">
+        <div class="card"><div class="card-hd"><div class="card-title">Score by Competency</div></div>
+          <div class="card-bd"><canvas id="barChart" height="240"></canvas></div>
+        </div>
+        <div class="card" id="priority-card"><div class="card-bd"><div style="text-align:center;padding:20px;color:var(--dim);">No priority gap</div></div></div>
+      </div>
+
+      <!-- Gaps -->
+      ${ga.gaps.length?`
+      <div class="card" style="margin-bottom:16px;">
+        <div class="card-hd">
+          <div class="card-title">Competency Gaps</div>
+          <a href="/learning-paths" class="btn btn-secondary btn-sm">View Learning Paths</a>
+        </div>
+        <div class="card-bd">
+          ${ga.gaps.map(g=>`
+          <div style="border:1px solid var(--border);border-left:4px solid ${colorMap[g.gap_level]};border-radius:10px;padding:14px 16px;margin-bottom:10px;">
+            <div style="display:flex;justify-content:space-between;align-items:center;">
+              <div>
+                <div style="font-weight:700;font-size:14px;">${g.competency_name}</div>
+                <div style="margin-top:4px;">${gapBadge(g.score)}</div>
+              </div>
+              <div style="font-family:var(--serif);font-size:26px;font-weight:700;color:${colorMap[g.gap_level]};">${g.score.toFixed(1)}%</div>
+            </div>
+            <div class="prog-wrap" style="height:6px;margin-top:10px;">
+              <div class="prog-fill" style="width:${g.score}%;background:${colorMap[g.gap_level]};"></div>
+            </div>
+          </div>`).join('')}
+        </div>
+      </div>`:''}
+
+      <!-- Strengths -->
+      ${ga.strengths.length?`
+      <div class="card">
+        <div class="card-hd"><div class="card-title">${iconCheck('#7A5540', 18)} Your Strengths</div></div>
+        <div class="card-bd" style="display:flex;flex-wrap:wrap;gap:10px;">
+          ${ga.strengths.map(s=>`
+          <div style="display:flex;align-items:center;gap:8px;padding:10px 16px;background:var(--green-pale);border:1px solid #A8C8B0;border-radius:10px;">
+            <span style="color:var(--green);">${iconCheck('currentColor', 14)}</span>
+            <span style="font-weight:600;font-size:13px;">${s.competency_name}</span>
+            <span style="font-weight:700;color:var(--green);font-size:13px;">${s.score.toFixed(1)}%</span>
+          </div>`).join('')}
+        </div>
+      </div>`:''}
+    </div>`;
+
+  new Chart(document.getElementById('barChart'),{type:'bar',
+    data:{labels:chartData.map(c=>c.name),datasets:[{data:chartData.map(c=>c.score),backgroundColor:chartData.map(c=>c.color),borderRadius:5}]},
+    options:{scales:{y:{min:0,max:100,ticks:{font:{size:11}}},x:{ticks:{font:{size:10}}}},plugins:{legend:{display:false}}}});
+
+  const pg=ga.top_priority_gap;
+  if(pg){
+    document.getElementById('priority-card').innerHTML=`
+      <div class="card-hd"><div class="card-title">Priority Focus Area</div></div>
+      <div class="card-bd">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px;">
+          <span style="font-size:24px;">${iconZap('#A03020', 24)}</span>
+          <div>
+            <div style="font-weight:700;font-size:17px;">${pg.competency_name}</div>
+            ${gapBadge(pg.score)}
+          </div>
+        </div>
+        <div style="font-family:var(--serif);font-size:32px;font-weight:700;color:${colorMap[pg.gap_level]};margin-bottom:8px;">${pg.score.toFixed(1)}%</div>
+        <div class="prog-wrap" style="height:8px;margin-bottom:14px;">
+          <div class="prog-fill" style="width:${pg.score}%;background:${colorMap[pg.gap_level]};"></div>
+        </div>
+        <div style="font-size:12px;color:var(--muted);margin-bottom:8px;">Suggestions:</div>
+        <ul style="padding-left:18px;">
+          ${(pg.suggestions||[]).slice(0,3).map(s=>`<li style="font-size:13px;color:var(--ink2);margin-bottom:5px;">${s}</li>`).join('')}
+        </ul>
+        <a href="/recommendations" class="btn btn-primary btn-sm" style="margin-top:14px;display:inline-flex;">Get Recommendations →</a>
+      </div>`;
+  }
+}
+
+init().catch(console.error);
+</script>
+</body>
+</html>

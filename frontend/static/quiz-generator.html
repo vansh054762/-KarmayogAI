@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>KarmayogAI — AI Quiz Generator</title>
+<link rel="stylesheet" href="/static/theme.css?v=4">
+<style>
+  input[type=range]{accent-color:var(--brown);width:100%;}
+  .drag-over{border-color:var(--brown)!important;background:var(--bg2)!important;}
+</style>
+</head>
+<body>
+<div id="shell"></div>
+<div class="sidebar-pad">
+  <div class="topbar">
+    <div>
+      <div class="topbar-title">AI Quiz Generator</div>
+      <div class="topbar-sub">Upload any document and let AI generate MCQs automatically</div>
+    </div>
+  </div>
+  <div class="page">
+    <div class="g2" style="align-items:start;">
+
+      <!-- Upload -->
+      <div>
+        <div class="card" style="margin-bottom:14px;">
+          <div class="card-hd"><div class="card-title">Upload Learning Material</div></div>
+          <div class="card-bd">
+            <div id="dropzone" class="dropzone" style="margin-bottom:14px;"
+              onclick="document.getElementById('fi').click()"
+              ondragover="event.preventDefault();this.classList.add('drag-over')"
+              ondragleave="this.classList.remove('drag-over')"
+              ondrop="handleDrop(event)">
+              <div id="dp">
+                <div style="font-size:30px;margin-bottom:8px;"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#7A5540" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 6c0-1.1.9-2 2-2h7v16H4a2 2 0 01-2-2V6z"/><path d="M22 6c0-1.1-.9-2-2-2h-7v16h7a2 2 0 002-2V6z"/><path d="M12 4v16"/><path d="M6 9h3M6 12h3M15 9h3M15 12h3"/></svg></div>
+                <div style="font-weight:600;color:var(--ink2);margin-bottom:4px;">Drag & drop or click to upload</div>
+                <div style="font-size:12px;color:var(--muted);">PDF, DOCX, PPTX, TXT · Max 16MB</div>
+              </div>
+              <div id="fi-info" style="display:none;align-items:center;gap:10px;justify-content:center;">
+                <span style="font-size:26px;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 6c0-1.1.9-2 2-2h7v16H4a2 2 0 01-2-2V6z"/><path d="M22 6c0-1.1-.9-2-2-2h-7v16h7a2 2 0 002-2V6z"/><path d="M12 4v16"/><path d="M6 9h3M6 12h3M15 9h3M15 12h3"/></svg></span>
+                <div><div id="fn" style="font-weight:600;font-size:13px;"></div><div id="fs" style="font-size:11px;color:var(--muted);"></div></div>
+                <button onclick="clearFile(event)" style="background:none;border:none;color:var(--red);font-size:16px;cursor:pointer;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#A03020" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+              </div>
+            </div>
+            <input type="file" id="fi" accept=".pdf,.docx,.pptx,.txt" style="display:none;" onchange="setFile(this.files[0])">
+            <div class="f-group">
+              <label class="f-label">Quiz Title</label>
+              <input id="qt" type="text" class="f-input" placeholder="e.g., Policy Analysis Chapter 3">
+            </div>
+            <div class="f-group">
+              <label class="f-label">Questions: <strong id="nl">10</strong></label>
+              <input type="range" min="5" max="25" step="5" value="10" id="ns" oninput="document.getElementById('nl').textContent=this.value">
+              <div style="display:flex;justify-content:space-between;font-size:11px;color:var(--muted);margin-top:3px;"><span>5</span><span>15</span><span>25</span></div>
+            </div>
+            <button id="gen-btn" onclick="generateQuiz()" class="btn btn-primary btn-block btn-lg" style="margin-top:4px;">🧠 Generate Questions</button>
+          </div>
+        </div>
+        <div class="card" style="background:var(--bg2);">
+          <div class="card-hd"><div class="card-title">How It Works</div></div>
+          <div class="card-bd" style="display:flex;flex-direction:column;gap:10px;">
+            <div style="display:flex;gap:10px;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7A5540" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 6c0-1.1.9-2 2-2h7v16H4a2 2 0 01-2-2V6z"/><path d="M22 6c0-1.1-.9-2-2-2h-7v16h7a2 2 0 002-2V6z"/><path d="M12 4v16"/><path d="M6 9h3M6 12h3M15 9h3M15 12h3"/></svg><div><div style="font-weight:600;font-size:12.5px;">Upload</div><div style="font-size:12px;color:var(--muted);">PDF, DOCX, PPTX or TXT</div></div></div>
+            <div style="display:flex;gap:10px;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7A5540" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 6c0-1.1.9-2 2-2h7v16H4a2 2 0 01-2-2V6z"/></svg><div><div style="font-weight:600;font-size:12.5px;">Parse</div><div style="font-size:12px;color:var(--muted);">Text extracted & cleaned</div></div></div>
+            <div style="display:flex;gap:10px;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7A5540" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0018 8a6 6 0 00-12 0c0 1 .23 2.23 1.5 3.5.76.76 1.23 1.5 1.41 2.5"/></svg><div><div style="font-weight:600;font-size:12.5px;">Analyze</div><div style="font-size:12px;color:var(--muted);">Key concepts identified</div></div></div>
+            <div style="display:flex;gap:10px;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7A5540" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg><div><div style="font-weight:600;font-size:12.5px;">Generate</div><div style="font-size:12px;color:var(--muted);">MCQs with 4 options</div></div></div>
+            <div style="display:flex;gap:10px;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7A5540" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><div><div style="font-weight:600;font-size:12.5px;">Validate</div><div style="font-size:12px;color:var(--muted);">Quality checked</div></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- My quizzes -->
+      <div class="card">
+        <div class="card-hd">
+          <div class="card-title">My Generated Quizzes</div>
+          <span id="qc" style="font-size:13px;color:var(--muted);"></span>
+        </div>
+        <div class="card-bd" id="ql"><div class="spinner" style="margin:20px auto;width:22px;height:22px;border-width:2px;"></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="/static/app.js"></script>
+<script>
+if(!requireAuth()) throw 0;
+let selFile=null;
+
+async function init(){
+  const r=await fetch('/static/shell.html');
+  document.getElementById('shell').innerHTML=await r.text();
+  await renderShell('AI Quiz Generator','quiz-generator');
+  loadQuizzes();
+}
+
+async function loadQuizzes(){
+  const data=await apiFetch('/quiz/my-quizzes');
+  const quizzes=data.quizzes||[];
+  document.getElementById('qc').textContent=`${quizzes.length} quizzes`;
+  if(!quizzes.length){
+    document.getElementById('ql').innerHTML=`<div style="text-align:center;padding:36px 0;"><div style="font-size:30px;margin-bottom:8px;">${iconBook('#7A5540', 36)}</div><p style="font-size:13px;color:var(--muted);">No quizzes yet. Upload a document to start.</p></div>`;
+    return;
+  }
+  document.getElementById('ql').innerHTML=quizzes.map(q=>`
+    <div class="card" style="margin-bottom:10px;">
+      <div class="card-bd" style="display:flex;justify-content:space-between;align-items:center;gap:10px;">
+        <div style="flex:1;min-width:0;">
+          <div style="font-weight:600;font-size:13.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">${q.title}</div>
+          <div style="font-size:12px;color:var(--muted);margin-top:3px;">${iconBook('currentColor', 14)} ${q.question_count} questions &nbsp;·&nbsp; ${iconTime('currentColor', 14)} ${new Date(q.created_at).toLocaleDateString()}</div>
+        </div>
+        <div style="display:flex;gap:7px;flex-shrink:0;">
+          <a href="/quiz/${q.id}" class="btn btn-primary btn-sm">${iconPlay('currentColor', 14)} Take</a>
+          <button onclick="deleteQuiz(${q.id})" class="btn btn-secondary btn-sm">${iconTrash('currentColor', 14)}</button>
+        </div>
+      </div>
+    </div>`).join('');
+}
+
+function handleDrop(e){
+  e.preventDefault();
+  document.getElementById('dropzone').classList.remove('drag-over');
+  if(e.dataTransfer.files[0]) setFile(e.dataTransfer.files[0]);
+}
+function setFile(f){
+  selFile=f;
+  document.getElementById('dp').style.display='none';
+  const fi=document.getElementById('fi-info'); fi.style.display='flex';
+  document.getElementById('fn').textContent=f.name;
+  document.getElementById('fs').textContent=(f.size/1024).toFixed(1)+' KB';
+  if(!document.getElementById('qt').value) document.getElementById('qt').value=f.name.replace(/\.[^.]+$/,'');
+}
+function clearFile(e){
+  e.stopPropagation(); selFile=null;
+  document.getElementById('dp').style.display='block';
+  document.getElementById('fi-info').style.display='none';
+  document.getElementById('fi').value='';
+}
+async function generateQuiz(){
+  if(!selFile){showToast('Please select a file first','err');return;}
+  const btn=document.getElementById('gen-btn');
+  btn.innerHTML='<span class="spinner-sm"></span> Generating…'; btn.disabled=true;
+  const fd=new FormData();
+  fd.append('file',selFile);
+  fd.append('num_questions',document.getElementById('ns').value);
+  fd.append('title',document.getElementById('qt').value||selFile.name);
+  try{
+    const res=await fetch('/api/quiz/upload',{method:'POST',headers:{Authorization:`Bearer ${localStorage.getItem('token')}`},body:fd});
+    const data=await res.json();
+    if(!res.ok) throw new Error(data.error||'Failed');
+    showToast(`Generated ${data.total} questions!`);
+    location.href=`/quiz/${data.quiz_id}`;
+  }catch(e){showToast(e.message,'err');btn.innerHTML=`${iconLightbulb('currentColor', 14)} Generate Questions`;btn.disabled=false;}
+}
+async function deleteQuiz(id){
+  if(!confirm('Delete this quiz?')) return;
+  await apiFetch(`/quiz/${id}`,{method:'DELETE'});
+  showToast('Quiz deleted');
+  loadQuizzes();
+}
+
+init().catch(console.error);
+</script>
+</body>
+</html>

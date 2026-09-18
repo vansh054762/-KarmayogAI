@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>KarmayogAI — Take Quiz</title>
+<link rel="stylesheet" href="/static/theme.css?v=4">
+</head>
+<body>
+<div id="shell"></div>
+<div class="sidebar-pad">
+  <div class="topbar">
+    <div>
+      <div class="topbar-title" id="quiz-title">Quiz</div>
+      <div class="topbar-sub" id="quiz-sub"></div>
+    </div>
+    <a href="/quiz-generator" class="btn btn-secondary btn-sm">← Back to Quizzes</a>
+  </div>
+  <div class="page" id="main" style="max-width:740px;margin:0 auto;"></div>
+</div>
+
+<script src="/static/app.js"></script>
+<script>
+if(!requireAuth()) throw 0;
+let quiz, answers={}, cur=0;
+const L=['A','B','C','D'];
+
+async function init(){
+  const r=await fetch('/static/shell.html');
+  document.getElementById('shell').innerHTML=await r.text();
+  await renderShell('Quiz','quiz-generator');
+  const quizId=location.pathname.split('/').pop();
+  quiz=await apiFetch(`/quiz/${quizId}`);
+  document.getElementById('quiz-title').textContent=quiz.title;
+  document.getElementById('quiz-sub').textContent=`${quiz.questions.length} questions · AI Generated`;
+  renderQ();
+}
+
+function renderQ(){
+  const q=quiz.questions[cur];
+  const answered=Object.keys(answers).length;
+  const pct=Math.round((cur+1)/quiz.questions.length*100);
+  const diffCls={easy:'badge-beg',medium:'badge-int',hard:'badge-adv'};
+
+  document.getElementById('main').innerHTML=`
+    <div class="prog-wrap" style="height:6px;margin-bottom:18px;">
+      <div class="prog-fill" style="width:${pct}%;"></div>
+    </div>
+
+    <div class="card" style="margin-bottom:14px;">
+      <div class="card-bd">
+        <div style="display:flex;gap:8px;margin-bottom:14px;">
+          <span class="badge ${diffCls[q.difficulty]||'badge-base'}">${q.difficulty}</span>
+          <span style="font-size:12px;color:var(--muted);align-self:center;">Q${cur+1}/${quiz.questions.length} · ${answered} answered</span>
+        </div>
+        <h2 style="font-family:var(--serif);font-size:17px;font-weight:700;line-height:1.5;margin-bottom:18px;">${q.text}</h2>
+        <div id="opts">
+          ${q.options.map((o,i)=>{
+            const sel=answers[q.id]===i;
+            return `<div class="opt${sel?' sel':''}" onclick="pick('${q.id}',${i})">
+              <span class="opt-letter">${L[i]}</span>
+              <span style="font-size:13.5px;">${o}</span>
+            </div>`;
+          }).join('')}
+        </div>
+      </div>
+    </div>
+
+    <div style="display:flex;justify-content:space-between;align-items:center;gap:10px;">
+      <button onclick="go(-1)" ${cur===0?'disabled':''} class="btn btn-secondary" style="${cur===0?'opacity:.45;':''}">← Previous</button>
+      <div style="display:flex;gap:5px;flex-wrap:wrap;justify-content:center;">
+        ${quiz.questions.map((_,i)=>`
+          <button onclick="cur=${i};renderQ()" style="width:28px;height:28px;border-radius:6px;font-size:11px;font-weight:700;cursor:pointer;
+            border:1.5px solid ${i===cur?'var(--brown)':answers[quiz.questions[i].id]!==undefined?'var(--sage)':'var(--border)'};
+            background:${i===cur?'var(--bg2)':answers[quiz.questions[i].id]!==undefined?'var(--sage-pale)':'var(--card)'};
+            color:${i===cur?'var(--brown-dark)':'var(--muted)'};">${i+1}</button>`).join('')}
+      </div>
+      ${cur<quiz.questions.length-1
+        ? `<button onclick="go(1)" class="btn btn-primary">Next →</button>`
+        : `<button onclick="submitQuiz()" class="btn btn-success">Submit ✓</button>`}
+    </div>`;
+}
+
+function pick(qId,idx){ answers[qId]=idx; renderQ(); }
+function go(d){ cur=Math.max(0,Math.min(quiz.questions.length-1,cur+d)); renderQ(); }
+
+async function submitQuiz(){
+  if(Object.keys(answers).length<quiz.questions.length){showToast('Answer all questions first','err');return;}
+  document.getElementById('main').innerHTML=`<div style="text-align:center;padding:60px 0;"><div class="spinner"></div><p style="color:var(--muted);">Evaluating…</p></div>`;
+  const res=await apiFetch(`/quiz/${quiz.id}/submit`,{method:'POST',body:JSON.stringify({answers:quiz.questions.map(q=>({question_id:q.id,selected_option:answers[q.id]}))})});
+  showResults(res);
+}
+
+function showResults(res){
+  const pass=res.passed;
+  let html=`
+    <div style="background:${pass?'linear-gradient(135deg,#2A4A35,#3A6040)':'linear-gradient(135deg,#4A1A10,#7A2A20)'};border-radius:16px;padding:28px;margin-bottom:16px;color:#FEFCF8;text-align:center;">
+      <div style="font-size:44px;font-weight:800;font-family:var(--serif);margin-bottom:6px;">${res.score}%</div>
+      <div style="font-size:17px;margin-bottom:4px;">${res.correct}/${res.total} Correct</div>
+      <div style="font-size:13px;opacity:.8;margin-bottom:18px;">${res.message}</div>
+      <div style="display:flex;gap:10px;justify-content:center;">
+        <button onclick="location.reload()" class="btn btn-sm" style="background:rgba(255,255,255,.15);color:#FEFCF8;">Retake</button>
+        <a href="/quiz-generator" class="btn btn-sm" style="background:rgba(255,255,255,.15);color:#FEFCF8;">← All Quizzes</a>
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:10px;">`;
+
+  res.results.forEach((r,i)=>{
+    html+=`
+      <div class="card" style="border-left:4px solid ${r.is_correct?'var(--green)':'var(--red)'};">
+        <div class="card-bd">
+          <div style="display:flex;gap:8px;margin-bottom:10px;">
+            <span style="font-size:16px;">${r.is_correct?'✓':'✕'}</span>
+            <span style="font-weight:600;font-size:13.5px;">${i+1}. ${r.question}</span>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:5px;margin-left:24px;">
+            ${r.options.map((o,idx)=>`
+              <div style="font-size:13px;padding:7px 12px;border-radius:7px;display:flex;align-items:center;gap:8px;
+                background:${idx===r.correct_answer?'var(--green-pale)':idx===r.selected_option&&!r.is_correct?'var(--red-pale)':'transparent'};
+                border:1px solid ${idx===r.correct_answer?'var(--green)':idx===r.selected_option&&!r.is_correct?'var(--red)':'transparent'};">
+                <span style="font-weight:700;color:var(--dim);min-width:18px;">${L[idx]}.</span>
+                ${o}
+                ${idx===r.correct_answer?'<span style="margin-left:auto;font-size:11px;font-weight:700;color:var(--green);">✓ Correct</span>':''}
+                ${idx===r.selected_option&&!r.is_correct?'<span style="margin-left:auto;font-size:11px;font-weight:700;color:var(--red);">Your answer</span>':''}
+              </div>`).join('')}
+            ${r.explanation?`<div class="alert alert-info" style="margin-top:6px;font-size:12px;">💡 ${r.explanation}</div>`:''}
+          </div>
+        </div>
+      </div>`;
+  });
+  html+='</div>';
+  document.getElementById('main').innerHTML=html;
+}
+
+init().catch(console.error);
+</script>
+</body>
+</html>

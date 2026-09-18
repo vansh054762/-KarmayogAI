@@ -1,0 +1,50 @@
+# ── Python ────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# ── Virtual environments ───────────────────────────────────────────────────
+venv/
+venv_win/
+backend/venv/
+backend/venv_win/
+.venv/
+env/
+ENV/
+
+# ── Secrets — NEVER commit these ──────────────────────────────────────────
+.env
+*.env
+.env.*
+!.env.example
+
+# ── Database ───────────────────────────────────────────────────────────────
+*.db
+*.sqlite
+*.sqlite3
+backend/instance/
+
+# ── Uploads ────────────────────────────────────────────────────────────────
+uploads/
+/tmp/
+
+# ── Logs ───────────────────────────────────────────────────────────────────
+*.log
+backend/logs/
+
+# ── ML model binaries (regenerated on deploy) ─────────────────────────────
+backend/ai_modules/trained_models/*.pkl
+
+# ── IDE / OS ───────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Build / dist ──────────────────────────────────────────────────────────
+dist/
+build/
+*.egg-info/

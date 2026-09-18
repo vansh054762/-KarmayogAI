@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>KarmayogAI — Sign In</title>
+<link rel="stylesheet" href="/static/theme.css?v=4">
+<style>
+/* ── Auth page background ── */
+body {
+  display:flex; align-items:center; justify-content:center; min-height:100vh;
+  background: var(--bg);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Large ambient blobs */
+body::before {
+  content:'';
+  position:fixed; inset:0; pointer-events:none; z-index:0;
+  background:
+    radial-gradient(ellipse 680px 500px at 15% 20%, rgba(122,85,64,.10) 0%, transparent 70%),
+    radial-gradient(ellipse 500px 400px at 85% 75%, rgba(90,107,74,.09) 0%, transparent 70%),
+    radial-gradient(ellipse 400px 300px at 70% 10%, rgba(192,112,96,.07) 0%, transparent 70%);
+}
+
+/* SVG-based study pattern overlay */
+body::after {
+  content:'';
+  position:fixed; inset:0; pointer-events:none; z-index:0; opacity:.045;
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Crect width='80' height='80' fill='none'/%3E%3Cpath d='M10 10h12v16H10zM10 12h12M10 15h12M10 18h8' stroke='%232A1A0E' stroke-width='1' fill='none'/%3E%3Ccircle cx='60' cy='20' r='8' stroke='%232A1A0E' stroke-width='1' fill='none'/%3E%3Cpath d='M56 20h8M60 16v8' stroke='%232A1A0E' stroke-width='1'/%3E%3Cpath d='M30 50l8-8 4 4 8-10' stroke='%232A1A0E' stroke-width='1' fill='none' stroke-linecap='round'/%3E%3Crect x='48' y='55' width='22' height='14' rx='2' stroke='%232A1A0E' stroke-width='1' fill='none'/%3E%3Cpath d='M52 59h14M52 63h10' stroke='%232A1A0E' stroke-width='1'/%3E%3C/svg%3E");
+  background-size: 80px 80px;
+}
+
+/* Floating decorative icons */
+.bg-deco {
+  position:fixed; pointer-events:none; z-index:0; opacity:0;
+  animation: floatDeco linear infinite;
+}
+.bg-deco svg { display:block; }
+
+@keyframes floatDeco {
+  0%   { opacity:0;   transform: translateY(0px) rotate(0deg); }
+  8%   { opacity:1; }
+  92%  { opacity:1; }
+  100% { opacity:0;   transform: translateY(-80px) rotate(12deg); }
+}
+
+/* Ruled-line texture strip on the left */
+.bg-lines {
+  position:fixed; left:0; top:0; bottom:0; width:38%;
+  pointer-events:none; z-index:0;
+  background: repeating-linear-gradient(
+    to bottom,
+    transparent 0px,
+    transparent 27px,
+    rgba(122,85,64,.06) 27px,
+    rgba(122,85,64,.06) 28px
+  );
+  mask-image: linear-gradient(to right, rgba(0,0,0,.5) 0%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,.5) 0%, transparent 100%);
+}
+
+/* Red margin line */
+.bg-margin {
+  position:fixed; left:calc(38% - 1px); top:0; bottom:0; width:1.5px;
+  pointer-events:none; z-index:0;
+  background: rgba(160,48,32,.12);
+}
+
+.wrap {
+  width:100%; max-width:420px; padding:24px;
+  position:relative; z-index:1;
+}
+.logo-row {
+  display:flex; align-items:center; gap:10px;
+  margin-bottom:28px; justify-content:center;
+}
+.logo-icon {
+  width:38px; height:38px; border-radius:9px;
+  background:var(--brown-btn);
+  display:flex; align-items:center; justify-content:center;
+}
+.logo-name { font-family:var(--serif); font-size:20px; font-weight:700; color:var(--ink); }
+.auth-card {
+  background: rgba(254,252,248,.92);
+  border:1px solid var(--border);
+  border-radius:var(--r-xl); padding:32px 30px;
+  box-shadow: 0 8px 40px rgba(42,26,14,.16), 0 1px 3px rgba(42,26,14,.08);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+.auth-title { font-family:var(--serif); font-size:22px; font-weight:700; color:var(--ink); margin-bottom:4px; }
+.auth-sub   { font-size:13px; color:var(--muted); margin-bottom:24px; }
+.err-box {
+  display:none; padding:10px 13px; border-radius:var(--r-sm); font-size:12.5px;
+  background:var(--red-pale); color:var(--red); border:1px solid #E0B0A8; margin-bottom:16px;
+}
+.demo-box {
+  margin-top:18px; padding:12px 14px; border-radius:var(--r-sm);
+  background:var(--bg2); border:1px solid var(--border);
+  font-size:12px; color:var(--muted); line-height:1.8;
+}
+.link { color:var(--brown); font-weight:600; transition:color .14s; }
+.link:hover { color:var(--ink); }
+
+/* Tagline strip */
+.auth-tagline {
+  text-align:center; margin-bottom:20px;
+  font-family:var(--serif); font-size:12px;
+  color:var(--muted); letter-spacing:.03em; font-style:italic;
+}
+</style>
+</head>
+<body>
+<!-- Notebook lines + margin line -->
+<div class="bg-lines"></div>
+<div class="bg-margin"></div>
+
+<!-- Floating study icons -->
+<div class="bg-deco" style="left:6%;top:80%;animation-duration:18s;animation-delay:0s;">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#7A5540" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M2 6c0-1.1.9-2 2-2h7v16H4a2 2 0 01-2-2V6z"/><path d="M22 6c0-1.1-.9-2-2-2h-7v16h7a2 2 0 002-2V6z"/><path d="M12 4v16"/></svg>
+</div>
+<div class="bg-deco" style="left:22%;top:85%;animation-duration:22s;animation-delay:4s;">
+  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#5A6B4A" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0018 8a6 6 0 00-12 0c0 1 .23 2.23 1.5 3.5.76.76 1.23 1.5 1.41 2.5"/></svg>
+</div>
+<div class="bg-deco" style="right:8%;top:75%;animation-duration:20s;animation-delay:7s;">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#C07060" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+</div>
+<div class="bg-deco" style="right:20%;top:88%;animation-duration:25s;animation-delay:2s;">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7A5540" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+</div>
+<div class="bg-deco" style="left:12%;top:90%;animation-duration:16s;animation-delay:10s;">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#A07020" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+</div>
+<div class="bg-deco" style="right:12%;top:82%;animation-duration:19s;animation-delay:5s;">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#5A6B4A" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="9" rx="1"/><rect x="14" y="3" width="7" height="5" rx="1"/><rect x="14" y="12" width="7" height="9" rx="1"/><rect x="3" y="16" width="7" height="5" rx="1"/></svg>
+</div>
+<div class="wrap">
+  <div class="logo-row">
+    <div class="logo-icon">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FEFCF8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M2 6c0-1.1.9-2 2-2h7v16H4a2 2 0 01-2-2V6z"/>
+        <path d="M22 6c0-1.1-.9-2-2-2h-7v16h7a2 2 0 002-2V6z"/>
+        <path d="M12 4v16"/>
+        <path d="M6 9h3M6 12h3M6 15h3M15 9h3M15 12h3M15 15h3"/>
+      </svg>
+    </div>
+    <span class="logo-name">KarmayogAI</span>
+  </div>
+  <div class="auth-tagline">AI-powered learning for public service excellence</div>
+
+  <div class="auth-card">
+    <h1 class="auth-title">Welcome back</h1>
+    <p class="auth-sub">Sign in to continue your learning journey</p>
+
+    <div id="err" class="err-box"></div>
+
+    <form id="form">
+      <div class="f-group">
+        <label class="f-label">Email Address</label>
+        <input id="email" type="email" class="f-input" placeholder="" required>
+      </div>
+      <div class="f-group">
+        <label class="f-label">Password</label>
+        <input id="password" type="password" class="f-input" placeholder="" required>
+      </div>
+      <button type="submit" id="btn" class="btn btn-primary btn-block btn-lg" style="margin-top:6px;">Sign In</button>
+    </form>
+
+    <p style="text-align:center;margin-top:16px;font-size:13px;color:var(--muted);">
+      No account? <a href="/register" class="link">Register here</a>
+    </p>
+
+
+  </div>
+</div>
+
+<script>
+document.getElementById('form').addEventListener('submit', async e => {
+  e.preventDefault();
+  const btn=document.getElementById('btn'), err=document.getElementById('err');
+  btn.innerHTML='<span class="spinner-sm"></span> Signing in…'; btn.disabled=true;
+  err.style.display='none';
+  try {
+    const r=await fetch('/api/auth/login',{method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({email:document.getElementById('email').value,password:document.getElementById('password').value})});
+    const d=await r.json();
+    if(!r.ok) throw new Error(d.error||'Login failed');
+    localStorage.setItem('token',d.token); localStorage.setItem('user',JSON.stringify(d.user));
+    location.href='/dashboard';
+  } catch(ex) { err.textContent=ex.message; err.style.display='block'; btn.textContent='Sign In'; btn.disabled=false; }
+});
+</script>
+</body>
+</html>

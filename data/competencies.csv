@@ -1,0 +1,23 @@
+competency_id,competency_name,domain,description,max_level,question_count
+1,Statistical Methods,Statistics,Core statistics competency covering statistical methods concepts and applications.,3,12
+2,Survey Design,Statistics,Core statistics competency covering survey design concepts and applications.,3,10
+3,Sampling Techniques,Statistics,Core statistics competency covering sampling techniques concepts and applications.,3,15
+4,Data Analysis,Statistics,Core statistics competency covering data analysis concepts and applications.,3,9
+5,National Accounts,Statistics,Core statistics competency covering national accounts concepts and applications.,3,8
+6,Price Statistics,Statistics,Core statistics competency covering price statistics concepts and applications.,3,12
+7,Labour Statistics,Statistics,Core statistics competency covering labour statistics concepts and applications.,3,15
+8,SDG Indicators,Statistics,Core statistics competency covering sdg indicators concepts and applications.,3,15
+9,Python Programming,Technical,Core technical competency covering python programming concepts and applications.,3,15
+10,R Programming,Technical,Core technical competency covering r programming concepts and applications.,3,13
+11,SQL & Databases,Technical,Core technical competency covering sql & databases concepts and applications.,3,10
+12,GIS & Mapping,Technical,Core technical competency covering gis & mapping concepts and applications.,3,8
+13,Data Visualization,Technical,Core technical competency covering data visualization concepts and applications.,3,12
+14,Machine Learning Basics,Technical,Core technical competency covering machine learning basics concepts and applications.,3,15
+15,Cloud Computing,Technical,Core technical competency covering cloud computing concepts and applications.,3,9
+16,Cybersecurity,Digital Governance,Core digital governance competency covering cybersecurity concepts and applications.,3,9
+17,Data Privacy & PDPB,Digital Governance,Core digital governance competency covering data privacy & pdpb concepts and applications.,3,14
+18,Digital Signatures,Digital Governance,Core digital governance competency covering digital signatures concepts and applications.,3,15
+19,Leadership,Behavioural,Core behavioural competency covering leadership concepts and applications.,3,9
+20,Project Management,Behavioural,Core behavioural competency covering project management concepts and applications.,3,8
+21,Communication Skills,Behavioural,Core behavioural competency covering communication skills concepts and applications.,3,10
+22,Change Management,Behavioural,Core behavioural competency covering change management concepts and applications.,3,10

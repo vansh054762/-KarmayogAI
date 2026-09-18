@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>KarmayogAI — iGOT Integration</title>
+<link rel="stylesheet" href="/static/theme.css?v=4">
+</head>
+<body>
+<div id="shell"></div>
+<div class="sidebar-pad">
+
+  <div class="topbar">
+    <div>
+      <div class="topbar-title">iGOT Integration</div>
+      <div class="topbar-sub">Connected to the Government of India's learning platform</div>
+    </div>
+    <div style="display:flex;align-items:center;gap:8px;">
+      <span style="width:8px;height:8px;border-radius:50%;background:var(--green);display:inline-block;animation:pulse 2s infinite;"></span>
+      <span style="font-size:13px;font-weight:600;color:var(--green);">Connected (Mock)</span>
+    </div>
+  </div>
+
+  <div class="page" id="main">
+    <div class="spinner"></div>
+  </div>
+</div>
+
+<script src="/static/app.js"></script>
+<script>
+if (!requireAuth()) throw 0;
+
+async function init() {
+  const r = await fetch('/static/shell.html');
+  document.getElementById('shell').innerHTML = await r.text();
+  await renderShell('iGOT Integration','igot');
+
+  const [profileData, coursesData] = await Promise.all([
+    apiFetch('/igot/profile'),
+    apiFetch('/igot/courses')
+  ]);
+  const profile = profileData;
+  const courses = coursesData.courses || [];
+  const diffTopColor = { beginner:'var(--green)', intermediate:'var(--amber)', advanced:'var(--red)' };
+
+  document.getElementById('main').innerHTML = `
+
+    <!-- Profile banner -->
+    <div style="background:linear-gradient(135deg,#2A1A0E,#4A2E1A);border-radius:16px;padding:26px 28px;margin-bottom:20px;color:#FEFCF8;">
+      <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-start;gap:20px;">
+        <div>
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px;">
+            ${iconWorld('currentColor', 20)}
+            <span style="font-size:15px;font-weight:700;">iGOT Karmayogi Profile</span>
+          </div>
+          <div style="font-family:var(--serif);font-size:22px;font-weight:700;margin-bottom:4px;">${profile.name}</div>
+          <div style="font-size:13px;color:#C4956A;">${profile.designation||''} · ${profile.department||''}</div>
+          <div style="font-size:11px;color:#A89080;margin-top:4px;">ID: ${profile.igot_user_id}</div>
+        </div>
+        <div style="display:flex;gap:28px;text-align:center;">
+          <div>
+            <div style="font-family:var(--serif);font-size:28px;font-weight:700;">${profile.total_enrolled}</div>
+            <div style="font-size:11px;color:#A89080;margin-top:3px;">Enrolled</div>
+          </div>
+          <div>
+            <div style="font-family:var(--serif);font-size:28px;font-weight:700;">${profile.total_completed}</div>
+            <div style="font-size:11px;color:#A89080;margin-top:3px;">Completed</div>
+          </div>
+          <div>
+            <div style="font-family:var(--serif);font-size:28px;font-weight:700;">${(profile.learning_hours||0).toFixed(1)}h</div>
+            <div style="font-size:11px;color:#A89080;margin-top:3px;">Hours</div>
+          </div>
+        </div>
+      </div>
+      <!-- Badges -->
+      <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:20px;">
+        ${(profile.badges||[]).map(b=>`
+          <div style="display:flex;align-items:center;gap:7px;padding:6px 14px;border-radius:999px;font-size:13px;font-weight:500;
+            background:${b.earned?'rgba(196,149,106,.2)':'rgba(255,255,255,.04)'};
+            border:1px solid ${b.earned?'rgba(196,149,106,.5)':'rgba(255,255,255,.1)'};
+            opacity:${b.earned?'1':'.4'};">
+            ${iconMedal('#C4956A', 14)} ${b.name} ${b.earned?iconCheck('currentColor', 12):''}
+          </div>`).join('')}
+      </div>
+    </div>
+
+    <!-- Integration status -->
+    <div class="card" style="margin-bottom:20px;">
+      <div class="card-hd"><div class="card-title">Integration Status</div></div>
+      <div class="card-bd">
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;">
+          ${[
+            [iconCheck, 'Course Catalog',      'Synced from iGOT'],
+            [iconCheck, 'Enrollment',          'Connected to iGOT API'],
+            [iconCheck, 'Progress Sync',       'Real-time updates'],
+            [iconCertificate, 'Certificates',        'Available on completion'],
+            [iconCheck, 'Competency Mapping',  'Aligned to iGOT framework'],
+            [iconZap, 'Live iGOT API',      'Mock mode (Prototype)'],
+          ].map(([iconFn,label,desc])=>`
+            <div style="display:flex;gap:10px;padding:10px 12px;background:var(--bg2);border-radius:10px;border:1px solid var(--border);">
+              ${iconFn('#7A5540', 17)}
+              <div>
+                <div style="font-weight:600;font-size:13px;">${label}</div>
+                <div style="font-size:11.5px;color:var(--muted);">${desc}</div>
+              </div>
+            </div>`).join('')}
+        </div>
+      </div>
+    </div>
+
+    <!-- Course catalog -->
+    <div class="card">
+      <div class="card-hd">
+        <div>
+          <div class="card-title">iGOT Course Catalog</div>
+          <div class="card-sub">${courses.length} government-approved courses</div>
+        </div>
+        <a href="https://igotkarmayogi.gov.in" target="_blank" class="btn btn-secondary btn-sm">Visit iGOT ↗</a>
+      </div>
+      <div class="card-bd">
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px;">
+          ${courses.map(c=>`
+            <div class="card" style="overflow:hidden;transition:box-shadow .2s,transform .2s;" onmouseover="this.style.boxShadow='var(--shadow-md)';this.style.transform='translateY(-2px)';" onmouseout="this.style.boxShadow='';this.style.transform='';">
+              <div style="height:4px;background:${diffTopColor[c.difficulty]||'var(--dim)'};"></div>
+              <div class="card-bd">
+                <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                  ${diffBadge(c.difficulty)}
+                  <span class="badge badge-base" style="font-size:10px;">iGOT</span>
+                </div>
+                <div style="font-weight:700;font-size:13.5px;margin-bottom:5px;line-height:1.4;">${c.title}</div>
+                <div style="font-size:12px;color:var(--muted);margin-bottom:10px;line-height:1.5;">${(c.description||'').slice(0,80)}…</div>
+                <div style="display:flex;gap:12px;font-size:12px;color:var(--muted);margin-bottom:12px;">
+                  <span>⏱ ${c.duration_hours}h</span>
+                  <span>📁 ${c.course_type||''}</span>
+                  <span>🎓 Certificate</span>
+                </div>
+                <div style="display:flex;gap:8px;">
+                  <button onclick="enroll(${c.id},'${c.title.replace(/'/g,"\\'")}',this)" class="btn btn-primary btn-sm" style="flex:1;">▶ Enroll</button>
+                  <a href="https://igotkarmayogi.gov.in/search?q=${encodeURIComponent(c.title)}" target="_blank" class="btn btn-secondary btn-sm">↗</a>
+                </div>
+              </div>
+            </div>`).join('')}
+        </div>
+      </div>
+    </div>`;
+}
+
+async function enroll(id, title, btn) {
+  btn.textContent = 'Enrolling…'; btn.disabled = true;
+  try {
+    await apiFetch('/igot/enroll', { method:'POST', body:JSON.stringify({course_id:id}) });
+    showToast(`Enrolled in "${title}"`);
+    btn.textContent = '✓ Enrolled';
+    btn.style.background = 'var(--green)';
+  } catch(e) {
+    showToast(e.message,'err');
+    btn.textContent = '▶ Enroll'; btn.disabled = false;
+  }
+}
+
+init().catch(console.error);
+</script>
+</body>
+</html>

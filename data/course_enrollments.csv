@@ -1,0 +1,747 @@
+enrollment_id,user_id,user_name,department,course_id,course_title,competency_name,difficulty,duration_hours,status,progress_pct,igot_course_id,enrolled_date,completed_date
+1,2,Kavita Kumar,CSO,59,PMP for Government Projects,Project Management,intermediate,6.9,completed,100.0,IGOT-20-059,2026-08-11,2026-08-20
+2,2,Kavita Kumar,CSO,4,Fundamentals of Survey Design,Survey Design,beginner,7.8,in_progress,65.9,IGOT-02-004,2026-07-01,
+3,2,Kavita Kumar,CSO,62,Presentation & Report Writing,Communication Skills,intermediate,5.9,completed,100.0,IGOT-21-062,2026-05-15,2026-08-21
+4,2,Kavita Kumar,CSO,15,Advanced National Accounts,National Accounts,advanced,5.8,completed,100.0,IGOT-05-015,2026-04-13,2026-09-01
+5,3,Anita Pillai,Ministry of Statistics & PI,34,Introduction to GIS,GIS & Mapping,beginner,6.3,completed,100.0,IGOT-12-034,2026-08-09,2026-08-15
+6,3,Anita Pillai,Ministry of Statistics & PI,32,Intermediate SQL & Database Design,SQL & Databases,intermediate,7.8,in_progress,47.9,IGOT-11-032,2026-05-30,
+7,3,Anita Pillai,Ministry of Statistics & PI,37,Data Visualization Basics,Data Visualization,beginner,5.8,in_progress,85.5,IGOT-13-037,2026-06-21,
+8,3,Anita Pillai,Ministry of Statistics & PI,6,Advanced Survey Methodology,Survey Design,advanced,4.5,in_progress,90.2,IGOT-02-006,2026-03-07,
+9,3,Anita Pillai,Ministry of Statistics & PI,26,Python for Data Analysis,Python Programming,intermediate,3.1,in_progress,49.9,IGOT-09-026,2026-07-08,
+10,3,Anita Pillai,Ministry of Statistics & PI,44,Government Cloud Platforms,Cloud Computing,intermediate,7.9,in_progress,71.2,IGOT-15-044,2026-06-22,
+11,3,Anita Pillai,Ministry of Statistics & PI,48,Advanced Cyber Defence,Cybersecurity,advanced,6.8,in_progress,25.6,IGOT-16-048,2026-06-26,
+12,4,Mukesh Reddy,NITI Aayog,46,Cybersecurity Awareness,Cybersecurity,beginner,4.2,completed,100.0,IGOT-16-046,2026-03-24,2026-09-01
+13,4,Mukesh Reddy,NITI Aayog,20,Employment & Unemployment Indicators,Labour Statistics,intermediate,5.7,completed,100.0,IGOT-07-020,2026-08-18,2026-08-05
+14,4,Mukesh Reddy,NITI Aayog,14,GDP Compilation Methodology,National Accounts,intermediate,5.1,completed,100.0,IGOT-05-014,2026-05-25,2026-08-13
+15,4,Mukesh Reddy,NITI Aayog,8,Stratified & Cluster Sampling,Sampling Techniques,intermediate,6.7,completed,100.0,IGOT-03-008,2026-04-24,2026-08-04
+16,4,Mukesh Reddy,NITI Aayog,59,PMP for Government Projects,Project Management,intermediate,6.9,completed,100.0,IGOT-20-059,2026-06-19,2026-08-17
+17,4,Mukesh Reddy,NITI Aayog,6,Advanced Survey Methodology,Survey Design,advanced,4.5,in_progress,93.6,IGOT-02-006,2026-04-20,
+18,5,Harish Pillai,Ministry of Statistics & PI,51,Advanced Data Governance,Data Privacy & PDPB,advanced,7.5,completed,100.0,IGOT-17-051,2026-05-12,2026-08-17
+19,5,Harish Pillai,Ministry of Statistics & PI,29,Statistical Analysis with R,R Programming,intermediate,4.0,completed,100.0,IGOT-10-029,2026-08-20,2026-08-16
+20,5,Harish Pillai,Ministry of Statistics & PI,17,Price Index Methods,Price Statistics,intermediate,6.0,completed,100.0,IGOT-06-017,2026-05-20,2026-08-05
+21,5,Harish Pillai,Ministry of Statistics & PI,7,Probability Sampling Basics,Sampling Techniques,beginner,3.7,in_progress,46.1,IGOT-03-007,2026-07-29,
+22,6,Geeta Patel,CRS,59,PMP for Government Projects,Project Management,intermediate,6.9,completed,100.0,IGOT-20-059,2026-08-03,2026-08-22
+23,6,Geeta Patel,CRS,41,Applied Machine Learning,Machine Learning Basics,intermediate,3.1,completed,100.0,IGOT-14-041,2026-03-25,2026-08-05
+24,6,Geeta Patel,CRS,2,Inferential Statistics & Hypothesis Testing,Statistical Methods,intermediate,6.6,completed,100.0,IGOT-01-002,2026-07-12,2026-08-15
+25,6,Geeta Patel,CRS,1,Introduction to Statistical Methods,Statistical Methods,beginner,6.9,completed,100.0,IGOT-01-001,2026-06-29,2026-08-24
+26,6,Geeta Patel,CRS,44,Government Cloud Platforms,Cloud Computing,intermediate,7.9,completed,100.0,IGOT-15-044,2026-03-25,2026-08-22
+27,6,Geeta Patel,CRS,14,GDP Compilation Methodology,National Accounts,intermediate,5.1,completed,100.0,IGOT-05-014,2026-07-12,2026-08-17
+28,6,Geeta Patel,CRS,25,Python for Beginners,Python Programming,beginner,7.0,completed,100.0,IGOT-09-025,2026-07-06,2026-08-19
+29,7,Ramesh Agarwal,MOSPI Field Operations,48,Advanced Cyber Defence,Cybersecurity,advanced,6.8,in_progress,93.1,IGOT-16-048,2026-03-06,
+30,7,Ramesh Agarwal,MOSPI Field Operations,47,Information Security Management,Cybersecurity,intermediate,2.0,in_progress,78.3,IGOT-16-047,2026-02-25,
+31,7,Ramesh Agarwal,MOSPI Field Operations,52,Digital Signatures Basics,Digital Signatures,beginner,5.2,completed,100.0,IGOT-18-052,2026-06-29,2026-08-15
+32,7,Ramesh Agarwal,MOSPI Field Operations,18,Advanced Price Statistics,Price Statistics,advanced,3.5,completed,100.0,IGOT-06-018,2026-05-23,2026-08-26
+33,7,Ramesh Agarwal,MOSPI Field Operations,29,Statistical Analysis with R,R Programming,intermediate,4.0,in_progress,77.0,IGOT-10-029,2026-02-20,
+34,7,Ramesh Agarwal,MOSPI Field Operations,12,Advanced Data Analytics,Data Analysis,advanced,5.6,in_progress,47.6,IGOT-04-012,2026-08-26,
+35,7,Ramesh Agarwal,MOSPI Field Operations,37,Data Visualization Basics,Data Visualization,beginner,5.8,in_progress,42.9,IGOT-13-037,2026-07-25,
+36,8,Kavita Saxena,NITI Aayog,41,Applied Machine Learning,Machine Learning Basics,intermediate,3.1,enrolled,40.9,IGOT-14-041,2026-03-05,
+37,8,Kavita Saxena,NITI Aayog,63,Advanced Communication,Communication Skills,advanced,6.1,in_progress,10.4,IGOT-21-063,2026-06-24,
+38,8,Kavita Saxena,NITI Aayog,39,Advanced Visual Analytics,Data Visualization,advanced,2.3,completed,100.0,IGOT-13-039,2026-03-20,2026-08-29
+39,8,Kavita Saxena,NITI Aayog,17,Price Index Methods,Price Statistics,intermediate,6.0,completed,100.0,IGOT-06-017,2026-02-19,2026-08-22
+40,8,Kavita Saxena,NITI Aayog,36,Advanced Spatial Analysis,GIS & Mapping,advanced,7.7,completed,100.0,IGOT-12-036,2026-05-28,2026-08-21
+41,8,Kavita Saxena,NITI Aayog,55,Leadership in Public Service,Leadership,beginner,6.1,completed,100.0,IGOT-19-055,2026-04-08,2026-08-03
+42,8,Kavita Saxena,NITI Aayog,37,Data Visualization Basics,Data Visualization,beginner,5.8,completed,100.0,IGOT-13-037,2026-06-01,2026-09-01
+43,9,Vikram Sharma,CSO,16,CPI & WPI Fundamentals,Price Statistics,beginner,3.9,completed,100.0,IGOT-06-016,2026-06-06,2026-08-11
+44,9,Vikram Sharma,CSO,45,Advanced Cloud Architecture,Cloud Computing,advanced,3.8,completed,100.0,IGOT-15-045,2026-04-26,2026-08-08
+45,9,Vikram Sharma,CSO,26,Python for Data Analysis,Python Programming,intermediate,3.1,completed,100.0,IGOT-09-026,2026-08-08,2026-08-20
+46,9,Vikram Sharma,CSO,23,SDG Indicator Compilation,SDG Indicators,intermediate,4.4,completed,100.0,IGOT-08-023,2026-06-16,2026-08-18
+47,9,Vikram Sharma,CSO,37,Data Visualization Basics,Data Visualization,beginner,5.8,in_progress,83.1,IGOT-13-037,2026-03-18,
+48,10,Naresh Joshi,CRS,54,Advanced Digital Infrastructure,Digital Signatures,advanced,2.7,in_progress,35.9,IGOT-18-054,2026-06-09,
+49,10,Naresh Joshi,CRS,52,Digital Signatures Basics,Digital Signatures,beginner,5.2,completed,100.0,IGOT-18-052,2026-03-14,2026-08-23
+50,10,Naresh Joshi,CRS,10,Introduction to Data Analysis,Data Analysis,beginner,3.8,completed,100.0,IGOT-04-010,2026-03-27,2026-08-12
+51,10,Naresh Joshi,CRS,11,Intermediate Data Analysis with Python,Data Analysis,intermediate,4.4,completed,100.0,IGOT-04-011,2026-06-20,2026-08-04
+52,11,Geeta Singh,NSSTA,47,Information Security Management,Cybersecurity,intermediate,2.0,enrolled,16.3,IGOT-16-047,2026-06-29,
+53,11,Geeta Singh,NSSTA,58,PM Fundamentals,Project Management,beginner,5.7,completed,100.0,IGOT-20-058,2026-02-19,2026-08-10
+54,11,Geeta Singh,NSSTA,53,PKI & e-Authentication,Digital Signatures,intermediate,3.0,enrolled,24.0,IGOT-18-053,2026-05-19,
+55,11,Geeta Singh,NSSTA,22,Introduction to SDG Framework,SDG Indicators,beginner,2.2,enrolled,13.6,IGOT-08-022,2026-04-29,
+56,11,Geeta Singh,NSSTA,24,Monitoring SDG Progress,SDG Indicators,advanced,7.0,completed,100.0,IGOT-08-024,2026-08-15,2026-09-01
+57,12,Pushpa Saxena,NITI Aayog,11,Intermediate Data Analysis with Python,Data Analysis,intermediate,4.4,completed,100.0,IGOT-04-011,2026-07-01,2026-08-25
+58,12,Pushpa Saxena,NITI Aayog,14,GDP Compilation Methodology,National Accounts,intermediate,5.1,completed,100.0,IGOT-05-014,2026-05-07,2026-08-12
+59,12,Pushpa Saxena,NITI Aayog,34,Introduction to GIS,GIS & Mapping,beginner,6.3,in_progress,16.8,IGOT-12-034,2026-07-16,
+60,12,Pushpa Saxena,NITI Aayog,20,Employment & Unemployment Indicators,Labour Statistics,intermediate,5.7,enrolled,8.2,IGOT-07-020,2026-05-29,
+61,12,Pushpa Saxena,NITI Aayog,50,PDPB Compliance for Officers,Data Privacy & PDPB,intermediate,6.7,completed,100.0,IGOT-17-050,2026-04-29,2026-08-18
+62,13,Sanjay Sharma,DGET,35,QGIS for Government Data,GIS & Mapping,intermediate,5.7,completed,100.0,IGOT-12-035,2026-07-14,2026-08-14
+63,13,Sanjay Sharma,DGET,57,Change Leadership,Leadership,advanced,4.3,completed,100.0,IGOT-19-057,2026-05-04,2026-08-12
+64,13,Sanjay Sharma,DGET,18,Advanced Price Statistics,Price Statistics,advanced,3.5,completed,100.0,IGOT-06-018,2026-05-09,2026-08-16
+65,13,Sanjay Sharma,DGET,63,Advanced Communication,Communication Skills,advanced,6.1,completed,100.0,IGOT-21-063,2026-06-10,2026-08-03
+66,13,Sanjay Sharma,DGET,61,Effective Communication,Communication Skills,beginner,4.3,completed,100.0,IGOT-21-061,2026-04-27,2026-08-15
+67,13,Sanjay Sharma,DGET,45,Advanced Cloud Architecture,Cloud Computing,advanced,3.8,in_progress,77.4,IGOT-15-045,2026-05-07,
+68,14,Vinod Mishra,Ministry of Finance,47,Information Security Management,Cybersecurity,intermediate,2.0,completed,100.0,IGOT-16-047,2026-08-26,2026-09-01
+69,14,Vinod Mishra,Ministry of Finance,53,PKI & e-Authentication,Digital Signatures,intermediate,3.0,completed,100.0,IGOT-18-053,2026-02-15,2026-08-05
+70,14,Vinod Mishra,Ministry of Finance,34,Introduction to GIS,GIS & Mapping,beginner,6.3,in_progress,35.9,IGOT-12-034,2026-04-30,
+71,14,Vinod Mishra,Ministry of Finance,20,Employment & Unemployment Indicators,Labour Statistics,intermediate,5.7,completed,100.0,IGOT-07-020,2026-08-26,2026-08-10
+72,15,Manoj Patel,NITI Aayog,62,Presentation & Report Writing,Communication Skills,intermediate,5.9,completed,100.0,IGOT-21-062,2026-06-30,2026-08-07
+73,15,Manoj Patel,NITI Aayog,39,Advanced Visual Analytics,Data Visualization,advanced,2.3,enrolled,54.3,IGOT-13-039,2026-07-11,
+74,15,Manoj Patel,NITI Aayog,2,Inferential Statistics & Hypothesis Testing,Statistical Methods,intermediate,6.6,completed,100.0,IGOT-01-002,2026-04-07,2026-08-19
+75,15,Manoj Patel,NITI Aayog,56,Strategic Leadership,Leadership,intermediate,3.6,completed,100.0,IGOT-19-056,2026-06-26,2026-08-27
+76,15,Manoj Patel,NITI Aayog,38,Dashboard Design with Power BI,Data Visualization,intermediate,6.6,completed,100.0,IGOT-13-038,2026-05-24,2026-08-25
+77,16,Lata Yadav,NITI Aayog,11,Intermediate Data Analysis with Python,Data Analysis,intermediate,4.4,completed,100.0,IGOT-04-011,2026-03-15,2026-08-09
+78,16,Lata Yadav,NITI Aayog,55,Leadership in Public Service,Leadership,beginner,6.1,completed,100.0,IGOT-19-055,2026-06-21,2026-08-19
+79,16,Lata Yadav,NITI Aayog,31,SQL Basics,SQL & Databases,beginner,3.9,in_progress,81.8,IGOT-11-031,2026-07-13,
+80,16,Lata Yadav,NITI Aayog,35,QGIS for Government Data,GIS & Mapping,intermediate,5.7,in_progress,31.1,IGOT-12-035,2026-03-18,
+81,17,Meena Verma,DGET,58,PM Fundamentals,Project Management,beginner,5.7,enrolled,18.7,IGOT-20-058,2026-04-14,
+82,17,Meena Verma,DGET,35,QGIS for Government Data,GIS & Mapping,intermediate,5.7,enrolled,21.7,IGOT-12-035,2026-08-02,
+83,17,Meena Verma,DGET,63,Advanced Communication,Communication Skills,advanced,6.1,completed,100.0,IGOT-21-063,2026-06-21,2026-08-28
+84,17,Meena Verma,DGET,25,Python for Beginners,Python Programming,beginner,7.0,completed,100.0,IGOT-09-025,2026-02-23,2026-09-01
+85,17,Meena Verma,DGET,42,Deep Learning Basics,Machine Learning Basics,advanced,2.9,in_progress,13.1,IGOT-14-042,2026-08-25,
+86,18,Pushpa Shah,NITI Aayog,28,Introduction to R,R Programming,beginner,5.5,completed,100.0,IGOT-10-028,2026-05-02,2026-08-10
+87,18,Pushpa Shah,NITI Aayog,44,Government Cloud Platforms,Cloud Computing,intermediate,7.9,enrolled,34.7,IGOT-15-044,2026-02-17,
+88,18,Pushpa Shah,NITI Aayog,54,Advanced Digital Infrastructure,Digital Signatures,advanced,2.7,in_progress,10.0,IGOT-18-054,2026-05-20,
+89,18,Pushpa Shah,NITI Aayog,40,ML Fundamentals for Officers,Machine Learning Basics,beginner,3.5,enrolled,53.9,IGOT-14-040,2026-07-13,
+90,18,Pushpa Shah,NITI Aayog,64,Change Management Basics,Change Management,beginner,4.2,in_progress,85.6,IGOT-22-064,2026-06-25,
+91,19,Geeta Pandey,MOSPI Field Operations,2,Inferential Statistics & Hypothesis Testing,Statistical Methods,intermediate,6.6,in_progress,71.4,IGOT-01-002,2026-08-20,
+92,19,Geeta Pandey,MOSPI Field Operations,16,CPI & WPI Fundamentals,Price Statistics,beginner,3.9,in_progress,46.5,IGOT-06-016,2026-08-04,
+93,19,Geeta Pandey,MOSPI Field Operations,32,Intermediate SQL & Database Design,SQL & Databases,intermediate,7.8,completed,100.0,IGOT-11-032,2026-03-11,2026-08-26
+94,19,Geeta Pandey,MOSPI Field Operations,50,PDPB Compliance for Officers,Data Privacy & PDPB,intermediate,6.7,completed,100.0,IGOT-17-050,2026-05-21,2026-08-11
+95,19,Geeta Pandey,MOSPI Field Operations,57,Change Leadership,Leadership,advanced,4.3,completed,100.0,IGOT-19-057,2026-06-07,2026-08-27
+96,20,Manoj Shah,NITI Aayog,6,Advanced Survey Methodology,Survey Design,advanced,4.5,completed,100.0,IGOT-02-006,2026-08-15,2026-08-05
+97,20,Manoj Shah,NITI Aayog,16,CPI & WPI Fundamentals,Price Statistics,beginner,3.9,in_progress,92.6,IGOT-06-016,2026-06-29,
+98,20,Manoj Shah,NITI Aayog,33,Advanced SQL & Performance,SQL & Databases,advanced,7.2,completed,100.0,IGOT-11-033,2026-06-06,2026-09-01
+99,20,Manoj Shah,NITI Aayog,31,SQL Basics,SQL & Databases,beginner,3.9,in_progress,76.5,IGOT-11-031,2026-04-01,
+100,20,Manoj Shah,NITI Aayog,41,Applied Machine Learning,Machine Learning Basics,intermediate,3.1,enrolled,40.6,IGOT-14-041,2026-06-27,
+101,20,Manoj Shah,NITI Aayog,20,Employment & Unemployment Indicators,Labour Statistics,intermediate,5.7,enrolled,92.2,IGOT-07-020,2026-04-02,
+102,20,Manoj Shah,NITI Aayog,13,National Accounts Basics,National Accounts,beginner,3.4,completed,100.0,IGOT-05-013,2026-03-05,2026-08-13
+103,21,Deepak Patel,NSSTA,48,Advanced Cyber Defence,Cybersecurity,advanced,6.8,in_progress,50.0,IGOT-16-048,2026-03-06,
+104,21,Deepak Patel,NSSTA,12,Advanced Data Analytics,Data Analysis,advanced,5.6,completed,100.0,IGOT-04-012,2026-06-03,2026-08-03
+105,21,Deepak Patel,NSSTA,32,Intermediate SQL & Database Design,SQL & Databases,intermediate,7.8,enrolled,10.4,IGOT-11-032,2026-03-16,
+106,22,Radha Kumar,CRS,14,GDP Compilation Methodology,National Accounts,intermediate,5.1,in_progress,33.5,IGOT-05-014,2026-04-08,
+107,22,Radha Kumar,CRS,17,Price Index Methods,Price Statistics,intermediate,6.0,completed,100.0,IGOT-06-017,2026-05-08,2026-08-09
+108,22,Radha Kumar,CRS,63,Advanced Communication,Communication Skills,advanced,6.1,in_progress,6.9,IGOT-21-063,2026-05-24,
+109,23,Anita Singh,National Statistical Office,18,Advanced Price Statistics,Price Statistics,advanced,3.5,completed,100.0,IGOT-06-018,2026-04-07,2026-08-23
+110,23,Anita Singh,National Statistical Office,33,Advanced SQL & Performance,SQL & Databases,advanced,7.2,completed,100.0,IGOT-11-033,2026-03-03,2026-08-17
+111,23,Anita Singh,National Statistical Office,6,Advanced Survey Methodology,Survey Design,advanced,4.5,in_progress,56.0,IGOT-02-006,2026-04-11,
+112,23,Anita Singh,National Statistical Office,63,Advanced Communication,Communication Skills,advanced,6.1,completed,100.0,IGOT-21-063,2026-06-07,2026-08-09
+113,24,Girish Nair,MOSPI Field Operations,36,Advanced Spatial Analysis,GIS & Mapping,advanced,7.7,completed,100.0,IGOT-12-036,2026-06-22,2026-08-15
+114,24,Girish Nair,MOSPI Field Operations,21,Advanced Labour Economics,Labour Statistics,advanced,5.3,completed,100.0,IGOT-07-021,2026-05-04,2026-09-01
+115,24,Girish Nair,MOSPI Field Operations,9,Advanced Sampling Theory,Sampling Techniques,advanced,2.9,completed,100.0,IGOT-03-009,2026-05-23,2026-08-09
+116,24,Girish Nair,MOSPI Field Operations,20,Employment & Unemployment Indicators,Labour Statistics,intermediate,5.7,in_progress,84.5,IGOT-07-020,2026-03-23,
+117,24,Girish Nair,MOSPI Field Operations,58,PM Fundamentals,Project Management,beginner,5.7,completed,100.0,IGOT-20-058,2026-03-23,2026-08-25
+118,25,Rajiv Mishra,DGET,9,Advanced Sampling Theory,Sampling Techniques,advanced,2.9,completed,100.0,IGOT-03-009,2026-07-20,2026-08-13
+119,25,Rajiv Mishra,DGET,50,PDPB Compliance for Officers,Data Privacy & PDPB,intermediate,6.7,completed,100.0,IGOT-17-050,2026-06-07,2026-08-19
+120,25,Rajiv Mishra,DGET,25,Python for Beginners,Python Programming,beginner,7.0,completed,100.0,IGOT-09-025,2026-07-31,2026-08-29
+121,25,Rajiv Mishra,DGET,64,Change Management Basics,Change Management,beginner,4.2,completed,100.0,IGOT-22-064,2026-03-13,2026-08-30
+122,26,Rekha Yadav,CRS,17,Price Index Methods,Price Statistics,intermediate,6.0,enrolled,23.2,IGOT-06-017,2026-04-26,
+123,26,Rekha Yadav,CRS,23,SDG Indicator Compilation,SDG Indicators,intermediate,4.4,in_progress,13.9,IGOT-08-023,2026-04-04,
+124,27,Rajesh Singh,Ministry of Statistics & PI,50,PDPB Compliance for Officers,Data Privacy & PDPB,intermediate,6.7,enrolled,6.2,IGOT-17-050,2026-07-06,
+125,27,Rajesh Singh,Ministry of Statistics & PI,63,Advanced Communication,Communication Skills,advanced,6.1,completed,100.0,IGOT-21-063,2026-08-08,2026-08-18
+126,27,Rajesh Singh,Ministry of Statistics & PI,33,Advanced SQL & Performance,SQL & Databases,advanced,7.2,enrolled,37.5,IGOT-11-033,2026-02-19,
+127,27,Rajesh Singh,Ministry of Statistics & PI,4,Fundamentals of Survey Design,Survey Design,beginner,7.8,completed,100.0,IGOT-02-004,2026-05-26,2026-08-07
+128,27,Rajesh Singh,Ministry of Statistics & PI,24,Monitoring SDG Progress,SDG Indicators,advanced,7.0,enrolled,79.1,IGOT-08-024,2026-06-21,
+129,27,Rajesh Singh,Ministry of Statistics & PI,15,Advanced National Accounts,National Accounts,advanced,5.8,completed,100.0,IGOT-05-015,2026-08-18,2026-08-09
+130,27,Rajesh Singh,Ministry of Statistics & PI,39,Advanced Visual Analytics,Data Visualization,advanced,2.3,enrolled,80.1,IGOT-13-039,2026-08-09,
+131,28,Vikram Shah,MOSPI Field Operations,13,National Accounts Basics,National Accounts,beginner,3.4,in_progress,22.4,IGOT-05-013,2026-03-13,
+132,28,Vikram Shah,MOSPI Field Operations,30,Advanced R & Visualization,R Programming,advanced,3.4,in_progress,56.3,IGOT-10-030,2026-07-14,
+133,28,Vikram Shah,MOSPI Field Operations,50,PDPB Compliance for Officers,Data Privacy & PDPB,intermediate,6.7,completed,100.0,IGOT-17-050,2026-02-18,2026-08-15
+134,29,Girish Yadav,DGET,14,GDP Compilation Methodology,National Accounts,intermediate,5.1,in_progress,54.5,IGOT-05-014,2026-04-21,
+135,29,Girish Yadav,DGET,46,Cybersecurity Awareness,Cybersecurity,beginner,4.2,completed,100.0,IGOT-16-046,2026-03-13,2026-08-27
+136,29,Girish Yadav,DGET,59,PMP for Government Projects,Project Management,intermediate,6.9,completed,100.0,IGOT-20-059,2026-03-28,2026-08-18
+137,29,Girish Yadav,DGET,55,Leadership in Public Service,Leadership,beginner,6.1,completed,100.0,IGOT-19-055,2026-06-09,2026-08-15
+138,29,Girish Yadav,DGET,22,Introduction to SDG Framework,SDG Indicators,beginner,2.2,completed,100.0,IGOT-08-022,2026-05-25,2026-08-19
+139,30,Ramesh Srivastava,Ministry of Finance,56,Strategic Leadership,Leadership,intermediate,3.6,completed,100.0,IGOT-19-056,2026-02-19,2026-08-24
+140,30,Ramesh Srivastava,Ministry of Finance,42,Deep Learning Basics,Machine Learning Basics,advanced,2.9,completed,100.0,IGOT-14-042,2026-05-05,2026-08-18
+141,30,Ramesh Srivastava,Ministry of Finance,31,SQL Basics,SQL & Databases,beginner,3.9,completed,100.0,IGOT-11-031,2026-08-28,2026-08-09
+142,30,Ramesh Srivastava,Ministry of Finance,37,Data Visualization Basics,Data Visualization,beginner,5.8,enrolled,93.5,IGOT-13-037,2026-03-29,
+143,30,Ramesh Srivastava,Ministry of Finance,35,QGIS for Government Data,GIS & Mapping,intermediate,5.7,enrolled,51.6,IGOT-12-035,2026-06-12,
+144,30,Ramesh Srivastava,Ministry of Finance,14,GDP Compilation Methodology,National Accounts,intermediate,5.1,enrolled,32.0,IGOT-05-014,2026-07-03,
+145,30,Ramesh Srivastava,Ministry of Finance,25,Python for Beginners,Python Programming,beginner,7.0,in_progress,82.0,IGOT-09-025,2026-08-23,
+146,31,Shobha Pandey,CSO,36,Advanced Spatial Analysis,GIS & Mapping,advanced,7.7,in_progress,28.8,IGOT-12-036,2026-04-01,
+147,31,Shobha Pandey,CSO,20,Employment & Unemployment Indicators,Labour Statistics,intermediate,5.7,in_progress,26.0,IGOT-07-020,2026-06-13,
+148,31,Shobha Pandey,CSO,13,National Accounts Basics,National Accounts,beginner,3.4,enrolled,56.3,IGOT-05-013,2026-04-05,
+149,31,Shobha Pandey,CSO,3,Advanced Regression Analysis,Statistical Methods,advanced,7.2,in_progress,71.1,IGOT-01-003,2026-02-24,
+150,31,Shobha Pandey,CSO,30,Advanced R & Visualization,R Programming,advanced,3.4,completed,100.0,IGOT-10-030,2026-04-27,2026-08-27
+151,31,Shobha Pandey,CSO,23,SDG Indicator Compilation,SDG Indicators,intermediate,4.4,completed,100.0,IGOT-08-023,2026-03-05,2026-08-10
+152,31,Shobha Pandey,CSO,10,Introduction to Data Analysis,Data Analysis,beginner,3.8,completed,100.0,IGOT-04-010,2026-08-04,2026-08-13
+153,32,Asha Verma,Ministry of Finance,39,Advanced Visual Analytics,Data Visualization,advanced,2.3,completed,100.0,IGOT-13-039,2026-05-31,2026-08-04
+154,32,Asha Verma,Ministry of Finance,5,Sampling & Questionnaire Design,Survey Design,intermediate,2.5,completed,100.0,IGOT-02-005,2026-05-14,2026-08-03
+155,32,Asha Verma,Ministry of Finance,49,Data Privacy Fundamentals,Data Privacy & PDPB,beginner,6.5,enrolled,83.3,IGOT-17-049,2026-07-01,
+156,32,Asha Verma,Ministry of Finance,6,Advanced Survey Methodology,Survey Design,advanced,4.5,completed,100.0,IGOT-02-006,2026-08-26,2026-08-12
+157,32,Asha Verma,Ministry of Finance,50,PDPB Compliance for Officers,Data Privacy & PDPB,intermediate,6.7,completed,100.0,IGOT-17-050,2026-08-15,2026-08-23
+158,32,Asha Verma,Ministry of Finance,4,Fundamentals of Survey Design,Survey Design,beginner,7.8,completed,100.0,IGOT-02-004,2026-08-18,2026-08-22
+159,32,Asha Verma,Ministry of Finance,59,PMP for Government Projects,Project Management,intermediate,6.9,completed,100.0,IGOT-20-059,2026-04-06,2026-08-28
+160,33,Suresh Sharma,NITI Aayog,65,Leading Organizational Change,Change Management,intermediate,4.4,completed,100.0,IGOT-22-065,2026-05-06,2026-08-08
+161,33,Suresh Sharma,NITI Aayog,29,Statistical Analysis with R,R Programming,intermediate,4.0,completed,100.0,IGOT-10-029,2026-04-03,2026-08-16
+162,33,Suresh Sharma,NITI Aayog,20,Employment & Unemployment Indicators,Labour Statistics,intermediate,5.7,enrolled,25.0,IGOT-07-020,2026-06-15,
+163,33,Suresh Sharma,NITI Aayog,7,Probability Sampling Basics,Sampling Techniques,beginner,3.7,completed,100.0,IGOT-03-007,2026-07-22,2026-08-28
+164,34,Dinesh Mehta,CSO,11,Intermediate Data Analysis with Python,Data Analysis,intermediate,4.4,completed,100.0,IGOT-04-011,2026-08-07,2026-08-20
+165,34,Dinesh Mehta,CSO,61,Effective Communication,Communication Skills,beginner,4.3,completed,100.0,IGOT-21-061,2026-05-09,2026-08-08
+166,34,Dinesh Mehta,CSO,7,Probability Sampling Basics,Sampling Techniques,beginner,3.7,in_progress,73.6,IGOT-03-007,2026-04-27,
+167,34,Dinesh Mehta,CSO,52,Digital Signatures Basics,Digital Signatures,beginner,5.2,completed,100.0,IGOT-18-052,2026-07-09,2026-08-17
+168,35,Naresh Kumar,MOSPI Field Operations,26,Python for Data Analysis,Python Programming,intermediate,3.1,completed,100.0,IGOT-09-026,2026-03-06,2026-08-03
+169,35,Naresh Kumar,MOSPI Field Operations,32,Intermediate SQL & Database Design,SQL & Databases,intermediate,7.8,completed,100.0,IGOT-11-032,2026-08-06,2026-08-29
+170,35,Naresh Kumar,MOSPI Field Operations,10,Introduction to Data Analysis,Data Analysis,beginner,3.8,completed,100.0,IGOT-04-010,2026-05-12,2026-08-21
+171,35,Naresh Kumar,MOSPI Field Operations,35,QGIS for Government Data,GIS & Mapping,intermediate,5.7,completed,100.0,IGOT-12-035,2026-07-11,2026-08-22
+172,35,Naresh Kumar,MOSPI Field Operations,56,Strategic Leadership,Leadership,intermediate,3.6,completed,100.0,IGOT-19-056,2026-03-29,2026-08-12
+173,36,Radha Patel,MOSPI Field Operations,40,ML Fundamentals for Officers,Machine Learning Basics,beginner,3.5,completed,100.0,IGOT-14-040,2026-03-24,2026-08-06
+174,36,Radha Patel,MOSPI Field Operations,22,Introduction to SDG Framework,SDG Indicators,beginner,2.2,completed,100.0,IGOT-08-022,2026-03-22,2026-08-28
+175,37,Sunita Sharma,Ministry of Finance,6,Advanced Survey Methodology,Survey Design,advanced,4.5,enrolled,15.1,IGOT-02-006,2026-08-15,
+176,37,Sunita Sharma,Ministry of Finance,30,Advanced R & Visualization,R Programming,advanced,3.4,in_progress,90.4,IGOT-10-030,2026-07-22,
+177,37,Sunita Sharma,Ministry of Finance,26,Python for Data Analysis,Python Programming,intermediate,3.1,completed,100.0,IGOT-09-026,2026-08-25,2026-08-22
+178,37,Sunita Sharma,Ministry of Finance,48,Advanced Cyber Defence,Cybersecurity,advanced,6.8,enrolled,32.5,IGOT-16-048,2026-04-30,
+179,37,Sunita Sharma,Ministry of Finance,20,Employment & Unemployment Indicators,Labour Statistics,intermediate,5.7,enrolled,34.9,IGOT-07-020,2026-02-20,
+180,38,Mukesh Singh,National Statistical Office,28,Introduction to R,R Programming,beginner,5.5,in_progress,67.6,IGOT-10-028,2026-03-10,
+181,38,Mukesh Singh,National Statistical Office,27,Advanced Python & ML,Python Programming,advanced,7.6,enrolled,38.9,IGOT-09-027,2026-03-12,
+182,38,Mukesh Singh,National Statistical Office,34,Introduction to GIS,GIS & Mapping,beginner,6.3,completed,100.0,IGOT-12-034,2026-08-17,2026-08-24
+183,38,Mukesh Singh,National Statistical Office,36,Advanced Spatial Analysis,GIS & Mapping,advanced,7.7,in_progress,10.4,IGOT-12-036,2026-07-08,
+184,38,Mukesh Singh,National Statistical Office,31,SQL Basics,SQL & Databases,beginner,3.9,completed,100.0,IGOT-11-031,2026-06-20,2026-08-31
+185,38,Mukesh Singh,National Statistical Office,40,ML Fundamentals for Officers,Machine Learning Basics,beginner,3.5,completed,100.0,IGOT-14-040,2026-03-14,2026-09-01
+186,39,Kavita Pillai,Ministry of Agriculture,50,PDPB Compliance for Officers,Data Privacy & PDPB,intermediate,6.7,completed,100.0,IGOT-17-050,2026-08-01,2026-09-01
+187,39,Kavita Pillai,Ministry of Agriculture,35,QGIS for Government Data,GIS & Mapping,intermediate,5.7,completed,100.0,IGOT-12-035,2026-03-15,2026-08-20
+188,40,Sunita Pandey,CSO,49,Data Privacy Fundamentals,Data Privacy & PDPB,beginner,6.5,completed,100.0,IGOT-17-049,2026-04-26,2026-08-05
+189,40,Sunita Pandey,CSO,66,Advanced Change Strategy,Change Management,advanced,6.0,completed,100.0,IGOT-22-066,2026-04-14,2026-08-30
+190,40,Sunita Pandey,CSO,13,National Accounts Basics,National Accounts,beginner,3.4,in_progress,22.9,IGOT-05-013,2026-05-03,
+191,41,Ravi Tiwari,CRS,3,Advanced Regression Analysis,Statistical Methods,advanced,7.2,completed,100.0,IGOT-01-003,2026-04-25,2026-08-20
+192,41,Ravi Tiwari,CRS,6,Advanced Survey Methodology,Survey Design,advanced,4.5,in_progress,6.7,IGOT-02-006,2026-03-06,
+193,41,Ravi Tiwari,CRS,32,Intermediate SQL & Database Design,SQL & Databases,intermediate,7.8,completed,100.0,IGOT-11-032,2026-05-30,2026-08-12
+194,41,Ravi Tiwari,CRS,60,Agile Project Management,Project Management,advanced,3.8,completed,100.0,IGOT-20-060,2026-06-29,2026-08-16
+195,41,Ravi Tiwari,CRS,34,Introduction to GIS,GIS & Mapping,beginner,6.3,completed,100.0,IGOT-12-034,2026-08-13,2026-08-12
+196,41,Ravi Tiwari,CRS,20,Employment & Unemployment Indicators,Labour Statistics,intermediate,5.7,completed,100.0,IGOT-07-020,2026-05-21,2026-08-04
+197,42,Suresh Singh,CSO,36,Advanced Spatial Analysis,GIS & Mapping,advanced,7.7,in_progress,35.8,IGOT-12-036,2026-05-20,
+198,42,Suresh Singh,CSO,29,Statistical Analysis with R,R Programming,intermediate,4.0,in_progress,12.9,IGOT-10-029,2026-05-23,
+199,43,Vikram Yadav,MOSPI Field Operations,30,Advanced R & Visualization,R Programming,advanced,3.4,completed,100.0,IGOT-10-030,2026-03-27,2026-08-22
+200,43,Vikram Yadav,MOSPI Field Operations,54,Advanced Digital Infrastructure,Digital Signatures,advanced,2.7,completed,100.0,IGOT-18-054,2026-04-12,2026-08-28
+201,43,Vikram Yadav,MOSPI Field Operations,31,SQL Basics,SQL & Databases,beginner,3.9,in_progress,63.7,IGOT-11-031,2026-04-02,
+202,43,Vikram Yadav,MOSPI Field Operations,37,Data Visualization Basics,Data Visualization,beginner,5.8,completed,100.0,IGOT-13-037,2026-03-06,2026-08-07
+203,43,Vikram Yadav,MOSPI Field Operations,10,Introduction to Data Analysis,Data Analysis,beginner,3.8,in_progress,82.6,IGOT-04-010,2026-06-10,
+204,43,Vikram Yadav,MOSPI Field Operations,28,Introduction to R,R Programming,beginner,5.5,completed,100.0,IGOT-10-028,2026-07-25,2026-08-19
+205,44,Rajesh Nair,National Statistical Office,21,Advanced Labour Economics,Labour Statistics,advanced,5.3,completed,100.0,IGOT-07-021,2026-04-14,2026-08-09
+206,44,Rajesh Nair,National Statistical Office,41,Applied Machine Learning,Machine Learning Basics,intermediate,3.1,enrolled,21.6,IGOT-14-041,2026-07-22,
+207,44,Rajesh Nair,National Statistical Office,9,Advanced Sampling Theory,Sampling Techniques,advanced,2.9,enrolled,73.9,IGOT-03-009,2026-05-15,
+208,45,Meena Joshi,Ministry of Agriculture,39,Advanced Visual Analytics,Data Visualization,advanced,2.3,enrolled,16.8,IGOT-13-039,2026-08-22,
+209,45,Meena Joshi,Ministry of Agriculture,57,Change Leadership,Leadership,advanced,4.3,completed,100.0,IGOT-19-057,2026-03-24,2026-08-24
+210,45,Meena Joshi,Ministry of Agriculture,36,Advanced Spatial Analysis,GIS & Mapping,advanced,7.7,completed,100.0,IGOT-12-036,2026-04-05,2026-08-13
+211,45,Meena Joshi,Ministry of Agriculture,20,Employment & Unemployment Indicators,Labour Statistics,intermediate,5.7,in_progress,58.7,IGOT-07-020,2026-06-30,
+212,45,Meena Joshi,Ministry of Agriculture,25,Python for Beginners,Python Programming,beginner,7.0,enrolled,37.3,IGOT-09-025,2026-03-05,
+213,46,Manoj Shah,MOSPI Field Operations,18,Advanced Price Statistics,Price Statistics,advanced,3.5,completed,100.0,IGOT-06-018,2026-04-25,2026-08-17
+214,46,Manoj Shah,MOSPI Field Operations,65,Leading Organizational Change,Change Management,intermediate,4.4,in_progress,19.7,IGOT-22-065,2026-07-02,
+215,46,Manoj Shah,MOSPI Field Operations,61,Effective Communication,Communication Skills,beginner,4.3,enrolled,41.8,IGOT-21-061,2026-08-25,
+216,46,Manoj Shah,MOSPI Field Operations,48,Advanced Cyber Defence,Cybersecurity,advanced,6.8,completed,100.0,IGOT-16-048,2026-05-15,2026-08-25
+217,46,Manoj Shah,MOSPI Field Operations,24,Monitoring SDG Progress,SDG Indicators,advanced,7.0,in_progress,73.2,IGOT-08-024,2026-08-12,
+218,47,Amit Kumar,NSSTA,57,Change Leadership,Leadership,advanced,4.3,completed,100.0,IGOT-19-057,2026-06-26,2026-08-19
+219,47,Amit Kumar,NSSTA,63,Advanced Communication,Communication Skills,advanced,6.1,completed,100.0,IGOT-21-063,2026-08-18,2026-08-13
+220,47,Amit Kumar,NSSTA,42,Deep Learning Basics,Machine Learning Basics,advanced,2.9,completed,100.0,IGOT-14-042,2026-02-25,2026-08-22
+221,48,Asha Nair,National Statistical Office,5,Sampling & Questionnaire Design,Survey Design,intermediate,2.5,in_progress,51.7,IGOT-02-005,2026-05-19,
+222,48,Asha Nair,National Statistical Office,14,GDP Compilation Methodology,National Accounts,intermediate,5.1,enrolled,55.2,IGOT-05-014,2026-04-18,
+223,48,Asha Nair,National Statistical Office,58,PM Fundamentals,Project Management,beginner,5.7,enrolled,22.1,IGOT-20-058,2026-05-08,
+224,48,Asha Nair,National Statistical Office,59,PMP for Government Projects,Project Management,intermediate,6.9,completed,100.0,IGOT-20-059,2026-06-12,2026-08-08
+225,48,Asha Nair,National Statistical Office,6,Advanced Survey Methodology,Survey Design,advanced,4.5,completed,100.0,IGOT-02-006,2026-05-02,2026-08-27
+226,49,Amit Agarwal,NITI Aayog,38,Dashboard Design with Power BI,Data Visualization,intermediate,6.6,enrolled,70.0,IGOT-13-038,2026-07-31,
+227,49,Amit Agarwal,NITI Aayog,7,Probability Sampling Basics,Sampling Techniques,beginner,3.7,in_progress,75.1,IGOT-03-007,2026-03-03,
+228,49,Amit Agarwal,NITI Aayog,19,Labour Force Survey Basics,Labour Statistics,beginner,7.2,completed,100.0,IGOT-07-019,2026-07-25,2026-08-20
+229,49,Amit Agarwal,NITI Aayog,60,Agile Project Management,Project Management,advanced,3.8,completed,100.0,IGOT-20-060,2026-06-07,2026-08-18
+230,49,Amit Agarwal,NITI Aayog,58,PM Fundamentals,Project Management,beginner,5.7,enrolled,21.1,IGOT-20-058,2026-03-30,
+231,50,Usha Agarwal,CRS,26,Python for Data Analysis,Python Programming,intermediate,3.1,in_progress,69.7,IGOT-09-026,2026-07-28,
+232,50,Usha Agarwal,CRS,59,PMP for Government Projects,Project Management,intermediate,6.9,enrolled,15.3,IGOT-20-059,2026-05-05,
+233,50,Usha Agarwal,CRS,12,Advanced Data Analytics,Data Analysis,advanced,5.6,completed,100.0,IGOT-04-012,2026-08-07,2026-08-16
+234,50,Usha Agarwal,CRS,17,Price Index Methods,Price Statistics,intermediate,6.0,completed,100.0,IGOT-06-017,2026-02-23,2026-08-07
+235,50,Usha Agarwal,CRS,21,Advanced Labour Economics,Labour Statistics,advanced,5.3,completed,100.0,IGOT-07-021,2026-03-25,2026-08-27
+236,50,Usha Agarwal,CRS,45,Advanced Cloud Architecture,Cloud Computing,advanced,3.8,completed,100.0,IGOT-15-045,2026-04-10,2026-08-20
+237,50,Usha Agarwal,CRS,42,Deep Learning Basics,Machine Learning Basics,advanced,2.9,enrolled,74.1,IGOT-14-042,2026-06-04,
+238,51,Ramesh Nair,Ministry of Agriculture,20,Employment & Unemployment Indicators,Labour Statistics,intermediate,5.7,enrolled,42.8,IGOT-07-020,2026-06-10,
+239,51,Ramesh Nair,Ministry of Agriculture,21,Advanced Labour Economics,Labour Statistics,advanced,5.3,completed,100.0,IGOT-07-021,2026-06-16,2026-08-12
+240,51,Ramesh Nair,Ministry of Agriculture,19,Labour Force Survey Basics,Labour Statistics,beginner,7.2,in_progress,15.6,IGOT-07-019,2026-07-26,
+241,51,Ramesh Nair,Ministry of Agriculture,12,Advanced Data Analytics,Data Analysis,advanced,5.6,in_progress,5.3,IGOT-04-012,2026-02-14,
+242,51,Ramesh Nair,Ministry of Agriculture,50,PDPB Compliance for Officers,Data Privacy & PDPB,intermediate,6.7,completed,100.0,IGOT-17-050,2026-08-25,2026-08-18
+243,51,Ramesh Nair,Ministry of Agriculture,46,Cybersecurity Awareness,Cybersecurity,beginner,4.2,completed,100.0,IGOT-16-046,2026-04-23,2026-08-15
+244,52,Pooja Srivastava,NSSTA,64,Change Management Basics,Change Management,beginner,4.2,in_progress,58.0,IGOT-22-064,2026-04-29,
+245,52,Pooja Srivastava,NSSTA,31,SQL Basics,SQL & Databases,beginner,3.9,completed,100.0,IGOT-11-031,2026-05-16,2026-08-18
+246,53,Geeta Verma,National Statistical Office,1,Introduction to Statistical Methods,Statistical Methods,beginner,6.9,completed,100.0,IGOT-01-001,2026-06-18,2026-08-13
+247,53,Geeta Verma,National Statistical Office,32,Intermediate SQL & Database Design,SQL & Databases,intermediate,7.8,completed,100.0,IGOT-11-032,2026-07-06,2026-08-31
+248,54,Sanjay Mishra,CRS,19,Labour Force Survey Basics,Labour Statistics,beginner,7.2,enrolled,18.1,IGOT-07-019,2026-08-20,
+249,54,Sanjay Mishra,CRS,8,Stratified & Cluster Sampling,Sampling Techniques,intermediate,6.7,completed,100.0,IGOT-03-008,2026-03-27,2026-08-23
+250,54,Sanjay Mishra,CRS,45,Advanced Cloud Architecture,Cloud Computing,advanced,3.8,completed,100.0,IGOT-15-045,2026-08-06,2026-08-31
+251,55,Priya Mishra,CRS,54,Advanced Digital Infrastructure,Digital Signatures,advanced,2.7,in_progress,65.5,IGOT-18-054,2026-03-25,
+252,55,Priya Mishra,CRS,23,SDG Indicator Compilation,SDG Indicators,intermediate,4.4,completed,100.0,IGOT-08-023,2026-04-04,2026-08-07
+253,56,Ramesh Shah,NITI Aayog,23,SDG Indicator Compilation,SDG Indicators,intermediate,4.4,completed,100.0,IGOT-08-023,2026-06-07,2026-08-21
+254,56,Ramesh Shah,NITI Aayog,59,PMP for Government Projects,Project Management,intermediate,6.9,completed,100.0,IGOT-20-059,2026-08-11,2026-08-08
+255,56,Ramesh Shah,NITI Aayog,47,Information Security Management,Cybersecurity,intermediate,2.0,completed,100.0,IGOT-16-047,2026-04-10,2026-08-30
+256,56,Ramesh Shah,NITI Aayog,60,Agile Project Management,Project Management,advanced,3.8,completed,100.0,IGOT-20-060,2026-04-30,2026-08-28
+257,56,Ramesh Shah,NITI Aayog,3,Advanced Regression Analysis,Statistical Methods,advanced,7.2,enrolled,67.5,IGOT-01-003,2026-06-19,
+258,56,Ramesh Shah,NITI Aayog,6,Advanced Survey Methodology,Survey Design,advanced,4.5,completed,100.0,IGOT-02-006,2026-04-16,2026-08-19
+259,57,Pooja Pillai,Ministry of Statistics & PI,27,Advanced Python & ML,Python Programming,advanced,7.6,completed,100.0,IGOT-09-027,2026-08-06,2026-08-17
+260,57,Pooja Pillai,Ministry of Statistics & PI,66,Advanced Change Strategy,Change Management,advanced,6.0,completed,100.0,IGOT-22-066,2026-03-01,2026-08-23
+261,57,Pooja Pillai,Ministry of Statistics & PI,8,Stratified & Cluster Sampling,Sampling Techniques,intermediate,6.7,completed,100.0,IGOT-03-008,2026-03-26,2026-08-05
+262,57,Pooja Pillai,Ministry of Statistics & PI,7,Probability Sampling Basics,Sampling Techniques,beginner,3.7,completed,100.0,IGOT-03-007,2026-06-23,2026-08-16
+263,57,Pooja Pillai,Ministry of Statistics & PI,37,Data Visualization Basics,Data Visualization,beginner,5.8,completed,100.0,IGOT-13-037,2026-03-22,2026-08-21
+264,57,Pooja Pillai,Ministry of Statistics & PI,47,Information Security Management,Cybersecurity,intermediate,2.0,in_progress,60.3,IGOT-16-047,2026-04-23,
+265,58,Vinod Srivastava,NITI Aayog,64,Change Management Basics,Change Management,beginner,4.2,completed,100.0,IGOT-22-064,2026-07-10,2026-09-01
+266,58,Vinod Srivastava,NITI Aayog,66,Advanced Change Strategy,Change Management,advanced,6.0,enrolled,7.2,IGOT-22-066,2026-03-21,
+267,58,Vinod Srivastava,NITI Aayog,24,Monitoring SDG Progress,SDG Indicators,advanced,7.0,enrolled,71.4,IGOT-08-024,2026-07-06,
+268,58,Vinod Srivastava,NITI Aayog,57,Change Leadership,Leadership,advanced,4.3,completed,100.0,IGOT-19-057,2026-05-14,2026-08-19
+269,58,Vinod Srivastava,NITI Aayog,40,ML Fundamentals for Officers,Machine Learning Basics,beginner,3.5,enrolled,35.0,IGOT-14-040,2026-04-07,
+270,58,Vinod Srivastava,NITI Aayog,15,Advanced National Accounts,National Accounts,advanced,5.8,in_progress,6.0,IGOT-05-015,2026-07-08,
+271,59,Amit Srivastava,NITI Aayog,37,Data Visualization Basics,Data Visualization,beginner,5.8,completed,100.0,IGOT-13-037,2026-08-27,2026-08-29
+272,59,Amit Srivastava,NITI Aayog,33,Advanced SQL & Performance,SQL & Databases,advanced,7.2,completed,100.0,IGOT-11-033,2026-06-02,2026-08-20
+273,59,Amit Srivastava,NITI Aayog,9,Advanced Sampling Theory,Sampling Techniques,advanced,2.9,completed,100.0,IGOT-03-009,2026-03-24,2026-09-01
+274,59,Amit Srivastava,NITI Aayog,20,Employment & Unemployment Indicators,Labour Statistics,intermediate,5.7,in_progress,22.5,IGOT-07-020,2026-06-03,
+275,59,Amit Srivastava,NITI Aayog,63,Advanced Communication,Communication Skills,advanced,6.1,completed,100.0,IGOT-21-063,2026-04-29,2026-08-07
+276,59,Amit Srivastava,NITI Aayog,65,Leading Organizational Change,Change Management,intermediate,4.4,enrolled,63.1,IGOT-22-065,2026-04-27,
+277,59,Amit Srivastava,NITI Aayog,36,Advanced Spatial Analysis,GIS & Mapping,advanced,7.7,in_progress,61.4,IGOT-12-036,2026-04-13,
+278,60,Asha Singh,CRS,60,Agile Project Management,Project Management,advanced,3.8,completed,100.0,IGOT-20-060,2026-02-24,2026-08-11
+279,60,Asha Singh,CRS,53,PKI & e-Authentication,Digital Signatures,intermediate,3.0,completed,100.0,IGOT-18-053,2026-04-08,2026-08-15
+280,60,Asha Singh,CRS,8,Stratified & Cluster Sampling,Sampling Techniques,intermediate,6.7,enrolled,23.7,IGOT-03-008,2026-03-06,
+281,60,Asha Singh,CRS,39,Advanced Visual Analytics,Data Visualization,advanced,2.3,completed,100.0,IGOT-13-039,2026-05-30,2026-08-30
+282,61,Mukesh Tiwari,DGET,36,Advanced Spatial Analysis,GIS & Mapping,advanced,7.7,completed,100.0,IGOT-12-036,2026-03-21,2026-08-15
+283,61,Mukesh Tiwari,DGET,4,Fundamentals of Survey Design,Survey Design,beginner,7.8,in_progress,56.4,IGOT-02-004,2026-05-21,
+284,61,Mukesh Tiwari,DGET,44,Government Cloud Platforms,Cloud Computing,intermediate,7.9,in_progress,58.6,IGOT-15-044,2026-02-17,
+285,62,Ravi Mishra,DGET,41,Applied Machine Learning,Machine Learning Basics,intermediate,3.1,enrolled,49.7,IGOT-14-041,2026-06-29,
+286,62,Ravi Mishra,DGET,5,Sampling & Questionnaire Design,Survey Design,intermediate,2.5,completed,100.0,IGOT-02-005,2026-05-05,2026-08-06
+287,62,Ravi Mishra,DGET,35,QGIS for Government Data,GIS & Mapping,intermediate,5.7,completed,100.0,IGOT-12-035,2026-07-04,2026-08-16
+288,62,Ravi Mishra,DGET,53,PKI & e-Authentication,Digital Signatures,intermediate,3.0,completed,100.0,IGOT-18-053,2026-07-15,2026-08-29
+289,63,Rajesh Tiwari,CSO,5,Sampling & Questionnaire Design,Survey Design,intermediate,2.5,completed,100.0,IGOT-02-005,2026-08-22,2026-08-07
+290,63,Rajesh Tiwari,CSO,26,Python for Data Analysis,Python Programming,intermediate,3.1,completed,100.0,IGOT-09-026,2026-04-22,2026-08-28
+291,63,Rajesh Tiwari,CSO,12,Advanced Data Analytics,Data Analysis,advanced,5.6,in_progress,35.6,IGOT-04-012,2026-04-27,
+292,63,Rajesh Tiwari,CSO,57,Change Leadership,Leadership,advanced,4.3,completed,100.0,IGOT-19-057,2026-06-10,2026-08-08
+293,64,Harish Chaudhary,CSO,19,Labour Force Survey Basics,Labour Statistics,beginner,7.2,enrolled,46.3,IGOT-07-019,2026-02-27,
+294,64,Harish Chaudhary,CSO,13,National Accounts Basics,National Accounts,beginner,3.4,completed,100.0,IGOT-05-013,2026-07-30,2026-09-01
+295,64,Harish Chaudhary,CSO,17,Price Index Methods,Price Statistics,intermediate,6.0,completed,100.0,IGOT-06-017,2026-08-17,2026-08-11
+296,64,Harish Chaudhary,CSO,27,Advanced Python & ML,Python Programming,advanced,7.6,completed,100.0,IGOT-09-027,2026-08-06,2026-08-22
+297,65,Ashok Shah,Ministry of Agriculture,6,Advanced Survey Methodology,Survey Design,advanced,4.5,completed,100.0,IGOT-02-006,2026-07-08,2026-08-26
+298,65,Ashok Shah,Ministry of Agriculture,14,GDP Compilation Methodology,National Accounts,intermediate,5.1,completed,100.0,IGOT-05-014,2026-06-19,2026-08-15
+299,65,Ashok Shah,Ministry of Agriculture,40,ML Fundamentals for Officers,Machine Learning Basics,beginner,3.5,completed,100.0,IGOT-14-040,2026-05-08,2026-08-11
+300,65,Ashok Shah,Ministry of Agriculture,3,Advanced Regression Analysis,Statistical Methods,advanced,7.2,enrolled,29.5,IGOT-01-003,2026-07-19,
+301,65,Ashok Shah,Ministry of Agriculture,27,Advanced Python & ML,Python Programming,advanced,7.6,completed,100.0,IGOT-09-027,2026-07-30,2026-09-01
+302,66,Sanjay Mishra,Ministry of Statistics & PI,66,Advanced Change Strategy,Change Management,advanced,6.0,completed,100.0,IGOT-22-066,2026-06-20,2026-08-28
+303,66,Sanjay Mishra,Ministry of Statistics & PI,14,GDP Compilation Methodology,National Accounts,intermediate,5.1,completed,100.0,IGOT-05-014,2026-04-04,2026-08-25
+304,66,Sanjay Mishra,Ministry of Statistics & PI,27,Advanced Python & ML,Python Programming,advanced,7.6,in_progress,11.4,IGOT-09-027,2026-03-25,
+305,66,Sanjay Mishra,Ministry of Statistics & PI,35,QGIS for Government Data,GIS & Mapping,intermediate,5.7,completed,100.0,IGOT-12-035,2026-04-12,2026-08-18
+306,66,Sanjay Mishra,Ministry of Statistics & PI,23,SDG Indicator Compilation,SDG Indicators,intermediate,4.4,enrolled,16.7,IGOT-08-023,2026-04-30,
+307,66,Sanjay Mishra,Ministry of Statistics & PI,36,Advanced Spatial Analysis,GIS & Mapping,advanced,7.7,enrolled,14.5,IGOT-12-036,2026-08-15,
+308,67,Pushpa Srivastava,Ministry of Agriculture,55,Leadership in Public Service,Leadership,beginner,6.1,in_progress,68.4,IGOT-19-055,2026-03-30,
+309,67,Pushpa Srivastava,Ministry of Agriculture,51,Advanced Data Governance,Data Privacy & PDPB,advanced,7.5,completed,100.0,IGOT-17-051,2026-03-24,2026-08-21
+310,68,Shobha Yadav,Ministry of Statistics & PI,43,Cloud Computing Concepts,Cloud Computing,beginner,4.8,completed,100.0,IGOT-15-043,2026-07-26,2026-08-30
+311,68,Shobha Yadav,Ministry of Statistics & PI,26,Python for Data Analysis,Python Programming,intermediate,3.1,completed,100.0,IGOT-09-026,2026-08-04,2026-08-18
+312,68,Shobha Yadav,Ministry of Statistics & PI,11,Intermediate Data Analysis with Python,Data Analysis,intermediate,4.4,completed,100.0,IGOT-04-011,2026-03-06,2026-08-12
+313,68,Shobha Yadav,Ministry of Statistics & PI,60,Agile Project Management,Project Management,advanced,3.8,completed,100.0,IGOT-20-060,2026-04-30,2026-08-25
+314,69,Pooja Shah,Ministry of Statistics & PI,19,Labour Force Survey Basics,Labour Statistics,beginner,7.2,completed,100.0,IGOT-07-019,2026-07-13,2026-08-10
+315,69,Pooja Shah,Ministry of Statistics & PI,34,Introduction to GIS,GIS & Mapping,beginner,6.3,completed,100.0,IGOT-12-034,2026-06-06,2026-08-18
+316,69,Pooja Shah,Ministry of Statistics & PI,47,Information Security Management,Cybersecurity,intermediate,2.0,completed,100.0,IGOT-16-047,2026-08-21,2026-08-30
+317,70,Ravi Chaudhary,NITI Aayog,15,Advanced National Accounts,National Accounts,advanced,5.8,completed,100.0,IGOT-05-015,2026-05-31,2026-08-13
+318,70,Ravi Chaudhary,NITI Aayog,45,Advanced Cloud Architecture,Cloud Computing,advanced,3.8,completed,100.0,IGOT-15-045,2026-07-27,2026-08-16
+319,70,Ravi Chaudhary,NITI Aayog,62,Presentation & Report Writing,Communication Skills,intermediate,5.9,enrolled,41.5,IGOT-21-062,2026-02-27,
+320,70,Ravi Chaudhary,NITI Aayog,60,Agile Project Management,Project Management,advanced,3.8,enrolled,34.3,IGOT-20-060,2026-03-15,
+321,70,Ravi Chaudhary,NITI Aayog,22,Introduction to SDG Framework,SDG Indicators,beginner,2.2,enrolled,76.3,IGOT-08-022,2026-04-14,
+322,71,Mukesh Srivastava,Ministry of Finance,52,Digital Signatures Basics,Digital Signatures,beginner,5.2,completed,100.0,IGOT-18-052,2026-05-22,2026-08-30
+323,71,Mukesh Srivastava,Ministry of Finance,53,PKI & e-Authentication,Digital Signatures,intermediate,3.0,completed,100.0,IGOT-18-053,2026-07-06,2026-08-06
+324,71,Mukesh Srivastava,Ministry of Finance,31,SQL Basics,SQL & Databases,beginner,3.9,completed,100.0,IGOT-11-031,2026-05-10,2026-08-07
+325,71,Mukesh Srivastava,Ministry of Finance,32,Intermediate SQL & Database Design,SQL & Databases,intermediate,7.8,completed,100.0,IGOT-11-032,2026-04-05,2026-08-07
+326,71,Mukesh Srivastava,Ministry of Finance,21,Advanced Labour Economics,Labour Statistics,advanced,5.3,completed,100.0,IGOT-07-021,2026-04-11,2026-08-10
+327,72,Manoj Yadav,MOSPI Field Operations,23,SDG Indicator Compilation,SDG Indicators,intermediate,4.4,enrolled,58.3,IGOT-08-023,2026-05-02,
+328,72,Manoj Yadav,MOSPI Field Operations,10,Introduction to Data Analysis,Data Analysis,beginner,3.8,completed,100.0,IGOT-04-010,2026-04-08,2026-08-29
+329,72,Manoj Yadav,MOSPI Field Operations,63,Advanced Communication,Communication Skills,advanced,6.1,completed,100.0,IGOT-21-063,2026-07-14,2026-08-23
+330,73,Harish Singh,CSO,9,Advanced Sampling Theory,Sampling Techniques,advanced,2.9,enrolled,13.1,IGOT-03-009,2026-07-24,
+331,73,Harish Singh,CSO,14,GDP Compilation Methodology,National Accounts,intermediate,5.1,completed,100.0,IGOT-05-014,2026-02-16,2026-08-12
+332,73,Harish Singh,CSO,49,Data Privacy Fundamentals,Data Privacy & PDPB,beginner,6.5,enrolled,73.1,IGOT-17-049,2026-03-12,
+333,73,Harish Singh,CSO,42,Deep Learning Basics,Machine Learning Basics,advanced,2.9,in_progress,45.8,IGOT-14-042,2026-06-15,
+334,73,Harish Singh,CSO,64,Change Management Basics,Change Management,beginner,4.2,completed,100.0,IGOT-22-064,2026-03-24,2026-08-14
+335,74,Anita Patel,CSO,26,Python for Data Analysis,Python Programming,intermediate,3.1,completed,100.0,IGOT-09-026,2026-08-06,2026-08-14
+336,74,Anita Patel,CSO,27,Advanced Python & ML,Python Programming,advanced,7.6,enrolled,60.0,IGOT-09-027,2026-04-20,
+337,74,Anita Patel,CSO,41,Applied Machine Learning,Machine Learning Basics,intermediate,3.1,completed,100.0,IGOT-14-041,2026-07-27,2026-08-05
+338,74,Anita Patel,CSO,39,Advanced Visual Analytics,Data Visualization,advanced,2.3,completed,100.0,IGOT-13-039,2026-08-13,2026-08-21
+339,74,Anita Patel,CSO,56,Strategic Leadership,Leadership,intermediate,3.6,completed,100.0,IGOT-19-056,2026-08-15,2026-09-01
+340,75,Vikram Srivastava,CRS,46,Cybersecurity Awareness,Cybersecurity,beginner,4.2,completed,100.0,IGOT-16-046,2026-05-20,2026-08-12
+341,75,Vikram Srivastava,CRS,15,Advanced National Accounts,National Accounts,advanced,5.8,completed,100.0,IGOT-05-015,2026-02-27,2026-08-20
+342,75,Vikram Srivastava,CRS,37,Data Visualization Basics,Data Visualization,beginner,5.8,completed,100.0,IGOT-13-037,2026-05-23,2026-08-19
+343,75,Vikram Srivastava,CRS,56,Strategic Leadership,Leadership,intermediate,3.6,completed,100.0,IGOT-19-056,2026-07-05,2026-08-11
+344,75,Vikram Srivastava,CRS,2,Inferential Statistics & Hypothesis Testing,Statistical Methods,intermediate,6.6,in_progress,47.7,IGOT-01-002,2026-07-11,
+345,75,Vikram Srivastava,CRS,16,CPI & WPI Fundamentals,Price Statistics,beginner,3.9,completed,100.0,IGOT-06-016,2026-05-22,2026-08-06
+346,75,Vikram Srivastava,CRS,28,Introduction to R,R Programming,beginner,5.5,completed,100.0,IGOT-10-028,2026-05-14,2026-08-28
+347,76,Nisha Srivastava,Ministry of Agriculture,17,Price Index Methods,Price Statistics,intermediate,6.0,enrolled,18.0,IGOT-06-017,2026-04-26,
+348,76,Nisha Srivastava,Ministry of Agriculture,18,Advanced Price Statistics,Price Statistics,advanced,3.5,completed,100.0,IGOT-06-018,2026-07-25,2026-08-30
+349,76,Nisha Srivastava,Ministry of Agriculture,2,Inferential Statistics & Hypothesis Testing,Statistical Methods,intermediate,6.6,in_progress,62.8,IGOT-01-002,2026-05-14,
+350,76,Nisha Srivastava,Ministry of Agriculture,10,Introduction to Data Analysis,Data Analysis,beginner,3.8,completed,100.0,IGOT-04-010,2026-03-03,2026-08-13
+351,77,Rajesh Agarwal,DGET,24,Monitoring SDG Progress,SDG Indicators,advanced,7.0,completed,100.0,IGOT-08-024,2026-05-30,2026-08-25
+352,77,Rajesh Agarwal,DGET,59,PMP for Government Projects,Project Management,intermediate,6.9,in_progress,43.2,IGOT-20-059,2026-08-27,
+353,77,Rajesh Agarwal,DGET,66,Advanced Change Strategy,Change Management,advanced,6.0,completed,100.0,IGOT-22-066,2026-04-23,2026-08-05
+354,77,Rajesh Agarwal,DGET,55,Leadership in Public Service,Leadership,beginner,6.1,in_progress,69.1,IGOT-19-055,2026-06-21,
+355,77,Rajesh Agarwal,DGET,58,PM Fundamentals,Project Management,beginner,5.7,completed,100.0,IGOT-20-058,2026-04-11,2026-08-14
+356,78,Sanjay Joshi,Ministry of Finance,5,Sampling & Questionnaire Design,Survey Design,intermediate,2.5,completed,100.0,IGOT-02-005,2026-04-27,2026-08-10
+357,78,Sanjay Joshi,Ministry of Finance,62,Presentation & Report Writing,Communication Skills,intermediate,5.9,enrolled,17.8,IGOT-21-062,2026-02-22,
+358,78,Sanjay Joshi,Ministry of Finance,48,Advanced Cyber Defence,Cybersecurity,advanced,6.8,completed,100.0,IGOT-16-048,2026-02-17,2026-08-08
+359,78,Sanjay Joshi,Ministry of Finance,15,Advanced National Accounts,National Accounts,advanced,5.8,completed,100.0,IGOT-05-015,2026-05-01,2026-08-16
+360,79,Arun Chaudhary,Ministry of Agriculture,12,Advanced Data Analytics,Data Analysis,advanced,5.6,completed,100.0,IGOT-04-012,2026-03-20,2026-08-09
+361,79,Arun Chaudhary,Ministry of Agriculture,32,Intermediate SQL & Database Design,SQL & Databases,intermediate,7.8,enrolled,66.6,IGOT-11-032,2026-04-12,
+362,80,Priya Singh,DGET,40,ML Fundamentals for Officers,Machine Learning Basics,beginner,3.5,completed,100.0,IGOT-14-040,2026-05-04,2026-08-16
+363,80,Priya Singh,DGET,7,Probability Sampling Basics,Sampling Techniques,beginner,3.7,completed,100.0,IGOT-03-007,2026-04-04,2026-08-09
+364,80,Priya Singh,DGET,44,Government Cloud Platforms,Cloud Computing,intermediate,7.9,completed,100.0,IGOT-15-044,2026-05-13,2026-08-21
+365,80,Priya Singh,DGET,35,QGIS for Government Data,GIS & Mapping,intermediate,5.7,completed,100.0,IGOT-12-035,2026-06-15,2026-08-27
+366,80,Priya Singh,DGET,50,PDPB Compliance for Officers,Data Privacy & PDPB,intermediate,6.7,enrolled,67.6,IGOT-17-050,2026-03-29,
+367,80,Priya Singh,DGET,1,Introduction to Statistical Methods,Statistical Methods,beginner,6.9,completed,100.0,IGOT-01-001,2026-02-23,2026-08-07
+368,81,Sunita Joshi,CRS,34,Introduction to GIS,GIS & Mapping,beginner,6.3,enrolled,64.1,IGOT-12-034,2026-06-15,
+369,81,Sunita Joshi,CRS,8,Stratified & Cluster Sampling,Sampling Techniques,intermediate,6.7,completed,100.0,IGOT-03-008,2026-08-22,2026-08-23
+370,81,Sunita Joshi,CRS,61,Effective Communication,Communication Skills,beginner,4.3,completed,100.0,IGOT-21-061,2026-08-07,2026-08-28
+371,81,Sunita Joshi,CRS,38,Dashboard Design with Power BI,Data Visualization,intermediate,6.6,completed,100.0,IGOT-13-038,2026-08-09,2026-08-05
+372,81,Sunita Joshi,CRS,11,Intermediate Data Analysis with Python,Data Analysis,intermediate,4.4,completed,100.0,IGOT-04-011,2026-06-25,2026-08-28
+373,81,Sunita Joshi,CRS,37,Data Visualization Basics,Data Visualization,beginner,5.8,completed,100.0,IGOT-13-037,2026-06-18,2026-08-24
+374,82,Naresh Joshi,MOSPI Field Operations,2,Inferential Statistics & Hypothesis Testing,Statistical Methods,intermediate,6.6,completed,100.0,IGOT-01-002,2026-05-26,2026-08-07
+375,82,Naresh Joshi,MOSPI Field Operations,15,Advanced National Accounts,National Accounts,advanced,5.8,in_progress,28.5,IGOT-05-015,2026-03-02,
+376,82,Naresh Joshi,MOSPI Field Operations,23,SDG Indicator Compilation,SDG Indicators,intermediate,4.4,in_progress,48.6,IGOT-08-023,2026-04-15,
+377,82,Naresh Joshi,MOSPI Field Operations,20,Employment & Unemployment Indicators,Labour Statistics,intermediate,5.7,enrolled,35.9,IGOT-07-020,2026-08-07,
+378,83,Sunita Agarwal,National Statistical Office,20,Employment & Unemployment Indicators,Labour Statistics,intermediate,5.7,completed,100.0,IGOT-07-020,2026-06-29,2026-08-11
+379,83,Sunita Agarwal,National Statistical Office,64,Change Management Basics,Change Management,beginner,4.2,completed,100.0,IGOT-22-064,2026-02-24,2026-08-12
+380,83,Sunita Agarwal,National Statistical Office,53,PKI & e-Authentication,Digital Signatures,intermediate,3.0,in_progress,24.0,IGOT-18-053,2026-02-22,
+381,84,Deepak Kumar,NSSTA,7,Probability Sampling Basics,Sampling Techniques,beginner,3.7,completed,100.0,IGOT-03-007,2026-05-18,2026-08-17
+382,84,Deepak Kumar,NSSTA,34,Introduction to GIS,GIS & Mapping,beginner,6.3,completed,100.0,IGOT-12-034,2026-04-29,2026-08-09
+383,84,Deepak Kumar,NSSTA,15,Advanced National Accounts,National Accounts,advanced,5.8,completed,100.0,IGOT-05-015,2026-06-30,2026-08-20
+384,84,Deepak Kumar,NSSTA,22,Introduction to SDG Framework,SDG Indicators,beginner,2.2,completed,100.0,IGOT-08-022,2026-04-29,2026-08-24
+385,85,Nisha Chaudhary,MOSPI Field Operations,56,Strategic Leadership,Leadership,intermediate,3.6,completed,100.0,IGOT-19-056,2026-05-23,2026-08-11
+386,85,Nisha Chaudhary,MOSPI Field Operations,2,Inferential Statistics & Hypothesis Testing,Statistical Methods,intermediate,6.6,completed,100.0,IGOT-01-002,2026-04-15,2026-08-11
+387,85,Nisha Chaudhary,MOSPI Field Operations,37,Data Visualization Basics,Data Visualization,beginner,5.8,enrolled,13.8,IGOT-13-037,2026-04-14,
+388,86,Usha Gupta,Ministry of Statistics & PI,46,Cybersecurity Awareness,Cybersecurity,beginner,4.2,enrolled,28.0,IGOT-16-046,2026-04-01,
+389,86,Usha Gupta,Ministry of Statistics & PI,56,Strategic Leadership,Leadership,intermediate,3.6,completed,100.0,IGOT-19-056,2026-05-02,2026-08-08
+390,86,Usha Gupta,Ministry of Statistics & PI,35,QGIS for Government Data,GIS & Mapping,intermediate,5.7,in_progress,71.1,IGOT-12-035,2026-03-31,
+391,86,Usha Gupta,Ministry of Statistics & PI,22,Introduction to SDG Framework,SDG Indicators,beginner,2.2,in_progress,51.8,IGOT-08-022,2026-03-08,
+392,86,Usha Gupta,Ministry of Statistics & PI,18,Advanced Price Statistics,Price Statistics,advanced,3.5,in_progress,33.2,IGOT-06-018,2026-08-26,
+393,86,Usha Gupta,Ministry of Statistics & PI,62,Presentation & Report Writing,Communication Skills,intermediate,5.9,enrolled,79.9,IGOT-21-062,2026-08-25,
+394,86,Usha Gupta,Ministry of Statistics & PI,52,Digital Signatures Basics,Digital Signatures,beginner,5.2,completed,100.0,IGOT-18-052,2026-08-03,2026-08-16
+395,87,Deepak Singh,CSO,58,PM Fundamentals,Project Management,beginner,5.7,in_progress,70.3,IGOT-20-058,2026-06-25,
+396,87,Deepak Singh,CSO,45,Advanced Cloud Architecture,Cloud Computing,advanced,3.8,in_progress,8.1,IGOT-15-045,2026-03-23,
+397,88,Amit Agarwal,DGET,8,Stratified & Cluster Sampling,Sampling Techniques,intermediate,6.7,completed,100.0,IGOT-03-008,2026-03-18,2026-08-29
+398,88,Amit Agarwal,DGET,28,Introduction to R,R Programming,beginner,5.5,enrolled,12.8,IGOT-10-028,2026-03-27,
+399,89,Dinesh Mehta,DGET,49,Data Privacy Fundamentals,Data Privacy & PDPB,beginner,6.5,in_progress,27.8,IGOT-17-049,2026-05-01,
+400,89,Dinesh Mehta,DGET,24,Monitoring SDG Progress,SDG Indicators,advanced,7.0,enrolled,62.5,IGOT-08-024,2026-06-19,
+401,89,Dinesh Mehta,DGET,15,Advanced National Accounts,National Accounts,advanced,5.8,completed,100.0,IGOT-05-015,2026-03-04,2026-08-04
+402,90,Asha Verma,MOSPI Field Operations,42,Deep Learning Basics,Machine Learning Basics,advanced,2.9,enrolled,39.5,IGOT-14-042,2026-06-04,
+403,90,Asha Verma,MOSPI Field Operations,33,Advanced SQL & Performance,SQL & Databases,advanced,7.2,enrolled,28.2,IGOT-11-033,2026-06-22,
+404,90,Asha Verma,MOSPI Field Operations,21,Advanced Labour Economics,Labour Statistics,advanced,5.3,in_progress,44.7,IGOT-07-021,2026-04-25,
+405,90,Asha Verma,MOSPI Field Operations,50,PDPB Compliance for Officers,Data Privacy & PDPB,intermediate,6.7,in_progress,59.9,IGOT-17-050,2026-07-14,
+406,90,Asha Verma,MOSPI Field Operations,5,Sampling & Questionnaire Design,Survey Design,intermediate,2.5,completed,100.0,IGOT-02-005,2026-08-01,2026-08-28
+407,90,Asha Verma,MOSPI Field Operations,18,Advanced Price Statistics,Price Statistics,advanced,3.5,completed,100.0,IGOT-06-018,2026-05-10,2026-08-26
+408,90,Asha Verma,MOSPI Field Operations,63,Advanced Communication,Communication Skills,advanced,6.1,completed,100.0,IGOT-21-063,2026-03-17,2026-08-29
+409,91,Asha Pillai,CRS,34,Introduction to GIS,GIS & Mapping,beginner,6.3,completed,100.0,IGOT-12-034,2026-08-24,2026-08-04
+410,91,Asha Pillai,CRS,14,GDP Compilation Methodology,National Accounts,intermediate,5.1,completed,100.0,IGOT-05-014,2026-07-21,2026-08-12
+411,91,Asha Pillai,CRS,5,Sampling & Questionnaire Design,Survey Design,intermediate,2.5,enrolled,89.0,IGOT-02-005,2026-03-11,
+412,91,Asha Pillai,CRS,10,Introduction to Data Analysis,Data Analysis,beginner,3.8,completed,100.0,IGOT-04-010,2026-06-21,2026-08-28
+413,91,Asha Pillai,CRS,33,Advanced SQL & Performance,SQL & Databases,advanced,7.2,completed,100.0,IGOT-11-033,2026-05-20,2026-08-14
+414,92,Harish Yadav,Ministry of Agriculture,66,Advanced Change Strategy,Change Management,advanced,6.0,completed,100.0,IGOT-22-066,2026-05-09,2026-08-20
+415,92,Harish Yadav,Ministry of Agriculture,63,Advanced Communication,Communication Skills,advanced,6.1,enrolled,53.6,IGOT-21-063,2026-08-28,
+416,93,Priya Mehta,NSSTA,62,Presentation & Report Writing,Communication Skills,intermediate,5.9,completed,100.0,IGOT-21-062,2026-08-14,2026-08-12
+417,93,Priya Mehta,NSSTA,16,CPI & WPI Fundamentals,Price Statistics,beginner,3.9,enrolled,37.9,IGOT-06-016,2026-06-02,
+418,93,Priya Mehta,NSSTA,46,Cybersecurity Awareness,Cybersecurity,beginner,4.2,enrolled,80.7,IGOT-16-046,2026-02-15,
+419,93,Priya Mehta,NSSTA,43,Cloud Computing Concepts,Cloud Computing,beginner,4.8,completed,100.0,IGOT-15-043,2026-03-16,2026-08-26
+420,93,Priya Mehta,NSSTA,39,Advanced Visual Analytics,Data Visualization,advanced,2.3,in_progress,54.9,IGOT-13-039,2026-05-22,
+421,94,Savita Joshi,MOSPI Field Operations,25,Python for Beginners,Python Programming,beginner,7.0,completed,100.0,IGOT-09-025,2026-04-26,2026-08-30
+422,94,Savita Joshi,MOSPI Field Operations,39,Advanced Visual Analytics,Data Visualization,advanced,2.3,completed,100.0,IGOT-13-039,2026-02-21,2026-08-26
+423,94,Savita Joshi,MOSPI Field Operations,50,PDPB Compliance for Officers,Data Privacy & PDPB,intermediate,6.7,in_progress,8.2,IGOT-17-050,2026-08-22,
+424,94,Savita Joshi,MOSPI Field Operations,58,PM Fundamentals,Project Management,beginner,5.7,completed,100.0,IGOT-20-058,2026-06-28,2026-08-17
+425,94,Savita Joshi,MOSPI Field Operations,7,Probability Sampling Basics,Sampling Techniques,beginner,3.7,completed,100.0,IGOT-03-007,2026-08-12,2026-08-07
+426,94,Savita Joshi,MOSPI Field Operations,41,Applied Machine Learning,Machine Learning Basics,intermediate,3.1,completed,100.0,IGOT-14-041,2026-03-17,2026-08-23
+427,94,Savita Joshi,MOSPI Field Operations,45,Advanced Cloud Architecture,Cloud Computing,advanced,3.8,completed,100.0,IGOT-15-045,2026-04-14,2026-08-06
+428,95,Rekha Srivastava,NITI Aayog,3,Advanced Regression Analysis,Statistical Methods,advanced,7.2,completed,100.0,IGOT-01-003,2026-07-29,2026-08-26
+429,95,Rekha Srivastava,NITI Aayog,5,Sampling & Questionnaire Design,Survey Design,intermediate,2.5,completed,100.0,IGOT-02-005,2026-05-03,2026-08-11
+430,95,Rekha Srivastava,NITI Aayog,44,Government Cloud Platforms,Cloud Computing,intermediate,7.9,completed,100.0,IGOT-15-044,2026-07-21,2026-08-09
+431,95,Rekha Srivastava,NITI Aayog,8,Stratified & Cluster Sampling,Sampling Techniques,intermediate,6.7,completed,100.0,IGOT-03-008,2026-06-30,2026-08-03
+432,95,Rekha Srivastava,NITI Aayog,6,Advanced Survey Methodology,Survey Design,advanced,4.5,enrolled,8.3,IGOT-02-006,2026-07-23,
+433,96,Harish Kumar,MOSPI Field Operations,3,Advanced Regression Analysis,Statistical Methods,advanced,7.2,enrolled,20.5,IGOT-01-003,2026-08-16,
+434,96,Harish Kumar,MOSPI Field Operations,61,Effective Communication,Communication Skills,beginner,4.3,completed,100.0,IGOT-21-061,2026-08-04,2026-08-18
+435,96,Harish Kumar,MOSPI Field Operations,6,Advanced Survey Methodology,Survey Design,advanced,4.5,completed,100.0,IGOT-02-006,2026-07-16,2026-08-06
+436,96,Harish Kumar,MOSPI Field Operations,32,Intermediate SQL & Database Design,SQL & Databases,intermediate,7.8,completed,100.0,IGOT-11-032,2026-08-12,2026-08-06
+437,96,Harish Kumar,MOSPI Field Operations,17,Price Index Methods,Price Statistics,intermediate,6.0,enrolled,15.3,IGOT-06-017,2026-03-29,
+438,97,Lata Mehta,NITI Aayog,29,Statistical Analysis with R,R Programming,intermediate,4.0,completed,100.0,IGOT-10-029,2026-06-06,2026-08-29
+439,97,Lata Mehta,NITI Aayog,9,Advanced Sampling Theory,Sampling Techniques,advanced,2.9,completed,100.0,IGOT-03-009,2026-04-11,2026-08-28
+440,97,Lata Mehta,NITI Aayog,26,Python for Data Analysis,Python Programming,intermediate,3.1,completed,100.0,IGOT-09-026,2026-07-05,2026-08-08
+441,97,Lata Mehta,NITI Aayog,28,Introduction to R,R Programming,beginner,5.5,enrolled,58.4,IGOT-10-028,2026-06-04,
+442,97,Lata Mehta,NITI Aayog,22,Introduction to SDG Framework,SDG Indicators,beginner,2.2,enrolled,15.9,IGOT-08-022,2026-07-23,
+443,97,Lata Mehta,NITI Aayog,52,Digital Signatures Basics,Digital Signatures,beginner,5.2,completed,100.0,IGOT-18-052,2026-07-16,2026-08-10
+444,98,Pushpa Joshi,MOSPI Field Operations,22,Introduction to SDG Framework,SDG Indicators,beginner,2.2,in_progress,14.0,IGOT-08-022,2026-03-20,
+445,98,Pushpa Joshi,MOSPI Field Operations,57,Change Leadership,Leadership,advanced,4.3,completed,100.0,IGOT-19-057,2026-05-24,2026-08-08
+446,98,Pushpa Joshi,MOSPI Field Operations,32,Intermediate SQL & Database Design,SQL & Databases,intermediate,7.8,in_progress,6.4,IGOT-11-032,2026-04-26,
+447,98,Pushpa Joshi,MOSPI Field Operations,6,Advanced Survey Methodology,Survey Design,advanced,4.5,enrolled,5.6,IGOT-02-006,2026-07-14,
+448,99,Kavita Nair,NSSTA,37,Data Visualization Basics,Data Visualization,beginner,5.8,completed,100.0,IGOT-13-037,2026-03-04,2026-08-28
+449,99,Kavita Nair,NSSTA,54,Advanced Digital Infrastructure,Digital Signatures,advanced,2.7,in_progress,17.9,IGOT-18-054,2026-06-20,
+450,100,Sunita Reddy,National Statistical Office,58,PM Fundamentals,Project Management,beginner,5.7,enrolled,58.7,IGOT-20-058,2026-02-26,
+451,100,Sunita Reddy,National Statistical Office,53,PKI & e-Authentication,Digital Signatures,intermediate,3.0,completed,100.0,IGOT-18-053,2026-03-25,2026-08-30
+452,100,Sunita Reddy,National Statistical Office,31,SQL Basics,SQL & Databases,beginner,3.9,completed,100.0,IGOT-11-031,2026-05-31,2026-08-19
+453,100,Sunita Reddy,National Statistical Office,61,Effective Communication,Communication Skills,beginner,4.3,enrolled,55.2,IGOT-21-061,2026-07-10,
+454,100,Sunita Reddy,National Statistical Office,12,Advanced Data Analytics,Data Analysis,advanced,5.6,enrolled,93.8,IGOT-04-012,2026-08-04,
+455,100,Sunita Reddy,National Statistical Office,40,ML Fundamentals for Officers,Machine Learning Basics,beginner,3.5,completed,100.0,IGOT-14-040,2026-05-28,2026-08-05
+456,101,Pooja Tiwari,NITI Aayog,65,Leading Organizational Change,Change Management,intermediate,4.4,in_progress,29.9,IGOT-22-065,2026-07-10,
+457,101,Pooja Tiwari,NITI Aayog,29,Statistical Analysis with R,R Programming,intermediate,4.0,enrolled,76.7,IGOT-10-029,2026-03-06,
+458,101,Pooja Tiwari,NITI Aayog,60,Agile Project Management,Project Management,advanced,3.8,completed,100.0,IGOT-20-060,2026-04-23,2026-08-27
+459,101,Pooja Tiwari,NITI Aayog,50,PDPB Compliance for Officers,Data Privacy & PDPB,intermediate,6.7,in_progress,65.3,IGOT-17-050,2026-08-17,
+460,101,Pooja Tiwari,NITI Aayog,41,Applied Machine Learning,Machine Learning Basics,intermediate,3.1,enrolled,63.0,IGOT-14-041,2026-06-17,
+461,101,Pooja Tiwari,NITI Aayog,43,Cloud Computing Concepts,Cloud Computing,beginner,4.8,in_progress,44.1,IGOT-15-043,2026-06-04,
+462,102,Officer_102,NSSTA,199,National Accounts Statistics,National Accounts Statistics,intermediate,5.0,in_progress,21.2,NSSTA-029,2025-02-01,
+463,102,Officer_102,NSSTA,187,GIS and Remote Sensing,GIS & Geospatial Analysis,intermediate,5.0,completed,100.0,NSSTA-081,2025-07-25,2025-08-13
+464,102,Officer_102,NSSTA,102,Mid Career Training Programme (MCTP),Leadership & Management,advanced,10.0,enrolled,16.7,NSSTA-009,2025-02-08,
+465,103,Officer_103,DPIIT,105,Mid Career Training Programme (MCTP),Leadership & Management,advanced,10.0,enrolled,17.4,NSSTA-060,2025-03-04,
+466,103,Officer_103,DPIIT,192,Cybersecurity and Data Privacy,Data Privacy & Cybersecurity,beginner,3.0,completed,100.0,NSSTA-051,2025-10-21,2025-11-08
+467,103,Officer_103,DPIIT,154,GIS and Remote Sensing,GIS & Geospatial Analysis,intermediate,5.0,completed,100.0,NSSTA-023,2025-07-15,2025-08-13
+468,104,Officer_104,NSSO,178,Agricultural Statistics,Agricultural Statistics,intermediate,5.0,completed,100.0,NSSTA-080,2025-03-18,2025-03-27
+469,104,Officer_104,NSSO,163,Price Statistics and Index Numbers,Price & Index Statistics,intermediate,4.0,completed,100.0,NSSTA-053,2025-11-28,2025-12-14
+470,104,Officer_104,NSSO,149,Labour and Employment Statistics (PLFS),Labour & Employment Statistics,intermediate,4.0,in_progress,48.3,NSSTA-018,2025-05-24,
+471,104,Officer_104,NSSO,167,Econometrics and Time Series Analysis,Statistical Methods,advanced,5.0,completed,100.0,NSSTA-032,2025-11-26,2026-01-01
+472,105,Officer_105,DES UP,172,Data Analysis using R,Python & R for Statistics,intermediate,5.0,enrolled,48.4,NSSTA-065,2025-06-26,
+473,105,Officer_105,DES UP,103,Econometrics and Time Series Analysis,Statistical Methods,advanced,5.0,completed,100.0,NSSTA-041,2025-05-19,2025-06-01
+474,106,Officer_106,DES Tamil Nadu,145,Survey Methodology and Data Analysis,Survey Design & Sampling,intermediate,5.0,completed,100.0,NSSTA-099,2025-08-30,2025-09-23
+475,106,Officer_106,DES Tamil Nadu,131,Econometrics and Time Series Analysis,Statistical Methods,advanced,5.0,in_progress,28.6,NSSTA-085,2025-02-21,
+476,106,Officer_106,DES Tamil Nadu,194,Advanced Sampling Techniques,Survey Design & Sampling,advanced,5.0,completed,100.0,NSSTA-008,2025-10-01,2025-11-04
+477,107,Officer_107,MoSPI,130,SDG Indicators and Data Quality,SDG & Metadata Standards,intermediate,3.0,completed,100.0,NSSTA-076,2025-03-30,2025-04-09
+478,107,Officer_107,MoSPI,175,Advanced Sampling Techniques,Survey Design & Sampling,advanced,5.0,completed,100.0,NSSTA-004,2025-12-24,2026-01-12
+479,107,Officer_107,MoSPI,124,Econometrics and Time Series Analysis,Statistical Methods,advanced,5.0,in_progress,38.1,NSSTA-064,2025-10-16,
+480,108,Officer_108,NSO,102,Price Statistics and Index Numbers,Price & Index Statistics,intermediate,4.0,completed,100.0,NSSTA-068,2025-11-05,2025-11-19
+481,108,Officer_108,NSO,178,GIS and Remote Sensing,GIS & Geospatial Analysis,intermediate,5.0,completed,100.0,NSSTA-026,2025-06-19,2025-07-26
+482,108,Officer_108,NSO,107,Survey Methodology and Data Analysis,Survey Design & Sampling,intermediate,5.0,in_progress,37.3,NSSTA-003,2025-06-15,
+483,108,Officer_108,NSO,118,National Accounts Statistics,National Accounts Statistics,intermediate,5.0,completed,100.0,NSSTA-015,2025-12-27,2026-02-02
+484,109,Officer_109,State Statistical Bureau,138,National Accounts Statistics,National Accounts Statistics,intermediate,5.0,completed,100.0,NSSTA-042,2025-02-21,2025-03-11
+485,109,Officer_109,State Statistical Bureau,155,Machine Learning using Python (IIT Madras),Python & R for Statistics,advanced,60.0,completed,100.0,NSSTA-082,2025-03-22,2025-07-14
+486,109,Officer_109,State Statistical Bureau,171,Industrial Statistics (IIP & ASI),Industrial & Economic Statistics,intermediate,4.0,in_progress,61.9,NSSTA-089,2025-12-29,
+487,109,Officer_109,State Statistical Bureau,185,Cybersecurity and Data Privacy,Data Privacy & Cybersecurity,beginner,3.0,enrolled,59.1,NSSTA-076,2025-04-25,
+488,110,Officer_110,Ministry of Agriculture,193,Data Analysis using R,Python & R for Statistics,intermediate,5.0,completed,100.0,NSSTA-001,2025-03-07,2025-03-20
+489,110,Officer_110,Ministry of Agriculture,104,Labour and Employment Statistics (PLFS),Labour & Employment Statistics,intermediate,4.0,enrolled,85.9,NSSTA-024,2025-10-18,
+490,110,Officer_110,Ministry of Agriculture,181,Industrial Statistics (IIP & ASI),Industrial & Economic Statistics,intermediate,4.0,completed,100.0,NSSTA-073,2025-11-10,2025-11-24
+491,111,Officer_111,DES Maharashtra,144,Mid Career Training Programme (MCTP),Leadership & Management,advanced,10.0,completed,100.0,NSSTA-041,2025-02-09,2025-03-04
+492,111,Officer_111,DES Maharashtra,190,GIS and Remote Sensing,GIS & Geospatial Analysis,intermediate,5.0,completed,100.0,NSSTA-086,2025-02-15,2025-03-21
+493,112,Officer_112,DES West Bengal,132,GIS and Remote Sensing,GIS & Geospatial Analysis,intermediate,5.0,completed,100.0,NSSTA-014,2025-02-04,2025-02-23
+494,112,Officer_112,DES West Bengal,156,Survey Methodology and Data Analysis,Survey Design & Sampling,intermediate,5.0,completed,100.0,NSSTA-094,2025-01-25,2025-02-14
+495,112,Officer_112,DES West Bengal,152,Labour and Employment Statistics (PLFS),Labour & Employment Statistics,intermediate,4.0,completed,100.0,NSSTA-064,2025-03-27,2025-05-01
+496,112,Officer_112,DES West Bengal,161,Agricultural Statistics,Agricultural Statistics,intermediate,5.0,enrolled,38.1,NSSTA-074,2025-02-21,
+497,113,Officer_113,CSO,133,Price Statistics and Index Numbers,Price & Index Statistics,intermediate,4.0,in_progress,12.7,NSSTA-014,2025-06-13,
+498,113,Officer_113,CSO,148,GIS and Remote Sensing,GIS & Geospatial Analysis,intermediate,5.0,completed,100.0,NSSTA-021,2025-03-29,2025-05-04
+499,113,Officer_113,CSO,176,National Accounts Statistics,National Accounts Statistics,intermediate,5.0,in_progress,53.8,NSSTA-079,2025-06-23,
+500,114,Officer_114,Planning Department,106,Industrial Statistics (IIP & ASI),Industrial & Economic Statistics,intermediate,4.0,completed,100.0,NSSTA-013,2025-08-11,2025-08-23
+501,114,Officer_114,Planning Department,189,Survey Methodology and Data Analysis,Survey Design & Sampling,intermediate,5.0,completed,100.0,NSSTA-071,2025-04-08,2025-04-29
+502,114,Officer_114,Planning Department,184,Data Analysis using R,Python & R for Statistics,intermediate,5.0,completed,100.0,NSSTA-037,2025-10-04,2025-10-20
+503,114,Officer_114,Planning Department,150,Cybersecurity and Data Privacy,Data Privacy & Cybersecurity,beginner,3.0,completed,100.0,NSSTA-074,2025-02-19,2025-02-25
+504,114,Officer_114,Planning Department,106,Price Statistics and Index Numbers,Price & Index Statistics,intermediate,4.0,completed,100.0,NSSTA-047,2025-09-09,2025-09-20
+505,115,Officer_115,DPIIT,176,Data Analysis using R,Python & R for Statistics,intermediate,5.0,completed,100.0,NSSTA-062,2025-12-05,2026-01-02
+506,115,Officer_115,DPIIT,121,National Accounts Statistics,National Accounts Statistics,intermediate,5.0,completed,100.0,NSSTA-082,2025-01-14,2025-01-28
+507,116,Officer_116,DPIIT,182,National Accounts Statistics,National Accounts Statistics,intermediate,5.0,enrolled,47.7,NSSTA-070,2025-02-16,
+508,116,Officer_116,DPIIT,148,GIS and Remote Sensing,GIS & Geospatial Analysis,intermediate,5.0,completed,100.0,NSSTA-048,2025-07-09,2025-08-14
+509,116,Officer_116,DPIIT,156,Mid Career Training Programme (MCTP),Leadership & Management,advanced,10.0,completed,100.0,NSSTA-060,2025-01-23,2025-02-16
+510,116,Officer_116,DPIIT,107,Labour and Employment Statistics (PLFS),Labour & Employment Statistics,intermediate,4.0,completed,100.0,NSSTA-020,2025-05-18,2025-06-12
+511,117,Officer_117,MoSPI,196,National Accounts Statistics,National Accounts Statistics,intermediate,5.0,completed,100.0,NSSTA-076,2025-10-05,2025-10-26
+512,117,Officer_117,MoSPI,149,Cybersecurity and Data Privacy,Data Privacy & Cybersecurity,beginner,3.0,completed,100.0,NSSTA-067,2025-02-01,2025-03-04
+513,118,Officer_118,DES Maharashtra,191,Data Visualization and Dashboard Development,GIS & Geospatial Analysis,beginner,4.0,completed,100.0,NSSTA-005,2025-02-10,2025-03-01
+514,118,Officer_118,DES Maharashtra,173,Cybersecurity and Data Privacy,Data Privacy & Cybersecurity,beginner,3.0,completed,100.0,NSSTA-087,2025-09-22,2025-10-22
+515,118,Officer_118,DES Maharashtra,121,GIS and Remote Sensing,GIS & Geospatial Analysis,intermediate,5.0,enrolled,21.8,NSSTA-028,2025-03-30,
+516,118,Officer_118,DES Maharashtra,187,SDG Indicators and Data Quality,SDG & Metadata Standards,intermediate,3.0,enrolled,20.1,NSSTA-056,2025-02-10,
+517,118,Officer_118,DES Maharashtra,176,Agricultural Statistics,Agricultural Statistics,intermediate,5.0,completed,100.0,NSSTA-034,2025-11-18,2025-11-30
+518,119,Officer_119,State Statistical Bureau,170,Mid Career Training Programme (MCTP),Leadership & Management,advanced,10.0,completed,100.0,NSSTA-042,2025-10-12,2025-11-09
+519,119,Officer_119,State Statistical Bureau,179,Industrial Statistics (IIP & ASI),Industrial & Economic Statistics,intermediate,4.0,in_progress,51.6,NSSTA-076,2025-12-25,
+520,119,Officer_119,State Statistical Bureau,153,Econometrics and Time Series Analysis,Statistical Methods,advanced,5.0,completed,100.0,NSSTA-020,2025-08-03,2025-08-14
+521,119,Officer_119,State Statistical Bureau,197,National Accounts Statistics,National Accounts Statistics,intermediate,5.0,completed,100.0,NSSTA-013,2025-10-29,2025-11-24
+522,120,Officer_120,DES Maharashtra,168,SDG Indicators and Data Quality,SDG & Metadata Standards,intermediate,3.0,completed,100.0,NSSTA-045,2025-05-27,2025-06-28
+523,120,Officer_120,DES Maharashtra,177,Econometrics and Time Series Analysis,Statistical Methods,advanced,5.0,enrolled,31.1,NSSTA-061,2025-10-20,
+524,121,Officer_121,DES West Bengal,187,Price Statistics and Index Numbers,Price & Index Statistics,intermediate,4.0,completed,100.0,NSSTA-089,2025-11-13,2025-12-09
+525,121,Officer_121,DES West Bengal,142,Labour and Employment Statistics (PLFS),Labour & Employment Statistics,intermediate,4.0,completed,100.0,NSSTA-089,2025-07-22,2025-08-26
+526,122,Officer_122,Finance Department,138,Survey Methodology and Data Analysis,Survey Design & Sampling,intermediate,5.0,in_progress,81.8,NSSTA-040,2025-06-22,
+527,122,Officer_122,Finance Department,189,Industrial Statistics (IIP & ASI),Industrial & Economic Statistics,intermediate,4.0,completed,100.0,NSSTA-088,2025-09-09,2025-10-13
+528,122,Officer_122,Finance Department,138,GIS and Remote Sensing,GIS & Geospatial Analysis,intermediate,5.0,completed,100.0,NSSTA-096,2025-04-27,2025-05-09
+529,123,Officer_123,NSO,156,Econometrics and Time Series Analysis,Statistical Methods,advanced,5.0,completed,100.0,NSSTA-028,2025-02-15,2025-03-01
+530,123,Officer_123,NSO,147,Advanced Sampling Techniques,Survey Design & Sampling,advanced,5.0,enrolled,42.6,NSSTA-008,2025-09-22,
+531,123,Officer_123,NSO,139,Machine Learning using Python (IIT Madras),Python & R for Statistics,advanced,60.0,completed,100.0,NSSTA-091,2025-03-23,2025-06-24
+532,123,Officer_123,NSO,167,Labour and Employment Statistics (PLFS),Labour & Employment Statistics,intermediate,4.0,completed,100.0,NSSTA-073,2025-03-11,2025-04-11
+533,123,Officer_123,NSO,125,Data Analysis using R,Python & R for Statistics,intermediate,5.0,completed,100.0,NSSTA-008,2025-04-09,2025-05-15
+534,124,Officer_124,DES Maharashtra,159,Survey Methodology and Data Analysis,Survey Design & Sampling,intermediate,5.0,enrolled,66.4,NSSTA-065,2025-07-08,
+535,124,Officer_124,DES Maharashtra,103,GIS and Remote Sensing,GIS & Geospatial Analysis,intermediate,5.0,completed,100.0,NSSTA-031,2025-03-05,2025-04-03
+536,124,Officer_124,DES Maharashtra,122,Mid Career Training Programme (MCTP),Leadership & Management,advanced,10.0,completed,100.0,NSSTA-061,2025-11-01,2025-12-01
+537,125,Officer_125,MoSPI,106,Machine Learning using Python (IIT Madras),Python & R for Statistics,advanced,60.0,in_progress,17.2,NSSTA-021,2025-07-17,
+538,125,Officer_125,MoSPI,182,Price Statistics and Index Numbers,Price & Index Statistics,intermediate,4.0,in_progress,72.4,NSSTA-029,2025-04-24,
+539,125,Officer_125,MoSPI,152,Labour and Employment Statistics (PLFS),Labour & Employment Statistics,intermediate,4.0,completed,100.0,NSSTA-066,2025-05-18,2025-06-14
+540,125,Officer_125,MoSPI,160,Industrial Statistics (IIP & ASI),Industrial & Economic Statistics,intermediate,4.0,completed,100.0,NSSTA-017,2025-12-16,2025-12-23
+541,126,Officer_126,Planning Department,139,SDG Indicators and Data Quality,SDG & Metadata Standards,intermediate,3.0,completed,100.0,NSSTA-092,2025-11-08,2025-12-08
+542,126,Officer_126,Planning Department,144,Econometrics and Time Series Analysis,Statistical Methods,advanced,5.0,enrolled,61.4,NSSTA-059,2025-07-12,
+543,126,Officer_126,Planning Department,186,Survey Methodology and Data Analysis,Survey Design & Sampling,intermediate,5.0,completed,100.0,NSSTA-067,2025-08-27,2025-09-13
+544,127,Officer_127,DES Maharashtra,187,SDG Indicators and Data Quality,SDG & Metadata Standards,intermediate,3.0,enrolled,77.2,NSSTA-014,2025-06-02,
+545,127,Officer_127,DES Maharashtra,181,National Accounts Statistics,National Accounts Statistics,intermediate,5.0,completed,100.0,NSSTA-042,2025-06-22,2025-07-08
+546,127,Officer_127,DES Maharashtra,119,Survey Methodology and Data Analysis,Survey Design & Sampling,intermediate,5.0,enrolled,30.9,NSSTA-067,2025-04-07,
+547,127,Officer_127,DES Maharashtra,176,Data Visualization and Dashboard Development,GIS & Geospatial Analysis,beginner,4.0,completed,100.0,NSSTA-052,2025-01-30,2025-03-03
+548,127,Officer_127,DES Maharashtra,192,Cybersecurity and Data Privacy,Data Privacy & Cybersecurity,beginner,3.0,completed,100.0,NSSTA-004,2025-12-15,2025-12-24
+549,128,Officer_128,DES Tamil Nadu,192,Labour and Employment Statistics (PLFS),Labour & Employment Statistics,intermediate,4.0,in_progress,56.6,NSSTA-092,2025-06-25,
+550,128,Officer_128,DES Tamil Nadu,200,Mid Career Training Programme (MCTP),Leadership & Management,advanced,10.0,completed,100.0,NSSTA-061,2025-10-01,2025-11-06
+551,128,Officer_128,DES Tamil Nadu,184,Data Analysis using R,Python & R for Statistics,intermediate,5.0,enrolled,63.7,NSSTA-072,2025-03-29,
+552,128,Officer_128,DES Tamil Nadu,116,Econometrics and Time Series Analysis,Statistical Methods,advanced,5.0,completed,100.0,NSSTA-095,2025-02-19,2025-03-14
+553,128,Officer_128,DES Tamil Nadu,123,Industrial Statistics (IIP & ASI),Industrial & Economic Statistics,intermediate,4.0,completed,100.0,NSSTA-088,2025-10-14,2025-11-14
+554,129,Officer_129,CSO,200,Cybersecurity and Data Privacy,Data Privacy & Cybersecurity,beginner,3.0,completed,100.0,NSSTA-043,2025-06-07,2025-06-25
+555,129,Officer_129,CSO,159,National Accounts Statistics,National Accounts Statistics,intermediate,5.0,completed,100.0,NSSTA-016,2025-10-27,2025-11-13
+556,129,Officer_129,CSO,174,Agricultural Statistics,Agricultural Statistics,intermediate,5.0,completed,100.0,NSSTA-080,2025-11-21,2025-12-17
+557,129,Officer_129,CSO,115,Machine Learning using Python (IIT Madras),Python & R for Statistics,advanced,60.0,completed,100.0,NSSTA-088,2025-04-10,2025-07-26
+558,130,Officer_130,DES UP,152,Data Visualization and Dashboard Development,GIS & Geospatial Analysis,beginner,4.0,completed,100.0,NSSTA-073,2025-04-13,2025-04-30
+559,130,Officer_130,DES UP,191,Labour and Employment Statistics (PLFS),Labour & Employment Statistics,intermediate,4.0,in_progress,88.9,NSSTA-024,2025-06-11,
+560,130,Officer_130,DES UP,180,Data Analysis using R,Python & R for Statistics,intermediate,5.0,completed,100.0,NSSTA-023,2025-09-07,2025-09-25
+561,130,Officer_130,DES UP,157,Survey Methodology and Data Analysis,Survey Design & Sampling,intermediate,5.0,completed,100.0,NSSTA-036,2025-01-30,2025-02-07
+562,130,Officer_130,DES UP,197,Price Statistics and Index Numbers,Price & Index Statistics,intermediate,4.0,completed,100.0,NSSTA-021,2025-03-28,2025-04-22
+563,131,Officer_131,DES Maharashtra,151,Econometrics and Time Series Analysis,Statistical Methods,advanced,5.0,completed,100.0,NSSTA-055,2025-11-21,2025-12-12
+564,131,Officer_131,DES Maharashtra,125,Mid Career Training Programme (MCTP),Leadership & Management,advanced,10.0,in_progress,40.7,NSSTA-094,2025-10-01,
+565,131,Officer_131,DES Maharashtra,141,Advanced Sampling Techniques,Survey Design & Sampling,advanced,5.0,completed,100.0,NSSTA-097,2025-01-08,2025-02-13
+566,131,Officer_131,DES Maharashtra,193,National Accounts Statistics,National Accounts Statistics,intermediate,5.0,in_progress,25.2,NSSTA-032,2025-11-17,
+567,131,Officer_131,DES Maharashtra,116,Price Statistics and Index Numbers,Price & Index Statistics,intermediate,4.0,completed,100.0,NSSTA-014,2025-06-26,2025-07-12
+568,132,Officer_132,Finance Department,158,Data Visualization and Dashboard Development,GIS & Geospatial Analysis,beginner,4.0,completed,100.0,NSSTA-094,2025-06-02,2025-06-18
+569,132,Officer_132,Finance Department,155,SDG Indicators and Data Quality,SDG & Metadata Standards,intermediate,3.0,completed,100.0,NSSTA-088,2025-09-26,2025-10-11
+570,132,Officer_132,Finance Department,196,Labour and Employment Statistics (PLFS),Labour & Employment Statistics,intermediate,4.0,enrolled,37.4,NSSTA-025,2025-07-03,
+571,132,Officer_132,Finance Department,129,Price Statistics and Index Numbers,Price & Index Statistics,intermediate,4.0,completed,100.0,NSSTA-029,2025-07-26,2025-08-02
+572,132,Officer_132,Finance Department,193,National Accounts Statistics,National Accounts Statistics,intermediate,5.0,completed,100.0,NSSTA-003,2025-03-09,2025-03-23
+573,133,Officer_133,NSSO,181,National Accounts Statistics,National Accounts Statistics,intermediate,5.0,completed,100.0,NSSTA-033,2025-01-20,2025-02-09
+574,133,Officer_133,NSSO,113,Machine Learning using Python (IIT Madras),Python & R for Statistics,advanced,60.0,in_progress,59.9,NSSTA-084,2025-12-05,
+575,133,Officer_133,NSSO,156,Industrial Statistics (IIP & ASI),Industrial & Economic Statistics,intermediate,4.0,in_progress,13.9,NSSTA-049,2025-08-02,
+576,134,Officer_134,MoSPI,188,Data Visualization and Dashboard Development,GIS & Geospatial Analysis,beginner,4.0,completed,100.0,NSSTA-088,2025-03-20,2025-04-02
+577,134,Officer_134,MoSPI,184,Labour and Employment Statistics (PLFS),Labour & Employment Statistics,intermediate,4.0,completed,100.0,NSSTA-013,2025-06-04,2025-06-24
+578,135,Officer_135,Ministry of Labour,192,SDG Indicators and Data Quality,SDG & Metadata Standards,intermediate,3.0,completed,100.0,NSSTA-080,2025-02-23,2025-03-16
+579,135,Officer_135,Ministry of Labour,113,Mid Career Training Programme (MCTP),Leadership & Management,advanced,10.0,completed,100.0,NSSTA-064,2025-02-28,2025-04-10
+580,135,Officer_135,Ministry of Labour,133,Industrial Statistics (IIP & ASI),Industrial & Economic Statistics,intermediate,4.0,completed,100.0,NSSTA-067,2025-04-13,2025-05-14
+581,135,Officer_135,Ministry of Labour,120,Price Statistics and Index Numbers,Price & Index Statistics,intermediate,4.0,enrolled,38.6,NSSTA-006,2025-06-01,
+582,136,Officer_136,NSSO,111,Mid Career Training Programme (MCTP),Leadership & Management,advanced,10.0,completed,100.0,NSSTA-015,2025-01-07,2025-02-13
+583,136,Officer_136,NSSO,199,Agricultural Statistics,Agricultural Statistics,intermediate,5.0,in_progress,63.5,NSSTA-066,2025-02-16,
+584,136,Officer_136,NSSO,132,Industrial Statistics (IIP & ASI),Industrial & Economic Statistics,intermediate,4.0,completed,100.0,NSSTA-083,2025-02-21,2025-03-28
+585,136,Officer_136,NSSO,159,GIS and Remote Sensing,GIS & Geospatial Analysis,intermediate,5.0,completed,100.0,NSSTA-007,2025-06-01,2025-06-17
+586,136,Officer_136,NSSO,105,Machine Learning using Python (IIT Madras),Python & R for Statistics,advanced,60.0,completed,100.0,NSSTA-038,2025-03-31,2025-07-27
+587,137,Officer_137,Finance Department,117,Econometrics and Time Series Analysis,Statistical Methods,advanced,5.0,in_progress,17.6,NSSTA-085,2025-01-05,
+588,137,Officer_137,Finance Department,156,Cybersecurity and Data Privacy,Data Privacy & Cybersecurity,beginner,3.0,completed,100.0,NSSTA-080,2025-06-18,2025-07-04
+589,137,Officer_137,Finance Department,143,Machine Learning using Python (IIT Madras),Python & R for Statistics,advanced,60.0,completed,100.0,NSSTA-024,2025-02-17,2025-05-30
+590,137,Officer_137,Finance Department,134,Data Analysis using R,Python & R for Statistics,intermediate,5.0,completed,100.0,NSSTA-050,2025-07-24,2025-08-15
+591,138,Officer_138,Planning Department,120,Econometrics and Time Series Analysis,Statistical Methods,advanced,5.0,completed,100.0,NSSTA-014,2025-01-31,2025-03-07
+592,138,Officer_138,Planning Department,172,Data Analysis using R,Python & R for Statistics,intermediate,5.0,completed,100.0,NSSTA-087,2025-10-30,2025-11-22
+593,138,Officer_138,Planning Department,199,Cybersecurity and Data Privacy,Data Privacy & Cybersecurity,beginner,3.0,completed,100.0,NSSTA-046,2025-11-09,2025-11-26
+594,138,Officer_138,Planning Department,193,Price Statistics and Index Numbers,Price & Index Statistics,intermediate,4.0,completed,100.0,NSSTA-017,2025-12-17,2026-01-21
+595,138,Officer_138,Planning Department,152,National Accounts Statistics,National Accounts Statistics,intermediate,5.0,completed,100.0,NSSTA-057,2025-09-07,2025-09-18
+596,139,Officer_139,MoSPI,186,National Accounts Statistics,National Accounts Statistics,intermediate,5.0,completed,100.0,NSSTA-068,2025-01-07,2025-02-06
+597,139,Officer_139,MoSPI,143,Labour and Employment Statistics (PLFS),Labour & Employment Statistics,intermediate,4.0,in_progress,56.1,NSSTA-067,2025-12-09,
+598,140,Officer_140,DES UP,171,Data Analysis using R,Python & R for Statistics,intermediate,5.0,enrolled,48.6,NSSTA-079,2025-03-18,
+599,140,Officer_140,DES UP,120,Cybersecurity and Data Privacy,Data Privacy & Cybersecurity,beginner,3.0,completed,100.0,NSSTA-065,2025-11-26,2025-12-30
+600,141,Officer_141,Ministry of Labour,106,Advanced Sampling Techniques,Survey Design & Sampling,advanced,5.0,completed,100.0,NSSTA-065,2025-06-19,2025-07-05
+601,141,Officer_141,Ministry of Labour,151,GIS and Remote Sensing,GIS & Geospatial Analysis,intermediate,5.0,completed,100.0,NSSTA-031,2025-11-26,2025-12-16
+602,141,Officer_141,Ministry of Labour,173,Price Statistics and Index Numbers,Price & Index Statistics,intermediate,4.0,completed,100.0,NSSTA-058,2025-08-16,2025-09-17
+603,141,Officer_141,Ministry of Labour,140,National Accounts Statistics,National Accounts Statistics,intermediate,5.0,completed,100.0,NSSTA-016,2025-09-13,2025-10-05
+604,141,Officer_141,Ministry of Labour,151,Mid Career Training Programme (MCTP),Leadership & Management,advanced,10.0,in_progress,69.6,NSSTA-053,2025-02-22,
+605,142,Officer_142,DPIIT,177,Data Visualization and Dashboard Development,GIS & Geospatial Analysis,beginner,4.0,completed,100.0,NSSTA-080,2025-02-16,2025-03-20
+606,142,Officer_142,DPIIT,185,Mid Career Training Programme (MCTP),Leadership & Management,advanced,10.0,in_progress,81.2,NSSTA-059,2025-12-02,
+607,143,Officer_143,DES Tamil Nadu,146,Machine Learning using Python (IIT Madras),Python & R for Statistics,advanced,60.0,enrolled,36.6,NSSTA-092,2025-12-03,
+608,143,Officer_143,DES Tamil Nadu,184,Advanced Sampling Techniques,Survey Design & Sampling,advanced,5.0,completed,100.0,NSSTA-029,2025-02-19,2025-03-23
+609,143,Officer_143,DES Tamil Nadu,181,Survey Methodology and Data Analysis,Survey Design & Sampling,intermediate,5.0,completed,100.0,NSSTA-038,2025-07-01,2025-08-04
+610,143,Officer_143,DES Tamil Nadu,113,Agricultural Statistics,Agricultural Statistics,intermediate,5.0,completed,100.0,NSSTA-006,2025-07-11,2025-08-10
+611,144,Officer_144,CSO,125,GIS and Remote Sensing,GIS & Geospatial Analysis,intermediate,5.0,enrolled,42.7,NSSTA-025,2025-11-09,
+612,144,Officer_144,CSO,158,Price Statistics and Index Numbers,Price & Index Statistics,intermediate,4.0,completed,100.0,NSSTA-025,2025-07-21,2025-08-03
+613,144,Officer_144,CSO,181,Industrial Statistics (IIP & ASI),Industrial & Economic Statistics,intermediate,4.0,enrolled,18.6,NSSTA-087,2025-01-24,
+614,145,Officer_145,CSO,117,Econometrics and Time Series Analysis,Statistical Methods,advanced,5.0,completed,100.0,NSSTA-064,2025-10-29,2025-11-22
+615,145,Officer_145,CSO,155,GIS and Remote Sensing,GIS & Geospatial Analysis,intermediate,5.0,completed,100.0,NSSTA-075,2025-01-25,2025-02-19
+616,146,Officer_146,Finance Department,149,Mid Career Training Programme (MCTP),Leadership & Management,advanced,10.0,completed,100.0,NSSTA-085,2025-03-07,2025-03-26
+617,146,Officer_146,Finance Department,149,Data Visualization and Dashboard Development,GIS & Geospatial Analysis,beginner,4.0,completed,100.0,NSSTA-054,2025-06-14,2025-07-07
+618,146,Officer_146,Finance Department,150,Econometrics and Time Series Analysis,Statistical Methods,advanced,5.0,in_progress,83.3,NSSTA-044,2025-05-21,
+619,146,Officer_146,Finance Department,152,Price Statistics and Index Numbers,Price & Index Statistics,intermediate,4.0,in_progress,46.2,NSSTA-078,2025-03-12,
+620,146,Officer_146,Finance Department,189,SDG Indicators and Data Quality,SDG & Metadata Standards,intermediate,3.0,completed,100.0,NSSTA-071,2025-09-20,2025-10-04
+621,147,Officer_147,NSSTA,191,Industrial Statistics (IIP & ASI),Industrial & Economic Statistics,intermediate,4.0,completed,100.0,NSSTA-038,2025-04-18,2025-05-14
+622,147,Officer_147,NSSTA,183,Mid Career Training Programme (MCTP),Leadership & Management,advanced,10.0,in_progress,83.7,NSSTA-023,2025-12-30,
+623,147,Officer_147,NSSTA,141,Data Visualization and Dashboard Development,GIS & Geospatial Analysis,beginner,4.0,completed,100.0,NSSTA-091,2025-12-22,2026-01-18
+624,147,Officer_147,NSSTA,161,Cybersecurity and Data Privacy,Data Privacy & Cybersecurity,beginner,3.0,completed,100.0,NSSTA-075,2025-06-30,2025-07-22
+625,148,Officer_148,Ministry of Agriculture,103,Cybersecurity and Data Privacy,Data Privacy & Cybersecurity,beginner,3.0,completed,100.0,NSSTA-049,2025-09-25,2025-10-03
+626,148,Officer_148,Ministry of Agriculture,125,Industrial Statistics (IIP & ASI),Industrial & Economic Statistics,intermediate,4.0,completed,100.0,NSSTA-035,2025-12-10,2025-12-18
+627,148,Officer_148,Ministry of Agriculture,187,Data Visualization and Dashboard Development,GIS & Geospatial Analysis,beginner,4.0,completed,100.0,NSSTA-033,2025-03-24,2025-04-09
+628,148,Officer_148,Ministry of Agriculture,200,Labour and Employment Statistics (PLFS),Labour & Employment Statistics,intermediate,4.0,completed,100.0,NSSTA-038,2025-02-01,2025-03-02
+629,148,Officer_148,Ministry of Agriculture,145,Data Analysis using R,Python & R for Statistics,intermediate,5.0,completed,100.0,NSSTA-058,2025-10-05,2025-10-14
+630,149,Officer_149,DES Tamil Nadu,128,SDG Indicators and Data Quality,SDG & Metadata Standards,intermediate,3.0,completed,100.0,NSSTA-096,2025-10-15,2025-11-16
+631,149,Officer_149,DES Tamil Nadu,185,Advanced Sampling Techniques,Survey Design & Sampling,advanced,5.0,enrolled,41.1,NSSTA-007,2025-12-21,
+632,150,Officer_150,DES Maharashtra,179,Data Analysis using R,Python & R for Statistics,intermediate,5.0,enrolled,14.3,NSSTA-057,2025-04-14,
+633,150,Officer_150,DES Maharashtra,169,Mid Career Training Programme (MCTP),Leadership & Management,advanced,10.0,enrolled,82.9,NSSTA-095,2025-10-29,
+634,150,Officer_150,DES Maharashtra,157,Econometrics and Time Series Analysis,Statistical Methods,advanced,5.0,in_progress,72.1,NSSTA-023,2025-05-31,
+635,150,Officer_150,DES Maharashtra,115,Cybersecurity and Data Privacy,Data Privacy & Cybersecurity,beginner,3.0,in_progress,16.0,NSSTA-049,2025-09-21,
+636,150,Officer_150,DES Maharashtra,133,Machine Learning using Python (IIT Madras),Python & R for Statistics,advanced,60.0,completed,100.0,NSSTA-017,2025-05-23,2025-09-08
+637,151,Officer_151,Ministry of Agriculture,119,SDG Indicators and Data Quality,SDG & Metadata Standards,intermediate,3.0,completed,100.0,NSSTA-006,2025-08-27,2025-09-23
+638,151,Officer_151,Ministry of Agriculture,106,Advanced Sampling Techniques,Survey Design & Sampling,advanced,5.0,completed,100.0,NSSTA-081,2025-06-15,2025-07-12
+639,151,Officer_151,Ministry of Agriculture,162,Labour and Employment Statistics (PLFS),Labour & Employment Statistics,intermediate,4.0,completed,100.0,NSSTA-074,2025-12-05,2025-12-21
+640,152,Officer_152,Ministry of Agriculture,108,National Accounts Statistics,National Accounts Statistics,intermediate,5.0,completed,100.0,NSSTA-065,2025-04-05,2025-04-29
+641,152,Officer_152,Ministry of Agriculture,151,Econometrics and Time Series Analysis,Statistical Methods,advanced,5.0,completed,100.0,NSSTA-012,2025-10-06,2025-10-31
+642,152,Officer_152,Ministry of Agriculture,142,Industrial Statistics (IIP & ASI),Industrial & Economic Statistics,intermediate,4.0,completed,100.0,NSSTA-043,2025-04-20,2025-05-18
+643,152,Officer_152,Ministry of Agriculture,179,Machine Learning using Python (IIT Madras),Python & R for Statistics,advanced,60.0,completed,100.0,NSSTA-068,2025-04-22,2025-08-15
+644,153,Officer_153,DES UP,130,Data Visualization and Dashboard Development,GIS & Geospatial Analysis,beginner,4.0,completed,100.0,NSSTA-083,2025-06-27,2025-07-18
+645,153,Officer_153,DES UP,141,Advanced Sampling Techniques,Survey Design & Sampling,advanced,5.0,in_progress,59.7,NSSTA-049,2025-12-16,
+646,153,Officer_153,DES UP,169,Econometrics and Time Series Analysis,Statistical Methods,advanced,5.0,enrolled,85.6,NSSTA-093,2025-05-12,
+647,153,Officer_153,DES UP,198,Cybersecurity and Data Privacy,Data Privacy & Cybersecurity,beginner,3.0,completed,100.0,NSSTA-048,2025-09-22,2025-10-23
+648,153,Officer_153,DES UP,162,Survey Methodology and Data Analysis,Survey Design & Sampling,intermediate,5.0,completed,100.0,NSSTA-006,2025-09-18,2025-10-10
+649,154,Officer_154,DES Tamil Nadu,198,Mid Career Training Programme (MCTP),Leadership & Management,advanced,10.0,completed,100.0,NSSTA-069,2025-02-19,2025-03-12
+650,154,Officer_154,DES Tamil Nadu,126,Cybersecurity and Data Privacy,Data Privacy & Cybersecurity,beginner,3.0,completed,100.0,NSSTA-086,2025-11-17,2025-11-24
+651,154,Officer_154,DES Tamil Nadu,187,Agricultural Statistics,Agricultural Statistics,intermediate,5.0,completed,100.0,NSSTA-055,2025-04-20,2025-05-25
+652,154,Officer_154,DES Tamil Nadu,109,Machine Learning using Python (IIT Madras),Python & R for Statistics,advanced,60.0,enrolled,26.4,NSSTA-096,2025-11-28,
+653,155,Officer_155,Planning Department,106,Survey Methodology and Data Analysis,Survey Design & Sampling,intermediate,5.0,completed,100.0,NSSTA-023,2025-02-14,2025-02-24
+654,155,Officer_155,Planning Department,152,GIS and Remote Sensing,GIS & Geospatial Analysis,intermediate,5.0,in_progress,54.6,NSSTA-050,2025-05-13,
+655,155,Officer_155,Planning Department,140,Industrial Statistics (IIP & ASI),Industrial & Economic Statistics,intermediate,4.0,completed,100.0,NSSTA-003,2025-07-27,2025-08-16
+656,156,Officer_156,DES UP,195,Cybersecurity and Data Privacy,Data Privacy & Cybersecurity,beginner,3.0,completed,100.0,NSSTA-075,2025-02-02,2025-03-03
+657,156,Officer_156,DES UP,164,National Accounts Statistics,National Accounts Statistics,intermediate,5.0,completed,100.0,NSSTA-014,2025-02-07,2025-02-26
+658,156,Officer_156,DES UP,177,Data Visualization and Dashboard Development,GIS & Geospatial Analysis,beginner,4.0,completed,100.0,NSSTA-012,2025-12-18,2026-01-03
+659,156,Officer_156,DES UP,150,Survey Methodology and Data Analysis,Survey Design & Sampling,intermediate,5.0,completed,100.0,NSSTA-085,2025-08-13,2025-09-02
+660,156,Officer_156,DES UP,128,Mid Career Training Programme (MCTP),Leadership & Management,advanced,10.0,completed,100.0,NSSTA-018,2025-03-22,2025-04-24
+661,157,Officer_157,DES Tamil Nadu,193,Econometrics and Time Series Analysis,Statistical Methods,advanced,5.0,completed,100.0,NSSTA-083,2025-12-13,2026-01-18
+662,157,Officer_157,DES Tamil Nadu,171,Mid Career Training Programme (MCTP),Leadership & Management,advanced,10.0,completed,100.0,NSSTA-019,2025-01-06,2025-02-08
+663,157,Officer_157,DES Tamil Nadu,176,Data Visualization and Dashboard Development,GIS & Geospatial Analysis,beginner,4.0,completed,100.0,NSSTA-051,2025-01-03,2025-01-28
+664,157,Officer_157,DES Tamil Nadu,126,Labour and Employment Statistics (PLFS),Labour & Employment Statistics,intermediate,4.0,completed,100.0,NSSTA-096,2025-02-13,2025-03-01
+665,157,Officer_157,DES Tamil Nadu,182,Cybersecurity and Data Privacy,Data Privacy & Cybersecurity,beginner,3.0,in_progress,68.1,NSSTA-066,2025-07-31,
+666,158,Officer_158,MoSPI,114,Price Statistics and Index Numbers,Price & Index Statistics,intermediate,4.0,completed,100.0,NSSTA-024,2025-05-10,2025-05-23
+667,158,Officer_158,MoSPI,159,Mid Career Training Programme (MCTP),Leadership & Management,advanced,10.0,in_progress,55.4,NSSTA-083,2025-10-09,
+668,158,Officer_158,MoSPI,108,Agricultural Statistics,Agricultural Statistics,intermediate,5.0,completed,100.0,NSSTA-033,2025-05-29,2025-06-27
+669,159,Officer_159,Ministry of Labour,116,Agricultural Statistics,Agricultural Statistics,intermediate,5.0,completed,100.0,NSSTA-086,2025-06-19,2025-07-08
+670,159,Officer_159,Ministry of Labour,140,Industrial Statistics (IIP & ASI),Industrial & Economic Statistics,intermediate,4.0,in_progress,18.0,NSSTA-063,2025-04-10,
+671,160,Officer_160,Ministry of Agriculture,140,Machine Learning using Python (IIT Madras),Python & R for Statistics,advanced,60.0,completed,100.0,NSSTA-055,2025-10-18,2026-01-28
+672,160,Officer_160,Ministry of Agriculture,200,SDG Indicators and Data Quality,SDG & Metadata Standards,intermediate,3.0,completed,100.0,NSSTA-029,2025-06-10,2025-06-22
+673,160,Officer_160,Ministry of Agriculture,135,Cybersecurity and Data Privacy,Data Privacy & Cybersecurity,beginner,3.0,completed,100.0,NSSTA-047,2025-11-25,2025-12-13
+674,160,Officer_160,Ministry of Agriculture,161,Labour and Employment Statistics (PLFS),Labour & Employment Statistics,intermediate,4.0,completed,100.0,NSSTA-060,2025-06-19,2025-07-24
+675,160,Officer_160,Ministry of Agriculture,170,Advanced Sampling Techniques,Survey Design & Sampling,advanced,5.0,completed,100.0,NSSTA-014,2025-06-06,2025-06-29
+676,161,Officer_161,NSSTA,168,Cybersecurity and Data Privacy,Data Privacy & Cybersecurity,beginner,3.0,completed,100.0,NSSTA-026,2025-03-13,2025-04-15
+677,161,Officer_161,NSSTA,193,SDG Indicators and Data Quality,SDG & Metadata Standards,intermediate,3.0,completed,100.0,NSSTA-010,2025-11-17,2025-11-24
+678,161,Officer_161,NSSTA,174,National Accounts Statistics,National Accounts Statistics,intermediate,5.0,in_progress,78.0,NSSTA-052,2025-10-25,
+679,162,Officer_162,State Statistical Bureau,183,Mid Career Training Programme (MCTP),Leadership & Management,advanced,10.0,completed,100.0,NSSTA-020,2025-10-04,2025-11-04
+680,162,Officer_162,State Statistical Bureau,198,Survey Methodology and Data Analysis,Survey Design & Sampling,intermediate,5.0,completed,100.0,NSSTA-076,2025-04-25,2025-05-31
+681,162,Officer_162,State Statistical Bureau,165,Data Visualization and Dashboard Development,GIS & Geospatial Analysis,beginner,4.0,enrolled,33.3,NSSTA-012,2025-09-14,
+682,163,Officer_163,Planning Department,117,Machine Learning using Python (IIT Madras),Python & R for Statistics,advanced,60.0,in_progress,74.5,NSSTA-058,2025-09-21,
+683,163,Officer_163,Planning Department,184,Data Visualization and Dashboard Development,GIS & Geospatial Analysis,beginner,4.0,completed,100.0,NSSTA-019,2025-10-17,2025-11-11
+684,163,Officer_163,Planning Department,128,Survey Methodology and Data Analysis,Survey Design & Sampling,intermediate,5.0,enrolled,48.7,NSSTA-098,2025-01-21,
+685,163,Officer_163,Planning Department,147,Cybersecurity and Data Privacy,Data Privacy & Cybersecurity,beginner,3.0,completed,100.0,NSSTA-030,2025-02-02,2025-02-15
+686,163,Officer_163,Planning Department,146,Agricultural Statistics,Agricultural Statistics,intermediate,5.0,completed,100.0,NSSTA-050,2025-04-16,2025-05-10
+687,164,Officer_164,NSSO,181,Mid Career Training Programme (MCTP),Leadership & Management,advanced,10.0,completed,100.0,NSSTA-036,2025-12-27,2026-01-28
+688,164,Officer_164,NSSO,183,GIS and Remote Sensing,GIS & Geospatial Analysis,intermediate,5.0,in_progress,31.1,NSSTA-049,2025-07-12,
+689,164,Officer_164,NSSO,109,Survey Methodology and Data Analysis,Survey Design & Sampling,intermediate,5.0,completed,100.0,NSSTA-067,2025-12-01,2026-01-06
+690,164,Officer_164,NSSO,151,Econometrics and Time Series Analysis,Statistical Methods,advanced,5.0,completed,100.0,NSSTA-046,2025-04-25,2025-05-19
+691,164,Officer_164,NSSO,161,Cybersecurity and Data Privacy,Data Privacy & Cybersecurity,beginner,3.0,completed,100.0,NSSTA-078,2025-06-26,2025-07-16
+692,165,Officer_165,NSO,165,Data Visualization and Dashboard Development,GIS & Geospatial Analysis,beginner,4.0,completed,100.0,NSSTA-083,2025-04-28,2025-05-07
+693,165,Officer_165,NSO,120,Price Statistics and Index Numbers,Price & Index Statistics,intermediate,4.0,completed,100.0,NSSTA-047,2025-03-18,2025-03-30
+694,166,Officer_166,CSO,114,Cybersecurity and Data Privacy,Data Privacy & Cybersecurity,beginner,3.0,completed,100.0,NSSTA-062,2025-06-19,2025-07-17
+695,166,Officer_166,CSO,152,Agricultural Statistics,Agricultural Statistics,intermediate,5.0,in_progress,48.3,NSSTA-003,2025-11-28,
+696,167,Officer_167,DES West Bengal,165,Survey Methodology and Data Analysis,Survey Design & Sampling,intermediate,5.0,completed,100.0,NSSTA-006,2025-03-10,2025-04-07
+697,167,Officer_167,DES West Bengal,123,Price Statistics and Index Numbers,Price & Index Statistics,intermediate,4.0,in_progress,21.7,NSSTA-067,2025-05-13,
+698,167,Officer_167,DES West Bengal,136,SDG Indicators and Data Quality,SDG & Metadata Standards,intermediate,3.0,in_progress,57.9,NSSTA-011,2025-12-05,
+699,168,Officer_168,Ministry of Agriculture,118,GIS and Remote Sensing,GIS & Geospatial Analysis,intermediate,5.0,enrolled,23.6,NSSTA-075,2025-11-04,
+700,168,Officer_168,Ministry of Agriculture,192,SDG Indicators and Data Quality,SDG & Metadata Standards,intermediate,3.0,enrolled,24.6,NSSTA-088,2025-03-27,
+701,168,Officer_168,Ministry of Agriculture,175,Mid Career Training Programme (MCTP),Leadership & Management,advanced,10.0,completed,100.0,NSSTA-009,2025-08-21,2025-09-25
+702,169,Officer_169,DPIIT,164,Data Analysis using R,Python & R for Statistics,intermediate,5.0,completed,100.0,NSSTA-088,2025-04-14,2025-05-08
+703,169,Officer_169,DPIIT,112,Mid Career Training Programme (MCTP),Leadership & Management,advanced,10.0,completed,100.0,NSSTA-023,2025-03-18,2025-04-22
+704,169,Officer_169,DPIIT,104,Price Statistics and Index Numbers,Price & Index Statistics,intermediate,4.0,completed,100.0,NSSTA-069,2025-11-11,2025-12-07
+705,170,Officer_170,Ministry of Labour,100,National Accounts Statistics,National Accounts Statistics,intermediate,5.0,completed,100.0,NSSTA-087,2025-11-05,2025-11-30
+706,170,Officer_170,Ministry of Labour,147,GIS and Remote Sensing,GIS & Geospatial Analysis,intermediate,5.0,completed,100.0,NSSTA-006,2025-09-25,2025-10-16
+707,171,Officer_171,DES West Bengal,117,Agricultural Statistics,Agricultural Statistics,intermediate,5.0,in_progress,69.3,NSSTA-033,2025-08-06,
+708,171,Officer_171,DES West Bengal,176,Econometrics and Time Series Analysis,Statistical Methods,advanced,5.0,in_progress,28.6,NSSTA-070,2025-05-26,
+709,171,Officer_171,DES West Bengal,190,GIS and Remote Sensing,GIS & Geospatial Analysis,intermediate,5.0,completed,100.0,NSSTA-096,2025-04-07,2025-04-15
+710,171,Officer_171,DES West Bengal,100,Data Analysis using R,Python & R for Statistics,intermediate,5.0,in_progress,56.2,NSSTA-049,2025-09-24,
+711,171,Officer_171,DES West Bengal,146,Machine Learning using Python (IIT Madras),Python & R for Statistics,advanced,60.0,enrolled,65.0,NSSTA-014,2025-07-29,
+712,172,Officer_172,NSSTA,172,Data Analysis using R,Python & R for Statistics,intermediate,5.0,completed,100.0,NSSTA-047,2025-10-02,2025-10-23
+713,172,Officer_172,NSSTA,196,Cybersecurity and Data Privacy,Data Privacy & Cybersecurity,beginner,3.0,completed,100.0,NSSTA-027,2025-12-15,2026-01-01
+714,172,Officer_172,NSSTA,122,SDG Indicators and Data Quality,SDG & Metadata Standards,intermediate,3.0,completed,100.0,NSSTA-048,2025-10-13,2025-11-02
+715,173,Officer_173,State Statistical Bureau,195,Labour and Employment Statistics (PLFS),Labour & Employment Statistics,intermediate,4.0,completed,100.0,NSSTA-030,2025-12-04,2025-12-14
+716,173,Officer_173,State Statistical Bureau,112,Mid Career Training Programme (MCTP),Leadership & Management,advanced,10.0,completed,100.0,NSSTA-028,2025-12-25,2026-01-15
+717,173,Officer_173,State Statistical Bureau,170,SDG Indicators and Data Quality,SDG & Metadata Standards,intermediate,3.0,completed,100.0,NSSTA-079,2025-06-23,2025-07-23
+718,173,Officer_173,State Statistical Bureau,181,Machine Learning using Python (IIT Madras),Python & R for Statistics,advanced,60.0,in_progress,66.5,NSSTA-001,2025-07-19,
+719,173,Officer_173,State Statistical Bureau,155,Data Analysis using R,Python & R for Statistics,intermediate,5.0,enrolled,75.9,NSSTA-012,2025-11-04,
+720,174,Officer_174,Ministry of Agriculture,192,Labour and Employment Statistics (PLFS),Labour & Employment Statistics,intermediate,4.0,completed,100.0,NSSTA-050,2025-11-08,2025-11-16
+721,174,Officer_174,Ministry of Agriculture,176,Agricultural Statistics,Agricultural Statistics,intermediate,5.0,enrolled,42.1,NSSTA-008,2025-12-31,
+722,175,Officer_175,Planning Department,166,Cybersecurity and Data Privacy,Data Privacy & Cybersecurity,beginner,3.0,completed,100.0,NSSTA-037,2025-12-03,2026-01-06
+723,175,Officer_175,Planning Department,166,GIS and Remote Sensing,GIS & Geospatial Analysis,intermediate,5.0,completed,100.0,NSSTA-090,2025-11-03,2025-11-27
+724,175,Officer_175,Planning Department,104,Advanced Sampling Techniques,Survey Design & Sampling,advanced,5.0,completed,100.0,NSSTA-047,2025-03-28,2025-04-26
+725,176,Officer_176,MoSPI,151,Cybersecurity and Data Privacy,Data Privacy & Cybersecurity,beginner,3.0,completed,100.0,NSSTA-046,2025-05-22,2025-06-20
+726,176,Officer_176,MoSPI,125,Survey Methodology and Data Analysis,Survey Design & Sampling,intermediate,5.0,completed,100.0,NSSTA-067,2025-07-27,2025-08-22
+727,176,Officer_176,MoSPI,111,Price Statistics and Index Numbers,Price & Index Statistics,intermediate,4.0,completed,100.0,NSSTA-071,2025-12-27,2026-01-05
+728,177,Officer_177,MoSPI,177,Industrial Statistics (IIP & ASI),Industrial & Economic Statistics,intermediate,4.0,completed,100.0,NSSTA-025,2025-05-22,2025-06-05
+729,177,Officer_177,MoSPI,100,Advanced Sampling Techniques,Survey Design & Sampling,advanced,5.0,completed,100.0,NSSTA-034,2025-07-26,2025-08-21
+730,177,Officer_177,MoSPI,171,Data Visualization and Dashboard Development,GIS & Geospatial Analysis,beginner,4.0,completed,100.0,NSSTA-010,2025-09-17,2025-09-27
+731,177,Officer_177,MoSPI,165,SDG Indicators and Data Quality,SDG & Metadata Standards,intermediate,3.0,completed,100.0,NSSTA-033,2025-06-24,2025-07-02
+732,178,Officer_178,NSO,143,Industrial Statistics (IIP & ASI),Industrial & Economic Statistics,intermediate,4.0,completed,100.0,NSSTA-059,2025-05-05,2025-06-05
+733,178,Officer_178,NSO,103,GIS and Remote Sensing,GIS & Geospatial Analysis,intermediate,5.0,completed,100.0,NSSTA-062,2025-10-28,2025-12-02
+734,178,Officer_178,NSO,181,Data Analysis using R,Python & R for Statistics,intermediate,5.0,completed,100.0,NSSTA-029,2025-02-04,2025-02-24
+735,178,Officer_178,NSO,140,SDG Indicators and Data Quality,SDG & Metadata Standards,intermediate,3.0,completed,100.0,NSSTA-053,2025-04-28,2025-05-28
+736,179,Officer_179,NSSTA,111,Data Visualization and Dashboard Development,GIS & Geospatial Analysis,beginner,4.0,completed,100.0,NSSTA-052,2025-05-08,2025-05-24
+737,179,Officer_179,NSSTA,122,Mid Career Training Programme (MCTP),Leadership & Management,advanced,10.0,in_progress,75.7,NSSTA-061,2025-10-11,
+738,179,Officer_179,NSSTA,173,Survey Methodology and Data Analysis,Survey Design & Sampling,intermediate,5.0,completed,100.0,NSSTA-035,2025-04-22,2025-05-28
+739,179,Officer_179,NSSTA,124,Industrial Statistics (IIP & ASI),Industrial & Economic Statistics,intermediate,4.0,completed,100.0,NSSTA-064,2025-12-16,2026-01-21
+740,180,Officer_180,CSO,179,Agricultural Statistics,Agricultural Statistics,intermediate,5.0,in_progress,26.5,NSSTA-046,2025-05-08,
+741,180,Officer_180,CSO,110,Industrial Statistics (IIP & ASI),Industrial & Economic Statistics,intermediate,4.0,completed,100.0,NSSTA-087,2025-02-24,2025-03-06
+742,180,Officer_180,CSO,105,Mid Career Training Programme (MCTP),Leadership & Management,advanced,10.0,in_progress,49.4,NSSTA-062,2025-10-05,
+743,181,Officer_181,NSSTA,128,SDG Indicators and Data Quality,SDG & Metadata Standards,intermediate,3.0,enrolled,49.3,NSSTA-097,2025-07-23,
+744,181,Officer_181,NSSTA,154,Machine Learning using Python (IIT Madras),Python & R for Statistics,advanced,60.0,completed,100.0,NSSTA-062,2025-01-28,2025-05-15
+745,181,Officer_181,NSSTA,187,GIS and Remote Sensing,GIS & Geospatial Analysis,intermediate,5.0,enrolled,12.6,NSSTA-023,2025-07-21,
+746,181,Officer_181,NSSTA,166,Mid Career Training Programme (MCTP),Leadership & Management,advanced,10.0,completed,100.0,NSSTA-059,2025-03-03,2025-04-10

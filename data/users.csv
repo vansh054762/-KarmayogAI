@@ -1,0 +1,182 @@
+user_id,name,email,role,department,designation,experience_years,education,joined_date
+1,Admin User,admin@karmayog.gov.in,admin,Ministry of Statistics & PI,Director,15,M.Stat,2024-01-01
+2,Kavita Kumar,kavita.kumar45@gov.in,employee,CSO,Director,5,M.Stat,2023-07-14
+3,Anita Pillai,anita.pillai64@gov.in,employee,Ministry of Statistics & PI,Statistical Officer,3,B.Tech,2025-04-14
+4,Mukesh Reddy,mukesh.reddy13@gov.in,employee,NITI Aayog,Director,23,B.Sc,2025-05-09
+5,Harish Pillai,harish.pillai45@gov.in,employee,Ministry of Statistics & PI,Deputy Director,23,B.Sc,2024-09-06
+6,Geeta Patel,geeta.patel37@gov.in,employee,CRS,Senior Statistical Officer,3,B.Sc,2026-01-17
+7,Ramesh Agarwal,ramesh.agarwal87@gov.in,employee,MOSPI Field Operations,Statistical Officer,24,M.Sc,2023-08-01
+8,Kavita Saxena,kavita.saxena20@gov.in,employee,NITI Aayog,Joint Director,27,MA Economics,2025-07-06
+9,Vikram Sharma,vikram.sharma94@gov.in,employee,CSO,Joint Director,3,B.Tech,2026-01-09
+10,Naresh Joshi,naresh.joshi68@gov.in,employee,CRS,Deputy Director,12,MA Economics,2025-05-31
+11,Geeta Singh,geeta.singh87@gov.in,employee,NSSTA,Statistical Assistant,24,B.Tech,2025-09-03
+12,Pushpa Saxena,pushpa.saxena44@gov.in,employee,NITI Aayog,Director,22,MA Economics,2026-04-11
+13,Sanjay Sharma,sanjay.sharma50@gov.in,employee,DGET,Joint Director,3,B.Tech,2023-05-30
+14,Vinod Mishra,vinod.mishra93@gov.in,employee,Ministry of Finance,Data Analyst,29,M.Sc,2025-10-15
+15,Manoj Patel,manoj.patel41@gov.in,employee,NITI Aayog,Statistical Assistant,9,B.Sc,2024-05-08
+16,Lata Yadav,lata.yadav27@gov.in,employee,NITI Aayog,Field Investigator,3,B.Stat,2025-12-22
+17,Meena Verma,meena.verma97@gov.in,employee,DGET,Deputy CSG,3,B.Sc,2024-06-13
+18,Pushpa Shah,pushpa.shah42@gov.in,employee,NITI Aayog,Statistical Officer,22,M.Stat,2023-07-31
+19,Geeta Pandey,geeta.pandey24@gov.in,employee,MOSPI Field Operations,Data Analyst,6,M.Sc,2026-07-28
+20,Manoj Shah,manoj.shah32@gov.in,employee,NITI Aayog,Senior Statistical Officer,28,M.Tech,2023-09-29
+21,Deepak Patel,deepak.patel57@gov.in,employee,NSSTA,Statistical Assistant,25,B.Stat,2024-10-09
+22,Radha Kumar,radha.kumar24@gov.in,employee,CRS,Joint Director,8,B.Stat,2025-03-28
+23,Anita Singh,anita.singh72@gov.in,employee,National Statistical Office,Statistical Assistant,25,MBA,2025-11-14
+24,Girish Nair,girish.nair31@gov.in,employee,MOSPI Field Operations,Statistical Assistant,28,B.Sc,2025-05-27
+25,Rajiv Mishra,rajiv.mishra49@gov.in,employee,DGET,Assistant Director,15,M.Sc,2025-11-29
+26,Rekha Yadav,rekha.yadav18@gov.in,employee,CRS,Statistical Officer,19,B.Tech,2025-05-09
+27,Rajesh Singh,rajesh.singh90@gov.in,employee,Ministry of Statistics & PI,Director,3,B.Stat,2024-09-26
+28,Vikram Shah,vikram.shah40@gov.in,employee,MOSPI Field Operations,Field Investigator,7,MBA,2023-05-22
+29,Girish Yadav,girish.yadav70@gov.in,employee,DGET,Director,4,M.Stat,2024-03-04
+30,Ramesh Srivastava,ramesh.srivastava62@gov.in,employee,Ministry of Finance,Statistical Officer,22,M.Stat,2026-04-01
+31,Shobha Pandey,shobha.pandey23@gov.in,employee,CSO,Director,7,M.Sc,2025-10-20
+32,Asha Verma,asha.verma45@gov.in,employee,Ministry of Finance,Director,28,M.Stat,2024-02-08
+33,Suresh Sharma,suresh.sharma93@gov.in,employee,NITI Aayog,Statistical Officer,3,B.Tech,2025-08-28
+34,Dinesh Mehta,dinesh.mehta71@gov.in,employee,CSO,Data Analyst,29,B.Stat,2025-08-31
+35,Naresh Kumar,naresh.kumar59@gov.in,employee,MOSPI Field Operations,Field Investigator,10,B.Sc,2023-06-22
+36,Radha Patel,radha.patel34@gov.in,employee,MOSPI Field Operations,Director,2,B.Stat,2024-10-30
+37,Sunita Sharma,sunita.sharma84@gov.in,employee,Ministry of Finance,Statistical Assistant,30,MBA,2026-04-09
+38,Mukesh Singh,mukesh.singh33@gov.in,employee,National Statistical Office,Deputy CSG,3,B.Tech,2024-04-29
+39,Kavita Pillai,kavita.pillai41@gov.in,employee,Ministry of Agriculture,Deputy CSG,2,M.Stat,2024-03-28
+40,Sunita Pandey,sunita.pandey43@gov.in,employee,CSO,Assistant Director,8,M.Tech,2024-05-15
+41,Ravi Tiwari,ravi.tiwari68@gov.in,employee,CRS,Senior Statistical Officer,1,M.Sc,2023-06-07
+42,Suresh Singh,suresh.singh78@gov.in,employee,CSO,Statistical Assistant,9,MBA,2024-08-19
+43,Vikram Yadav,vikram.yadav57@gov.in,employee,MOSPI Field Operations,Deputy Director,15,M.Tech,2023-08-16
+44,Rajesh Nair,rajesh.nair48@gov.in,employee,National Statistical Office,Deputy Director,9,M.Stat,2025-12-27
+45,Meena Joshi,meena.joshi46@gov.in,employee,Ministry of Agriculture,Director,23,MA Economics,2025-06-13
+46,Manoj Shah,manoj.shah72@gov.in,employee,MOSPI Field Operations,Statistical Officer,3,B.Sc,2025-01-14
+47,Amit Kumar,amit.kumar52@gov.in,employee,NSSTA,Joint Director,6,M.Sc,2023-07-01
+48,Asha Nair,asha.nair11@gov.in,employee,National Statistical Office,Senior Statistical Officer,29,MBA,2023-07-13
+49,Amit Agarwal,amit.agarwal84@gov.in,employee,NITI Aayog,Deputy Director,14,MBA,2026-05-10
+50,Usha Agarwal,usha.agarwal15@gov.in,employee,CRS,Director,22,B.Tech,2026-01-05
+51,Ramesh Nair,ramesh.nair62@gov.in,employee,Ministry of Agriculture,Deputy Director,30,B.Tech,2025-09-05
+52,Pooja Srivastava,pooja.srivastava13@gov.in,employee,NSSTA,Assistant Director,26,B.Sc,2025-03-13
+53,Geeta Verma,geeta.verma99@gov.in,employee,National Statistical Office,Data Analyst,28,B.Stat,2023-12-14
+54,Sanjay Mishra,sanjay.mishra68@gov.in,employee,CRS,Joint Director,27,B.Tech,2025-05-04
+55,Priya Mishra,priya.mishra61@gov.in,employee,CRS,Joint Director,28,M.Stat,2025-01-09
+56,Ramesh Shah,ramesh.shah61@gov.in,employee,NITI Aayog,Assistant Director,1,M.Stat,2025-02-15
+57,Pooja Pillai,pooja.pillai43@gov.in,employee,Ministry of Statistics & PI,Senior Statistical Officer,20,B.Sc,2024-08-26
+58,Vinod Srivastava,vinod.srivastava87@gov.in,employee,NITI Aayog,Senior Statistical Officer,13,B.Tech,2025-02-28
+59,Amit Srivastava,amit.srivastava10@gov.in,employee,NITI Aayog,Statistical Assistant,22,B.Tech,2024-07-19
+60,Asha Singh,asha.singh95@gov.in,employee,CRS,Deputy CSG,11,M.Stat,2024-11-26
+61,Mukesh Tiwari,mukesh.tiwari95@gov.in,employee,DGET,Assistant Director,13,M.Tech,2023-06-25
+62,Ravi Mishra,ravi.mishra63@gov.in,employee,DGET,Deputy Director,20,M.Tech,2024-04-24
+63,Rajesh Tiwari,rajesh.tiwari46@gov.in,employee,CSO,Data Analyst,26,MA Economics,2023-12-25
+64,Harish Chaudhary,harish.chaudhary96@gov.in,employee,CSO,Statistical Assistant,16,MBA,2026-02-11
+65,Ashok Shah,ashok.shah94@gov.in,employee,Ministry of Agriculture,Assistant Director,3,B.Tech,2024-11-06
+66,Sanjay Mishra,sanjay.mishra28@gov.in,employee,Ministry of Statistics & PI,Statistical Officer,8,M.Sc,2026-03-07
+67,Pushpa Srivastava,pushpa.srivastava90@gov.in,employee,Ministry of Agriculture,Director,23,B.Sc,2023-10-26
+68,Shobha Yadav,shobha.yadav28@gov.in,employee,Ministry of Statistics & PI,Senior Statistical Officer,25,B.Sc,2025-05-12
+69,Pooja Shah,pooja.shah69@gov.in,employee,Ministry of Statistics & PI,Statistical Assistant,8,M.Stat,2024-01-12
+70,Ravi Chaudhary,ravi.chaudhary95@gov.in,employee,NITI Aayog,Statistical Assistant,20,MA Economics,2024-02-09
+71,Mukesh Srivastava,mukesh.srivastava80@gov.in,employee,Ministry of Finance,Deputy Director,24,M.Sc,2024-01-25
+72,Manoj Yadav,manoj.yadav91@gov.in,employee,MOSPI Field Operations,Statistical Assistant,16,B.Tech,2025-01-18
+73,Harish Singh,harish.singh46@gov.in,employee,CSO,Joint Director,11,MA Economics,2023-07-24
+74,Anita Patel,anita.patel29@gov.in,employee,CSO,Data Analyst,23,MBA,2025-05-22
+75,Vikram Srivastava,vikram.srivastava62@gov.in,employee,CRS,Statistical Assistant,15,B.Sc,2026-03-29
+76,Nisha Srivastava,nisha.srivastava59@gov.in,employee,Ministry of Agriculture,Statistical Officer,28,B.Sc,2023-12-01
+77,Rajesh Agarwal,rajesh.agarwal48@gov.in,employee,DGET,Data Analyst,18,B.Tech,2023-11-08
+78,Sanjay Joshi,sanjay.joshi65@gov.in,employee,Ministry of Finance,Statistical Officer,13,MA Economics,2024-04-27
+79,Arun Chaudhary,arun.chaudhary26@gov.in,employee,Ministry of Agriculture,Statistical Assistant,1,B.Sc,2023-06-05
+80,Priya Singh,priya.singh92@gov.in,employee,DGET,Deputy Director,28,M.Sc,2025-07-27
+81,Sunita Joshi,sunita.joshi58@gov.in,employee,CRS,Director,15,MA Economics,2024-09-11
+82,Naresh Joshi,naresh.joshi63@gov.in,employee,MOSPI Field Operations,Senior Statistical Officer,16,B.Stat,2023-07-26
+83,Sunita Agarwal,sunita.agarwal38@gov.in,employee,National Statistical Office,Statistical Officer,25,B.Stat,2025-03-15
+84,Deepak Kumar,deepak.kumar89@gov.in,employee,NSSTA,Director,5,M.Sc,2025-12-12
+85,Nisha Chaudhary,nisha.chaudhary99@gov.in,employee,MOSPI Field Operations,Assistant Director,6,M.Stat,2025-09-02
+86,Usha Gupta,usha.gupta84@gov.in,employee,Ministry of Statistics & PI,Joint Director,19,B.Sc,2024-05-13
+87,Deepak Singh,deepak.singh85@gov.in,employee,CSO,Senior Statistical Officer,23,M.Tech,2025-11-29
+88,Amit Agarwal,amit.agarwal78@gov.in,employee,DGET,Assistant Director,3,MA Economics,2026-07-09
+89,Dinesh Mehta,dinesh.mehta23@gov.in,employee,DGET,Assistant Director,21,M.Sc,2025-09-24
+90,Asha Verma,asha.verma76@gov.in,employee,MOSPI Field Operations,Deputy CSG,26,M.Sc,2023-12-25
+91,Asha Pillai,asha.pillai44@gov.in,employee,CRS,Director,27,M.Stat,2025-01-09
+92,Harish Yadav,harish.yadav69@gov.in,employee,Ministry of Agriculture,Deputy CSG,22,B.Sc,2024-09-14
+93,Priya Mehta,priya.mehta51@gov.in,employee,NSSTA,Field Investigator,7,MA Economics,2025-02-20
+94,Savita Joshi,savita.joshi86@gov.in,employee,MOSPI Field Operations,Statistical Assistant,1,B.Tech,2026-02-09
+95,Rekha Srivastava,rekha.srivastava72@gov.in,employee,NITI Aayog,Director,23,M.Sc,2023-11-02
+96,Harish Kumar,harish.kumar21@gov.in,employee,MOSPI Field Operations,Director,13,B.Tech,2024-11-14
+97,Lata Mehta,lata.mehta80@gov.in,employee,NITI Aayog,Assistant Director,14,MA Economics,2024-08-13
+98,Pushpa Joshi,pushpa.joshi49@gov.in,employee,MOSPI Field Operations,Director,4,B.Tech,2024-10-26
+99,Kavita Nair,kavita.nair98@gov.in,employee,NSSTA,Director,7,M.Sc,2025-01-14
+100,Sunita Reddy,sunita.reddy46@gov.in,employee,National Statistical Office,Director,10,B.Tech,2024-07-25
+101,Pooja Tiwari,pooja.tiwari11@gov.in,employee,NITI Aayog,Deputy Director,9,B.Stat,2026-04-14
+102,Officer_102,officer102@nssta.gov.in,employee,NSSTA,Junior Statistical Officer,21,M.Sc Statistics,2002-11-05
+103,Officer_103,officer103@nssta.gov.in,employee,DPIIT,Deputy Director (Statistics),8,M.Sc Mathematics,2015-08-17
+104,Officer_104,officer104@nssta.gov.in,employee,NSSO,Junior Statistical Officer,3,Ph.D Statistics,2020-11-07
+105,Officer_105,officer105@nssta.gov.in,employee,DES UP,Statistical Superintendent,8,M.Sc Economics,2015-11-14
+106,Officer_106,officer106@nssta.gov.in,employee,DES Tamil Nadu,Senior Statistical Officer,23,M.Sc Economics,2000-08-09
+107,Officer_107,officer107@nssta.gov.in,employee,MoSPI,Director,9,M.Stat,2014-07-09
+108,Officer_108,officer108@nssta.gov.in,employee,NSO,Statistical Officer,14,B.Sc Statistics,2009-10-10
+109,Officer_109,officer109@nssta.gov.in,employee,State Statistical Bureau,Senior Statistical Officer,4,M.Sc Statistics,2019-10-06
+110,Officer_110,officer110@nssta.gov.in,employee,Ministry of Agriculture,Director,20,B.Stat,2003-09-11
+111,Officer_111,officer111@nssta.gov.in,employee,DES Maharashtra,SSS Officer,18,M.Sc Statistics,2005-12-16
+112,Officer_112,officer112@nssta.gov.in,employee,DES West Bengal,Additional Director General,18,B.Stat,2005-10-05
+113,Officer_113,officer113@nssta.gov.in,employee,CSO,Deputy Director (Statistics),19,MBA,2004-07-20
+114,Officer_114,officer114@nssta.gov.in,employee,Planning Department,SSS Officer,8,B.Stat,2015-11-05
+115,Officer_115,officer115@nssta.gov.in,employee,DPIIT,Statistical Officer,4,Ph.D Statistics,2019-10-01
+116,Officer_116,officer116@nssta.gov.in,employee,DPIIT,Senior Statistical Officer,6,B.Sc Statistics,2017-10-26
+117,Officer_117,officer117@nssta.gov.in,employee,MoSPI,Statistical Superintendent,23,M.Sc Statistics,2000-08-23
+118,Officer_118,officer118@nssta.gov.in,employee,DES Maharashtra,Statistical Officer,24,MBA,1999-10-30
+119,Officer_119,officer119@nssta.gov.in,employee,State Statistical Bureau,Statistical Officer,21,M.Sc Economics,2002-12-23
+120,Officer_120,officer120@nssta.gov.in,employee,DES Maharashtra,Director,8,M.Stat,2015-10-27
+121,Officer_121,officer121@nssta.gov.in,employee,DES West Bengal,SSS Officer,3,MBA,2020-10-13
+122,Officer_122,officer122@nssta.gov.in,employee,Finance Department,Senior Statistical Officer,7,M.A Economics,2016-07-22
+123,Officer_123,officer123@nssta.gov.in,employee,NSO,Statistical Officer,15,M.Sc Mathematics,2008-08-14
+124,Officer_124,officer124@nssta.gov.in,employee,DES Maharashtra,Director,18,B.Stat,2005-08-09
+125,Officer_125,officer125@nssta.gov.in,employee,MoSPI,Statistical Officer,13,B.Sc Statistics,2010-08-27
+126,Officer_126,officer126@nssta.gov.in,employee,Planning Department,Director,16,M.Sc Statistics,2007-12-08
+127,Officer_127,officer127@nssta.gov.in,employee,DES Maharashtra,Director,5,M.Sc Mathematics,2018-08-03
+128,Officer_128,officer128@nssta.gov.in,employee,DES Tamil Nadu,Senior Statistical Officer,3,Ph.D Statistics,2020-08-19
+129,Officer_129,officer129@nssta.gov.in,employee,CSO,ISS Probationer,9,M.Sc Economics,2014-07-13
+130,Officer_130,officer130@nssta.gov.in,employee,DES UP,Deputy Director (Statistics),24,M.Sc Statistics,1999-10-31
+131,Officer_131,officer131@nssta.gov.in,employee,DES Maharashtra,Junior Statistical Officer,25,B.Sc Statistics,1998-11-28
+132,Officer_132,officer132@nssta.gov.in,employee,Finance Department,SSS Officer,15,M.Stat,2008-10-29
+133,Officer_133,officer133@nssta.gov.in,employee,NSSO,Statistical Examiner,17,M.Sc Mathematics,2006-07-29
+134,Officer_134,officer134@nssta.gov.in,employee,MoSPI,Statistical Superintendent,10,M.Sc Economics,2013-09-30
+135,Officer_135,officer135@nssta.gov.in,employee,Ministry of Labour,Statistical Examiner,25,M.Sc Mathematics,1998-08-25
+136,Officer_136,officer136@nssta.gov.in,employee,NSSO,Statistical Examiner,1,B.Sc Statistics,2022-10-01
+137,Officer_137,officer137@nssta.gov.in,employee,Finance Department,Junior Statistical Officer,10,MBA,2013-08-11
+138,Officer_138,officer138@nssta.gov.in,employee,Planning Department,Deputy Director (Statistics),3,M.Sc Statistics,2020-12-15
+139,Officer_139,officer139@nssta.gov.in,employee,MoSPI,Director,25,M.Sc Economics,1998-07-23
+140,Officer_140,officer140@nssta.gov.in,employee,DES UP,Statistical Officer,16,M.Sc Economics,2007-08-03
+141,Officer_141,officer141@nssta.gov.in,employee,Ministry of Labour,SSS Officer,14,MBA,2009-07-12
+142,Officer_142,officer142@nssta.gov.in,employee,DPIIT,Senior Statistical Officer,7,B.Stat,2016-07-20
+143,Officer_143,officer143@nssta.gov.in,employee,DES Tamil Nadu,ISS Probationer,12,M.A Economics,2011-12-05
+144,Officer_144,officer144@nssta.gov.in,employee,CSO,Junior Statistical Officer,8,MBA,2015-08-06
+145,Officer_145,officer145@nssta.gov.in,employee,CSO,Statistical Superintendent,18,MBA,2005-12-18
+146,Officer_146,officer146@nssta.gov.in,employee,Finance Department,Statistical Officer,23,M.Stat,2000-12-29
+147,Officer_147,officer147@nssta.gov.in,employee,NSSTA,Statistical Examiner,11,M.Sc Statistics,2012-07-16
+148,Officer_148,officer148@nssta.gov.in,employee,Ministry of Agriculture,Statistical Examiner,16,MBA,2007-08-12
+149,Officer_149,officer149@nssta.gov.in,employee,DES Tamil Nadu,Statistical Officer,19,M.A Economics,2004-09-23
+150,Officer_150,officer150@nssta.gov.in,employee,DES Maharashtra,Junior Statistical Officer,7,M.Sc Statistics,2016-10-04
+151,Officer_151,officer151@nssta.gov.in,employee,Ministry of Agriculture,Statistical Examiner,14,Ph.D Statistics,2009-12-22
+152,Officer_152,officer152@nssta.gov.in,employee,Ministry of Agriculture,Junior Statistical Officer,22,M.Sc Statistics,2001-10-12
+153,Officer_153,officer153@nssta.gov.in,employee,DES UP,Statistical Officer,4,MBA,2019-09-10
+154,Officer_154,officer154@nssta.gov.in,employee,DES Tamil Nadu,Statistical Officer,5,Ph.D Statistics,2018-10-31
+155,Officer_155,officer155@nssta.gov.in,employee,Planning Department,Director,3,M.A Economics,2020-08-14
+156,Officer_156,officer156@nssta.gov.in,employee,DES UP,Statistical Superintendent,4,M.Stat,2019-12-30
+157,Officer_157,officer157@nssta.gov.in,employee,DES Tamil Nadu,Statistical Officer,3,MBA,2020-08-31
+158,Officer_158,officer158@nssta.gov.in,employee,MoSPI,ISS Probationer,7,Ph.D Statistics,2016-09-27
+159,Officer_159,officer159@nssta.gov.in,employee,Ministry of Labour,Statistical Officer,1,Ph.D Statistics,2022-09-07
+160,Officer_160,officer160@nssta.gov.in,employee,Ministry of Agriculture,Deputy Director (Statistics),10,Ph.D Statistics,2013-08-14
+161,Officer_161,officer161@nssta.gov.in,employee,NSSTA,Statistical Officer,22,M.A Economics,2001-11-12
+162,Officer_162,officer162@nssta.gov.in,employee,State Statistical Bureau,Junior Statistical Officer,2,M.Sc Economics,2021-12-18
+163,Officer_163,officer163@nssta.gov.in,employee,Planning Department,Statistical Examiner,2,M.A Economics,2021-08-19
+164,Officer_164,officer164@nssta.gov.in,employee,NSSO,SSS Officer,6,M.Stat,2017-11-16
+165,Officer_165,officer165@nssta.gov.in,employee,NSO,Deputy Director (Statistics),3,M.Sc Statistics,2020-09-20
+166,Officer_166,officer166@nssta.gov.in,employee,CSO,Statistical Superintendent,4,MBA,2019-07-28
+167,Officer_167,officer167@nssta.gov.in,employee,DES West Bengal,Deputy Director (Statistics),3,Ph.D Statistics,2020-08-21
+168,Officer_168,officer168@nssta.gov.in,employee,Ministry of Agriculture,Statistical Officer,11,B.Stat,2012-10-15
+169,Officer_169,officer169@nssta.gov.in,employee,DPIIT,Senior Statistical Officer,8,B.Stat,2015-07-22
+170,Officer_170,officer170@nssta.gov.in,employee,Ministry of Labour,Senior Statistical Officer,10,M.A Economics,2013-12-16
+171,Officer_171,officer171@nssta.gov.in,employee,DES West Bengal,Statistical Superintendent,1,M.A Economics,2022-12-07
+172,Officer_172,officer172@nssta.gov.in,employee,NSSTA,Statistical Officer,3,M.Sc Economics,2020-11-29
+173,Officer_173,officer173@nssta.gov.in,employee,State Statistical Bureau,ISS Probationer,12,M.Sc Statistics,2011-10-24
+174,Officer_174,officer174@nssta.gov.in,employee,Ministry of Agriculture,Additional Director General,6,M.A Economics,2017-10-17
+175,Officer_175,officer175@nssta.gov.in,employee,Planning Department,Junior Statistical Officer,20,M.Sc Economics,2003-08-18
+176,Officer_176,officer176@nssta.gov.in,employee,MoSPI,SSS Officer,10,M.Sc Statistics,2013-10-28
+177,Officer_177,officer177@nssta.gov.in,employee,MoSPI,Director,4,M.Sc Statistics,2019-10-25
+178,Officer_178,officer178@nssta.gov.in,employee,NSO,Deputy Director (Statistics),10,MBA,2013-07-12
+179,Officer_179,officer179@nssta.gov.in,employee,NSSTA,Statistical Examiner,21,B.Stat,2002-12-24
+180,Officer_180,officer180@nssta.gov.in,employee,CSO,Additional Director General,3,Ph.D Statistics,2021-01-01
+181,Officer_181,officer181@nssta.gov.in,employee,NSSTA,Statistical Superintendent,11,M.Sc Mathematics,2012-11-23

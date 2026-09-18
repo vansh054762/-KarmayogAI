@@ -1,0 +1,67 @@
+course_id,title,competency_id,competency_name,domain,difficulty,duration_hours,course_type,igot_course_id,provider,rating,enrolled_count,created_date
+1,Introduction to Statistical Methods,1,Statistical Methods,Statistics,beginner,6.9,interactive,IGOT-01-001,iGOT Karmayogi,5.0,1020,2025-09-22
+2,Inferential Statistics & Hypothesis Testing,1,Statistical Methods,Statistics,intermediate,6.6,document,IGOT-01-002,IGNOU,4.1,3676,2026-02-02
+3,Advanced Regression Analysis,1,Statistical Methods,Statistics,advanced,7.2,quiz,IGOT-01-003,NIC,4.4,543,2025-08-26
+4,Fundamentals of Survey Design,2,Survey Design,Statistics,beginner,7.8,video,IGOT-02-004,NSSTA,4.4,2217,2025-07-31
+5,Sampling & Questionnaire Design,2,Survey Design,Statistics,intermediate,2.5,document,IGOT-02-005,NSSTA,4.3,1332,2026-07-03
+6,Advanced Survey Methodology,2,Survey Design,Statistics,advanced,4.5,quiz,IGOT-02-006,NIC,3.5,2410,2025-07-08
+7,Probability Sampling Basics,3,Sampling Techniques,Statistics,beginner,3.7,quiz,IGOT-03-007,iGOT Karmayogi,4.5,2217,2025-05-27
+8,Stratified & Cluster Sampling,3,Sampling Techniques,Statistics,intermediate,6.7,document,IGOT-03-008,LBSNAA,3.7,1891,2025-08-07
+9,Advanced Sampling Theory,3,Sampling Techniques,Statistics,advanced,2.9,interactive,IGOT-03-009,NSSTA,3.6,1409,2025-05-25
+10,Introduction to Data Analysis,4,Data Analysis,Statistics,beginner,3.8,interactive,IGOT-04-010,LBSNAA,3.7,2541,2025-07-11
+11,Intermediate Data Analysis with Python,4,Data Analysis,Statistics,intermediate,4.4,interactive,IGOT-04-011,IGNOU,4.3,3636,2026-05-24
+12,Advanced Data Analytics,4,Data Analysis,Statistics,advanced,5.6,quiz,IGOT-04-012,NIC,4.4,261,2026-05-19
+13,National Accounts Basics,5,National Accounts,Statistics,beginner,3.4,video,IGOT-05-013,NIC,4.4,1485,2025-11-06
+14,GDP Compilation Methodology,5,National Accounts,Statistics,intermediate,5.1,quiz,IGOT-05-014,NIC,3.8,4845,2025-11-23
+15,Advanced National Accounts,5,National Accounts,Statistics,advanced,5.8,quiz,IGOT-05-015,iGOT Karmayogi,4.2,3395,2026-01-15
+16,CPI & WPI Fundamentals,6,Price Statistics,Statistics,beginner,3.9,video,IGOT-06-016,NSSTA,4.0,4108,2026-02-07
+17,Price Index Methods,6,Price Statistics,Statistics,intermediate,6.0,quiz,IGOT-06-017,IGNOU,3.6,771,2026-01-24
+18,Advanced Price Statistics,6,Price Statistics,Statistics,advanced,3.5,video,IGOT-06-018,LBSNAA,4.8,59,2025-08-02
+19,Labour Force Survey Basics,7,Labour Statistics,Statistics,beginner,7.2,quiz,IGOT-07-019,LBSNAA,3.6,4297,2025-12-31
+20,Employment & Unemployment Indicators,7,Labour Statistics,Statistics,intermediate,5.7,quiz,IGOT-07-020,LBSNAA,4.6,1717,2026-02-18
+21,Advanced Labour Economics,7,Labour Statistics,Statistics,advanced,5.3,interactive,IGOT-07-021,LBSNAA,4.8,4020,2026-05-03
+22,Introduction to SDG Framework,8,SDG Indicators,Statistics,beginner,2.2,document,IGOT-08-022,NSSTA,4.0,162,2025-09-25
+23,SDG Indicator Compilation,8,SDG Indicators,Statistics,intermediate,4.4,document,IGOT-08-023,iGOT Karmayogi,4.2,1012,2025-08-07
+24,Monitoring SDG Progress,8,SDG Indicators,Statistics,advanced,7.0,quiz,IGOT-08-024,NIC,4.3,2289,2025-12-04
+25,Python for Beginners,9,Python Programming,Technical,beginner,7.0,quiz,IGOT-09-025,NSSTA,4.2,1234,2025-12-20
+26,Python for Data Analysis,9,Python Programming,Technical,intermediate,3.1,document,IGOT-09-026,iGOT Karmayogi,3.9,3449,2026-01-11
+27,Advanced Python & ML,9,Python Programming,Technical,advanced,7.6,interactive,IGOT-09-027,iGOT Karmayogi,3.9,2495,2025-05-02
+28,Introduction to R,10,R Programming,Technical,beginner,5.5,quiz,IGOT-10-028,NSSTA,4.2,4017,2026-01-09
+29,Statistical Analysis with R,10,R Programming,Technical,intermediate,4.0,quiz,IGOT-10-029,LBSNAA,4.9,1595,2025-07-12
+30,Advanced R & Visualization,10,R Programming,Technical,advanced,3.4,quiz,IGOT-10-030,NSSTA,4.8,3415,2026-06-12
+31,SQL Basics,11,SQL & Databases,Technical,beginner,3.9,quiz,IGOT-11-031,LBSNAA,4.1,1296,2025-10-24
+32,Intermediate SQL & Database Design,11,SQL & Databases,Technical,intermediate,7.8,document,IGOT-11-032,IGNOU,4.9,2769,2026-05-14
+33,Advanced SQL & Performance,11,SQL & Databases,Technical,advanced,7.2,quiz,IGOT-11-033,iGOT Karmayogi,4.3,3793,2026-06-27
+34,Introduction to GIS,12,GIS & Mapping,Technical,beginner,6.3,quiz,IGOT-12-034,NSSTA,3.6,2221,2026-01-12
+35,QGIS for Government Data,12,GIS & Mapping,Technical,intermediate,5.7,quiz,IGOT-12-035,iGOT Karmayogi,4.8,4421,2025-12-22
+36,Advanced Spatial Analysis,12,GIS & Mapping,Technical,advanced,7.7,quiz,IGOT-12-036,IGNOU,3.6,610,2026-03-06
+37,Data Visualization Basics,13,Data Visualization,Technical,beginner,5.8,interactive,IGOT-13-037,NSSTA,4.6,3605,2026-05-15
+38,Dashboard Design with Power BI,13,Data Visualization,Technical,intermediate,6.6,video,IGOT-13-038,LBSNAA,3.7,2503,2026-06-20
+39,Advanced Visual Analytics,13,Data Visualization,Technical,advanced,2.3,video,IGOT-13-039,NIC,4.0,3578,2026-04-21
+40,ML Fundamentals for Officers,14,Machine Learning Basics,Technical,beginner,3.5,quiz,IGOT-14-040,IGNOU,4.5,1525,2026-04-08
+41,Applied Machine Learning,14,Machine Learning Basics,Technical,intermediate,3.1,quiz,IGOT-14-041,IGNOU,4.5,4126,2025-09-09
+42,Deep Learning Basics,14,Machine Learning Basics,Technical,advanced,2.9,quiz,IGOT-14-042,NIC,4.2,126,2025-05-19
+43,Cloud Computing Concepts,15,Cloud Computing,Technical,beginner,4.8,interactive,IGOT-15-043,IGNOU,3.7,3668,2026-01-09
+44,Government Cloud Platforms,15,Cloud Computing,Technical,intermediate,7.9,interactive,IGOT-15-044,LBSNAA,4.5,3792,2025-04-28
+45,Advanced Cloud Architecture,15,Cloud Computing,Technical,advanced,3.8,quiz,IGOT-15-045,LBSNAA,3.7,3174,2025-09-15
+46,Cybersecurity Awareness,16,Cybersecurity,Digital Governance,beginner,4.2,interactive,IGOT-16-046,NIC,3.5,3292,2026-02-14
+47,Information Security Management,16,Cybersecurity,Digital Governance,intermediate,2.0,video,IGOT-16-047,IGNOU,4.6,2394,2025-06-02
+48,Advanced Cyber Defence,16,Cybersecurity,Digital Governance,advanced,6.8,interactive,IGOT-16-048,NSSTA,4.5,2103,2025-07-22
+49,Data Privacy Fundamentals,17,Data Privacy & PDPB,Digital Governance,beginner,6.5,document,IGOT-17-049,iGOT Karmayogi,4.9,372,2026-01-27
+50,PDPB Compliance for Officers,17,Data Privacy & PDPB,Digital Governance,intermediate,6.7,video,IGOT-17-050,IGNOU,4.0,1126,2026-05-19
+51,Advanced Data Governance,17,Data Privacy & PDPB,Digital Governance,advanced,7.5,interactive,IGOT-17-051,LBSNAA,3.8,1132,2025-05-28
+52,Digital Signatures Basics,18,Digital Signatures,Digital Governance,beginner,5.2,interactive,IGOT-18-052,IGNOU,4.3,2282,2025-05-05
+53,PKI & e-Authentication,18,Digital Signatures,Digital Governance,intermediate,3.0,quiz,IGOT-18-053,NIC,4.6,2824,2025-05-19
+54,Advanced Digital Infrastructure,18,Digital Signatures,Digital Governance,advanced,2.7,video,IGOT-18-054,NSSTA,4.6,1898,2025-04-20
+55,Leadership in Public Service,19,Leadership,Behavioural,beginner,6.1,quiz,IGOT-19-055,IGNOU,4.0,3282,2026-06-27
+56,Strategic Leadership,19,Leadership,Behavioural,intermediate,3.6,video,IGOT-19-056,LBSNAA,4.1,2197,2025-09-08
+57,Change Leadership,19,Leadership,Behavioural,advanced,4.3,interactive,IGOT-19-057,iGOT Karmayogi,4.5,3912,2026-06-22
+58,PM Fundamentals,20,Project Management,Behavioural,beginner,5.7,interactive,IGOT-20-058,IGNOU,3.8,567,2025-08-13
+59,PMP for Government Projects,20,Project Management,Behavioural,intermediate,6.9,interactive,IGOT-20-059,LBSNAA,3.7,421,2026-06-15
+60,Agile Project Management,20,Project Management,Behavioural,advanced,3.8,quiz,IGOT-20-060,iGOT Karmayogi,3.6,4453,2026-04-26
+61,Effective Communication,21,Communication Skills,Behavioural,beginner,4.3,interactive,IGOT-21-061,IGNOU,4.1,1315,2025-12-04
+62,Presentation & Report Writing,21,Communication Skills,Behavioural,intermediate,5.9,quiz,IGOT-21-062,IGNOU,4.1,2341,2026-06-18
+63,Advanced Communication,21,Communication Skills,Behavioural,advanced,6.1,document,IGOT-21-063,LBSNAA,4.2,1984,2025-04-23
+64,Change Management Basics,22,Change Management,Behavioural,beginner,4.2,interactive,IGOT-22-064,IGNOU,4.9,2988,2026-06-03
+65,Leading Organizational Change,22,Change Management,Behavioural,intermediate,4.4,document,IGOT-22-065,iGOT Karmayogi,4.9,3775,2026-05-19
+66,Advanced Change Strategy,22,Change Management,Behavioural,advanced,6.0,video,IGOT-22-066,iGOT Karmayogi,4.7,2045,2026-05-01

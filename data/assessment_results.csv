@@ -1,0 +1,917 @@
+assessment_id,user_id,user_name,department,competency_id,competency_name,domain,score,total_questions,correct_answers,difficulty_level,gap_level,time_taken_sec,assessment_date
+1,2,Kavita Kumar,CSO,7,Labour Statistics,Statistics,53.8,9,2,intermediate,moderate,416,2026-07-30
+2,2,Kavita Kumar,CSO,3,Sampling Techniques,Statistics,17.6,9,1,beginner,critical,345,2026-03-16
+3,2,Kavita Kumar,CSO,18,Digital Signatures,Digital Governance,55.4,7,3,advanced,moderate,783,2026-08-28
+4,2,Kavita Kumar,CSO,22,Change Management,Behavioural,41.9,6,2,beginner,critical,379,2026-05-17
+5,2,Kavita Kumar,CSO,19,Leadership,Behavioural,19.6,8,1,intermediate,critical,1171,2026-04-03
+6,2,Kavita Kumar,CSO,8,SDG Indicators,Statistics,44.1,5,3,advanced,critical,573,2026-03-28
+7,2,Kavita Kumar,CSO,11,SQL & Databases,Technical,79.3,10,7,intermediate,minor,1058,2026-03-21
+8,3,Anita Pillai,Ministry of Statistics & PI,2,Survey Design,Statistics,53.9,8,5,beginner,moderate,1124,2026-05-11
+9,3,Anita Pillai,Ministry of Statistics & PI,16,Cybersecurity,Digital Governance,52.0,9,3,beginner,moderate,378,2026-06-23
+10,3,Anita Pillai,Ministry of Statistics & PI,13,Data Visualization,Technical,48.7,9,4,advanced,critical,785,2026-05-27
+11,4,Mukesh Reddy,NITI Aayog,17,Data Privacy & PDPB,Digital Governance,97.1,9,9,beginner,proficient,1000,2026-05-09
+12,4,Mukesh Reddy,NITI Aayog,10,R Programming,Technical,60.5,6,4,intermediate,moderate,1048,2026-05-22
+13,4,Mukesh Reddy,NITI Aayog,15,Cloud Computing,Technical,74.4,8,5,advanced,minor,642,2026-05-29
+14,4,Mukesh Reddy,NITI Aayog,22,Change Management,Behavioural,85.5,6,8,intermediate,proficient,257,2026-08-09
+15,4,Mukesh Reddy,NITI Aayog,14,Machine Learning Basics,Technical,85.3,5,8,advanced,proficient,883,2026-07-30
+16,4,Mukesh Reddy,NITI Aayog,4,Data Analysis,Statistics,74.5,9,3,advanced,minor,795,2026-03-14
+17,4,Mukesh Reddy,NITI Aayog,19,Leadership,Behavioural,93.5,10,7,advanced,proficient,225,2026-06-20
+18,5,Harish Pillai,Ministry of Statistics & PI,10,R Programming,Technical,93.1,10,7,beginner,proficient,341,2026-06-04
+19,5,Harish Pillai,Ministry of Statistics & PI,12,GIS & Mapping,Technical,91.1,7,8,beginner,proficient,998,2026-04-11
+20,5,Harish Pillai,Ministry of Statistics & PI,4,Data Analysis,Statistics,67.2,9,6,advanced,moderate,173,2026-03-30
+21,5,Harish Pillai,Ministry of Statistics & PI,19,Leadership,Behavioural,100.0,7,5,beginner,proficient,679,2026-03-06
+22,5,Harish Pillai,Ministry of Statistics & PI,17,Data Privacy & PDPB,Digital Governance,66.8,7,4,intermediate,moderate,132,2026-07-17
+23,5,Harish Pillai,Ministry of Statistics & PI,7,Labour Statistics,Statistics,97.3,8,4,beginner,proficient,182,2026-08-09
+24,5,Harish Pillai,Ministry of Statistics & PI,5,National Accounts,Statistics,64.4,10,5,beginner,moderate,890,2026-05-17
+25,6,Geeta Patel,CRS,11,SQL & Databases,Technical,53.2,9,2,advanced,moderate,287,2026-06-24
+26,6,Geeta Patel,CRS,6,Price Statistics,Statistics,38.4,8,3,intermediate,critical,1114,2026-03-30
+27,6,Geeta Patel,CRS,12,GIS & Mapping,Technical,32.0,9,1,intermediate,critical,1000,2026-08-04
+28,6,Geeta Patel,CRS,10,R Programming,Technical,50.5,7,5,advanced,moderate,1116,2026-04-20
+29,6,Geeta Patel,CRS,22,Change Management,Behavioural,42.7,8,3,beginner,critical,135,2026-07-11
+30,6,Geeta Patel,CRS,3,Sampling Techniques,Statistics,40.6,7,2,beginner,critical,643,2026-06-19
+31,7,Ramesh Agarwal,MOSPI Field Operations,4,Data Analysis,Statistics,98.5,6,8,advanced,proficient,845,2026-08-14
+32,7,Ramesh Agarwal,MOSPI Field Operations,1,Statistical Methods,Statistics,99.3,8,9,beginner,proficient,1013,2026-08-28
+33,7,Ramesh Agarwal,MOSPI Field Operations,16,Cybersecurity,Digital Governance,76.2,7,6,intermediate,minor,948,2026-03-22
+34,7,Ramesh Agarwal,MOSPI Field Operations,14,Machine Learning Basics,Technical,85.0,8,5,beginner,proficient,949,2026-08-27
+35,7,Ramesh Agarwal,MOSPI Field Operations,6,Price Statistics,Statistics,94.0,9,7,advanced,proficient,861,2026-08-10
+36,8,Kavita Saxena,NITI Aayog,4,Data Analysis,Statistics,82.7,5,6,intermediate,minor,815,2026-07-07
+37,8,Kavita Saxena,NITI Aayog,8,SDG Indicators,Statistics,79.6,9,7,beginner,minor,1164,2026-07-14
+38,8,Kavita Saxena,NITI Aayog,14,Machine Learning Basics,Technical,94.5,7,6,advanced,proficient,422,2026-07-03
+39,8,Kavita Saxena,NITI Aayog,19,Leadership,Behavioural,96.1,6,8,beginner,proficient,274,2026-07-18
+40,8,Kavita Saxena,NITI Aayog,13,Data Visualization,Technical,93.3,10,7,intermediate,proficient,1039,2026-03-11
+41,8,Kavita Saxena,NITI Aayog,17,Data Privacy & PDPB,Digital Governance,100.0,10,9,intermediate,proficient,767,2026-07-25
+42,9,Vikram Sharma,CSO,3,Sampling Techniques,Statistics,34.8,7,3,beginner,critical,755,2026-05-06
+43,9,Vikram Sharma,CSO,16,Cybersecurity,Digital Governance,39.5,7,1,advanced,critical,304,2026-03-28
+44,9,Vikram Sharma,CSO,15,Cloud Computing,Technical,47.2,9,4,intermediate,critical,1067,2026-04-06
+45,9,Vikram Sharma,CSO,10,R Programming,Technical,15.3,5,1,advanced,critical,505,2026-06-11
+46,9,Vikram Sharma,CSO,9,Python Programming,Technical,34.7,9,2,advanced,critical,428,2026-08-17
+47,9,Vikram Sharma,CSO,2,Survey Design,Statistics,14.1,7,1,beginner,critical,1153,2026-03-20
+48,10,Naresh Joshi,CRS,2,Survey Design,Statistics,71.7,9,6,beginner,minor,865,2026-05-29
+49,10,Naresh Joshi,CRS,8,SDG Indicators,Statistics,77.1,7,7,advanced,minor,227,2026-03-24
+50,10,Naresh Joshi,CRS,15,Cloud Computing,Technical,52.8,10,3,beginner,moderate,795,2026-08-08
+51,10,Naresh Joshi,CRS,17,Data Privacy & PDPB,Digital Governance,45.0,7,4,advanced,critical,427,2026-06-08
+52,11,Geeta Singh,NSSTA,19,Leadership,Behavioural,76.9,7,5,advanced,minor,922,2026-07-30
+53,11,Geeta Singh,NSSTA,22,Change Management,Behavioural,48.1,7,4,intermediate,critical,792,2026-07-31
+54,11,Geeta Singh,NSSTA,5,National Accounts,Statistics,59.3,10,5,advanced,moderate,1198,2026-08-09
+55,12,Pushpa Saxena,NITI Aayog,22,Change Management,Behavioural,95.3,8,5,beginner,proficient,401,2026-07-24
+56,12,Pushpa Saxena,NITI Aayog,14,Machine Learning Basics,Technical,74.6,5,5,beginner,minor,1159,2026-04-16
+57,12,Pushpa Saxena,NITI Aayog,17,Data Privacy & PDPB,Digital Governance,98.6,5,9,intermediate,proficient,388,2026-04-02
+58,12,Pushpa Saxena,NITI Aayog,12,GIS & Mapping,Technical,47.5,8,2,beginner,critical,490,2026-03-08
+59,12,Pushpa Saxena,NITI Aayog,1,Statistical Methods,Statistics,83.9,6,8,intermediate,minor,209,2026-05-19
+60,12,Pushpa Saxena,NITI Aayog,19,Leadership,Behavioural,47.1,7,4,advanced,critical,606,2026-05-11
+61,12,Pushpa Saxena,NITI Aayog,10,R Programming,Technical,56.5,8,3,advanced,moderate,609,2026-06-14
+62,12,Pushpa Saxena,NITI Aayog,3,Sampling Techniques,Statistics,60.3,8,3,intermediate,moderate,1022,2026-05-06
+63,13,Sanjay Sharma,DGET,13,Data Visualization,Technical,48.5,7,2,advanced,critical,1104,2026-05-29
+64,13,Sanjay Sharma,DGET,17,Data Privacy & PDPB,Digital Governance,36.1,9,1,advanced,critical,1176,2026-08-01
+65,13,Sanjay Sharma,DGET,14,Machine Learning Basics,Technical,38.7,7,3,advanced,critical,421,2026-05-13
+66,13,Sanjay Sharma,DGET,6,Price Statistics,Statistics,75.2,5,4,intermediate,minor,835,2026-08-26
+67,13,Sanjay Sharma,DGET,7,Labour Statistics,Statistics,29.8,7,1,intermediate,critical,287,2026-05-29
+68,14,Vinod Mishra,Ministry of Finance,1,Statistical Methods,Statistics,94.2,7,5,beginner,proficient,198,2026-06-20
+69,14,Vinod Mishra,Ministry of Finance,11,SQL & Databases,Technical,100.0,6,10,intermediate,proficient,1038,2026-03-28
+70,14,Vinod Mishra,Ministry of Finance,4,Data Analysis,Statistics,74.9,5,3,beginner,minor,644,2026-07-08
+71,14,Vinod Mishra,Ministry of Finance,21,Communication Skills,Behavioural,96.6,10,8,advanced,proficient,986,2026-08-04
+72,15,Manoj Patel,NITI Aayog,8,SDG Indicators,Statistics,36.7,10,3,intermediate,critical,248,2026-08-04
+73,15,Manoj Patel,NITI Aayog,10,R Programming,Technical,67.2,9,3,advanced,moderate,1175,2026-04-07
+74,15,Manoj Patel,NITI Aayog,4,Data Analysis,Statistics,38.1,6,3,beginner,critical,716,2026-05-15
+75,15,Manoj Patel,NITI Aayog,2,Survey Design,Statistics,73.0,9,5,beginner,minor,295,2026-04-20
+76,15,Manoj Patel,NITI Aayog,14,Machine Learning Basics,Technical,56.4,7,2,advanced,moderate,1159,2026-04-25
+77,16,Lata Yadav,NITI Aayog,1,Statistical Methods,Statistics,45.1,5,3,beginner,critical,332,2026-04-06
+78,16,Lata Yadav,NITI Aayog,13,Data Visualization,Technical,28.5,10,1,beginner,critical,210,2026-06-03
+79,16,Lata Yadav,NITI Aayog,16,Cybersecurity,Digital Governance,13.8,6,1,intermediate,critical,1100,2026-03-24
+80,16,Lata Yadav,NITI Aayog,2,Survey Design,Statistics,36.0,6,2,beginner,critical,1057,2026-08-23
+81,16,Lata Yadav,NITI Aayog,21,Communication Skills,Behavioural,43.9,6,2,intermediate,critical,755,2026-04-23
+82,16,Lata Yadav,NITI Aayog,12,GIS & Mapping,Technical,50.6,8,4,intermediate,moderate,638,2026-08-23
+83,16,Lata Yadav,NITI Aayog,9,Python Programming,Technical,45.6,7,2,advanced,critical,799,2026-06-24
+84,17,Meena Verma,DGET,12,GIS & Mapping,Technical,33.7,10,2,intermediate,critical,814,2026-07-16
+85,17,Meena Verma,DGET,14,Machine Learning Basics,Technical,24.3,9,1,beginner,critical,989,2026-08-12
+86,17,Meena Verma,DGET,13,Data Visualization,Technical,45.9,8,4,beginner,critical,721,2026-06-11
+87,18,Pushpa Shah,NITI Aayog,3,Sampling Techniques,Statistics,74.1,10,5,beginner,minor,1029,2026-06-04
+88,18,Pushpa Shah,NITI Aayog,11,SQL & Databases,Technical,98.4,8,4,advanced,proficient,842,2026-03-28
+89,18,Pushpa Shah,NITI Aayog,22,Change Management,Behavioural,94.0,5,4,advanced,proficient,951,2026-05-31
+90,19,Geeta Pandey,MOSPI Field Operations,22,Change Management,Behavioural,50.6,5,3,advanced,moderate,870,2026-06-01
+91,19,Geeta Pandey,MOSPI Field Operations,6,Price Statistics,Statistics,33.5,9,2,advanced,critical,1041,2026-05-30
+92,19,Geeta Pandey,MOSPI Field Operations,1,Statistical Methods,Statistics,66.4,7,5,beginner,moderate,401,2026-04-19
+93,19,Geeta Pandey,MOSPI Field Operations,5,National Accounts,Statistics,40.3,7,2,beginner,critical,173,2026-07-16
+94,19,Geeta Pandey,MOSPI Field Operations,15,Cloud Computing,Technical,62.4,8,5,intermediate,moderate,361,2026-06-26
+95,19,Geeta Pandey,MOSPI Field Operations,2,Survey Design,Statistics,55.2,6,4,intermediate,moderate,1125,2026-07-12
+96,19,Geeta Pandey,MOSPI Field Operations,19,Leadership,Behavioural,23.1,5,1,beginner,critical,1045,2026-07-19
+97,20,Manoj Shah,NITI Aayog,15,Cloud Computing,Technical,100.0,10,10,beginner,proficient,860,2026-04-24
+98,20,Manoj Shah,NITI Aayog,3,Sampling Techniques,Statistics,100.0,6,5,beginner,proficient,404,2026-07-03
+99,20,Manoj Shah,NITI Aayog,11,SQL & Databases,Technical,86.0,9,7,intermediate,proficient,1077,2026-04-13
+100,20,Manoj Shah,NITI Aayog,12,GIS & Mapping,Technical,81.0,6,7,beginner,minor,254,2026-06-14
+101,20,Manoj Shah,NITI Aayog,21,Communication Skills,Behavioural,62.1,8,5,intermediate,moderate,958,2026-04-07
+102,20,Manoj Shah,NITI Aayog,10,R Programming,Technical,100.0,5,6,intermediate,proficient,271,2026-05-09
+103,20,Manoj Shah,NITI Aayog,17,Data Privacy & PDPB,Digital Governance,63.8,6,5,advanced,moderate,492,2026-07-30
+104,20,Manoj Shah,NITI Aayog,14,Machine Learning Basics,Technical,89.6,8,8,beginner,proficient,374,2026-04-22
+105,21,Deepak Patel,NSSTA,10,R Programming,Technical,60.7,7,3,intermediate,moderate,522,2026-03-23
+106,21,Deepak Patel,NSSTA,6,Price Statistics,Statistics,100.0,9,7,beginner,proficient,740,2026-03-28
+107,21,Deepak Patel,NSSTA,11,SQL & Databases,Technical,64.2,6,5,advanced,moderate,435,2026-07-20
+108,21,Deepak Patel,NSSTA,8,SDG Indicators,Statistics,80.6,10,7,advanced,minor,811,2026-04-10
+109,22,Radha Kumar,CRS,1,Statistical Methods,Statistics,83.7,7,8,beginner,minor,973,2026-03-27
+110,22,Radha Kumar,CRS,3,Sampling Techniques,Statistics,44.6,10,2,intermediate,critical,713,2026-03-21
+111,22,Radha Kumar,CRS,2,Survey Design,Statistics,74.3,10,5,intermediate,minor,1048,2026-08-14
+112,23,Anita Singh,National Statistical Office,2,Survey Design,Statistics,79.4,9,4,intermediate,minor,773,2026-06-05
+113,23,Anita Singh,National Statistical Office,6,Price Statistics,Statistics,94.4,7,8,advanced,proficient,337,2026-06-12
+114,23,Anita Singh,National Statistical Office,15,Cloud Computing,Technical,83.5,6,6,beginner,minor,667,2026-05-09
+115,23,Anita Singh,National Statistical Office,14,Machine Learning Basics,Technical,85.1,7,6,advanced,proficient,976,2026-06-30
+116,23,Anita Singh,National Statistical Office,16,Cybersecurity,Digital Governance,93.1,6,6,advanced,proficient,760,2026-07-15
+117,23,Anita Singh,National Statistical Office,20,Project Management,Behavioural,86.7,9,6,intermediate,proficient,751,2026-04-27
+118,23,Anita Singh,National Statistical Office,7,Labour Statistics,Statistics,63.9,5,3,intermediate,moderate,1155,2026-05-07
+119,23,Anita Singh,National Statistical Office,21,Communication Skills,Behavioural,97.3,7,4,beginner,proficient,696,2026-04-28
+120,24,Girish Nair,MOSPI Field Operations,21,Communication Skills,Behavioural,82.4,6,5,advanced,minor,869,2026-05-21
+121,24,Girish Nair,MOSPI Field Operations,16,Cybersecurity,Digital Governance,72.9,9,6,beginner,minor,862,2026-04-13
+122,24,Girish Nair,MOSPI Field Operations,10,R Programming,Technical,98.6,7,4,intermediate,proficient,1152,2026-05-09
+123,24,Girish Nair,MOSPI Field Operations,18,Digital Signatures,Digital Governance,86.3,9,8,advanced,proficient,363,2026-07-31
+124,24,Girish Nair,MOSPI Field Operations,1,Statistical Methods,Statistics,70.5,5,5,intermediate,minor,814,2026-04-12
+125,24,Girish Nair,MOSPI Field Operations,4,Data Analysis,Statistics,100.0,6,9,advanced,proficient,942,2026-04-26
+126,24,Girish Nair,MOSPI Field Operations,14,Machine Learning Basics,Technical,73.7,5,3,beginner,minor,400,2026-06-08
+127,25,Rajiv Mishra,DGET,17,Data Privacy & PDPB,Digital Governance,81.3,8,7,advanced,minor,732,2026-04-03
+128,25,Rajiv Mishra,DGET,15,Cloud Computing,Technical,60.4,7,5,advanced,moderate,1123,2026-04-10
+129,25,Rajiv Mishra,DGET,5,National Accounts,Statistics,56.8,7,3,advanced,moderate,344,2026-05-18
+130,25,Rajiv Mishra,DGET,22,Change Management,Behavioural,98.5,9,6,advanced,proficient,174,2026-04-02
+131,25,Rajiv Mishra,DGET,20,Project Management,Behavioural,20.6,9,1,beginner,critical,225,2026-04-05
+132,25,Rajiv Mishra,DGET,11,SQL & Databases,Technical,74.5,8,4,advanced,minor,898,2026-07-26
+133,26,Rekha Yadav,CRS,8,SDG Indicators,Statistics,58.0,6,4,advanced,moderate,1085,2026-08-17
+134,26,Rekha Yadav,CRS,2,Survey Design,Statistics,83.3,10,4,advanced,minor,544,2026-04-11
+135,26,Rekha Yadav,CRS,19,Leadership,Behavioural,62.2,9,4,intermediate,moderate,474,2026-05-07
+136,26,Rekha Yadav,CRS,4,Data Analysis,Statistics,97.8,9,6,advanced,proficient,845,2026-03-12
+137,26,Rekha Yadav,CRS,7,Labour Statistics,Statistics,78.2,10,7,intermediate,minor,1111,2026-07-14
+138,26,Rekha Yadav,CRS,1,Statistical Methods,Statistics,45.7,6,3,advanced,critical,731,2026-07-06
+139,26,Rekha Yadav,CRS,15,Cloud Computing,Technical,100.0,7,10,beginner,proficient,1121,2026-06-12
+140,26,Rekha Yadav,CRS,6,Price Statistics,Statistics,55.8,8,3,advanced,moderate,680,2026-06-20
+141,27,Rajesh Singh,Ministry of Statistics & PI,19,Leadership,Behavioural,10.0,7,0,intermediate,critical,206,2026-06-20
+142,27,Rajesh Singh,Ministry of Statistics & PI,22,Change Management,Behavioural,80.0,10,4,intermediate,minor,1025,2026-03-18
+143,27,Rajesh Singh,Ministry of Statistics & PI,18,Digital Signatures,Digital Governance,44.6,6,4,intermediate,critical,676,2026-07-28
+144,28,Vikram Shah,MOSPI Field Operations,20,Project Management,Behavioural,73.1,6,3,advanced,minor,582,2026-03-22
+145,28,Vikram Shah,MOSPI Field Operations,19,Leadership,Behavioural,53.5,7,5,intermediate,moderate,325,2026-03-11
+146,28,Vikram Shah,MOSPI Field Operations,8,SDG Indicators,Statistics,60.8,6,3,advanced,moderate,443,2026-05-20
+147,29,Girish Yadav,DGET,16,Cybersecurity,Digital Governance,50.3,6,4,advanced,moderate,196,2026-07-19
+148,29,Girish Yadav,DGET,22,Change Management,Behavioural,21.2,8,1,beginner,critical,933,2026-04-28
+149,29,Girish Yadav,DGET,7,Labour Statistics,Statistics,58.9,7,2,beginner,moderate,731,2026-04-09
+150,29,Girish Yadav,DGET,10,R Programming,Technical,74.8,9,3,intermediate,minor,702,2026-05-08
+151,29,Girish Yadav,DGET,11,SQL & Databases,Technical,69.7,8,4,advanced,moderate,1078,2026-06-24
+152,29,Girish Yadav,DGET,19,Leadership,Behavioural,45.7,6,2,intermediate,critical,452,2026-05-07
+153,29,Girish Yadav,DGET,2,Survey Design,Statistics,30.1,5,3,intermediate,critical,724,2026-04-09
+154,29,Girish Yadav,DGET,15,Cloud Computing,Technical,24.2,10,1,beginner,critical,950,2026-05-15
+155,30,Ramesh Srivastava,Ministry of Finance,11,SQL & Databases,Technical,73.5,7,5,beginner,minor,1034,2026-06-25
+156,30,Ramesh Srivastava,Ministry of Finance,3,Sampling Techniques,Statistics,91.8,7,6,advanced,proficient,143,2026-06-27
+157,30,Ramesh Srivastava,Ministry of Finance,13,Data Visualization,Technical,63.9,5,6,beginner,moderate,1073,2026-06-15
+158,30,Ramesh Srivastava,Ministry of Finance,4,Data Analysis,Statistics,56.9,6,4,advanced,moderate,1149,2026-06-14
+159,30,Ramesh Srivastava,Ministry of Finance,6,Price Statistics,Statistics,70.2,7,4,advanced,minor,572,2026-07-07
+160,30,Ramesh Srivastava,Ministry of Finance,5,National Accounts,Statistics,55.7,6,4,beginner,moderate,1051,2026-03-30
+161,30,Ramesh Srivastava,Ministry of Finance,16,Cybersecurity,Digital Governance,60.0,8,5,advanced,moderate,567,2026-06-30
+162,31,Shobha Pandey,CSO,20,Project Management,Behavioural,72.6,9,3,beginner,minor,1155,2026-07-12
+163,31,Shobha Pandey,CSO,3,Sampling Techniques,Statistics,43.4,7,3,intermediate,critical,358,2026-03-11
+164,31,Shobha Pandey,CSO,17,Data Privacy & PDPB,Digital Governance,48.1,6,4,advanced,critical,1121,2026-08-09
+165,31,Shobha Pandey,CSO,15,Cloud Computing,Technical,68.3,5,5,beginner,moderate,1171,2026-05-18
+166,31,Shobha Pandey,CSO,22,Change Management,Behavioural,41.0,8,3,beginner,critical,1066,2026-03-13
+167,31,Shobha Pandey,CSO,12,GIS & Mapping,Technical,62.7,8,4,beginner,moderate,566,2026-04-06
+168,31,Shobha Pandey,CSO,21,Communication Skills,Behavioural,25.6,5,1,intermediate,critical,825,2026-03-06
+169,31,Shobha Pandey,CSO,19,Leadership,Behavioural,100.0,5,8,beginner,proficient,707,2026-05-20
+170,32,Asha Verma,Ministry of Finance,5,National Accounts,Statistics,100.0,8,8,intermediate,proficient,889,2026-08-12
+171,32,Asha Verma,Ministry of Finance,21,Communication Skills,Behavioural,74.1,9,4,advanced,minor,832,2026-08-02
+172,32,Asha Verma,Ministry of Finance,14,Machine Learning Basics,Technical,60.8,6,5,intermediate,moderate,380,2026-07-06
+173,32,Asha Verma,Ministry of Finance,12,GIS & Mapping,Technical,100.0,7,8,advanced,proficient,988,2026-04-18
+174,33,Suresh Sharma,NITI Aayog,8,SDG Indicators,Statistics,19.4,6,1,beginner,critical,185,2026-03-16
+175,33,Suresh Sharma,NITI Aayog,22,Change Management,Behavioural,18.6,5,1,beginner,critical,257,2026-08-07
+176,33,Suresh Sharma,NITI Aayog,15,Cloud Computing,Technical,60.3,9,3,intermediate,moderate,219,2026-07-01
+177,33,Suresh Sharma,NITI Aayog,12,GIS & Mapping,Technical,44.3,6,3,beginner,critical,235,2026-07-28
+178,33,Suresh Sharma,NITI Aayog,5,National Accounts,Statistics,27.2,9,1,beginner,critical,773,2026-04-07
+179,33,Suresh Sharma,NITI Aayog,9,Python Programming,Technical,23.4,7,1,intermediate,critical,413,2026-03-16
+180,34,Dinesh Mehta,CSO,8,SDG Indicators,Statistics,69.5,9,5,beginner,moderate,825,2026-03-21
+181,34,Dinesh Mehta,CSO,14,Machine Learning Basics,Technical,70.0,7,7,intermediate,minor,956,2026-07-25
+182,34,Dinesh Mehta,CSO,10,R Programming,Technical,57.2,7,4,beginner,moderate,1089,2026-07-02
+183,34,Dinesh Mehta,CSO,9,Python Programming,Technical,93.9,10,5,intermediate,proficient,238,2026-04-11
+184,34,Dinesh Mehta,CSO,2,Survey Design,Statistics,72.6,8,5,advanced,minor,394,2026-05-25
+185,34,Dinesh Mehta,CSO,6,Price Statistics,Statistics,85.5,10,4,intermediate,proficient,879,2026-08-09
+186,34,Dinesh Mehta,CSO,21,Communication Skills,Behavioural,97.1,9,9,beginner,proficient,225,2026-06-25
+187,35,Naresh Kumar,MOSPI Field Operations,22,Change Management,Behavioural,66.1,10,5,beginner,moderate,1101,2026-07-10
+188,35,Naresh Kumar,MOSPI Field Operations,20,Project Management,Behavioural,35.4,7,2,beginner,critical,553,2026-07-15
+189,35,Naresh Kumar,MOSPI Field Operations,21,Communication Skills,Behavioural,66.7,8,4,advanced,moderate,538,2026-05-23
+190,35,Naresh Kumar,MOSPI Field Operations,2,Survey Design,Statistics,55.9,6,5,intermediate,moderate,699,2026-05-27
+191,35,Naresh Kumar,MOSPI Field Operations,3,Sampling Techniques,Statistics,32.5,7,2,intermediate,critical,1170,2026-04-27
+192,35,Naresh Kumar,MOSPI Field Operations,7,Labour Statistics,Statistics,63.5,8,3,advanced,moderate,1081,2026-06-12
+193,36,Radha Patel,MOSPI Field Operations,12,GIS & Mapping,Technical,31.8,6,1,intermediate,critical,975,2026-06-18
+194,36,Radha Patel,MOSPI Field Operations,11,SQL & Databases,Technical,38.7,6,2,intermediate,critical,591,2026-05-27
+195,36,Radha Patel,MOSPI Field Operations,14,Machine Learning Basics,Technical,31.4,9,3,advanced,critical,811,2026-06-28
+196,36,Radha Patel,MOSPI Field Operations,2,Survey Design,Statistics,37.9,8,3,advanced,critical,1124,2026-05-07
+197,37,Sunita Sharma,Ministry of Finance,12,GIS & Mapping,Technical,45.0,9,4,beginner,critical,1193,2026-08-24
+198,37,Sunita Sharma,Ministry of Finance,6,Price Statistics,Statistics,87.9,5,8,beginner,proficient,133,2026-05-19
+199,37,Sunita Sharma,Ministry of Finance,5,National Accounts,Statistics,100.0,5,10,beginner,proficient,138,2026-07-08
+200,37,Sunita Sharma,Ministry of Finance,18,Digital Signatures,Digital Governance,100.0,9,8,intermediate,proficient,243,2026-03-27
+201,38,Mukesh Singh,National Statistical Office,22,Change Management,Behavioural,74.1,9,5,beginner,minor,1148,2026-03-07
+202,38,Mukesh Singh,National Statistical Office,20,Project Management,Behavioural,48.4,10,3,beginner,critical,339,2026-08-08
+203,38,Mukesh Singh,National Statistical Office,16,Cybersecurity,Digital Governance,32.2,9,2,intermediate,critical,845,2026-06-25
+204,38,Mukesh Singh,National Statistical Office,21,Communication Skills,Behavioural,43.4,8,2,intermediate,critical,951,2026-05-07
+205,38,Mukesh Singh,National Statistical Office,1,Statistical Methods,Statistics,10.0,6,0,advanced,critical,285,2026-03-18
+206,38,Mukesh Singh,National Statistical Office,18,Digital Signatures,Digital Governance,23.6,10,1,beginner,critical,950,2026-05-27
+207,38,Mukesh Singh,National Statistical Office,14,Machine Learning Basics,Technical,30.7,10,1,advanced,critical,470,2026-08-11
+208,38,Mukesh Singh,National Statistical Office,17,Data Privacy & PDPB,Digital Governance,59.7,8,4,advanced,moderate,798,2026-04-10
+209,39,Kavita Pillai,Ministry of Agriculture,17,Data Privacy & PDPB,Digital Governance,52.3,9,4,intermediate,moderate,215,2026-08-13
+210,39,Kavita Pillai,Ministry of Agriculture,2,Survey Design,Statistics,78.8,10,5,advanced,minor,187,2026-07-18
+211,39,Kavita Pillai,Ministry of Agriculture,8,SDG Indicators,Statistics,57.7,6,5,beginner,moderate,935,2026-08-13
+212,40,Sunita Pandey,CSO,6,Price Statistics,Statistics,47.6,9,3,intermediate,critical,406,2026-03-09
+213,40,Sunita Pandey,CSO,19,Leadership,Behavioural,51.0,7,2,beginner,moderate,1015,2026-07-04
+214,40,Sunita Pandey,CSO,8,SDG Indicators,Statistics,33.5,5,2,advanced,critical,932,2026-06-10
+215,40,Sunita Pandey,CSO,13,Data Visualization,Technical,68.5,8,5,beginner,moderate,848,2026-04-13
+216,40,Sunita Pandey,CSO,22,Change Management,Behavioural,57.1,8,4,beginner,moderate,898,2026-08-11
+217,41,Ravi Tiwari,CRS,10,R Programming,Technical,35.7,10,2,intermediate,critical,858,2026-08-05
+218,41,Ravi Tiwari,CRS,8,SDG Indicators,Statistics,17.0,5,0,intermediate,critical,1030,2026-06-01
+219,41,Ravi Tiwari,CRS,3,Sampling Techniques,Statistics,42.4,5,2,intermediate,critical,1039,2026-04-12
+220,41,Ravi Tiwari,CRS,20,Project Management,Behavioural,33.5,9,3,intermediate,critical,331,2026-08-26
+221,41,Ravi Tiwari,CRS,9,Python Programming,Technical,61.1,9,5,intermediate,moderate,908,2026-08-29
+222,41,Ravi Tiwari,CRS,5,National Accounts,Statistics,54.0,7,4,intermediate,moderate,293,2026-04-11
+223,41,Ravi Tiwari,CRS,13,Data Visualization,Technical,83.0,9,7,beginner,minor,899,2026-07-20
+224,42,Suresh Singh,CSO,9,Python Programming,Technical,28.3,5,1,intermediate,critical,685,2026-05-17
+225,42,Suresh Singh,CSO,10,R Programming,Technical,46.5,7,3,beginner,critical,1135,2026-04-02
+226,42,Suresh Singh,CSO,16,Cybersecurity,Digital Governance,86.1,9,5,intermediate,proficient,339,2026-07-29
+227,42,Suresh Singh,CSO,5,National Accounts,Statistics,41.4,7,3,intermediate,critical,794,2026-05-12
+228,43,Vikram Yadav,MOSPI Field Operations,14,Machine Learning Basics,Technical,100.0,7,9,advanced,proficient,531,2026-05-02
+229,43,Vikram Yadav,MOSPI Field Operations,21,Communication Skills,Behavioural,48.7,7,3,advanced,critical,1125,2026-04-07
+230,43,Vikram Yadav,MOSPI Field Operations,20,Project Management,Behavioural,100.0,6,7,intermediate,proficient,694,2026-05-24
+231,43,Vikram Yadav,MOSPI Field Operations,5,National Accounts,Statistics,39.4,6,3,advanced,critical,488,2026-03-11
+232,43,Vikram Yadav,MOSPI Field Operations,10,R Programming,Technical,98.3,9,4,advanced,proficient,1065,2026-07-10
+233,44,Rajesh Nair,National Statistical Office,10,R Programming,Technical,57.5,10,4,intermediate,moderate,271,2026-05-10
+234,44,Rajesh Nair,National Statistical Office,3,Sampling Techniques,Statistics,82.6,9,6,advanced,minor,940,2026-04-18
+235,44,Rajesh Nair,National Statistical Office,14,Machine Learning Basics,Technical,15.7,10,1,advanced,critical,195,2026-06-01
+236,44,Rajesh Nair,National Statistical Office,16,Cybersecurity,Digital Governance,54.5,10,4,advanced,moderate,294,2026-08-05
+237,44,Rajesh Nair,National Statistical Office,5,National Accounts,Statistics,59.3,7,3,advanced,moderate,210,2026-04-10
+238,44,Rajesh Nair,National Statistical Office,22,Change Management,Behavioural,30.0,10,3,advanced,critical,938,2026-06-09
+239,45,Meena Joshi,Ministry of Agriculture,4,Data Analysis,Statistics,80.9,10,7,beginner,minor,1032,2026-05-29
+240,45,Meena Joshi,Ministry of Agriculture,1,Statistical Methods,Statistics,58.4,8,4,advanced,moderate,1144,2026-07-25
+241,45,Meena Joshi,Ministry of Agriculture,22,Change Management,Behavioural,79.1,5,5,intermediate,minor,295,2026-08-03
+242,45,Meena Joshi,Ministry of Agriculture,9,Python Programming,Technical,84.7,10,5,intermediate,minor,758,2026-06-06
+243,45,Meena Joshi,Ministry of Agriculture,8,SDG Indicators,Statistics,69.6,8,4,intermediate,moderate,319,2026-05-12
+244,45,Meena Joshi,Ministry of Agriculture,17,Data Privacy & PDPB,Digital Governance,84.8,10,8,intermediate,minor,773,2026-08-15
+245,46,Manoj Shah,MOSPI Field Operations,2,Survey Design,Statistics,70.4,10,4,advanced,minor,477,2026-04-13
+246,46,Manoj Shah,MOSPI Field Operations,4,Data Analysis,Statistics,65.9,6,4,advanced,moderate,993,2026-05-06
+247,46,Manoj Shah,MOSPI Field Operations,1,Statistical Methods,Statistics,47.5,6,2,advanced,critical,1005,2026-05-23
+248,46,Manoj Shah,MOSPI Field Operations,11,SQL & Databases,Technical,63.6,5,6,advanced,moderate,524,2026-05-09
+249,46,Manoj Shah,MOSPI Field Operations,21,Communication Skills,Behavioural,30.5,10,1,beginner,critical,690,2026-08-16
+250,47,Amit Kumar,NSSTA,4,Data Analysis,Statistics,41.0,5,2,advanced,critical,1122,2026-04-19
+251,47,Amit Kumar,NSSTA,18,Digital Signatures,Digital Governance,66.1,8,5,intermediate,moderate,353,2026-06-04
+252,47,Amit Kumar,NSSTA,6,Price Statistics,Statistics,47.5,7,3,advanced,critical,473,2026-03-13
+253,47,Amit Kumar,NSSTA,12,GIS & Mapping,Technical,46.7,9,4,beginner,critical,394,2026-06-13
+254,47,Amit Kumar,NSSTA,11,SQL & Databases,Technical,36.2,5,2,intermediate,critical,359,2026-07-17
+255,47,Amit Kumar,NSSTA,7,Labour Statistics,Statistics,43.8,8,3,advanced,critical,402,2026-04-07
+256,47,Amit Kumar,NSSTA,15,Cloud Computing,Technical,57.9,8,4,beginner,moderate,1116,2026-03-23
+257,48,Asha Nair,National Statistical Office,21,Communication Skills,Behavioural,98.3,9,4,intermediate,proficient,139,2026-04-30
+258,48,Asha Nair,National Statistical Office,6,Price Statistics,Statistics,100.0,6,6,intermediate,proficient,1155,2026-03-18
+259,48,Asha Nair,National Statistical Office,18,Digital Signatures,Digital Governance,57.7,8,5,intermediate,moderate,1120,2026-07-21
+260,48,Asha Nair,National Statistical Office,22,Change Management,Behavioural,85.9,5,7,beginner,proficient,571,2026-06-19
+261,48,Asha Nair,National Statistical Office,16,Cybersecurity,Digital Governance,97.6,7,5,intermediate,proficient,1134,2026-04-14
+262,48,Asha Nair,National Statistical Office,10,R Programming,Technical,87.6,9,4,advanced,proficient,353,2026-06-25
+263,48,Asha Nair,National Statistical Office,5,National Accounts,Statistics,90.3,7,8,beginner,proficient,1023,2026-04-15
+264,49,Amit Agarwal,NITI Aayog,14,Machine Learning Basics,Technical,32.1,7,1,intermediate,critical,658,2026-06-04
+265,49,Amit Agarwal,NITI Aayog,4,Data Analysis,Statistics,70.2,5,4,beginner,minor,838,2026-03-29
+266,49,Amit Agarwal,NITI Aayog,21,Communication Skills,Behavioural,59.4,10,4,beginner,moderate,405,2026-07-11
+267,49,Amit Agarwal,NITI Aayog,8,SDG Indicators,Statistics,77.9,9,5,advanced,minor,695,2026-04-02
+268,50,Usha Agarwal,CRS,6,Price Statistics,Statistics,49.6,6,3,beginner,critical,687,2026-03-18
+269,50,Usha Agarwal,CRS,11,SQL & Databases,Technical,100.0,6,6,advanced,proficient,779,2026-06-30
+270,50,Usha Agarwal,CRS,10,R Programming,Technical,100.0,10,8,intermediate,proficient,411,2026-04-07
+271,50,Usha Agarwal,CRS,20,Project Management,Behavioural,62.6,8,5,beginner,moderate,310,2026-05-21
+272,50,Usha Agarwal,CRS,9,Python Programming,Technical,60.9,9,6,intermediate,moderate,875,2026-05-08
+273,50,Usha Agarwal,CRS,17,Data Privacy & PDPB,Digital Governance,94.9,5,9,beginner,proficient,1058,2026-03-23
+274,50,Usha Agarwal,CRS,4,Data Analysis,Statistics,74.7,10,7,intermediate,minor,249,2026-04-18
+275,51,Ramesh Nair,Ministry of Agriculture,7,Labour Statistics,Statistics,92.7,9,5,advanced,proficient,1113,2026-06-06
+276,51,Ramesh Nair,Ministry of Agriculture,14,Machine Learning Basics,Technical,70.6,10,3,beginner,minor,323,2026-03-25
+277,51,Ramesh Nair,Ministry of Agriculture,22,Change Management,Behavioural,89.2,5,5,intermediate,proficient,1054,2026-09-01
+278,51,Ramesh Nair,Ministry of Agriculture,16,Cybersecurity,Digital Governance,65.5,8,3,advanced,moderate,390,2026-03-19
+279,51,Ramesh Nair,Ministry of Agriculture,9,Python Programming,Technical,73.3,7,3,advanced,minor,858,2026-06-29
+280,51,Ramesh Nair,Ministry of Agriculture,11,SQL & Databases,Technical,100.0,5,7,advanced,proficient,458,2026-08-19
+281,52,Pooja Srivastava,NSSTA,21,Communication Skills,Behavioural,100.0,6,9,beginner,proficient,1183,2026-03-11
+282,52,Pooja Srivastava,NSSTA,10,R Programming,Technical,85.1,8,4,beginner,proficient,823,2026-08-02
+283,52,Pooja Srivastava,NSSTA,8,SDG Indicators,Statistics,100.0,6,8,beginner,proficient,588,2026-05-26
+284,52,Pooja Srivastava,NSSTA,14,Machine Learning Basics,Technical,83.6,5,8,beginner,minor,331,2026-06-13
+285,52,Pooja Srivastava,NSSTA,3,Sampling Techniques,Statistics,74.8,8,4,advanced,minor,412,2026-08-15
+286,52,Pooja Srivastava,NSSTA,4,Data Analysis,Statistics,96.2,9,8,beginner,proficient,456,2026-05-12
+287,53,Geeta Verma,National Statistical Office,7,Labour Statistics,Statistics,71.1,5,3,beginner,minor,372,2026-04-04
+288,53,Geeta Verma,National Statistical Office,21,Communication Skills,Behavioural,52.1,10,4,intermediate,moderate,999,2026-06-13
+289,53,Geeta Verma,National Statistical Office,5,National Accounts,Statistics,88.5,10,4,beginner,proficient,703,2026-03-09
+290,53,Geeta Verma,National Statistical Office,14,Machine Learning Basics,Technical,71.9,5,7,intermediate,minor,540,2026-04-22
+291,53,Geeta Verma,National Statistical Office,20,Project Management,Behavioural,75.9,8,5,advanced,minor,231,2026-07-02
+292,54,Sanjay Mishra,CRS,13,Data Visualization,Technical,77.8,5,5,intermediate,minor,390,2026-05-25
+293,54,Sanjay Mishra,CRS,4,Data Analysis,Statistics,100.0,7,9,advanced,proficient,473,2026-05-04
+294,54,Sanjay Mishra,CRS,8,SDG Indicators,Statistics,67.1,5,3,advanced,moderate,258,2026-08-29
+295,54,Sanjay Mishra,CRS,16,Cybersecurity,Digital Governance,84.6,5,6,advanced,minor,706,2026-03-25
+296,54,Sanjay Mishra,CRS,3,Sampling Techniques,Statistics,90.1,10,8,intermediate,proficient,987,2026-03-06
+297,54,Sanjay Mishra,CRS,17,Data Privacy & PDPB,Digital Governance,64.0,9,5,beginner,moderate,688,2026-08-11
+298,55,Priya Mishra,CRS,3,Sampling Techniques,Statistics,99.8,7,7,advanced,proficient,255,2026-06-14
+299,55,Priya Mishra,CRS,17,Data Privacy & PDPB,Digital Governance,75.8,6,3,beginner,minor,296,2026-05-13
+300,55,Priya Mishra,CRS,7,Labour Statistics,Statistics,57.4,5,4,advanced,moderate,232,2026-06-14
+301,55,Priya Mishra,CRS,5,National Accounts,Statistics,71.7,6,3,beginner,minor,401,2026-03-06
+302,55,Priya Mishra,CRS,18,Digital Signatures,Digital Governance,62.2,5,3,intermediate,moderate,830,2026-04-21
+303,56,Ramesh Shah,NITI Aayog,9,Python Programming,Technical,32.1,9,1,intermediate,critical,277,2026-04-27
+304,56,Ramesh Shah,NITI Aayog,6,Price Statistics,Statistics,58.2,8,5,intermediate,moderate,233,2026-04-27
+305,56,Ramesh Shah,NITI Aayog,12,GIS & Mapping,Technical,48.7,6,3,beginner,critical,356,2026-07-05
+306,56,Ramesh Shah,NITI Aayog,5,National Accounts,Statistics,33.4,10,3,beginner,critical,210,2026-08-29
+307,56,Ramesh Shah,NITI Aayog,22,Change Management,Behavioural,42.5,8,2,beginner,critical,192,2026-04-13
+308,56,Ramesh Shah,NITI Aayog,4,Data Analysis,Statistics,62.1,10,6,advanced,moderate,978,2026-07-06
+309,56,Ramesh Shah,NITI Aayog,1,Statistical Methods,Statistics,33.7,10,2,intermediate,critical,279,2026-04-08
+310,57,Pooja Pillai,Ministry of Statistics & PI,4,Data Analysis,Statistics,92.8,6,8,beginner,proficient,941,2026-08-15
+311,57,Pooja Pillai,Ministry of Statistics & PI,17,Data Privacy & PDPB,Digital Governance,100.0,7,7,beginner,proficient,1055,2026-08-30
+312,57,Pooja Pillai,Ministry of Statistics & PI,22,Change Management,Behavioural,50.8,7,3,intermediate,moderate,742,2026-03-26
+313,57,Pooja Pillai,Ministry of Statistics & PI,2,Survey Design,Statistics,76.8,8,4,advanced,minor,622,2026-07-25
+314,57,Pooja Pillai,Ministry of Statistics & PI,6,Price Statistics,Statistics,93.2,5,7,beginner,proficient,597,2026-04-16
+315,58,Vinod Srivastava,NITI Aayog,21,Communication Skills,Behavioural,80.3,5,4,advanced,minor,607,2026-05-17
+316,58,Vinod Srivastava,NITI Aayog,1,Statistical Methods,Statistics,39.8,8,1,beginner,critical,693,2026-08-09
+317,58,Vinod Srivastava,NITI Aayog,11,SQL & Databases,Technical,76.0,9,6,advanced,minor,882,2026-05-07
+318,58,Vinod Srivastava,NITI Aayog,22,Change Management,Behavioural,67.0,10,3,advanced,moderate,315,2026-04-25
+319,58,Vinod Srivastava,NITI Aayog,13,Data Visualization,Technical,85.7,5,7,advanced,proficient,247,2026-05-13
+320,59,Amit Srivastava,NITI Aayog,5,National Accounts,Statistics,100.0,8,7,beginner,proficient,272,2026-07-12
+321,59,Amit Srivastava,NITI Aayog,8,SDG Indicators,Statistics,99.9,5,5,beginner,proficient,456,2026-05-09
+322,59,Amit Srivastava,NITI Aayog,10,R Programming,Technical,100.0,8,7,intermediate,proficient,367,2026-04-17
+323,59,Amit Srivastava,NITI Aayog,9,Python Programming,Technical,60.2,8,4,intermediate,moderate,662,2026-08-02
+324,59,Amit Srivastava,NITI Aayog,11,SQL & Databases,Technical,100.0,5,6,advanced,proficient,743,2026-03-07
+325,59,Amit Srivastava,NITI Aayog,13,Data Visualization,Technical,69.6,7,4,beginner,moderate,628,2026-06-02
+326,59,Amit Srivastava,NITI Aayog,18,Digital Signatures,Digital Governance,72.0,8,6,beginner,minor,732,2026-06-27
+327,59,Amit Srivastava,NITI Aayog,6,Price Statistics,Statistics,84.3,8,6,advanced,minor,631,2026-08-08
+328,60,Asha Singh,CRS,4,Data Analysis,Statistics,49.7,6,2,intermediate,critical,882,2026-03-10
+329,60,Asha Singh,CRS,5,National Accounts,Statistics,42.1,9,3,intermediate,critical,273,2026-08-27
+330,60,Asha Singh,CRS,22,Change Management,Behavioural,40.9,5,2,advanced,critical,1028,2026-07-31
+331,60,Asha Singh,CRS,1,Statistical Methods,Statistics,89.0,7,4,beginner,proficient,1064,2026-08-20
+332,60,Asha Singh,CRS,2,Survey Design,Statistics,78.9,6,7,intermediate,minor,928,2026-04-27
+333,60,Asha Singh,CRS,8,SDG Indicators,Statistics,86.6,6,6,beginner,proficient,503,2026-06-23
+334,61,Mukesh Tiwari,DGET,15,Cloud Computing,Technical,68.4,10,4,intermediate,moderate,963,2026-04-14
+335,61,Mukesh Tiwari,DGET,5,National Accounts,Statistics,55.8,8,3,intermediate,moderate,528,2026-03-21
+336,61,Mukesh Tiwari,DGET,2,Survey Design,Statistics,64.4,9,3,advanced,moderate,159,2026-05-27
+337,61,Mukesh Tiwari,DGET,20,Project Management,Behavioural,66.8,9,5,intermediate,moderate,1148,2026-06-11
+338,61,Mukesh Tiwari,DGET,8,SDG Indicators,Statistics,46.8,8,3,beginner,critical,173,2026-06-12
+339,62,Ravi Mishra,DGET,8,SDG Indicators,Statistics,83.5,6,4,beginner,minor,613,2026-06-25
+340,62,Ravi Mishra,DGET,1,Statistical Methods,Statistics,10.0,9,1,beginner,critical,569,2026-04-07
+341,62,Ravi Mishra,DGET,9,Python Programming,Technical,94.3,7,5,beginner,proficient,604,2026-04-03
+342,62,Ravi Mishra,DGET,2,Survey Design,Statistics,49.6,7,4,advanced,critical,854,2026-04-03
+343,62,Ravi Mishra,DGET,16,Cybersecurity,Digital Governance,100.0,9,9,beginner,proficient,505,2026-04-28
+344,62,Ravi Mishra,DGET,17,Data Privacy & PDPB,Digital Governance,80.9,9,5,beginner,minor,1124,2026-08-23
+345,62,Ravi Mishra,DGET,12,GIS & Mapping,Technical,87.0,6,4,advanced,proficient,1098,2026-09-01
+346,63,Rajesh Tiwari,CSO,20,Project Management,Behavioural,92.0,7,4,beginner,proficient,422,2026-04-04
+347,63,Rajesh Tiwari,CSO,7,Labour Statistics,Statistics,82.2,5,7,intermediate,minor,268,2026-05-29
+348,63,Rajesh Tiwari,CSO,5,National Accounts,Statistics,75.5,10,7,intermediate,minor,326,2026-06-07
+349,63,Rajesh Tiwari,CSO,11,SQL & Databases,Technical,81.9,6,8,intermediate,minor,1117,2026-03-19
+350,63,Rajesh Tiwari,CSO,6,Price Statistics,Statistics,94.2,7,5,advanced,proficient,850,2026-07-06
+351,64,Harish Chaudhary,CSO,19,Leadership,Behavioural,96.8,9,7,advanced,proficient,186,2026-07-17
+352,64,Harish Chaudhary,CSO,6,Price Statistics,Statistics,69.1,9,4,advanced,moderate,572,2026-03-22
+353,64,Harish Chaudhary,CSO,13,Data Visualization,Technical,30.0,6,2,advanced,critical,279,2026-07-03
+354,64,Harish Chaudhary,CSO,10,R Programming,Technical,51.9,7,3,beginner,moderate,301,2026-03-14
+355,64,Harish Chaudhary,CSO,22,Change Management,Behavioural,44.7,8,2,intermediate,critical,549,2026-06-30
+356,64,Harish Chaudhary,CSO,5,National Accounts,Statistics,40.0,10,2,intermediate,critical,645,2026-08-05
+357,64,Harish Chaudhary,CSO,21,Communication Skills,Behavioural,67.8,8,6,intermediate,moderate,460,2026-05-19
+358,64,Harish Chaudhary,CSO,12,GIS & Mapping,Technical,63.2,8,5,intermediate,moderate,888,2026-08-07
+359,65,Ashok Shah,Ministry of Agriculture,19,Leadership,Behavioural,46.8,5,3,intermediate,critical,334,2026-08-14
+360,65,Ashok Shah,Ministry of Agriculture,21,Communication Skills,Behavioural,40.9,7,2,intermediate,critical,449,2026-08-13
+361,65,Ashok Shah,Ministry of Agriculture,8,SDG Indicators,Statistics,10.0,5,0,advanced,critical,1108,2026-08-25
+362,65,Ashok Shah,Ministry of Agriculture,6,Price Statistics,Statistics,34.2,8,3,beginner,critical,1009,2026-07-23
+363,65,Ashok Shah,Ministry of Agriculture,15,Cloud Computing,Technical,60.6,6,4,advanced,moderate,663,2026-03-16
+364,65,Ashok Shah,Ministry of Agriculture,3,Sampling Techniques,Statistics,50.7,7,3,beginner,moderate,316,2026-08-20
+365,66,Sanjay Mishra,Ministry of Statistics & PI,19,Leadership,Behavioural,62.1,10,6,advanced,moderate,1103,2026-07-12
+366,66,Sanjay Mishra,Ministry of Statistics & PI,18,Digital Signatures,Digital Governance,54.6,5,2,beginner,moderate,469,2026-03-22
+367,66,Sanjay Mishra,Ministry of Statistics & PI,16,Cybersecurity,Digital Governance,52.5,5,3,intermediate,moderate,1084,2026-04-29
+368,66,Sanjay Mishra,Ministry of Statistics & PI,5,National Accounts,Statistics,61.6,10,4,beginner,moderate,913,2026-07-16
+369,66,Sanjay Mishra,Ministry of Statistics & PI,2,Survey Design,Statistics,42.2,6,3,beginner,critical,659,2026-05-12
+370,66,Sanjay Mishra,Ministry of Statistics & PI,12,GIS & Mapping,Technical,67.2,8,4,beginner,moderate,670,2026-04-10
+371,67,Pushpa Srivastava,Ministry of Agriculture,5,National Accounts,Statistics,95.6,9,7,advanced,proficient,585,2026-04-13
+372,67,Pushpa Srivastava,Ministry of Agriculture,22,Change Management,Behavioural,89.9,5,7,advanced,proficient,977,2026-04-17
+373,67,Pushpa Srivastava,Ministry of Agriculture,4,Data Analysis,Statistics,65.1,9,3,intermediate,moderate,732,2026-08-12
+374,68,Shobha Yadav,Ministry of Statistics & PI,2,Survey Design,Statistics,46.0,8,2,beginner,critical,553,2026-07-14
+375,68,Shobha Yadav,Ministry of Statistics & PI,17,Data Privacy & PDPB,Digital Governance,98.3,10,7,beginner,proficient,422,2026-04-02
+376,68,Shobha Yadav,Ministry of Statistics & PI,19,Leadership,Behavioural,98.5,7,6,advanced,proficient,257,2026-08-10
+377,68,Shobha Yadav,Ministry of Statistics & PI,21,Communication Skills,Behavioural,71.2,7,4,advanced,minor,1058,2026-08-29
+378,68,Shobha Yadav,Ministry of Statistics & PI,5,National Accounts,Statistics,96.7,10,8,advanced,proficient,1190,2026-05-17
+379,68,Shobha Yadav,Ministry of Statistics & PI,4,Data Analysis,Statistics,92.8,9,8,advanced,proficient,325,2026-08-05
+380,69,Pooja Shah,Ministry of Statistics & PI,4,Data Analysis,Statistics,61.1,10,4,advanced,moderate,1088,2026-08-23
+381,69,Pooja Shah,Ministry of Statistics & PI,10,R Programming,Technical,63.0,9,5,advanced,moderate,942,2026-08-23
+382,69,Pooja Shah,Ministry of Statistics & PI,18,Digital Signatures,Digital Governance,70.5,8,4,advanced,minor,606,2026-08-20
+383,69,Pooja Shah,Ministry of Statistics & PI,12,GIS & Mapping,Technical,53.3,7,2,intermediate,moderate,740,2026-06-14
+384,69,Pooja Shah,Ministry of Statistics & PI,14,Machine Learning Basics,Technical,13.9,7,1,advanced,critical,321,2026-07-05
+385,69,Pooja Shah,Ministry of Statistics & PI,9,Python Programming,Technical,86.7,8,6,intermediate,proficient,973,2026-03-31
+386,69,Pooja Shah,Ministry of Statistics & PI,13,Data Visualization,Technical,90.8,10,4,beginner,proficient,1024,2026-07-09
+387,70,Ravi Chaudhary,NITI Aayog,16,Cybersecurity,Digital Governance,100.0,8,6,advanced,proficient,179,2026-07-19
+388,70,Ravi Chaudhary,NITI Aayog,17,Data Privacy & PDPB,Digital Governance,87.3,6,5,beginner,proficient,630,2026-08-24
+389,70,Ravi Chaudhary,NITI Aayog,12,GIS & Mapping,Technical,37.2,10,2,intermediate,critical,874,2026-05-06
+390,70,Ravi Chaudhary,NITI Aayog,2,Survey Design,Statistics,86.9,9,6,advanced,proficient,373,2026-03-11
+391,70,Ravi Chaudhary,NITI Aayog,21,Communication Skills,Behavioural,93.1,9,7,beginner,proficient,1091,2026-04-04
+392,70,Ravi Chaudhary,NITI Aayog,6,Price Statistics,Statistics,79.3,9,5,intermediate,minor,454,2026-06-27
+393,71,Mukesh Srivastava,Ministry of Finance,3,Sampling Techniques,Statistics,85.5,6,5,advanced,proficient,958,2026-04-23
+394,71,Mukesh Srivastava,Ministry of Finance,10,R Programming,Technical,95.8,5,9,beginner,proficient,1090,2026-07-30
+395,71,Mukesh Srivastava,Ministry of Finance,1,Statistical Methods,Statistics,68.5,5,4,intermediate,moderate,745,2026-03-21
+396,71,Mukesh Srivastava,Ministry of Finance,13,Data Visualization,Technical,63.7,7,5,intermediate,moderate,834,2026-05-07
+397,71,Mukesh Srivastava,Ministry of Finance,2,Survey Design,Statistics,82.9,10,7,advanced,minor,933,2026-04-05
+398,71,Mukesh Srivastava,Ministry of Finance,6,Price Statistics,Statistics,100.0,5,5,advanced,proficient,886,2026-04-11
+399,71,Mukesh Srivastava,Ministry of Finance,7,Labour Statistics,Statistics,68.4,7,6,beginner,moderate,1106,2026-08-16
+400,71,Mukesh Srivastava,Ministry of Finance,14,Machine Learning Basics,Technical,63.5,7,4,advanced,moderate,785,2026-06-23
+401,72,Manoj Yadav,MOSPI Field Operations,21,Communication Skills,Behavioural,72.5,9,5,advanced,minor,774,2026-03-11
+402,72,Manoj Yadav,MOSPI Field Operations,10,R Programming,Technical,30.4,6,3,beginner,critical,1138,2026-06-18
+403,72,Manoj Yadav,MOSPI Field Operations,7,Labour Statistics,Statistics,67.7,8,6,beginner,moderate,508,2026-06-06
+404,72,Manoj Yadav,MOSPI Field Operations,5,National Accounts,Statistics,87.5,10,8,beginner,proficient,1094,2026-03-14
+405,72,Manoj Yadav,MOSPI Field Operations,17,Data Privacy & PDPB,Digital Governance,59.2,6,5,advanced,moderate,490,2026-06-18
+406,73,Harish Singh,CSO,16,Cybersecurity,Digital Governance,71.6,10,6,beginner,minor,807,2026-03-18
+407,73,Harish Singh,CSO,5,National Accounts,Statistics,74.1,10,5,intermediate,minor,798,2026-05-29
+408,73,Harish Singh,CSO,9,Python Programming,Technical,68.8,7,6,intermediate,moderate,1069,2026-08-02
+409,74,Anita Patel,CSO,2,Survey Design,Statistics,97.7,10,7,advanced,proficient,731,2026-05-19
+410,74,Anita Patel,CSO,21,Communication Skills,Behavioural,67.8,5,4,beginner,moderate,530,2026-06-06
+411,74,Anita Patel,CSO,19,Leadership,Behavioural,61.7,8,3,intermediate,moderate,489,2026-08-12
+412,74,Anita Patel,CSO,20,Project Management,Behavioural,94.0,8,6,advanced,proficient,482,2026-06-13
+413,74,Anita Patel,CSO,3,Sampling Techniques,Statistics,80.2,7,4,beginner,minor,444,2026-04-29
+414,74,Anita Patel,CSO,16,Cybersecurity,Digital Governance,80.1,5,4,advanced,minor,1008,2026-03-23
+415,75,Vikram Srivastava,CRS,13,Data Visualization,Technical,38.5,5,2,advanced,critical,510,2026-08-28
+416,75,Vikram Srivastava,CRS,14,Machine Learning Basics,Technical,60.9,10,3,advanced,moderate,629,2026-07-06
+417,75,Vikram Srivastava,CRS,16,Cybersecurity,Digital Governance,61.3,6,3,intermediate,moderate,1150,2026-04-04
+418,75,Vikram Srivastava,CRS,22,Change Management,Behavioural,51.5,7,3,beginner,moderate,213,2026-06-17
+419,75,Vikram Srivastava,CRS,1,Statistical Methods,Statistics,85.8,9,7,advanced,proficient,811,2026-05-13
+420,75,Vikram Srivastava,CRS,2,Survey Design,Statistics,60.7,10,3,intermediate,moderate,1123,2026-06-02
+421,76,Nisha Srivastava,Ministry of Agriculture,6,Price Statistics,Statistics,93.4,6,9,beginner,proficient,1153,2026-07-20
+422,76,Nisha Srivastava,Ministry of Agriculture,13,Data Visualization,Technical,100.0,5,7,advanced,proficient,196,2026-05-28
+423,76,Nisha Srivastava,Ministry of Agriculture,1,Statistical Methods,Statistics,94.9,9,8,beginner,proficient,218,2026-03-16
+424,76,Nisha Srivastava,Ministry of Agriculture,8,SDG Indicators,Statistics,75.3,5,7,beginner,minor,218,2026-03-09
+425,77,Rajesh Agarwal,DGET,14,Machine Learning Basics,Technical,82.2,10,4,beginner,minor,139,2026-06-16
+426,77,Rajesh Agarwal,DGET,15,Cloud Computing,Technical,82.0,8,8,beginner,minor,1185,2026-06-24
+427,77,Rajesh Agarwal,DGET,13,Data Visualization,Technical,52.4,8,2,advanced,moderate,361,2026-06-21
+428,78,Sanjay Joshi,Ministry of Finance,4,Data Analysis,Statistics,43.9,9,2,intermediate,critical,1191,2026-07-12
+429,78,Sanjay Joshi,Ministry of Finance,16,Cybersecurity,Digital Governance,51.8,6,2,advanced,moderate,1136,2026-07-10
+430,78,Sanjay Joshi,Ministry of Finance,7,Labour Statistics,Statistics,77.8,10,6,intermediate,minor,600,2026-09-01
+431,79,Arun Chaudhary,Ministry of Agriculture,22,Change Management,Behavioural,55.5,6,2,advanced,moderate,273,2026-08-07
+432,79,Arun Chaudhary,Ministry of Agriculture,3,Sampling Techniques,Statistics,18.8,7,1,beginner,critical,1055,2026-06-18
+433,79,Arun Chaudhary,Ministry of Agriculture,4,Data Analysis,Statistics,41.3,6,2,intermediate,critical,857,2026-03-12
+434,80,Priya Singh,DGET,14,Machine Learning Basics,Technical,90.7,10,9,beginner,proficient,793,2026-06-02
+435,80,Priya Singh,DGET,4,Data Analysis,Statistics,100.0,7,10,beginner,proficient,883,2026-06-06
+436,80,Priya Singh,DGET,2,Survey Design,Statistics,57.4,6,2,intermediate,moderate,939,2026-05-08
+437,80,Priya Singh,DGET,1,Statistical Methods,Statistics,82.6,8,6,advanced,minor,461,2026-08-04
+438,80,Priya Singh,DGET,5,National Accounts,Statistics,100.0,6,10,advanced,proficient,240,2026-07-23
+439,81,Sunita Joshi,CRS,14,Machine Learning Basics,Technical,75.7,6,6,intermediate,minor,854,2026-03-29
+440,81,Sunita Joshi,CRS,19,Leadership,Behavioural,41.3,5,4,advanced,critical,387,2026-05-01
+441,81,Sunita Joshi,CRS,16,Cybersecurity,Digital Governance,74.7,8,5,beginner,minor,249,2026-06-27
+442,82,Naresh Joshi,MOSPI Field Operations,11,SQL & Databases,Technical,64.6,10,6,beginner,moderate,1106,2026-06-05
+443,82,Naresh Joshi,MOSPI Field Operations,1,Statistical Methods,Statistics,55.5,6,4,advanced,moderate,231,2026-08-30
+444,82,Naresh Joshi,MOSPI Field Operations,17,Data Privacy & PDPB,Digital Governance,46.7,10,2,advanced,critical,1081,2026-04-28
+445,82,Naresh Joshi,MOSPI Field Operations,19,Leadership,Behavioural,73.6,8,5,beginner,minor,797,2026-06-22
+446,82,Naresh Joshi,MOSPI Field Operations,8,SDG Indicators,Statistics,63.6,5,5,beginner,moderate,895,2026-05-21
+447,82,Naresh Joshi,MOSPI Field Operations,22,Change Management,Behavioural,71.8,8,6,intermediate,minor,300,2026-04-27
+448,82,Naresh Joshi,MOSPI Field Operations,4,Data Analysis,Statistics,62.1,8,4,beginner,moderate,1138,2026-03-18
+449,82,Naresh Joshi,MOSPI Field Operations,7,Labour Statistics,Statistics,87.0,5,7,advanced,proficient,120,2026-08-09
+450,83,Sunita Agarwal,National Statistical Office,20,Project Management,Behavioural,87.0,7,6,beginner,proficient,576,2026-05-08
+451,83,Sunita Agarwal,National Statistical Office,21,Communication Skills,Behavioural,69.9,9,5,advanced,moderate,864,2026-05-09
+452,83,Sunita Agarwal,National Statistical Office,10,R Programming,Technical,100.0,5,5,advanced,proficient,574,2026-09-01
+453,83,Sunita Agarwal,National Statistical Office,17,Data Privacy & PDPB,Digital Governance,66.6,7,5,advanced,moderate,885,2026-03-06
+454,83,Sunita Agarwal,National Statistical Office,18,Digital Signatures,Digital Governance,100.0,5,5,beginner,proficient,1128,2026-07-28
+455,83,Sunita Agarwal,National Statistical Office,7,Labour Statistics,Statistics,97.9,8,4,intermediate,proficient,521,2026-07-15
+456,83,Sunita Agarwal,National Statistical Office,15,Cloud Computing,Technical,58.3,5,4,beginner,moderate,1056,2026-07-15
+457,84,Deepak Kumar,NSSTA,11,SQL & Databases,Technical,30.9,8,1,advanced,critical,219,2026-04-13
+458,84,Deepak Kumar,NSSTA,4,Data Analysis,Statistics,37.7,8,3,intermediate,critical,1161,2026-07-18
+459,84,Deepak Kumar,NSSTA,14,Machine Learning Basics,Technical,45.0,6,2,intermediate,critical,779,2026-04-25
+460,84,Deepak Kumar,NSSTA,2,Survey Design,Statistics,38.6,8,3,advanced,critical,628,2026-06-23
+461,84,Deepak Kumar,NSSTA,21,Communication Skills,Behavioural,35.8,7,2,beginner,critical,402,2026-05-19
+462,84,Deepak Kumar,NSSTA,15,Cloud Computing,Technical,58.9,9,5,advanced,moderate,1169,2026-06-17
+463,84,Deepak Kumar,NSSTA,17,Data Privacy & PDPB,Digital Governance,61.5,7,6,advanced,moderate,565,2026-07-12
+464,84,Deepak Kumar,NSSTA,22,Change Management,Behavioural,30.1,6,2,advanced,critical,715,2026-03-10
+465,85,Nisha Chaudhary,MOSPI Field Operations,22,Change Management,Behavioural,26.1,10,1,intermediate,critical,1103,2026-04-05
+466,85,Nisha Chaudhary,MOSPI Field Operations,5,National Accounts,Statistics,44.0,9,4,advanced,critical,974,2026-03-13
+467,85,Nisha Chaudhary,MOSPI Field Operations,21,Communication Skills,Behavioural,50.3,7,4,beginner,moderate,1190,2026-08-05
+468,85,Nisha Chaudhary,MOSPI Field Operations,6,Price Statistics,Statistics,16.3,5,1,beginner,critical,228,2026-03-14
+469,85,Nisha Chaudhary,MOSPI Field Operations,17,Data Privacy & PDPB,Digital Governance,64.1,6,4,advanced,moderate,633,2026-07-26
+470,86,Usha Gupta,Ministry of Statistics & PI,10,R Programming,Technical,79.1,5,5,intermediate,minor,329,2026-03-28
+471,86,Usha Gupta,Ministry of Statistics & PI,7,Labour Statistics,Statistics,94.1,6,9,advanced,proficient,916,2026-07-03
+472,86,Usha Gupta,Ministry of Statistics & PI,18,Digital Signatures,Digital Governance,52.4,9,5,intermediate,moderate,216,2026-05-27
+473,87,Deepak Singh,CSO,14,Machine Learning Basics,Technical,91.9,8,5,advanced,proficient,873,2026-04-04
+474,87,Deepak Singh,CSO,11,SQL & Databases,Technical,100.0,9,10,advanced,proficient,522,2026-07-14
+475,87,Deepak Singh,CSO,18,Digital Signatures,Digital Governance,78.3,10,3,beginner,minor,475,2026-04-23
+476,87,Deepak Singh,CSO,2,Survey Design,Statistics,92.2,5,7,beginner,proficient,997,2026-06-22
+477,87,Deepak Singh,CSO,1,Statistical Methods,Statistics,72.5,9,5,beginner,minor,796,2026-05-05
+478,87,Deepak Singh,CSO,9,Python Programming,Technical,78.1,10,4,beginner,minor,434,2026-06-11
+479,88,Amit Agarwal,DGET,2,Survey Design,Statistics,48.7,6,2,advanced,critical,259,2026-04-25
+480,88,Amit Agarwal,DGET,21,Communication Skills,Behavioural,30.0,6,2,advanced,critical,946,2026-08-09
+481,88,Amit Agarwal,DGET,20,Project Management,Behavioural,23.6,10,1,intermediate,critical,858,2026-06-18
+482,88,Amit Agarwal,DGET,10,R Programming,Technical,75.7,6,6,advanced,minor,1092,2026-04-11
+483,88,Amit Agarwal,DGET,16,Cybersecurity,Digital Governance,68.1,5,3,advanced,moderate,828,2026-05-10
+484,88,Amit Agarwal,DGET,12,GIS & Mapping,Technical,10.0,6,1,advanced,critical,619,2026-08-22
+485,88,Amit Agarwal,DGET,3,Sampling Techniques,Statistics,38.9,5,3,intermediate,critical,699,2026-08-26
+486,89,Dinesh Mehta,DGET,12,GIS & Mapping,Technical,63.4,10,3,intermediate,moderate,1172,2026-08-11
+487,89,Dinesh Mehta,DGET,17,Data Privacy & PDPB,Digital Governance,88.1,9,7,beginner,proficient,254,2026-07-10
+488,89,Dinesh Mehta,DGET,21,Communication Skills,Behavioural,74.3,10,7,beginner,minor,988,2026-08-06
+489,89,Dinesh Mehta,DGET,15,Cloud Computing,Technical,87.1,10,6,advanced,proficient,267,2026-03-10
+490,89,Dinesh Mehta,DGET,16,Cybersecurity,Digital Governance,100.0,6,5,intermediate,proficient,799,2026-08-23
+491,89,Dinesh Mehta,DGET,2,Survey Design,Statistics,82.9,7,7,beginner,minor,586,2026-06-27
+492,89,Dinesh Mehta,DGET,10,R Programming,Technical,80.9,8,6,intermediate,minor,948,2026-05-14
+493,90,Asha Verma,MOSPI Field Operations,1,Statistical Methods,Statistics,100.0,5,10,advanced,proficient,213,2026-03-06
+494,90,Asha Verma,MOSPI Field Operations,13,Data Visualization,Technical,86.1,5,6,advanced,proficient,337,2026-06-19
+495,90,Asha Verma,MOSPI Field Operations,22,Change Management,Behavioural,88.5,5,6,intermediate,proficient,901,2026-05-23
+496,90,Asha Verma,MOSPI Field Operations,4,Data Analysis,Statistics,70.2,10,3,intermediate,minor,440,2026-04-18
+497,90,Asha Verma,MOSPI Field Operations,18,Digital Signatures,Digital Governance,90.6,9,6,advanced,proficient,415,2026-06-17
+498,91,Asha Pillai,CRS,21,Communication Skills,Behavioural,100.0,5,9,advanced,proficient,927,2026-04-17
+499,91,Asha Pillai,CRS,12,GIS & Mapping,Technical,77.7,6,7,advanced,minor,824,2026-07-09
+500,91,Asha Pillai,CRS,1,Statistical Methods,Statistics,82.8,8,8,advanced,minor,411,2026-07-22
+501,91,Asha Pillai,CRS,18,Digital Signatures,Digital Governance,95.0,7,5,beginner,proficient,491,2026-03-14
+502,91,Asha Pillai,CRS,19,Leadership,Behavioural,100.0,9,5,advanced,proficient,1064,2026-03-20
+503,91,Asha Pillai,CRS,5,National Accounts,Statistics,70.8,5,4,beginner,minor,524,2026-04-06
+504,91,Asha Pillai,CRS,4,Data Analysis,Statistics,80.4,8,5,intermediate,minor,382,2026-03-14
+505,91,Asha Pillai,CRS,20,Project Management,Behavioural,80.4,9,4,beginner,minor,770,2026-04-30
+506,92,Harish Yadav,Ministry of Agriculture,11,SQL & Databases,Technical,72.8,7,5,beginner,minor,129,2026-06-13
+507,92,Harish Yadav,Ministry of Agriculture,20,Project Management,Behavioural,79.9,10,7,intermediate,minor,686,2026-06-01
+508,92,Harish Yadav,Ministry of Agriculture,10,R Programming,Technical,92.3,6,9,advanced,proficient,799,2026-05-02
+509,92,Harish Yadav,Ministry of Agriculture,19,Leadership,Behavioural,63.1,7,5,advanced,moderate,342,2026-07-19
+510,92,Harish Yadav,Ministry of Agriculture,5,National Accounts,Statistics,83.5,10,7,beginner,minor,694,2026-07-28
+511,92,Harish Yadav,Ministry of Agriculture,12,GIS & Mapping,Technical,88.8,10,8,beginner,proficient,274,2026-08-28
+512,93,Priya Mehta,NSSTA,21,Communication Skills,Behavioural,45.1,9,3,advanced,critical,1086,2026-03-18
+513,93,Priya Mehta,NSSTA,1,Statistical Methods,Statistics,55.3,6,4,advanced,moderate,715,2026-07-29
+514,93,Priya Mehta,NSSTA,19,Leadership,Behavioural,35.6,8,3,advanced,critical,305,2026-05-23
+515,93,Priya Mehta,NSSTA,20,Project Management,Behavioural,50.9,6,4,advanced,moderate,459,2026-04-23
+516,93,Priya Mehta,NSSTA,13,Data Visualization,Technical,54.6,6,4,beginner,moderate,486,2026-04-10
+517,93,Priya Mehta,NSSTA,7,Labour Statistics,Statistics,77.7,6,7,advanced,minor,1110,2026-06-02
+518,93,Priya Mehta,NSSTA,2,Survey Design,Statistics,44.2,5,2,intermediate,critical,594,2026-08-16
+519,94,Savita Joshi,MOSPI Field Operations,12,GIS & Mapping,Technical,10.1,8,0,intermediate,critical,215,2026-08-22
+520,94,Savita Joshi,MOSPI Field Operations,8,SDG Indicators,Statistics,38.2,10,2,beginner,critical,1187,2026-03-23
+521,94,Savita Joshi,MOSPI Field Operations,2,Survey Design,Statistics,58.2,7,5,advanced,moderate,476,2026-05-28
+522,94,Savita Joshi,MOSPI Field Operations,22,Change Management,Behavioural,11.8,10,0,intermediate,critical,279,2026-04-22
+523,94,Savita Joshi,MOSPI Field Operations,7,Labour Statistics,Statistics,41.3,6,3,intermediate,critical,842,2026-06-05
+524,95,Rekha Srivastava,NITI Aayog,16,Cybersecurity,Digital Governance,100.0,6,6,beginner,proficient,1173,2026-03-21
+525,95,Rekha Srivastava,NITI Aayog,20,Project Management,Behavioural,79.4,6,5,advanced,minor,362,2026-03-16
+526,95,Rekha Srivastava,NITI Aayog,1,Statistical Methods,Statistics,91.5,6,7,intermediate,proficient,352,2026-05-01
+527,95,Rekha Srivastava,NITI Aayog,17,Data Privacy & PDPB,Digital Governance,72.1,9,4,advanced,minor,961,2026-08-27
+528,95,Rekha Srivastava,NITI Aayog,5,National Accounts,Statistics,63.1,6,3,beginner,moderate,449,2026-07-29
+529,95,Rekha Srivastava,NITI Aayog,15,Cloud Computing,Technical,77.9,9,4,beginner,minor,460,2026-06-27
+530,96,Harish Kumar,MOSPI Field Operations,17,Data Privacy & PDPB,Digital Governance,59.7,10,2,advanced,moderate,700,2026-08-11
+531,96,Harish Kumar,MOSPI Field Operations,13,Data Visualization,Technical,68.5,8,5,beginner,moderate,569,2026-05-19
+532,96,Harish Kumar,MOSPI Field Operations,20,Project Management,Behavioural,87.4,9,5,advanced,proficient,492,2026-03-26
+533,96,Harish Kumar,MOSPI Field Operations,19,Leadership,Behavioural,55.8,10,5,intermediate,moderate,1048,2026-04-02
+534,97,Lata Mehta,NITI Aayog,3,Sampling Techniques,Statistics,53.3,6,4,advanced,moderate,979,2026-07-25
+535,97,Lata Mehta,NITI Aayog,8,SDG Indicators,Statistics,56.3,9,5,beginner,moderate,1150,2026-08-02
+536,97,Lata Mehta,NITI Aayog,13,Data Visualization,Technical,58.3,5,4,advanced,moderate,386,2026-03-31
+537,97,Lata Mehta,NITI Aayog,20,Project Management,Behavioural,64.3,10,6,intermediate,moderate,1189,2026-05-17
+538,97,Lata Mehta,NITI Aayog,5,National Accounts,Statistics,65.0,7,3,advanced,moderate,998,2026-07-05
+539,97,Lata Mehta,NITI Aayog,4,Data Analysis,Statistics,84.3,8,5,advanced,minor,320,2026-05-16
+540,97,Lata Mehta,NITI Aayog,1,Statistical Methods,Statistics,57.4,6,4,intermediate,moderate,596,2026-08-11
+541,98,Pushpa Joshi,MOSPI Field Operations,20,Project Management,Behavioural,76.9,5,6,advanced,minor,361,2026-04-21
+542,98,Pushpa Joshi,MOSPI Field Operations,18,Digital Signatures,Digital Governance,48.2,5,3,advanced,critical,540,2026-03-09
+543,98,Pushpa Joshi,MOSPI Field Operations,14,Machine Learning Basics,Technical,53.4,5,3,intermediate,moderate,639,2026-06-27
+544,98,Pushpa Joshi,MOSPI Field Operations,9,Python Programming,Technical,29.8,9,2,advanced,critical,868,2026-03-29
+545,98,Pushpa Joshi,MOSPI Field Operations,7,Labour Statistics,Statistics,42.9,6,3,advanced,critical,1108,2026-07-18
+546,99,Kavita Nair,NSSTA,18,Digital Signatures,Digital Governance,79.4,7,7,intermediate,minor,402,2026-03-17
+547,99,Kavita Nair,NSSTA,16,Cybersecurity,Digital Governance,62.1,10,3,beginner,moderate,559,2026-04-24
+548,99,Kavita Nair,NSSTA,9,Python Programming,Technical,61.4,8,4,advanced,moderate,226,2026-07-22
+549,99,Kavita Nair,NSSTA,10,R Programming,Technical,33.0,5,1,intermediate,critical,1011,2026-08-10
+550,99,Kavita Nair,NSSTA,19,Leadership,Behavioural,69.0,5,4,beginner,moderate,879,2026-08-12
+551,100,Sunita Reddy,National Statistical Office,2,Survey Design,Statistics,45.7,6,4,advanced,critical,705,2026-07-14
+552,100,Sunita Reddy,National Statistical Office,13,Data Visualization,Technical,43.1,5,3,advanced,critical,1176,2026-03-07
+553,100,Sunita Reddy,National Statistical Office,21,Communication Skills,Behavioural,59.3,5,4,beginner,moderate,120,2026-07-23
+554,100,Sunita Reddy,National Statistical Office,17,Data Privacy & PDPB,Digital Governance,68.9,5,4,intermediate,moderate,843,2026-03-14
+555,100,Sunita Reddy,National Statistical Office,10,R Programming,Technical,39.1,9,1,advanced,critical,260,2026-08-09
+556,100,Sunita Reddy,National Statistical Office,22,Change Management,Behavioural,72.6,9,5,advanced,minor,832,2026-06-05
+557,100,Sunita Reddy,National Statistical Office,6,Price Statistics,Statistics,72.1,9,4,intermediate,minor,947,2026-04-07
+558,101,Pooja Tiwari,NITI Aayog,9,Python Programming,Technical,52.9,9,2,advanced,moderate,268,2026-04-26
+559,101,Pooja Tiwari,NITI Aayog,6,Price Statistics,Statistics,44.2,9,3,advanced,critical,632,2026-03-08
+560,101,Pooja Tiwari,NITI Aayog,14,Machine Learning Basics,Technical,98.2,8,7,advanced,proficient,1110,2026-07-01
+561,102,Officer_102,NSSTA,14,Cybersecurity,Data Privacy & Cybersecurity,79.1,8,6,beginner,minor,310,2026-01-11
+562,102,Officer_102,NSSTA,20,GIS Analysis,GIS & Geospatial Analysis,63.6,5,3,advanced,moderate,878,2026-03-05
+563,102,Officer_102,NSSTA,12,Sampling Techniques,Survey Design & Sampling,94.7,8,8,advanced,proficient,422,2026-08-10
+564,102,Officer_102,NSSTA,16,Python Programming,Python & R for Statistics,81.7,10,8,beginner,minor,520,2026-07-20
+565,102,Officer_102,NSSTA,10,Economic Census,Industrial & Economic Statistics,77.1,8,6,advanced,minor,571,2026-08-12
+566,102,Officer_102,NSSTA,13,Price Statistics,National Accounts Statistics,98.0,8,8,intermediate,proficient,538,2026-03-20
+567,103,Officer_103,DPIIT,18,Labour Statistics,Agricultural Statistics,51.5,8,4,advanced,moderate,875,2026-08-04
+568,103,Officer_103,DPIIT,14,GIS Analysis,GIS & Geospatial Analysis,89.5,8,7,beginner,proficient,362,2026-05-29
+569,103,Officer_103,DPIIT,11,SDG Indicators,SDG & Metadata Standards,68.6,8,5,intermediate,moderate,800,2026-05-11
+570,104,Officer_104,NSSO,20,Industrial Statistics,Labour & Employment Statistics,44.2,10,4,advanced,critical,883,2026-07-04
+571,104,Officer_104,NSSO,11,Sampling Techniques,Survey Design & Sampling,87.2,10,9,intermediate,proficient,859,2026-08-06
+572,104,Officer_104,NSSO,14,GIS Analysis,GIS & Geospatial Analysis,56.5,8,5,intermediate,moderate,592,2026-06-28
+573,104,Officer_104,NSSO,19,R Programming,Data Privacy & Cybersecurity,89.3,10,9,beginner,proficient,358,2026-06-07
+574,105,Officer_105,DES UP,17,Cybersecurity,Data Privacy & Cybersecurity,62.4,8,5,intermediate,moderate,656,2026-04-24
+575,105,Officer_105,DES UP,20,Survey Methodology,Survey Design & Sampling,71.4,10,7,intermediate,minor,707,2026-06-19
+576,105,Officer_105,DES UP,13,Labour Statistics,Labour & Employment Statistics,81.4,5,4,beginner,minor,868,2026-03-21
+577,105,Officer_105,DES UP,16,Index Numbers,Price & Index Statistics,93.4,5,5,beginner,proficient,254,2026-04-27
+578,105,Officer_105,DES UP,16,Industrial Statistics,National Accounts Statistics,75.3,10,8,beginner,minor,573,2026-05-07
+579,105,Officer_105,DES UP,16,Agricultural Statistics,Agricultural Statistics,87.6,5,4,intermediate,proficient,289,2026-07-19
+580,106,Officer_106,DES Tamil Nadu,17,R Programming,Data Privacy & Cybersecurity,49.1,5,2,advanced,critical,647,2026-02-04
+581,106,Officer_106,DES Tamil Nadu,18,R Programming,Python & R for Statistics,55.7,10,6,advanced,moderate,633,2026-06-06
+582,106,Officer_106,DES Tamil Nadu,14,R Programming,Survey Design & Sampling,92.4,5,5,intermediate,proficient,666,2026-04-26
+583,106,Officer_106,DES Tamil Nadu,14,Labour Statistics,Labour & Employment Statistics,55.2,10,6,advanced,moderate,630,2026-01-20
+584,107,Officer_107,MoSPI,16,Metadata Standards,SDG & Metadata Standards,77.4,5,4,intermediate,minor,399,2026-01-17
+585,107,Officer_107,MoSPI,19,Labour Statistics,Industrial & Economic Statistics,97.5,8,8,intermediate,proficient,578,2026-08-20
+586,107,Officer_107,MoSPI,16,Industrial Statistics,National Accounts Statistics,93.2,5,5,intermediate,proficient,540,2026-03-18
+587,107,Officer_107,MoSPI,14,R Programming,Python & R for Statistics,74.4,10,7,advanced,minor,679,2026-02-26
+588,107,Officer_107,MoSPI,16,GIS Analysis,GIS & Geospatial Analysis,60.1,8,5,beginner,moderate,864,2026-06-23
+589,108,Officer_108,NSO,14,Industrial Statistics,Price & Index Statistics,56.3,10,6,beginner,moderate,366,2026-01-13
+590,108,Officer_108,NSO,16,Data Privacy,Data Privacy & Cybersecurity,80.4,8,6,intermediate,minor,525,2026-07-14
+591,108,Officer_108,NSO,15,Sampling Techniques,Survey Design & Sampling,58.4,5,3,intermediate,moderate,233,2026-09-01
+592,108,Officer_108,NSO,10,Price Statistics,Agricultural Statistics,63.7,10,6,advanced,moderate,221,2026-07-13
+593,108,Officer_108,NSO,19,Agricultural Statistics,Labour & Employment Statistics,63.6,10,6,advanced,moderate,865,2026-01-30
+594,108,Officer_108,NSO,19,Data Privacy,SDG & Metadata Standards,75.1,8,6,intermediate,minor,351,2026-06-05
+595,109,Officer_109,State Statistical Bureau,20,Industrial Statistics,Labour & Employment Statistics,46.9,8,4,intermediate,critical,257,2026-06-01
+596,109,Officer_109,State Statistical Bureau,11,National Accounts,National Accounts Statistics,81.5,8,7,intermediate,minor,880,2026-06-03
+597,109,Officer_109,State Statistical Bureau,10,Survey Methodology,Survey Design & Sampling,75.6,8,6,beginner,minor,843,2026-03-29
+598,109,Officer_109,State Statistical Bureau,17,Labour Statistics,Price & Index Statistics,66.1,8,5,beginner,moderate,830,2026-08-17
+599,110,Officer_110,Ministry of Agriculture,11,Labour Statistics,Price & Index Statistics,63.2,10,6,intermediate,moderate,431,2026-08-01
+600,110,Officer_110,Ministry of Agriculture,20,Data Privacy,Data Privacy & Cybersecurity,66.2,8,5,intermediate,moderate,763,2026-06-06
+601,110,Officer_110,Ministry of Agriculture,14,Labour Statistics,Labour & Employment Statistics,83.4,8,7,beginner,minor,444,2026-03-29
+602,110,Officer_110,Ministry of Agriculture,13,Industrial Statistics,Python & R for Statistics,69.5,10,7,advanced,moderate,190,2026-05-13
+603,110,Officer_110,Ministry of Agriculture,17,GIS Analysis,GIS & Geospatial Analysis,53.6,8,4,advanced,moderate,667,2026-06-15
+604,110,Officer_110,Ministry of Agriculture,13,Price Statistics,Agricultural Statistics,77.0,5,4,beginner,minor,594,2026-06-27
+605,111,Officer_111,DES Maharashtra,13,R Programming,Python & R for Statistics,67.2,10,7,intermediate,moderate,416,2026-01-31
+606,111,Officer_111,DES Maharashtra,13,R Programming,Data Privacy & Cybersecurity,69.9,10,7,advanced,moderate,369,2026-02-19
+607,111,Officer_111,DES Maharashtra,13,R Programming,SDG & Metadata Standards,39.4,10,4,advanced,critical,378,2026-03-17
+608,111,Officer_111,DES Maharashtra,14,Agricultural Statistics,Agricultural Statistics,57.8,10,6,intermediate,moderate,726,2026-02-02
+609,111,Officer_111,DES Maharashtra,10,Price Statistics,Industrial & Economic Statistics,83.1,10,8,advanced,minor,682,2026-01-27
+610,112,Officer_112,DES West Bengal,11,Price Statistics,Python & R for Statistics,66.1,8,5,intermediate,moderate,296,2026-07-30
+611,112,Officer_112,DES West Bengal,14,R Programming,Industrial & Economic Statistics,77.3,10,8,beginner,minor,756,2026-08-31
+612,112,Officer_112,DES West Bengal,19,R Programming,Data Privacy & Cybersecurity,65.7,8,5,intermediate,moderate,800,2026-06-02
+613,112,Officer_112,DES West Bengal,19,R Programming,Price & Index Statistics,67.3,8,5,intermediate,moderate,619,2026-03-20
+614,112,Officer_112,DES West Bengal,13,National Accounts,National Accounts Statistics,85.3,10,9,advanced,proficient,281,2026-08-31
+615,113,Officer_113,CSO,14,Agricultural Statistics,Labour & Employment Statistics,74.1,5,4,advanced,minor,788,2026-05-01
+616,113,Officer_113,CSO,17,Price Statistics,National Accounts Statistics,71.2,8,6,intermediate,minor,899,2026-08-09
+617,113,Officer_113,CSO,13,Industrial Statistics,Price & Index Statistics,75.0,8,6,intermediate,minor,857,2026-07-25
+618,113,Officer_113,CSO,14,R Programming,Data Privacy & Cybersecurity,44.7,10,4,advanced,critical,332,2026-08-21
+619,114,Officer_114,Planning Department,14,R Programming,Survey Design & Sampling,76.4,10,8,advanced,minor,659,2026-06-26
+620,114,Officer_114,Planning Department,19,Agricultural Statistics,Price & Index Statistics,60.9,8,5,intermediate,moderate,628,2026-01-21
+621,114,Officer_114,Planning Department,19,R Programming,Labour & Employment Statistics,57.0,10,6,advanced,moderate,870,2026-08-03
+622,115,Officer_115,DPIIT,19,R Programming,Labour & Employment Statistics,72.3,8,6,intermediate,minor,464,2026-02-16
+623,115,Officer_115,DPIIT,11,R Programming,Survey Design & Sampling,52.9,5,3,advanced,moderate,508,2026-06-21
+624,115,Officer_115,DPIIT,16,Agricultural Statistics,Price & Index Statistics,69.3,8,6,intermediate,moderate,475,2026-06-19
+625,116,Officer_116,DPIIT,18,Labour Statistics,Python & R for Statistics,74.8,8,6,intermediate,minor,181,2026-06-18
+626,116,Officer_116,DPIIT,17,Labour Statistics,National Accounts Statistics,59.2,10,6,beginner,moderate,550,2026-06-09
+627,116,Officer_116,DPIIT,17,Data Privacy,SDG & Metadata Standards,49.3,5,2,advanced,critical,474,2026-04-23
+628,117,Officer_117,MoSPI,13,Labour Statistics,Industrial & Economic Statistics,73.3,10,7,advanced,minor,597,2026-01-24
+629,117,Officer_117,MoSPI,14,R Programming,Agricultural Statistics,74.0,10,7,advanced,minor,478,2026-05-11
+630,117,Officer_117,MoSPI,12,Labour Statistics,Price & Index Statistics,54.7,5,3,advanced,moderate,647,2026-05-22
+631,118,Officer_118,DES Maharashtra,10,Price Statistics,Industrial & Economic Statistics,59.7,8,5,intermediate,moderate,453,2026-07-30
+632,118,Officer_118,DES Maharashtra,17,Cybersecurity,Data Privacy & Cybersecurity,88.8,10,9,intermediate,proficient,773,2026-06-18
+633,118,Officer_118,DES Maharashtra,15,Labour Statistics,Price & Index Statistics,50.9,8,4,advanced,moderate,566,2026-04-27
+634,118,Officer_118,DES Maharashtra,15,GIS Analysis,GIS & Geospatial Analysis,78.7,5,4,advanced,minor,600,2026-01-12
+635,119,Officer_119,State Statistical Bureau,12,GIS Analysis,GIS & Geospatial Analysis,85.4,8,7,advanced,proficient,195,2026-07-04
+636,119,Officer_119,State Statistical Bureau,14,Industrial Statistics,Price & Index Statistics,79.5,5,4,advanced,minor,660,2026-07-20
+637,119,Officer_119,State Statistical Bureau,18,R Programming,Python & R for Statistics,73.4,10,7,advanced,minor,870,2026-08-08
+638,119,Officer_119,State Statistical Bureau,19,Sampling Techniques,Survey Design & Sampling,69.2,8,6,advanced,moderate,734,2026-01-10
+639,119,Officer_119,State Statistical Bureau,11,Price Statistics,National Accounts Statistics,83.9,8,7,advanced,minor,624,2026-09-08
+640,119,Officer_119,State Statistical Bureau,10,Price Statistics,Labour & Employment Statistics,73.7,10,7,intermediate,minor,486,2026-08-20
+641,120,Officer_120,DES Maharashtra,11,Survey Methodology,Survey Design & Sampling,62.5,8,5,intermediate,moderate,354,2026-02-14
+642,120,Officer_120,DES Maharashtra,19,R Programming,Labour & Employment Statistics,65.4,5,3,intermediate,moderate,689,2026-08-22
+643,120,Officer_120,DES Maharashtra,14,Metadata Standards,SDG & Metadata Standards,56.8,8,5,intermediate,moderate,656,2026-08-19
+644,120,Officer_120,DES Maharashtra,14,R Programming,Price & Index Statistics,86.5,8,7,beginner,proficient,533,2026-05-31
+645,120,Officer_120,DES Maharashtra,17,R Programming,Agricultural Statistics,78.5,8,6,intermediate,minor,573,2026-08-07
+646,121,Officer_121,DES West Bengal,10,GIS Analysis,GIS & Geospatial Analysis,54.9,10,5,beginner,moderate,585,2026-03-12
+647,121,Officer_121,DES West Bengal,13,SDG Indicators,SDG & Metadata Standards,17.5,10,2,advanced,critical,473,2026-07-18
+648,121,Officer_121,DES West Bengal,20,Labour Statistics,Labour & Employment Statistics,62.0,5,3,beginner,moderate,815,2026-03-06
+649,121,Officer_121,DES West Bengal,17,Cybersecurity,Data Privacy & Cybersecurity,57.3,10,6,advanced,moderate,220,2026-03-21
+650,122,Officer_122,Finance Department,15,Labour Statistics,Price & Index Statistics,83.2,5,4,beginner,minor,732,2026-08-13
+651,122,Officer_122,Finance Department,14,Industrial Statistics,National Accounts Statistics,54.5,5,3,advanced,moderate,673,2026-09-05
+652,122,Officer_122,Finance Department,13,Price Statistics,Labour & Employment Statistics,87.9,5,4,intermediate,proficient,324,2026-07-13
+653,122,Officer_122,Finance Department,16,Economic Census,Industrial & Economic Statistics,86.7,8,7,intermediate,proficient,554,2026-01-24
+654,122,Officer_122,Finance Department,20,R Programming,SDG & Metadata Standards,61.1,8,5,intermediate,moderate,557,2026-06-22
+655,123,Officer_123,NSO,14,R Programming,SDG & Metadata Standards,54.8,5,3,advanced,moderate,655,2026-08-21
+656,123,Officer_123,NSO,17,Labour Statistics,National Accounts Statistics,61.4,5,3,intermediate,moderate,218,2026-03-19
+657,123,Officer_123,NSO,18,Price Statistics,Agricultural Statistics,83.7,10,8,intermediate,minor,866,2026-09-01
+658,123,Officer_123,NSO,11,R Programming,Python & R for Statistics,74.9,5,4,advanced,minor,604,2026-06-17
+659,123,Officer_123,NSO,13,R Programming,Survey Design & Sampling,86.3,8,7,intermediate,proficient,634,2026-04-24
+660,123,Officer_123,NSO,20,Price Statistics,Labour & Employment Statistics,67.4,8,5,advanced,moderate,737,2026-08-19
+661,124,Officer_124,DES Maharashtra,10,GIS Analysis,GIS & Geospatial Analysis,68.9,8,6,advanced,moderate,834,2026-06-02
+662,124,Officer_124,DES Maharashtra,11,Labour Statistics,Labour & Employment Statistics,76.5,5,4,intermediate,minor,758,2026-02-22
+663,124,Officer_124,DES Maharashtra,14,Agricultural Statistics,Agricultural Statistics,58.8,5,3,advanced,moderate,790,2026-01-01
+664,125,Officer_125,MoSPI,13,Cybersecurity,Data Privacy & Cybersecurity,66.0,5,3,advanced,moderate,195,2026-04-02
+665,125,Officer_125,MoSPI,11,Labour Statistics,Labour & Employment Statistics,96.7,8,8,beginner,proficient,718,2026-01-30
+666,125,Officer_125,MoSPI,17,Labour Statistics,Price & Index Statistics,66.4,10,7,advanced,moderate,787,2026-01-28
+667,125,Officer_125,MoSPI,14,Survey Methodology,Survey Design & Sampling,64.3,5,3,advanced,moderate,854,2026-05-14
+668,126,Officer_126,Planning Department,11,Sampling Techniques,Survey Design & Sampling,49.0,8,4,advanced,critical,634,2026-01-19
+669,126,Officer_126,Planning Department,15,R Programming,Python & R for Statistics,74.3,5,4,intermediate,minor,741,2026-07-02
+670,126,Officer_126,Planning Department,11,GIS Analysis,GIS & Geospatial Analysis,93.8,10,9,intermediate,proficient,620,2026-01-26
+671,127,Officer_127,DES Maharashtra,20,GIS Analysis,GIS & Geospatial Analysis,47.9,8,4,advanced,critical,617,2026-03-22
+672,127,Officer_127,DES Maharashtra,11,Labour Statistics,Python & R for Statistics,55.2,10,6,advanced,moderate,665,2026-01-18
+673,127,Officer_127,DES Maharashtra,19,Price Statistics,Agricultural Statistics,61.0,10,6,intermediate,moderate,749,2026-01-16
+674,127,Officer_127,DES Maharashtra,20,Cybersecurity,Data Privacy & Cybersecurity,40.6,5,2,intermediate,critical,600,2026-04-01
+675,128,Officer_128,DES Tamil Nadu,18,Price Statistics,Labour & Employment Statistics,72.3,5,4,intermediate,minor,290,2026-03-31
+676,128,Officer_128,DES Tamil Nadu,16,Price Statistics,Industrial & Economic Statistics,75.9,10,8,intermediate,minor,411,2026-07-26
+677,128,Officer_128,DES Tamil Nadu,14,SDG Indicators,SDG & Metadata Standards,69.0,10,7,intermediate,moderate,364,2026-03-11
+678,129,Officer_129,CSO,10,Sampling Techniques,Survey Design & Sampling,71.2,10,7,beginner,minor,828,2026-09-06
+679,129,Officer_129,CSO,15,Industrial Statistics,Price & Index Statistics,61.9,8,5,intermediate,moderate,558,2026-03-21
+680,129,Officer_129,CSO,19,Cybersecurity,Data Privacy & Cybersecurity,84.8,5,4,beginner,minor,339,2026-02-10
+681,129,Officer_129,CSO,13,Price Statistics,Labour & Employment Statistics,56.9,10,6,intermediate,moderate,604,2026-03-11
+682,129,Officer_129,CSO,20,SDG Indicators,SDG & Metadata Standards,79.0,5,4,intermediate,minor,470,2026-06-23
+683,130,Officer_130,DES UP,15,R Programming,Data Privacy & Cybersecurity,98.0,8,8,beginner,proficient,441,2026-03-16
+684,130,Officer_130,DES UP,16,Price Statistics,Labour & Employment Statistics,70.1,8,6,intermediate,minor,359,2026-02-03
+685,130,Officer_130,DES UP,10,R Programming,Survey Design & Sampling,95.9,10,10,intermediate,proficient,253,2026-04-12
+686,130,Officer_130,DES UP,16,National Accounts,National Accounts Statistics,66.2,5,3,intermediate,moderate,500,2026-05-28
+687,130,Officer_130,DES UP,19,R Programming,Agricultural Statistics,64.0,8,5,advanced,moderate,512,2026-02-13
+688,130,Officer_130,DES UP,11,Economic Census,Industrial & Economic Statistics,78.9,5,4,advanced,minor,627,2026-08-05
+689,131,Officer_131,DES Maharashtra,13,Agricultural Statistics,Industrial & Economic Statistics,85.1,5,4,intermediate,proficient,723,2026-05-11
+690,131,Officer_131,DES Maharashtra,11,GIS Analysis,GIS & Geospatial Analysis,67.8,10,7,advanced,moderate,331,2026-03-02
+691,131,Officer_131,DES Maharashtra,20,Agricultural Statistics,National Accounts Statistics,89.6,10,9,intermediate,proficient,257,2026-02-15
+692,131,Officer_131,DES Maharashtra,19,R Programming,Agricultural Statistics,76.6,10,8,advanced,minor,639,2026-06-24
+693,131,Officer_131,DES Maharashtra,11,Industrial Statistics,Price & Index Statistics,71.1,8,6,advanced,minor,334,2026-04-23
+694,131,Officer_131,DES Maharashtra,15,Data Privacy,SDG & Metadata Standards,47.3,8,4,advanced,critical,785,2026-01-15
+695,132,Officer_132,Finance Department,19,Price Statistics,Labour & Employment Statistics,98.0,8,8,beginner,proficient,272,2026-06-07
+696,132,Officer_132,Finance Department,19,Python Programming,Python & R for Statistics,90.1,10,9,intermediate,proficient,222,2026-04-26
+697,132,Officer_132,Finance Department,15,R Programming,Data Privacy & Cybersecurity,48.8,8,4,intermediate,critical,641,2026-01-27
+698,133,Officer_133,NSSO,14,R Programming,Survey Design & Sampling,64.7,5,3,advanced,moderate,552,2026-04-06
+699,133,Officer_133,NSSO,11,R Programming,Agricultural Statistics,47.7,10,5,advanced,critical,842,2026-03-27
+700,133,Officer_133,NSSO,20,Price Statistics,Python & R for Statistics,52.8,8,4,advanced,moderate,470,2026-03-06
+701,133,Officer_133,NSSO,20,R Programming,Data Privacy & Cybersecurity,61.2,10,6,intermediate,moderate,497,2026-09-05
+702,134,Officer_134,MoSPI,18,Index Numbers,Price & Index Statistics,51.1,10,5,intermediate,moderate,881,2026-08-22
+703,134,Officer_134,MoSPI,17,Labour Statistics,National Accounts Statistics,69.1,5,3,intermediate,moderate,399,2026-03-29
+704,134,Officer_134,MoSPI,11,Agricultural Statistics,Labour & Employment Statistics,69.8,5,3,advanced,moderate,259,2026-03-17
+705,134,Officer_134,MoSPI,19,R Programming,Python & R for Statistics,74.6,10,7,advanced,minor,812,2026-02-03
+706,134,Officer_134,MoSPI,12,Agricultural Statistics,Agricultural Statistics,84.6,10,8,beginner,minor,819,2026-07-27
+707,134,Officer_134,MoSPI,17,Price Statistics,Industrial & Economic Statistics,68.0,10,7,intermediate,moderate,805,2026-03-14
+708,135,Officer_135,Ministry of Labour,16,Industrial Statistics,Labour & Employment Statistics,33.9,8,3,advanced,critical,468,2026-07-19
+709,135,Officer_135,Ministry of Labour,14,R Programming,Python & R for Statistics,83.8,5,4,intermediate,minor,321,2026-08-12
+710,135,Officer_135,Ministry of Labour,18,R Programming,Agricultural Statistics,45.3,10,5,advanced,critical,285,2026-07-02
+711,135,Officer_135,Ministry of Labour,16,Agricultural Statistics,Price & Index Statistics,79.3,5,4,beginner,minor,330,2026-08-01
+712,136,Officer_136,NSSO,11,Price Statistics,Python & R for Statistics,81.3,8,7,beginner,minor,421,2026-04-09
+713,136,Officer_136,NSSO,10,Metadata Standards,SDG & Metadata Standards,64.7,5,3,beginner,moderate,329,2026-02-05
+714,136,Officer_136,NSSO,19,Sampling Techniques,Survey Design & Sampling,40.8,5,2,intermediate,critical,660,2026-04-25
+715,136,Officer_136,NSSO,16,Price Statistics,Agricultural Statistics,63.2,5,3,beginner,moderate,803,2026-05-16
+716,137,Officer_137,Finance Department,11,R Programming,Agricultural Statistics,58.0,10,6,intermediate,moderate,648,2026-01-17
+717,137,Officer_137,Finance Department,16,Industrial Statistics,Labour & Employment Statistics,62.1,10,6,intermediate,moderate,327,2026-03-16
+718,137,Officer_137,Finance Department,20,Industrial Statistics,National Accounts Statistics,70.1,10,7,intermediate,minor,606,2026-02-17
+719,137,Officer_137,Finance Department,18,Survey Methodology,Survey Design & Sampling,84.4,8,7,intermediate,minor,699,2026-07-21
+720,137,Officer_137,Finance Department,16,Price Statistics,Python & R for Statistics,77.0,8,6,intermediate,minor,224,2026-06-12
+721,138,Officer_138,Planning Department,10,R Programming,Survey Design & Sampling,70.1,5,4,intermediate,minor,520,2026-02-04
+722,138,Officer_138,Planning Department,17,R Programming,SDG & Metadata Standards,30.1,5,2,advanced,critical,881,2026-04-29
+723,138,Officer_138,Planning Department,13,Price Statistics,National Accounts Statistics,51.4,5,3,advanced,moderate,217,2026-03-17
+724,138,Officer_138,Planning Department,16,Index Numbers,Price & Index Statistics,21.4,8,2,advanced,critical,497,2026-05-12
+725,138,Officer_138,Planning Department,20,Python Programming,Python & R for Statistics,71.6,10,7,beginner,minor,228,2026-08-10
+726,139,Officer_139,MoSPI,12,Labour Statistics,National Accounts Statistics,74.5,8,6,advanced,minor,527,2026-09-07
+727,139,Officer_139,MoSPI,16,Data Privacy,SDG & Metadata Standards,73.5,10,7,intermediate,minor,614,2026-01-21
+728,139,Officer_139,MoSPI,15,GIS Analysis,GIS & Geospatial Analysis,69.0,8,6,advanced,moderate,285,2026-01-21
+729,139,Officer_139,MoSPI,17,Labour Statistics,Agricultural Statistics,72.5,10,7,intermediate,minor,634,2026-03-31
+730,139,Officer_139,MoSPI,14,Cybersecurity,Data Privacy & Cybersecurity,56.9,8,5,advanced,moderate,809,2026-04-22
+731,140,Officer_140,DES UP,17,Industrial Statistics,National Accounts Statistics,65.6,10,7,advanced,moderate,802,2026-06-23
+732,140,Officer_140,DES UP,16,GIS Analysis,GIS & Geospatial Analysis,84.5,10,8,beginner,minor,555,2026-04-03
+733,140,Officer_140,DES UP,11,SDG Indicators,SDG & Metadata Standards,53.0,10,5,advanced,moderate,634,2026-07-15
+734,141,Officer_141,Ministry of Labour,12,Cybersecurity,Data Privacy & Cybersecurity,74.6,5,4,intermediate,minor,206,2026-07-08
+735,141,Officer_141,Ministry of Labour,19,Data Privacy,SDG & Metadata Standards,60.3,5,3,advanced,moderate,636,2026-02-24
+736,141,Officer_141,Ministry of Labour,12,GIS Analysis,GIS & Geospatial Analysis,80.3,5,4,intermediate,minor,255,2026-04-26
+737,141,Officer_141,Ministry of Labour,14,Price Statistics,Price & Index Statistics,51.7,8,4,advanced,moderate,743,2026-05-19
+738,142,Officer_142,DPIIT,15,Index Numbers,Price & Index Statistics,38.1,5,2,advanced,critical,685,2026-01-07
+739,142,Officer_142,DPIIT,16,R Programming,SDG & Metadata Standards,81.6,10,8,intermediate,minor,247,2026-03-21
+740,142,Officer_142,DPIIT,12,Industrial Statistics,Agricultural Statistics,82.6,8,7,intermediate,minor,768,2026-01-19
+741,142,Officer_142,DPIIT,19,R Programming,Survey Design & Sampling,75.8,8,6,beginner,minor,744,2026-06-13
+742,143,Officer_143,DES Tamil Nadu,15,GIS Analysis,GIS & Geospatial Analysis,63.0,8,5,intermediate,moderate,348,2026-02-11
+743,143,Officer_143,DES Tamil Nadu,20,Data Privacy,Data Privacy & Cybersecurity,81.3,10,8,advanced,minor,436,2026-02-20
+744,143,Officer_143,DES Tamil Nadu,11,Sampling Techniques,Survey Design & Sampling,66.8,8,5,beginner,moderate,809,2026-05-17
+745,143,Officer_143,DES Tamil Nadu,19,Economic Census,Industrial & Economic Statistics,91.0,10,9,beginner,proficient,799,2026-03-28
+746,144,Officer_144,CSO,10,Price Statistics,National Accounts Statistics,70.5,8,6,advanced,minor,812,2026-06-13
+747,144,Officer_144,CSO,14,R Programming,Survey Design & Sampling,79.3,10,8,intermediate,minor,881,2026-04-14
+748,144,Officer_144,CSO,17,Price Statistics,Labour & Employment Statistics,62.3,5,3,intermediate,moderate,630,2026-04-17
+749,145,Officer_145,CSO,18,R Programming,SDG & Metadata Standards,67.3,8,5,advanced,moderate,559,2026-05-12
+750,145,Officer_145,CSO,13,Agricultural Statistics,Price & Index Statistics,70.0,5,4,intermediate,minor,453,2026-04-26
+751,145,Officer_145,CSO,15,Price Statistics,Industrial & Economic Statistics,87.2,8,7,beginner,proficient,343,2026-07-28
+752,145,Officer_145,CSO,17,GIS Analysis,GIS & Geospatial Analysis,61.6,5,3,intermediate,moderate,690,2026-05-12
+753,146,Officer_146,Finance Department,19,Python Programming,Python & R for Statistics,65.7,5,3,advanced,moderate,468,2026-05-07
+754,146,Officer_146,Finance Department,11,R Programming,Survey Design & Sampling,85.1,10,9,intermediate,proficient,188,2026-08-05
+755,146,Officer_146,Finance Department,10,Price Statistics,National Accounts Statistics,68.9,10,7,advanced,moderate,226,2026-04-13
+756,146,Officer_146,Finance Department,16,Industrial Statistics,Agricultural Statistics,88.1,10,9,intermediate,proficient,475,2026-01-19
+757,146,Officer_146,Finance Department,12,R Programming,Labour & Employment Statistics,76.6,8,6,advanced,minor,805,2026-01-31
+758,147,Officer_147,NSSTA,15,Data Privacy,SDG & Metadata Standards,62.1,5,3,intermediate,moderate,219,2026-02-05
+759,147,Officer_147,NSSTA,12,Industrial Statistics,Industrial & Economic Statistics,82.2,10,8,intermediate,minor,807,2026-03-23
+760,147,Officer_147,NSSTA,18,Cybersecurity,Data Privacy & Cybersecurity,62.9,8,5,advanced,moderate,787,2026-03-28
+761,147,Officer_147,NSSTA,11,GIS Analysis,GIS & Geospatial Analysis,64.8,8,5,advanced,moderate,519,2026-06-22
+762,147,Officer_147,NSSTA,10,Industrial Statistics,National Accounts Statistics,85.3,10,9,intermediate,proficient,884,2026-06-11
+763,147,Officer_147,NSSTA,10,Python Programming,Python & R for Statistics,81.3,10,8,intermediate,minor,771,2026-02-28
+764,148,Officer_148,Ministry of Agriculture,10,Price Statistics,Price & Index Statistics,40.7,10,4,advanced,critical,292,2026-02-18
+765,148,Officer_148,Ministry of Agriculture,17,Data Privacy,Data Privacy & Cybersecurity,66.5,8,5,intermediate,moderate,806,2026-08-24
+766,148,Officer_148,Ministry of Agriculture,17,GIS Analysis,GIS & Geospatial Analysis,49.5,10,5,advanced,critical,512,2026-06-19
+767,148,Officer_148,Ministry of Agriculture,20,Labour Statistics,National Accounts Statistics,56.7,5,3,intermediate,moderate,739,2026-04-01
+768,148,Officer_148,Ministry of Agriculture,18,R Programming,SDG & Metadata Standards,64.7,5,3,advanced,moderate,432,2026-03-13
+769,148,Officer_148,Ministry of Agriculture,17,Agricultural Statistics,Python & R for Statistics,63.5,8,5,advanced,moderate,886,2026-06-30
+770,149,Officer_149,DES Tamil Nadu,12,Data Privacy,SDG & Metadata Standards,44.4,8,4,advanced,critical,533,2026-09-02
+771,149,Officer_149,DES Tamil Nadu,17,R Programming,Data Privacy & Cybersecurity,97.0,10,10,intermediate,proficient,851,2026-03-07
+772,149,Officer_149,DES Tamil Nadu,14,Agricultural Statistics,Labour & Employment Statistics,76.0,8,6,advanced,minor,755,2026-06-28
+773,149,Officer_149,DES Tamil Nadu,20,Price Statistics,Price & Index Statistics,63.3,10,6,advanced,moderate,723,2026-02-27
+774,149,Officer_149,DES Tamil Nadu,20,Survey Methodology,Survey Design & Sampling,76.9,8,6,intermediate,minor,663,2026-01-26
+775,149,Officer_149,DES Tamil Nadu,20,Price Statistics,Python & R for Statistics,39.6,5,2,advanced,critical,667,2026-05-03
+776,150,Officer_150,DES Maharashtra,12,Metadata Standards,SDG & Metadata Standards,85.0,10,8,intermediate,proficient,218,2026-08-22
+777,150,Officer_150,DES Maharashtra,14,Agricultural Statistics,Labour & Employment Statistics,71.6,5,4,advanced,minor,687,2026-02-17
+778,150,Officer_150,DES Maharashtra,15,Survey Methodology,Survey Design & Sampling,77.3,10,8,intermediate,minor,289,2026-08-26
+779,150,Officer_150,DES Maharashtra,18,GIS Analysis,GIS & Geospatial Analysis,34.6,10,3,advanced,critical,317,2026-08-06
+780,150,Officer_150,DES Maharashtra,17,Labour Statistics,Python & R for Statistics,73.7,5,4,beginner,minor,518,2026-02-11
+781,151,Officer_151,Ministry of Agriculture,16,R Programming,Price & Index Statistics,92.7,5,5,intermediate,proficient,595,2026-07-31
+782,151,Officer_151,Ministry of Agriculture,12,Sampling Techniques,Survey Design & Sampling,98.0,10,10,beginner,proficient,277,2026-02-17
+783,151,Officer_151,Ministry of Agriculture,15,R Programming,SDG & Metadata Standards,71.4,5,4,advanced,minor,453,2026-09-02
+784,151,Officer_151,Ministry of Agriculture,10,GIS Analysis,GIS & Geospatial Analysis,90.8,8,7,intermediate,proficient,889,2026-03-02
+785,151,Officer_151,Ministry of Agriculture,14,Price Statistics,Industrial & Economic Statistics,70.3,5,4,intermediate,minor,900,2026-07-17
+786,152,Officer_152,Ministry of Agriculture,18,Metadata Standards,SDG & Metadata Standards,84.9,10,8,intermediate,minor,562,2026-04-17
+787,152,Officer_152,Ministry of Agriculture,11,Industrial Statistics,Agricultural Statistics,68.3,5,3,advanced,moderate,790,2026-08-12
+788,152,Officer_152,Ministry of Agriculture,19,Data Privacy,Data Privacy & Cybersecurity,48.9,8,4,advanced,critical,259,2026-08-23
+789,152,Officer_152,Ministry of Agriculture,18,National Accounts,National Accounts Statistics,79.4,10,8,advanced,minor,348,2026-03-25
+790,152,Officer_152,Ministry of Agriculture,11,Price Statistics,Python & R for Statistics,81.2,10,8,advanced,minor,777,2026-05-06
+791,153,Officer_153,DES UP,14,R Programming,Survey Design & Sampling,59.2,8,5,beginner,moderate,202,2026-04-12
+792,153,Officer_153,DES UP,15,Industrial Statistics,Python & R for Statistics,54.9,5,3,beginner,moderate,226,2026-04-19
+793,153,Officer_153,DES UP,12,R Programming,Price & Index Statistics,59.5,5,3,advanced,moderate,473,2026-04-15
+794,153,Officer_153,DES UP,16,R Programming,Labour & Employment Statistics,62.8,8,5,beginner,moderate,639,2026-08-11
+795,153,Officer_153,DES UP,12,Price Statistics,Agricultural Statistics,60.5,10,6,intermediate,moderate,536,2026-01-31
+796,153,Officer_153,DES UP,10,Data Privacy,SDG & Metadata Standards,51.5,10,5,intermediate,moderate,408,2026-08-02
+797,154,Officer_154,DES Tamil Nadu,20,Agricultural Statistics,Python & R for Statistics,73.9,8,6,intermediate,minor,295,2026-01-09
+798,154,Officer_154,DES Tamil Nadu,11,Cybersecurity,Data Privacy & Cybersecurity,65.9,5,3,advanced,moderate,426,2026-02-22
+799,154,Officer_154,DES Tamil Nadu,17,GIS Analysis,GIS & Geospatial Analysis,68.4,10,7,intermediate,moderate,225,2026-04-13
+800,154,Officer_154,DES Tamil Nadu,14,Industrial Statistics,Labour & Employment Statistics,65.9,5,3,intermediate,moderate,323,2026-05-09
+801,154,Officer_154,DES Tamil Nadu,12,Industrial Statistics,Agricultural Statistics,72.6,10,7,intermediate,minor,422,2026-03-19
+802,155,Officer_155,Planning Department,10,GIS Analysis,GIS & Geospatial Analysis,33.6,8,3,intermediate,critical,749,2026-05-07
+803,155,Officer_155,Planning Department,12,R Programming,Labour & Employment Statistics,51.4,8,4,intermediate,moderate,487,2026-04-07
+804,155,Officer_155,Planning Department,12,Data Privacy,Data Privacy & Cybersecurity,51.9,5,3,beginner,moderate,487,2026-08-08
+805,155,Officer_155,Planning Department,13,Survey Methodology,Survey Design & Sampling,49.5,8,4,intermediate,critical,428,2026-03-07
+806,156,Officer_156,DES UP,16,R Programming,Python & R for Statistics,61.7,5,3,intermediate,moderate,232,2026-03-10
+807,156,Officer_156,DES UP,13,SDG Indicators,SDG & Metadata Standards,59.4,5,3,advanced,moderate,867,2026-05-24
+808,156,Officer_156,DES UP,10,Price Statistics,National Accounts Statistics,47.0,8,4,advanced,critical,490,2026-09-02
+809,157,Officer_157,DES Tamil Nadu,17,Industrial Statistics,National Accounts Statistics,66.6,8,5,intermediate,moderate,469,2026-04-08
+810,157,Officer_157,DES Tamil Nadu,17,Industrial Statistics,Python & R for Statistics,53.8,8,4,beginner,moderate,548,2026-05-12
+811,157,Officer_157,DES Tamil Nadu,15,Price Statistics,Agricultural Statistics,21.0,10,2,advanced,critical,388,2026-04-05
+812,157,Officer_157,DES Tamil Nadu,14,SDG Indicators,SDG & Metadata Standards,57.9,5,3,intermediate,moderate,329,2026-01-05
+813,158,Officer_158,MoSPI,17,Industrial Statistics,Labour & Employment Statistics,37.2,8,3,advanced,critical,525,2026-03-07
+814,158,Officer_158,MoSPI,12,Industrial Statistics,Price & Index Statistics,65.5,5,3,intermediate,moderate,540,2026-02-13
+815,158,Officer_158,MoSPI,11,R Programming,Agricultural Statistics,98.0,10,10,beginner,proficient,716,2026-01-09
+816,158,Officer_158,MoSPI,20,R Programming,Data Privacy & Cybersecurity,62.7,8,5,advanced,moderate,320,2026-08-04
+817,158,Officer_158,MoSPI,20,National Accounts,National Accounts Statistics,75.1,5,4,advanced,minor,241,2026-06-08
+818,158,Officer_158,MoSPI,10,R Programming,Python & R for Statistics,77.5,10,8,advanced,minor,679,2026-01-05
+819,159,Officer_159,Ministry of Labour,11,R Programming,Survey Design & Sampling,31.7,10,3,advanced,critical,363,2026-01-28
+820,159,Officer_159,Ministry of Labour,15,Agricultural Statistics,Industrial & Economic Statistics,79.5,10,8,beginner,minor,719,2026-03-06
+821,159,Officer_159,Ministry of Labour,14,R Programming,Labour & Employment Statistics,58.8,8,5,beginner,moderate,893,2026-02-27
+822,159,Officer_159,Ministry of Labour,16,Price Statistics,Python & R for Statistics,61.8,10,6,intermediate,moderate,212,2026-01-24
+823,159,Officer_159,Ministry of Labour,16,Labour Statistics,Price & Index Statistics,47.3,5,2,intermediate,critical,264,2026-05-08
+824,159,Officer_159,Ministry of Labour,10,Data Privacy,Data Privacy & Cybersecurity,45.3,5,2,intermediate,critical,720,2026-08-24
+825,160,Officer_160,Ministry of Agriculture,15,Price Statistics,Industrial & Economic Statistics,94.5,8,8,intermediate,proficient,213,2026-02-15
+826,160,Officer_160,Ministry of Agriculture,11,Agricultural Statistics,Python & R for Statistics,72.9,10,7,intermediate,minor,587,2026-08-26
+827,160,Officer_160,Ministry of Agriculture,16,Agricultural Statistics,Labour & Employment Statistics,88.0,10,9,intermediate,proficient,733,2026-03-26
+828,160,Officer_160,Ministry of Agriculture,11,R Programming,Survey Design & Sampling,69.7,10,7,advanced,moderate,534,2026-01-14
+829,161,Officer_161,NSSTA,18,Agricultural Statistics,National Accounts Statistics,83.7,8,7,beginner,minor,413,2026-04-02
+830,161,Officer_161,NSSTA,11,Data Privacy,SDG & Metadata Standards,60.2,10,6,intermediate,moderate,856,2026-04-08
+831,161,Officer_161,NSSTA,20,GIS Analysis,GIS & Geospatial Analysis,71.5,10,7,advanced,minor,569,2026-07-02
+832,161,Officer_161,NSSTA,10,Industrial Statistics,Python & R for Statistics,77.2,8,6,intermediate,minor,289,2026-01-24
+833,162,Officer_162,State Statistical Bureau,18,Data Privacy,SDG & Metadata Standards,48.4,10,5,intermediate,critical,271,2026-04-01
+834,162,Officer_162,State Statistical Bureau,14,Industrial Statistics,Labour & Employment Statistics,53.6,8,4,intermediate,moderate,574,2026-01-04
+835,162,Officer_162,State Statistical Bureau,18,Labour Statistics,National Accounts Statistics,75.2,10,8,intermediate,minor,428,2026-05-27
+836,162,Officer_162,State Statistical Bureau,14,Industrial Statistics,Python & R for Statistics,46.8,5,2,beginner,critical,455,2026-03-19
+837,162,Officer_162,State Statistical Bureau,14,Survey Methodology,Survey Design & Sampling,60.4,8,5,beginner,moderate,258,2026-04-03
+838,162,Officer_162,State Statistical Bureau,12,GIS Analysis,GIS & Geospatial Analysis,64.0,5,3,intermediate,moderate,648,2026-01-28
+839,163,Officer_163,Planning Department,14,GIS Analysis,GIS & Geospatial Analysis,62.5,8,5,intermediate,moderate,788,2026-02-04
+840,163,Officer_163,Planning Department,15,Metadata Standards,SDG & Metadata Standards,31.2,5,2,intermediate,critical,587,2026-09-05
+841,163,Officer_163,Planning Department,14,Economic Census,Industrial & Economic Statistics,73.5,8,6,intermediate,minor,513,2026-04-07
+842,164,Officer_164,NSSO,14,National Accounts,National Accounts Statistics,62.8,8,5,advanced,moderate,394,2026-04-23
+843,164,Officer_164,NSSO,16,R Programming,Agricultural Statistics,63.0,5,3,intermediate,moderate,854,2026-02-09
+844,164,Officer_164,NSSO,16,Price Statistics,Price & Index Statistics,62.4,10,6,intermediate,moderate,670,2026-05-30
+845,164,Officer_164,NSSO,11,Data Privacy,SDG & Metadata Standards,62.4,8,5,intermediate,moderate,788,2026-06-13
+846,164,Officer_164,NSSO,19,Agricultural Statistics,Labour & Employment Statistics,48.1,8,4,intermediate,critical,350,2026-06-15
+847,165,Officer_165,NSO,15,Metadata Standards,SDG & Metadata Standards,42.4,10,4,intermediate,critical,406,2026-04-25
+848,165,Officer_165,NSO,12,GIS Analysis,GIS & Geospatial Analysis,53.0,10,5,intermediate,moderate,887,2026-05-09
+849,165,Officer_165,NSO,12,National Accounts,National Accounts Statistics,41.0,8,3,intermediate,critical,298,2026-08-01
+850,165,Officer_165,NSO,15,Sampling Techniques,Survey Design & Sampling,90.9,5,5,beginner,proficient,713,2026-05-04
+851,165,Officer_165,NSO,11,R Programming,Data Privacy & Cybersecurity,55.2,10,6,intermediate,moderate,225,2026-07-27
+852,165,Officer_165,NSO,13,Agricultural Statistics,Price & Index Statistics,60.8,10,6,intermediate,moderate,348,2026-08-27
+853,166,Officer_166,CSO,20,Data Privacy,Data Privacy & Cybersecurity,51.0,5,3,advanced,moderate,370,2026-06-13
+854,166,Officer_166,CSO,19,Labour Statistics,Price & Index Statistics,47.8,10,5,beginner,critical,382,2026-04-26
+855,166,Officer_166,CSO,11,Data Privacy,SDG & Metadata Standards,69.5,5,3,beginner,moderate,244,2026-05-28
+856,166,Officer_166,CSO,14,Agricultural Statistics,Labour & Employment Statistics,83.3,5,4,beginner,minor,648,2026-01-30
+857,167,Officer_167,DES West Bengal,19,R Programming,Data Privacy & Cybersecurity,56.2,8,4,beginner,moderate,484,2026-08-24
+858,167,Officer_167,DES West Bengal,14,SDG Indicators,SDG & Metadata Standards,49.7,8,4,intermediate,critical,300,2026-03-03
+859,167,Officer_167,DES West Bengal,16,GIS Analysis,GIS & Geospatial Analysis,60.0,5,3,beginner,moderate,321,2026-05-28
+860,167,Officer_167,DES West Bengal,20,Agricultural Statistics,Labour & Employment Statistics,63.7,10,6,intermediate,moderate,890,2026-08-24
+861,167,Officer_167,DES West Bengal,10,Industrial Statistics,Agricultural Statistics,79.1,8,6,beginner,minor,641,2026-06-08
+862,167,Officer_167,DES West Bengal,18,Price Statistics,Python & R for Statistics,72.5,5,4,intermediate,minor,573,2026-09-04
+863,168,Officer_168,Ministry of Agriculture,13,GIS Analysis,GIS & Geospatial Analysis,82.4,5,4,beginner,minor,213,2026-03-12
+864,168,Officer_168,Ministry of Agriculture,17,Labour Statistics,Python & R for Statistics,71.9,8,6,beginner,minor,759,2026-07-10
+865,168,Officer_168,Ministry of Agriculture,10,Industrial Statistics,Industrial & Economic Statistics,78.3,5,4,beginner,minor,555,2026-05-19
+866,168,Officer_168,Ministry of Agriculture,13,Metadata Standards,SDG & Metadata Standards,76.9,5,4,advanced,minor,849,2026-07-12
+867,168,Officer_168,Ministry of Agriculture,13,Price Statistics,Agricultural Statistics,75.3,8,6,intermediate,minor,300,2026-07-18
+868,168,Officer_168,Ministry of Agriculture,16,Cybersecurity,Data Privacy & Cybersecurity,68.1,8,5,intermediate,moderate,804,2026-06-11
+869,169,Officer_169,DPIIT,14,Labour Statistics,Agricultural Statistics,56.7,10,6,intermediate,moderate,900,2026-03-16
+870,169,Officer_169,DPIIT,11,Labour Statistics,Industrial & Economic Statistics,54.4,10,5,advanced,moderate,875,2026-07-28
+871,169,Officer_169,DPIIT,12,Sampling Techniques,Survey Design & Sampling,69.2,8,6,advanced,moderate,315,2026-03-05
+872,169,Officer_169,DPIIT,12,Agricultural Statistics,Labour & Employment Statistics,52.4,10,5,advanced,moderate,582,2026-05-06
+873,170,Officer_170,Ministry of Labour,17,GIS Analysis,GIS & Geospatial Analysis,68.0,10,7,intermediate,moderate,557,2026-04-27
+874,170,Officer_170,Ministry of Labour,17,Industrial Statistics,Industrial & Economic Statistics,98.0,10,10,beginner,proficient,275,2026-07-07
+875,170,Officer_170,Ministry of Labour,13,Industrial Statistics,Python & R for Statistics,76.4,5,4,intermediate,minor,619,2026-07-31
+876,170,Officer_170,Ministry of Labour,19,Sampling Techniques,Survey Design & Sampling,61.4,8,5,intermediate,moderate,525,2026-05-21
+877,170,Officer_170,Ministry of Labour,17,Data Privacy,SDG & Metadata Standards,63.3,10,6,advanced,moderate,821,2026-07-20
+878,171,Officer_171,DES West Bengal,12,Price Statistics,Price & Index Statistics,36.8,8,3,advanced,critical,387,2026-06-26
+879,171,Officer_171,DES West Bengal,20,Labour Statistics,Python & R for Statistics,67.9,8,5,beginner,moderate,264,2026-04-06
+880,171,Officer_171,DES West Bengal,13,R Programming,Data Privacy & Cybersecurity,64.8,10,6,beginner,moderate,492,2026-07-05
+881,172,Officer_172,NSSTA,15,Labour Statistics,National Accounts Statistics,67.2,10,7,beginner,moderate,189,2026-01-03
+882,172,Officer_172,NSSTA,16,Sampling Techniques,Survey Design & Sampling,74.4,8,6,intermediate,minor,252,2026-02-28
+883,172,Officer_172,NSSTA,20,Price Statistics,Agricultural Statistics,69.3,8,6,beginner,moderate,316,2026-06-14
+884,173,Officer_173,State Statistical Bureau,12,Data Privacy,Data Privacy & Cybersecurity,72.6,5,4,intermediate,minor,823,2026-07-11
+885,173,Officer_173,State Statistical Bureau,16,R Programming,Survey Design & Sampling,89.7,5,4,intermediate,proficient,306,2026-05-31
+886,173,Officer_173,State Statistical Bureau,20,Labour Statistics,Price & Index Statistics,79.9,5,4,intermediate,minor,433,2026-03-12
+887,174,Officer_174,Ministry of Agriculture,20,Cybersecurity,Data Privacy & Cybersecurity,38.8,5,2,advanced,critical,581,2026-03-17
+888,174,Officer_174,Ministry of Agriculture,20,Agricultural Statistics,Labour & Employment Statistics,61.4,5,3,intermediate,moderate,426,2026-05-08
+889,174,Officer_174,Ministry of Agriculture,19,Survey Methodology,Survey Design & Sampling,90.9,5,5,intermediate,proficient,315,2026-04-10
+890,174,Officer_174,Ministry of Agriculture,11,GIS Analysis,GIS & Geospatial Analysis,60.7,5,3,intermediate,moderate,662,2026-09-02
+891,175,Officer_175,Planning Department,16,Survey Methodology,Survey Design & Sampling,47.1,8,4,advanced,critical,693,2026-07-16
+892,175,Officer_175,Planning Department,12,R Programming,Labour & Employment Statistics,81.3,10,8,beginner,minor,730,2026-06-07
+893,175,Officer_175,Planning Department,15,Price Statistics,Agricultural Statistics,98.0,10,10,intermediate,proficient,339,2026-05-18
+894,176,Officer_176,MoSPI,19,Price Statistics,Labour & Employment Statistics,61.5,8,5,intermediate,moderate,298,2026-04-27
+895,176,Officer_176,MoSPI,12,GIS Analysis,GIS & Geospatial Analysis,72.9,10,7,intermediate,minor,192,2026-07-01
+896,176,Officer_176,MoSPI,14,Agricultural Statistics,Agricultural Statistics,70.8,8,6,intermediate,minor,715,2026-05-13
+897,177,Officer_177,MoSPI,11,Agricultural Statistics,Price & Index Statistics,42.7,8,3,advanced,critical,770,2026-06-10
+898,177,Officer_177,MoSPI,19,R Programming,Labour & Employment Statistics,60.6,5,3,intermediate,moderate,691,2026-08-08
+899,177,Officer_177,MoSPI,18,Agricultural Statistics,National Accounts Statistics,92.1,5,5,beginner,proficient,298,2026-02-28
+900,177,Officer_177,MoSPI,17,GIS Analysis,GIS & Geospatial Analysis,40.9,5,2,advanced,critical,430,2026-01-12
+901,177,Officer_177,MoSPI,20,Sampling Techniques,Survey Design & Sampling,81.5,5,4,advanced,minor,746,2026-07-25
+902,178,Officer_178,NSO,11,R Programming,SDG & Metadata Standards,61.1,5,3,intermediate,moderate,765,2026-04-06
+903,178,Officer_178,NSO,17,Price Statistics,Agricultural Statistics,98.0,10,10,beginner,proficient,250,2026-08-13
+904,178,Officer_178,NSO,15,GIS Analysis,GIS & Geospatial Analysis,67.5,10,7,intermediate,moderate,647,2026-01-03
+905,178,Officer_178,NSO,17,Labour Statistics,Industrial & Economic Statistics,70.4,8,6,intermediate,minor,557,2026-06-01
+906,179,Officer_179,NSSTA,10,Index Numbers,Price & Index Statistics,53.1,10,5,advanced,moderate,890,2026-08-13
+907,179,Officer_179,NSSTA,18,Survey Methodology,Survey Design & Sampling,81.3,8,7,advanced,minor,286,2026-02-22
+908,179,Officer_179,NSSTA,14,GIS Analysis,GIS & Geospatial Analysis,56.3,5,3,intermediate,moderate,325,2026-07-02
+909,179,Officer_179,NSSTA,11,R Programming,Data Privacy & Cybersecurity,40.2,10,4,advanced,critical,649,2026-09-07
+910,180,Officer_180,CSO,12,R Programming,Data Privacy & Cybersecurity,77.8,5,4,intermediate,minor,625,2026-06-19
+911,180,Officer_180,CSO,17,Agricultural Statistics,Price & Index Statistics,83.2,8,7,beginner,minor,514,2026-03-23
+912,180,Officer_180,CSO,19,GIS Analysis,GIS & Geospatial Analysis,67.1,5,3,beginner,moderate,319,2026-07-19
+913,181,Officer_181,NSSTA,17,Agricultural Statistics,National Accounts Statistics,62.1,10,6,intermediate,moderate,642,2026-03-20
+914,181,Officer_181,NSSTA,19,Price Statistics,Price & Index Statistics,98.0,10,10,beginner,proficient,491,2026-07-31
+915,181,Officer_181,NSSTA,18,Agricultural Statistics,Python & R for Statistics,76.3,8,6,advanced,minor,544,2026-04-12
+916,181,Officer_181,NSSTA,16,Labour Statistics,Agricultural Statistics,90.2,5,5,intermediate,proficient,211,2026-09-01
