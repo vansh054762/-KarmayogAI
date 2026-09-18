@@ -403,3 +403,183 @@ tr:hover td { background: var(--card2); }
   .g2,.g3,.g4 { grid-template-columns:1fr; }
   .topbar { padding:11px 14px; }
 }
+
+
+/* ═══════════════════════════════════════════════════════════
+   MOBILE RESPONSIVE FIXES — phones & small screens
+   Applies to all pages: dashboard, assessment, login, etc.
+═══════════════════════════════════════════════════════════ */
+
+/* ── Mobile sidebar — slide-in drawer ────────────────── */
+@media (max-width: 768px) {
+
+  /* Sidebar hidden off-screen by default */
+  .sidebar {
+    transform: translateX(-100%);
+    transition: transform .28s cubic-bezier(.4,0,.2,1);
+    z-index: 500;
+    width: 240px;
+  }
+  .sidebar.open {
+    transform: translateX(0);
+    box-shadow: 4px 0 32px rgba(0,0,0,.45);
+  }
+
+  /* Overlay behind open sidebar */
+  .sidebar-overlay {
+    display: none;
+    position: fixed; inset: 0;
+    background: rgba(0,0,0,.45);
+    z-index: 499;
+    backdrop-filter: blur(2px);
+  }
+  .sidebar-overlay.open { display: block; }
+
+  /* Remove left margin — sidebar is no longer fixed in layout */
+  .sidebar-pad {
+    margin-left: 0 !important;
+  }
+
+  /* ── Mobile topbar ── */
+  .topbar {
+    padding: 11px 14px;
+    gap: 8px;
+  }
+  .topbar-title { font-size: 15px; }
+
+  /* Hamburger button — shown on mobile */
+  .hamburger {
+    display: flex !important;
+    align-items: center; justify-content: center;
+    width: 36px; height: 36px;
+    border: 1.5px solid var(--border2);
+    border-radius: 8px;
+    background: var(--card2);
+    cursor: pointer;
+    flex-shrink: 0;
+  }
+
+  /* ── Page padding ── */
+  .page { padding: 12px; }
+
+  /* ── Grids → single column ── */
+  .g2, .g3, .g4 {
+    grid-template-columns: 1fr !important;
+    gap: 10px;
+  }
+
+  /* ── Cards ── */
+  .card-bd, .card-hd { padding: 12px 14px; }
+
+  /* ── Stat cards ── */
+  .stat { padding: 14px; }
+  .stat-val { font-size: 22px; }
+
+  /* ── Tables — horizontal scroll ── */
+  .tbl-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  table { min-width: 560px; }
+  th, td { padding: 9px 10px; font-size: 12px; }
+
+  /* ── Buttons ── */
+  .btn-lg { padding: 10px 20px; font-size: 13.5px; }
+  .btn-block-mobile { width: 100%; justify-content: center; }
+
+  /* ── Topbar actions → icon-only or wrap ── */
+  #topbar-actions { gap: 6px; flex-wrap: wrap; }
+  #topbar-actions .btn { padding: 5px 10px; font-size: 11.5px; }
+
+  /* ── Quiz options ── */
+  .opt { padding: 10px 12px; }
+  .opt-letter { width: 24px; height: 24px; min-width: 24px; font-size: 10px; }
+
+  /* ── Drop zone ── */
+  .dropzone { padding: 28px 14px; }
+
+  /* ── Toast — full width on mobile ── */
+  .toast {
+    left: 12px; right: 12px;
+    top: 12px;
+    font-size: 12.5px;
+  }
+}
+
+/* ── Hamburger hidden on desktop ───────────────────────── */
+.hamburger { display: none; }
+
+/* ── Landing page (index.html) mobile fixes ─────────────── */
+@media (max-width: 768px) {
+
+  /* Nav */
+  .nav, .nav.scrolled {
+    padding: 13px 16px !important;
+  }
+  .nav-links { display: none !important; }
+  .nav-cta .btn-lg { padding: 7px 14px; font-size: 12px; }
+
+  /* Hero */
+  .hero { padding: 90px 18px 60px !important; min-height: auto; }
+  .hero-inner {
+    grid-template-columns: 1fr !important;
+    gap: 32px;
+  }
+  .hero-visual { display: none !important; }
+  .h1-karmayog .letter {
+    font-size: clamp(2.4rem, 11vw, 3.4rem) !important;
+  }
+  .h1-ai { font-size: .32em !important; }
+  .hero-tagline { font-size: clamp(1.1rem, 5vw, 1.5rem) !important; }
+  .hero p { font-size: 14px !important; }
+  .hero-btns { flex-direction: column; align-items: stretch; }
+  .hero-btns .btn { text-align: center; justify-content: center; }
+  .hero-words { margin-top: 28px; }
+
+  /* Sections */
+  .feat-section, .hiw-section, .cta-section, .stats-section {
+    padding: 56px 16px !important;
+  }
+
+  /* Feature cards */
+  .feat-grid { grid-template-columns: 1fr !important; gap: 12px; }
+  .feat-card { padding: 22px 18px; }
+
+  /* How it works zigzag → single column */
+  .hiw-flow::before { left: 24px !important; }
+  .hiw-step {
+    grid-template-columns: 48px 1fr !important;
+    gap: 12px !important;
+  }
+  .hiw-step:nth-child(even) .hiw-card,
+  .hiw-step:nth-child(odd)  .hiw-card  { grid-column: 2 !important; grid-row: 1 !important; text-align: left !important; }
+  .hiw-step:nth-child(even) .hiw-mid,
+  .hiw-step:nth-child(odd)  .hiw-mid   { grid-column: 1 !important; grid-row: 1 !important; }
+  .hiw-step:nth-child(odd)  .hiw-card-icon { margin-left: 0 !important; }
+  .hiw-spacer { display: none !important; }
+  .hiw-num { width: 44px; height: 44px; font-size: 14px; }
+  .hiw-card { padding: 18px 16px; }
+
+  /* Stats grid → 2 cols */
+  .stats-inner { grid-template-columns: 1fr 1fr !important; }
+  .stat-item { padding: 20px 12px; border-right: none !important; border-bottom: 1px solid rgba(255,255,255,.08); }
+  .stat-item-val { font-size: 2rem; }
+
+  /* Footer */
+  footer { padding: 40px 16px 24px !important; }
+  .footer-grid { grid-template-columns: 1fr 1fr !important; gap: 24px; }
+  .footer-bottom { flex-direction: column; gap: 8px; text-align: center; }
+
+  /* CTA */
+  .cta-btns { flex-direction: column; align-items: stretch; }
+  .cta-btns .btn { text-align: center; justify-content: center; }
+  .cta-section h2 { font-size: clamp(1.6rem, 7vw, 2.4rem); }
+
+  /* Section headings */
+  .section-h { font-size: clamp(1.4rem, 6vw, 2rem); }
+}
+
+/* ── Small phones (< 400px) ──────────────────────────── */
+@media (max-width: 400px) {
+  .stats-inner { grid-template-columns: 1fr !important; }
+  .footer-grid { grid-template-columns: 1fr !important; }
+  .nav-cta { gap: 6px; }
+  .nav-cta .btn:first-child { display: none; }
+}

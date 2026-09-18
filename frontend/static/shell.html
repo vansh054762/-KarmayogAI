@@ -1,4 +1,7 @@
-<aside class="sidebar">
+<!-- Mobile sidebar overlay -->
+<div class="sidebar-overlay" id="sidebar-overlay" onclick="closeSidebar()"></div>
+
+<aside class="sidebar" id="sidebar">
   <div class="sidebar-logo">
     <div class="sidebar-logo-icon">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FEFCF8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -150,6 +153,22 @@ function closeProfileModal() {
 // Close on backdrop click
 document.getElementById('profile-modal').addEventListener('click', function(e) {
   if (e.target === this) closeProfileModal();
+});
+
+// ── Mobile sidebar toggle ──────────────────────────────
+function openSidebar() {
+  document.getElementById('sidebar').classList.add('open');
+  document.getElementById('sidebar-overlay').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeSidebar() {
+  document.getElementById('sidebar').classList.remove('open');
+  document.getElementById('sidebar-overlay').classList.remove('open');
+  document.body.style.overflow = '';
+}
+// Close sidebar on nav item click (mobile)
+document.querySelectorAll('.nav-item').forEach(function(el) {
+  el.addEventListener('click', closeSidebar);
 });
 
 async function saveProfile() {

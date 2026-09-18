@@ -65,6 +65,18 @@ async function renderShell(title, pageId) {
   const adminNav = document.getElementById('admin-nav');
   if (adminNav) adminNav.classList.toggle('hidden', user.role!=='admin');
   setActivePage(pageId);
+
+  // Inject hamburger button into topbar for mobile
+  const topbar = document.querySelector('.topbar');
+  if (topbar && !topbar.querySelector('.hamburger')) {
+    const ham = document.createElement('button');
+    ham.className = 'hamburger';
+    ham.setAttribute('aria-label', 'Open menu');
+    ham.innerHTML = `<svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>`;
+    ham.onclick = function() { if (typeof openSidebar === 'function') openSidebar(); };
+    topbar.insertBefore(ham, topbar.firstChild);
+  }
+
   return user;
 }
 
